@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import './footer.css';
-import profilePicture from '../assets/user12.png';
-import projectsPicture from '../assets/planning.png';
-import contactPicture from '../assets/send1.png';
-import booksPicture from '../assets/book.png';
-import dapPicture from '../assets/astronomy.png';
+import profilePicture from '../Assets/user12.png';
+import projectsPicture from '../Assets/planning.png';
+import contactPicture from '../Assets/send1.png';
+import booksPicture from '../Assets/book.png';
+import dapPicture from '../Assets/astronomy.png';
 
 const Footer = () => {
   return (

@@ -10,7 +10,7 @@
 }
 
 .left-item {
-    margin-top: -10px;
+
     flex: 1;
     color: #000000;
 }
@@ -36,13 +36,11 @@
 .mode {
     cursor: pointer;
     width: 1.8%;
-    margin-top: -10px;
     padding: 0px 20px;
 }
 
 .form-select {
     color: rgb(0, 0, 0);
-    margin-top: -10px;
     border: 2px solid rgb(0, 0, 0);
     background-color: #ffffff;
     cursor: pointer;

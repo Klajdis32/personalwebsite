@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import './header.css';
-import Lightmode from '../assets/sunny.png';
-import Darkmode from '../assets/moon.png';
+import Lightmode from '../Assets/sunny.png';
+import Darkmode from '../Assets/moon.png';
 
 const Header = () => {
   return (
