@@ -1,0 +1,82 @@
+.header {
+    margin-top: 0px;
+    background-color: white;
+    color: #333;
+    height: 50px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-item {
+    margin-top: -10px;
+    flex: 1;
+    color: #000000;
+}
+
+.left-item p {
+    width: 10%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tolink {
+    text-decoration: none;
+}
+
+.right-item {
+    text-align: right;
+    margin-right: 0px;
+}
+
+.mode {
+    cursor: pointer;
+    width: 1.8%;
+    margin-top: -10px;
+    padding: 0px 20px;
+}
+
+.form-select {
+    color: rgb(0, 0, 0);
+    margin-top: -10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#lightmode {
+    display: none
+}
+
+
+/* Κανόνες CSS για tablet */
+@media (min-width: 601px) and (max-width: 768px) {
+    .left-item p {
+        width: 50%;
+    }
+
+    .mode {
+        width: 4%;
+    }
+
+}
+
+/* Κανόνες CSS για κινητά */
+@media (max-width: 600px) {
+  
+    .left-item p {
+        width: 50%;
+    }
+
+    .mode {
+        width: 5%;
+    }
+
+}
