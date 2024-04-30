@@ -1,3 +1,22 @@
+
+
+:root {
+    background-color: white;
+    color: black;
+ 
+}
+
+[data-theme="dark"] {
+    background-color: #282828; /* Σκοτεινό φόντο */
+    color: #ffffff; /* Λευκό χρώμα κειμένου */
+
+
+    .toatoykeimenoy{
+        color: white;
+    }
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

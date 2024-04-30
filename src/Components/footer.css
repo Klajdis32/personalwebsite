@@ -17,6 +17,21 @@
     text-decoration: none;
 }
 
+
+[data-theme="dark"] {
+
+    .footer {
+        background-color: #333;
+        border-top: 2px solid white;
+    }
+
+    .todiv span {
+        font-size: 1em;
+        color: white;
+    }
+
+}
+
 .todiv{
     padding: 10px;
     text-decoration: none;

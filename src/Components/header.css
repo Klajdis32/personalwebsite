@@ -9,6 +9,25 @@
     align-items: center;
 }
 
+[data-theme="dark"] {
+
+    .header {
+        background-color: #333;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    .left-item p {
+        color: rgb(255, 255, 255);
+    }
+
+    .form-select {
+        color: white;
+        border: 2px solid lightgrey;
+        background-color: #333;
+    }
+}
+
 .left-item {
 
     flex: 1;

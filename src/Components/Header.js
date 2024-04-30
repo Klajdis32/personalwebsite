@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import './header.css';
-import Lightmode from '../Assets/sunny.png';
-import Darkmode from '../Assets/moon.png';
+import DarkMode from './DarkMode/DarkMode.js';
 
 const Header = () => {
 
@@ -19,8 +18,7 @@ const Header = () => {
               <option value="ge">German</option>
           </select>
       </div>
-      <img src={Darkmode} alt="" className="mode" id="darkmode" />
-      <img src={Lightmode} alt="" className="mode" id="lightmode" />
+      <DarkMode />
   </div>
   );
 }

@@ -1,0 +1,11 @@
+:root {
+    --body_buckgraund: white;
+    --body_color: black;
+    --link_color: navy;
+}
+
+[data-theme="dark"] {
+    --body_buckground: #282c34;
+    --body_color: white;
+    --link_color: cyan;
+}
