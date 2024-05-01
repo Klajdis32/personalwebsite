@@ -1,33 +1,39 @@
-
 import './home.css';
 import Logo from '../Assets/imagelogo.png';
+import React, { useState, useEffect } from "react";
 
 const Home = () => {
 
-    document.getElementById("languages").addEventListener("change", function() {
-        var selectedLanguage = this.value;
+    const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
 
-        if (selectedLanguage === "en") {
-            document.getElementById("en").style.display = "block";
-            document.getElementById("gr").style.display = "none";
-            document.getElementById("ge").style.display = "none";
-            document.getElementById("grname").style.display = "none";
-            document.getElementById("enname").style.display = "block";
-        } else if (selectedLanguage === "gr") {
+    useEffect(() => {
+      const storedLanguage = localStorage.getItem('selectedLanguage');
+      if (storedLanguage) {
+        setSelectedLanguage(storedLanguage);
+      }
+    }, []);
+  
+    useEffect(() => {
+      if (selectedLanguage === "en") {
+                document.getElementById("en").style.display = "block";
+                document.getElementById("gr").style.display = "none";
+                document.getElementById("ge").style.display = "none";
+                document.getElementById("grname").style.display = "none";
+                document.getElementById("enname").style.display = "block";
+      } else if (selectedLanguage === "gr") {
             document.getElementById("en").style.display = "none";
             document.getElementById("gr").style.display = "block";
             document.getElementById("ge").style.display = "none";
             document.getElementById("grname").style.display = "block";
             document.getElementById("enname").style.display = "none";
-        } else if (selectedLanguage === "ge") {
-            document.getElementById("en").style.display = "none";
-            document.getElementById("gr").style.display = "none";
-            document.getElementById("ge").style.display = "block";
-            document.getElementById("grname").style.display = "none";
-            document.getElementById("enname").style.display = "block";
-        }
-    });
-
+      } else if (selectedLanguage === "ge") {
+                document.getElementById("en").style.display = "none";
+                document.getElementById("gr").style.display = "none";
+                document.getElementById("ge").style.display = "block";
+                document.getElementById("grname").style.display = "none";
+                document.getElementById("enname").style.display = "block";
+      }
+    }, [selectedLanguage]);
 
     return (
     <div className="container">
