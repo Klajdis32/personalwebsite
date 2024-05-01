@@ -291,23 +291,23 @@ color: black;
 }
 
 .todivmetaa {
-text-align: center;
-font-size: 18px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .todivmetaa a {
-padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 .toerror {
-font-size: 25px;
-font-weight: 500;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .topstoproj {
-text-align: center;
-font-size: 25px;
-font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .arrow {
@@ -331,20 +331,16 @@ font-weight: 600;
 }
 
 .waves {
-text-align: center;
+    text-align: center;
 }
 
 #loadingDiv {
-display: block;
+    display: block;
 }
 
 .waves img {
     margin-top: -4%;
     width: 10%;
-}
-
-#dynamicContentContainer {
-display: none;
 }
 
 .todivmeimages {
@@ -393,6 +389,10 @@ margin-top: 25px;
 #cube {
     width: 40%;
     display: none;
+}
+
+.center {
+    text-align: center;
 }
 
 @media screen and (max-width: 1068px) {
