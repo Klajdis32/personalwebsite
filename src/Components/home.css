@@ -143,18 +143,18 @@ body {
 }
 
 .divlogo{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
-.tologoA {
+.tologo{
     z-index: 500;
-    text-align: center;
     border-radius: 100%;
-    width: 12%;
+    width: 11%;
+    margin-bottom: -10px;
     border: 2px solid darkgrey;
-   
-} 
+}
+
 
 .divkeimeno {
     padding: 20px;
@@ -318,8 +318,8 @@ body {
     margin-left: 0%;
 }
 
-    .tologoA {
-        width: 23%;
+    .tologo {
+        width: 17%;
     } 
     
     .todiv span {
@@ -380,7 +380,7 @@ body {
     margin-left: 0%;
 }
 
-    .tologoA {
+    .tologo {
         border: 2px solid lightgrey;
         width: 23%;
     }

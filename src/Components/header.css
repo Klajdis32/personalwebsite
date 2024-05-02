@@ -26,6 +26,10 @@
         border: 2px solid lightgrey;
         background-color: #333;
     }
+
+    .dark_mode_label {
+        border: 2px solid white;
+    }
 }
 
 .left-item {

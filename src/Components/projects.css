@@ -372,6 +372,11 @@ margin-top: 25px;
     text-align: center;
 }
 
+.notfound {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 1068px) {
 .blog-post {
     max-width: 80rem;

@@ -38,7 +38,7 @@ const Home = () => {
     return (
     <div className="container">
         <div className="divlogo">
-            <img src={Logo} alt="" className="tologoA" /><br />
+            <img src={Logo} alt="" className="tologo" /><br />
             <h3 id="enname">Klajdi Cami</h3>
             <h3 id="grname">Κλάιντι Τσάμη</h3>
         </div>
