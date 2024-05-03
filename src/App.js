@@ -12,11 +12,11 @@ function App() {
     <Router>
         <Header /> 
           <Routes>
-            <Route path="/" exact  element={<Home />} /> 
-            <Route path="/projects" element={<Projects />} /> 
-            <Route path="contact" element={<Contact />} /> 
-            <Route path="/books" element={<Books />} /> 
-            <Route path="/dap" element={<Dap />} /> 
+            <Route path="/personalwebsite/" exact  element={<Home />} /> 
+            <Route path="/personalwebsite/projects" element={<Projects />} /> 
+            <Route path="/personalwebsite/contact" element={<Contact />} /> 
+            <Route path="/personalwebsite/books" element={<Books />} /> 
+            <Route path="/personalwebsite/dap" element={<Dap />} /> 
           </Routes>
         <Footer />
     </Router>
