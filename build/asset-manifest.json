@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personalwebsite/static/css/main.47fcd8b2.css",
-    "main.js": "/personalwebsite/static/js/main.67817de3.js",
+    "main.js": "/personalwebsite/static/js/main.93c78ac4.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/personalwebsite/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/personalwebsite/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Τετράπολα - Κυκλώματα Διαφόρισης .pdf": "/personalwebsite/static/media/Τετράπολα - Κυκλώματα Διαφόρισης .84948d01b1fa9bd22414.pdf",
@@ -35,10 +35,10 @@
     "static/media/Moon.svg": "/personalwebsite/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/personalwebsite/index.html",
     "main.47fcd8b2.css.map": "/personalwebsite/static/css/main.47fcd8b2.css.map",
-    "main.67817de3.js.map": "/personalwebsite/static/js/main.67817de3.js.map"
+    "main.93c78ac4.js.map": "/personalwebsite/static/js/main.93c78ac4.js.map"
   },
   "entrypoints": [
     "static/css/main.47fcd8b2.css",
-    "static/js/main.67817de3.js"
+    "static/js/main.93c78ac4.js"
   ]
 }
