@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import books from './BooksDB.js'; 
 import './books.css';
-import Pin from "../Assets/pin.png";
-import xeraki from '../Assets/output-onlinegiftools.gif';
+import Pin from "../assets/pin.png";
+import xeraki from '../assets/output-onlinegiftools.gif';
 
 const Books = () => {
     const [infoVisible, setInfoVisible] = useState({});

@@ -1,6 +1,6 @@
 import './contact.css';
 import React, { useState } from 'react';
-import Logo from '../Assets/imagelogo.png';
+import Logo from '../assets/imagelogo.png';
 import Forma from './Forma';
 
 const Contact = () => {

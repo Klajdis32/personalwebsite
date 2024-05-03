@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './projects.css';
 import posts from './ProjectsDB.js'; 
-import Math from "../Assets/math.png";
+import Math from "../assets/math.png";
 
 const Projects = () => {
     const [searchTerm, setSearchTerm] = useState('');

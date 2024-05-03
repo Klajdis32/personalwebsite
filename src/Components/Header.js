@@ -16,14 +16,14 @@ const Header = () => {
 
   useEffect(() => {
     localStorage.setItem('selectedLanguage', selectedLanguage);
-    setShowHeaderDiv(location.pathname === '/personalwebsite/');
+    setShowHeaderDiv(location.pathname === '/');
     // προσθεσε αυτο να θεσ να εμφανιστει και σε αλλα:  || location.pathname === '/contact');
   }, [selectedLanguage, location]);
 
   return (
     <div className="header">
       <div className="left-item">
-          <Link to="/personalwebsite/" className="tolink">
+          <Link to="/" className="tolink">
               <p><strong>Klajdi Cami</strong></p>
           </Link>
       </div>
