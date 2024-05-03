@@ -1,5 +1,5 @@
 {
-  "homepage": "https://tsamiklainti.com/",
+  "homepage": "https://Klajdis32.github.io/personalwebsite",
   "name": "personalwebsite",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
