@@ -45,6 +45,24 @@ const Contact = () => {
         }
       };
 
+      const handleCopyEmail = () => {
+        const email = 'ktsami@auth.gr';
+        navigator.clipboard.writeText(email);
+
+        const paragraph = document.getElementById('tocopy');
+        if (paragraph) {
+            paragraph.textContent = 'Copied!';
+          
+            setTimeout(() => {
+              paragraph.textContent = 'Click on this message to copy my email';
+            }, 2000);
+          }
+      };
+
+      const handleResetConversation = () => {
+        window.location.reload();
+      };
+
       return (
         <div className="container1">
             <div className="online">
@@ -118,7 +136,7 @@ const Contact = () => {
                                 <p>You can contact with me with this email: <strong>ktsami@auth.gr</strong></p>
                             </div>
                             <br/>
-                            <div class="minima"  id="mnm5">
+                            <div class="minima"  id="mnm5" onClick={handleCopyEmail}>
                                 <p><a id="tocopy">Click on this message to copy my email</a></p>
                             </div>
                             <br/>
@@ -127,7 +145,11 @@ const Contact = () => {
                             </div>
                             <br/>
                             <div class="minima"  id="mnm6">
-                                <p><a href="mailto:ktsami@auth.gr">Direct contact me from your email app!</a></p>
+                                <p><a href="mailto:ktsami@auth.gr" id="toa">Direct contact me from your email app!</a></p>
+                            </div>
+                            <br/>
+                            <div class="apathsh" id="ap6" onClick={handleResetConversation}>
+                                <p>reset conversation!</p>
                             </div>
                         </div>
                     }
@@ -140,6 +162,10 @@ const Contact = () => {
                             </div>
                             <div class="hforma">
                                 <Forma />
+                            </div>
+                   
+                            <div class="apathsh" id="ap6" onClick={handleResetConversation}>
+                                <p>reset conversation!</p>
                             </div>
                         </div>
                     }
@@ -155,11 +181,15 @@ const Contact = () => {
                     </div>
                     <br />
                     <div class="minima"  id="mnm5">
-                        <p>Github: <a href="https://github.com/Klajdis32" >Klajdis32</a></p>
+                        <p>Github: <a href="https://github.com/Klajdis32" target='_blanck'  id="toa">Klajdis32</a></p>
                     </div>
                     <br />
                     <div class="minima"  id="mnm6">
-                        <p>Linkedin: <a href="https://www.linkedin.com/in/klajdi-cami-90a59b284/" >Klajdi Cami</a></p>
+                        <p>Linkedin: <a href="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target='_blanck'  id="toa">Klajdi Cami</a></p>
+                    </div>
+                    <br />
+                    <div class="apathsh" id="ap6" onClick={handleResetConversation}>
+                                <p>reset conversation!</p>
                     </div>
                 </div>
             }
@@ -172,14 +202,18 @@ const Contact = () => {
                     </div>
                     <br />
                     <div class="minima"  id="mnm5">
-                        <p><a href="https://github.com/Klajdis32/npw" >https://github.com/Klajdis32/npw</a></p>
+                        <p><a href="https://github.com/Klajdis32/npw" target='_blanck' id="toa">https://github.com/Klajdis32/npw</a></p>
                     </div>
-                </div>
+                    <br/>
+                    <div class="apathsh" id="ap6" onClick={handleResetConversation}>
+                                <p>reset conversation!</p>
+                    </div>
+                </div>   
             }
 
 
             
-            <br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
   );
 };

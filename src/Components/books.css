@@ -1,0 +1,656 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+[data-theme="dark"] {
+        background-color: #282828; /* Σκοτεινό φόντο */
+        color: #ffffff; /* Λευκό χρώμα κειμένου */
+    
+        .todivtoybiblioy {
+            color: white;
+            border: 2px solid lightgrey;
+            box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+        }
+
+        .todivtoybiblioy:hover {
+            box-shadow: rgba(255, 255, 255, 0.6) 0px 5px 15px;
+        }
+
+        .toinfo {
+            border: 2px solid lightgrey;
+            border-top: none;
+        }
+
+        .todivtoybiblioyPIN {
+            color: white;
+            border: 2px solid lightgrey;
+            box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+        }
+
+        .todivtoybiblioyPIN:hover {
+            box-shadow: rgba(255, 255, 255, 0.6) 0px 5px 15px;
+        }
+
+        .toinfoPIN {
+            border: 2px solid lightgrey;
+            border-top: none;
+        }
+    
+}
+
+.container {
+    width: 80%;
+    margin-left: 0%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.divkeimeno {
+    padding: 20px;
+}
+
+.divkeimeno strong {
+    font-size: 20px;
+}
+
+.divkeimeno p {
+    font-size: 18px;
+}
+
+#toepi {
+    border-bottom : 2px solid blue;
+}
+
+.form-select {
+    color: white;
+    border: 1px solid lightgrey;
+    background-color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+.mode {
+    cursor: pointer;
+    width: 1.8%;
+    margin-right: 20px;
+    padding: 0px 0px;
+}
+
+
+#darkmode {
+    display: block;
+}
+
+#lightmode {
+    display: none;
+}
+
+
+.todivtoybiblioy {
+    cursor: pointer;
+    z-index: 400;
+    display: flex;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 5%;
+    padding: 0px 10px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+
+.todivtoybiblioy:hover {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+}
+
+.todivtoybiblioy img {
+    text-align: center;
+    justify-content: center;
+    margin-top: 1%;
+    width: 4%;
+    height: 7%;
+}
+
+.todivtoybiblioyPIN {
+    cursor: pointer;
+    z-index: 400;
+    display: flex;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 5%;
+    padding: 0px 10px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.todivtoybiblioyPIN img {
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.8%;
+    margin-left: 7%;
+    width: 4%;
+    height: 7%;
+}
+
+.bathmologia {
+    margin-right: 3%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.downaroow{
+    margin-right: 5%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.left-item2 {
+    text-decoration: none;
+    padding: 0px 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#tosig {
+    margin-top: -30px;
+}
+
+.toinfo {
+ 
+    z-index: 300;
+    height: auto;
+    border: 2px solid black;
+    margin-top: -8px;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    margin-left: 5%;
+    padding: 0px 10px;
+    width: 90%;
+}
+
+.toinfo p{
+    margin-left: 2%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.toinfoPIN {
+    z-index: 300;
+    height: auto;
+    border: 2px solid black;
+    margin-top: -8px;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    margin-left: 5%;
+    padding: 0px 10px;
+    width: 90%;
+}
+
+.toinfoPIN p{
+    margin-left: 2%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.waves {
+    text-align: center;
+}
+
+.waves img {
+    width: 14%;
+}
+
+:root {
+    --rad: .7rem;
+    --dur: .3s;
+    --color-dark: #2f2f2f;
+    --color-light: #fff;
+    --color-brand: #57bd84;
+    --font-fam: 'Lato', sans-serif;
+    --height: 3rem;
+    --btn-width: 6rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+    }
+    
+    form {
+    position: relative;
+    width: 92%;
+    margin-left: 5%;
+    border: 2px solid black;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+    }
+    input, button {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    }
+    input[type="search"] {
+    outline: 0; /* <-- should probably remove this for better accessibility, adding for demo aesthetics for now. */
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    appearance: none; /* for iOS input[type="search"] roundedness issue. border-radius alone doesn't work */
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+    }
+    button {
+    display: none; /* prevent being able to tab to it */
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: var(--btn-width);
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 var(--rad) var(--rad) 0;
+    }
+    input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+    }
+    input:not(:placeholder-shown) + button {
+    display: block;
+    }
+    
+    label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    }
+    
+    .blog-post {
+    width: 99%;
+    background-color: #dbf4ff21;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    margin: 10px;
+    margin-bottom: 5%;
+    }
+    
+    .blog-post_info {
+    padding: 15px;
+    }
+    
+    .blog-post_img {
+    min-width: 30%;
+    max-width: 30%;
+    height: 30%;
+    padding: 20px;
+    position: relative;
+    }
+    
+    .blog-post_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .8rem;
+    display: block;
+    }
+    
+    .blog-post_img img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+    border-radius: .8rem;
+    }
+    
+    .blog-post_date {
+    text-align: right;
+    }
+    
+    .blog-post_date span {
+    display: block;
+    color: #00000080;
+    font-size: 14px;
+    font-weight: 500;
+    }
+    
+    .blog-post_title {
+    font-size: 20px;
+    margin-top: -10px;
+    color: black;
+    }
+    
+    .blog-post_text {
+    font-size: 18px;
+    color: black;
+    }
+    
+    .blog-post_cta {
+    display: inline-block;
+    letter-spacing: 1px;
+    color: black;
+    }
+
+    .notFoundMessage{
+        margin-left: 5%;
+        width: 95%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    #anoike{
+        display: block;
+    }
+
+    .arrow {
+        position: sticky;
+        bottom: 100px; 
+        text-align: right;
+        z-index: 9999;
+        margin-left: 90%;
+    }
+    
+    .arrow img {
+        cursor: pointer;
+        width: 25%;
+    }
+    
+    #uparrow {
+        display: none;
+        border: 2px solid rgb(53, 168, 207);
+        border-radius: 15px 15px 0 15px;
+        padding: 3px;
+    }
+
+    .divmath {
+        text-align: center;  
+        justify-content: center; 
+        display: flex;
+    }
+
+    .math {
+        width: 7%;
+        border-radius: 100%;
+        padding: 3px;
+        margin-bottom: -10px;
+    }
+
+/* Κανόνες CSS για tablet */
+@media (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0px;
+    }
+
+    .todiv img {
+        width: 15%;
+    }
+
+    .heikona {
+    margin-left: 0%;
+}
+
+    .tologoA {
+        width: 40%;
+    } 
+    
+    .todiv span {
+        font-size: 1em;
+        color: #333;
+    }
+
+    .divmaximg {
+        display: flex;
+        position: fixed;
+        top: 20%;
+        left: 20%;
+        transform: translate(-10%, -10%);
+    }
+
+    .maxlogo {
+        margin-left: 0%;
+        width: 100%;
+        z-index: 999;
+        border-radius: 100%;
+    }
+
+    .mode {
+    width: 4%;
+}
+
+.todivtoybiblioy {
+    margin-left: 5%;
+    width: 85%;
+}
+
+.toinfoPIN {
+    margin-left: 5%;
+    width: 85%;
+}
+
+.toinfoPIN p{
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.toinfo {
+    margin-left: 5%;
+    width: 85%;
+}
+
+.toinfo p{
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 88%;
+    margin-left: 5%;
+    }
+
+    .waves img {
+        width: 40%;
+    }
+
+      
+    .todivtoybiblioyPIN {
+        margin-left: 5%;
+        width: 85%;
+    }
+
+    .toinfoPIN {
+        margin-left: 5%;
+        width: 85%;
+    }
+
+    
+    .arrow {
+        position: sticky;
+        bottom: 100px; 
+        text-align: right;
+        z-index: 9999;
+        margin-left: 85%;
+    }
+    
+    .arrow img {
+        cursor: pointer;
+        width: 40%;
+    }
+
+    .footer {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0px;
+        border: 2px solid black;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .math {
+        width: 20%;
+    }
+}
+
+/* Κανόνες CSS για κινητά */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0px;
+    }
+
+    .todiv img {
+        width: 20%;
+    }
+
+    .heikona {
+    margin-left: 0%;
+}
+
+    .tologoA {
+        width: 40%;
+    }
+    
+    .todiv span {
+        font-size: 1em;
+        color: #333;
+    }
+
+    .divmaximg {
+        display: flex;
+        position: fixed;
+        top: 30%;
+        left: 20%;
+        transform: translate(-12%, -10%);
+    }
+
+    .maxlogo {
+        margin-left: 0%;
+        width: 100%;
+        z-index: 999;
+        border-radius: 100%;
+    }
+
+    
+    .mode {
+        width: 6%;
+    }
+
+        .todivtoybiblioy {
+            margin-left: 5%;
+            width: 85%;
+        }
+
+        
+        .todivtoybiblioyPIN {
+            margin-left: 5%;
+            width: 85%;
+        }
+
+        .toinfoPIN {
+            margin-left: 5%;
+            width: 85%;
+        }
+
+        .toinfoPIN p{
+            margin-left: 5%;
+            width: 90%;
+            margin-bottom: 30px;
+        }
+
+        .toinfo {
+            margin-left: 5%;
+            width: 85%;
+        }
+
+        .toinfo p{
+            margin-left: 5%;
+            width: 90%;
+            margin-bottom: 30px;
+        }
+
+
+        form {
+        width: 90%;
+        margin-left: 5%;
+        }
+
+        .waves img {
+            width: 40%;
+        }
+
+        .notFoundMessage{
+            margin-left: 5%;
+            width: 95%;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .todivtoybiblioy img {
+            margin-top: 3%;
+            width: 10%;
+            height: 10%;
+        }
+
+        .todivtoybiblioyPIN img {
+            margin-top: 5%;
+            width: 10%;
+            height: 10%;
+        }
+
+        .arrow {
+            position: sticky;
+            bottom: 100px; 
+            text-align: right;
+            z-index: 9999;
+            margin-left: 80%;
+        }
+        
+        .arrow img {
+            cursor: pointer;
+            width: 40%;
+        }
+        
+        .footer {
+            width: 100%;
+            margin-left: 0%;
+            margin-bottom: 0px;
+            border: 2px solid black;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .math {
+            width: 20%;
+        }
+}

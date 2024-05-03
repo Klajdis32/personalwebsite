@@ -206,6 +206,10 @@ body {
 
 }
 
+#toa {
+    color: white;
+}
+
 #ap3:hover {
     background-color: rgb(76, 76, 208);
 }
