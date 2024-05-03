@@ -9,31 +9,31 @@ import dapPicture from '../Assets/astronomy.png';
 const Footer = () => {
   return (
     <div className="footer">
-      <Link to="/" className="toa">
+      <Link to="/personalwebsite/" className="toa">
         <div className="todiv">
           <img src={profilePicture} alt="" /><br/>
           <span>Profile</span>
         </div>
       </Link>
-      <Link to="/projects" className="toa">
+      <Link to="/personalwebsite/projects" className="toa">
         <div className="todiv">
           <img src={projectsPicture} alt="" /><br/>
           <span >Projects</span>
         </div>
       </Link>
-      <Link to="/contact" className="toa">
+      <Link to="/personalwebsite/contact" className="toa">
         <div className="todiv">
           <img src={contactPicture} alt="" /><br/>
           <span>Contact</span>
         </div>
       </Link>
-      <Link to="/books" className="toa">
+      <Link to="/personalwebsite/books" className="toa">
         <div className="todiv">
           <img src={booksPicture} alt="" /><br/>
           <span>Books</span>
         </div>
       </Link>
-      <Link to="/dap" className="toa">
+      <Link to="/personalwebsite/dap" className="toa">
         <div className="todiv">
           <img src={dapPicture} alt="" /><br/>
           <span>DAP</span>
