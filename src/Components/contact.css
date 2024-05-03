@@ -57,24 +57,16 @@ body {
         box-shadow: rgba(255, 255, 255, 0.9) 0px 5px 15px;
     }
 
+    .left-item1 p {
+        color: white;
+    }
+
         @media (max-width: 600px) {
             .container1 {
                 border: none;
             }
         }
 
-}
-
-
-.header {
-    margin-top: 0px;
-    background-color: white;
-    color: #333;
-    height: 50px;
-    border-bottom: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -224,7 +216,6 @@ body {
 
 #ap4 {
     background-color: rgba(76, 76, 208, 0.4);
-    display: none;
 }
 
 #ap4:hover {
@@ -233,7 +224,7 @@ body {
 
 #ap5{
     background-color: rgba(76, 76, 208, 0.4);
-    display: none;
+ 
     margin-bottom: 5px;
 }
 
@@ -243,7 +234,7 @@ body {
 
 #ap6{
     background-color: rgba(76, 76, 208, 0.4);
-    display: none;
+ 
 }
 
 #ap6:hover {
@@ -251,26 +242,6 @@ body {
 }
 
 
-
-#apantisi1 {
-    display: none;
-}
-
-#apantisiapomena1{
-    display: none;
-}
-
-#apantisiapomena2{
-    display: none;
-}
-
-#apantisiapomena3{
-    display: none;
-}
-
-#apantisiapomena4{
-    display: none;
-}
 
 .apathsh{
     cursor: pointer;
@@ -283,12 +254,12 @@ body {
     padding: 0px 15px;
 }
 
-.left-item {
+.left-item1 {
     flex: 1;
     display: flex;
 }
 
-.right-item {
+.right-item1 {
     text-align: right;
     margin-top: 21px;
     margin-right: 10px;
@@ -315,31 +286,6 @@ display: block;
 display: none;
 }
 
-.footer {
-    z-index: 500;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    border-top: 2px solid grey;
-    border-radius: 50px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-.todiv{
-padding: 10px;
-text-decoration: none;
-}
-
 .toa {
 cursor: pointer;
 text-decoration: none;
@@ -349,20 +295,11 @@ text-decoration: none;
 color: green;
 }
 
-.todiv img {
-width: 5%;
-}
-
-.todiv span {
-font-size: 1em;
-color: #333;
-}
-
 #toepi {
 border-bottom : 2px solid blue;
 }
 
-.left-item p {
+.left-item1 p {
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 20px;
@@ -371,42 +308,14 @@ border-bottom : 2px solid blue;
     white-space: nowrap;
 }
 
-
-.contactdiv {
-    cursor: pointer;
-    margin-bottom: 30px;
-    height: 30px;
-    width: 60%;
-    display: flex;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px; 
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}  
-
 #nocursor {
     cursor: default;
-}
-
-.contactdiv:hover {
-box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
 }
 
 #nocursor:hover {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
-
-.contactdiv a {
-color: black;
-width: 100%; 
-display: flex;
-text-decoration: none;
-}
-
-.contactdiv img {
-    width: 5.5%;     
-} 
 
 #megalhtero {
     width: 6%;     

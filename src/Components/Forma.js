@@ -8,9 +8,9 @@ const Forma = () => {
         width="110%" 
         height="990px" 
         title="My Google Contact Form"
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
+        frameBorder="0" 
+        marginHeight="0" 
+        marginWidth="0">
           Loading…
       </iframe>
     </div>
