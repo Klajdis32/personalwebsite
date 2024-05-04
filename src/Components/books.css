@@ -421,8 +421,8 @@ body {
 }
 
 .todivtoybiblioy {
-    margin-left: 5%;
-    width: 85%;
+    margin-left: 2%;
+            width: 91%;
 }
 
 .toinfoPIN {
@@ -437,8 +437,8 @@ body {
 }
 
 .toinfo {
-    margin-left: 5%;
-    width: 85%;
+    margin-left: 2%;
+            width: 91%;
 }
 
 .toinfo p{
@@ -458,13 +458,13 @@ form {
 
       
     .todivtoybiblioyPIN {
-        margin-left: 5%;
-        width: 85%;
+        margin-left: 2%;
+        width: 91%;
     }
 
     .toinfoPIN {
-        margin-left: 5%;
-        width: 85%;
+        margin-left: 2%;
+            width: 91%;
     }
 
     
@@ -490,6 +490,13 @@ form {
         border-right: none;
         border-bottom: none;
         border-radius: 10px 10px 0px 0px;
+    }
+
+    
+    .todivtoybiblioyPIN img {
+        margin-top: 2%;
+        width: 8%;
+        height: 10%;
     }
 
 
@@ -541,19 +548,19 @@ form {
     }
 
         .todivtoybiblioy {
-            margin-left: 5%;
-            width: 85%;
+            margin-left: 2%;
+            width: 91%;
         }
 
         
         .todivtoybiblioyPIN {
-            margin-left: 5%;
-            width: 85%;
+            margin-left: 2%;
+            width: 91%;
         }
 
         .toinfoPIN {
-            margin-left: 5%;
-            width: 85%;
+            margin-left: 2%;
+            width: 91%;
         }
 
         .toinfoPIN p{
@@ -563,8 +570,8 @@ form {
         }
 
         .toinfo {
-            margin-left: 5%;
-            width: 85%;
+            margin-left: 2%;
+            width: 91%;
         }
 
         .toinfo p{

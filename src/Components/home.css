@@ -302,6 +302,16 @@ body {
     margin-left: 15px;
  }
 
+ .toreact {
+width: 1.8%;
+margin-top: -3px;
+ }
+
+ .ligopiodeksia{
+    margin-left: 40px;
+ }
+
+
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
     .container {
@@ -361,6 +371,13 @@ body {
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
 }
+
+
+.toreact {
+    width: 4%;
+    margin-top: 0px;
+}
+    
 
 }
 
@@ -426,47 +443,9 @@ body {
         border-radius: 10px 10px 0px 0px;
     }
     
-}
-
-.dark-mode {
-    background-color: #282828; /* Σκοτεινό φόντο */
-    color: #ffffff; /* Λευκό χρώμα κειμένου */
-
-    .header {
-        background-color: #333;
-        color: white;
+    .toreact {
+        width: 5%;
+        margin-top: 0px;
     }
-
-    .left-item p {
-        color: rgb(255, 255, 255);
-    }
-
-
-    .footer {
-        background-color: #333;
-        border-top: 2px solid white;
-    }
-
-    .todiv span {
-        color: white;
-    }
-
-    .header {
-        border-bottom: 1px solid white;
-    }
-
-    .toatoykeimenoy{
-        color: white;
-    }
-    
-    .tasocial p{
-        color: white;
-    }
-
-    .form-select {
-        color: white;
-        border: 1px solid lightgrey;
-        background-color: #333;
-    }
-
+        
 }
