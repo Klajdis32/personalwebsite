@@ -86,8 +86,7 @@ body {
 }
 
 .tologoA{
-    width: auto;
-    height: 70%;
+    width: 7.5%;
     border-radius: 100%;
     margin-left: 20px;
     margin-top: 12px;
@@ -490,8 +489,7 @@ border-bottom : 2px solid blue;
     }
 
     .tologoA{
-        width: auto;
-        height: 60%;
+        max-width: 12%;
         border-radius: 100%;
         margin-left: 20px;
         margin-top: 15px;
@@ -522,10 +520,6 @@ border-bottom : 2px solid blue;
 
     .heikona {
     margin-left: 0%;
-    }
-
-    .tologoA {
-        width: auto;
     }
 
     .todiv span {
@@ -629,11 +623,10 @@ border-bottom : 2px solid blue;
     }
 
     .tologoA{
-        width: auto;
-        height: 60%;
+        max-width: 17%;
         border-radius: 100%;
         margin-left: 20px;
-        margin-top: 15px;
+        margin-top: 10px;
         margin-bottom: 0px;
         border: 2px solid black;
     }
