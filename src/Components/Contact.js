@@ -67,7 +67,7 @@ const Contact = () => {
         <div className="container1">
             <div className="online">
                 <div className="left-item1">
-                    <img src={Logo} alt="" className="tologoA" />
+                    <img src={Logo} alt="" className="tologoAC" />
                     <p><strong>Klajdi Cami</strong></p>
                 </div>
                 <div className="right-item1">
