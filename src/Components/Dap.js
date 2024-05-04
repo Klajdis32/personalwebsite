@@ -22,7 +22,7 @@ const Dap = () => {
     }, []); 
 
     if (loading) {
-        return <div className='center'>Loading...</div>;
+        return <div className='centerload'>Loading...</div>;
     }
 
     if (error) {
@@ -45,7 +45,7 @@ const Dap = () => {
             </div>
 
             <div className="kinito" id="kinitoDiv">
-                <div className='center'><h2>🌌 NASA's Astronomy Picture<br/>/ Video of the Day</h2></div>
+                <div className='center'><h2>🌌 NASA's Astronomy Picture<br/>- Video of the Day</h2></div>
                 <br/>
                 <div className="image-container" id="imageContainer" >
                     {apodData.media_type === 'image' ? (

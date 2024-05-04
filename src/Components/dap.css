@@ -12,6 +12,11 @@ color: #ffffff; /* Λευκό χρώμα κειμένου */
 
 }
 
+.centerload {
+    height: 100vh;
+    text-align: center;
+    margin-top: 20%;
+}
 
 
 .left-item {
