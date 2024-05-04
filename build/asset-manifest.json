@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7dee7094.css",
-    "main.js": "/static/js/main.a465c176.js",
+    "main.css": "/static/css/main.92296b1b.css",
+    "main.js": "/static/js/main.ef8f195d.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Τετράπολα - Κυκλώματα Διαφόρισης .pdf": "/static/media/Τετράπολα - Κυκλώματα Διαφόρισης .84948d01b1fa9bd22414.pdf",
@@ -28,17 +28,18 @@
     "static/media/book.png": "/static/media/book.1f9650abd36f9d59751b.png",
     "static/media/planning.png": "/static/media/planning.18387ccc8fc3cadf2944.png",
     "static/media/user12.png": "/static/media/user12.45a0af68515332b42be9.png",
+    "static/media/video.png": "/static/media/video.c07fe566746d9d0d109c.png",
     "static/media/send1.png": "/static/media/send1.2ce2a557c3b6fe11e1dd.png",
     "static/media/pin.png": "/static/media/pin.6a3555b7275125c4b64d.png",
     "static/media/ALU.zip": "/static/media/ALU.e4a920d94b85c67db4a8.zip",
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.7dee7094.css.map": "/static/css/main.7dee7094.css.map",
-    "main.a465c176.js.map": "/static/js/main.a465c176.js.map"
+    "main.92296b1b.css.map": "/static/css/main.92296b1b.css.map",
+    "main.ef8f195d.js.map": "/static/js/main.ef8f195d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7dee7094.css",
-    "static/js/main.a465c176.js"
+    "static/css/main.92296b1b.css",
+    "static/js/main.ef8f195d.js"
   ]
 }

@@ -263,6 +263,7 @@ color: black;
 .blog-post_cta {
     display: flex;
     width: 15%;
+    text-decoration: none;
     display: inline-block;
     letter-spacing: 1px;
     color: black;   
@@ -376,6 +377,12 @@ margin-top: 25px;
 .notfound {
     margin-left: 5px;
     font-size: 18px;
+}
+
+.toshow {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 1068px) {
