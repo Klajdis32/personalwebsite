@@ -93,7 +93,7 @@
 @media (max-width: 600px) {
   
     .left-item p {
-        width: 50%;
+        width: 100%;
     }
 
     .mode {

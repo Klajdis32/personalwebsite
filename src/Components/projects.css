@@ -198,7 +198,7 @@ overflow: hidden;
 }
 
 .blog-post {
-width: 98%;
+width: 100%;
 background-color: #dbf4ff21;
 box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
 display: flex;
@@ -380,8 +380,8 @@ margin-top: 25px;
 
 @media screen and (max-width: 1068px) {
 .blog-post {
-    max-width: 96%;
-    margin-left: 15%;
+    width: 100%;
+    margin-left: 0%;
     margin-bottom: 5%;
 }
 .blog-post_img {
@@ -394,16 +394,16 @@ margin-top: 25px;
 
 @media screen and (max-width: 868px) {
 .blog-post {
-    max-width: 96%;
-    margin-bottom: 5%;
+    width: 100%;
+    margin-left: 0%;
 }
 
 }
 
 @media screen and (max-width: 768px) {
 .blog-post {
-    width: 96%;
-    margin-left: 15%;
+    width: 95%;
+    margin-left: 2.5%;
     padding: 0rem;
     margin-bottom: 5%;
     flex-direction: column;
@@ -411,7 +411,6 @@ margin-top: 25px;
 .blog-post_img {
     min-width: 80%;
     max-width: 80%;
-    
 }
 
 .blog-post_date span {
@@ -546,8 +545,8 @@ width: 40%;
 /* Κανόνες CSS για κινητά */
 @media (max-width: 600px) {
 .container3 {
-    width: 98%;
-    margin-left: 1%;
+    width: 90%;
+    margin-left: 5%;
     padding: 0px;
 }
 

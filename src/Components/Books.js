@@ -35,7 +35,7 @@ const Books = () => {
     
 
     return (  
-        <div className="container">
+        <div className="container6">
            
             <div className='center'><h2>Books 📚 i have read<br/> and liked 👍</h2></div>
             <br/>
@@ -102,7 +102,7 @@ const Books = () => {
                     <img src="images/satellite.gif" alt=""  />
                 </div>
 
-                <br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/>
             </div>
     );
 }

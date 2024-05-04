@@ -307,11 +307,6 @@ width: 1.8%;
 margin-top: -3px;
  }
 
- .ligopiodeksia{
-    margin-left: 40px;
- }
-
-
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
     .container {
