@@ -6,9 +6,10 @@ const Dap = () => {
     const [apodData, setApodData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
+    const nasaKey = process.env.REACT_APP_NASA_KEY;
 
     useEffect(() => {
-        fetch(`https://api.nasa.gov/planetary/apod?api_key=wNu2CW6MkRKeGOLgiAeLxoxVkLPGhQpj0KIqz0Tf`)
+        fetch(`https://api.nasa.gov/planetary/apod?api_key=${nasaKey}`)
             .then(response => response.json())
             .then(data => {
                 setApodData(data);
@@ -19,7 +20,7 @@ const Dap = () => {
                 setError(true);
                 setLoading(false);
             });
-    }, []); 
+    }, [nasaKey]);
 
     if (loading) {
         return <div className='centerload'>Loading...</div>;

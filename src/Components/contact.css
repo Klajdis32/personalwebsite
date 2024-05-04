@@ -196,17 +196,19 @@ body {
     text-align: center; font-size: 14px; color: grey;
 }
 
-#ap1:hover {
+#ap1:focus {
     background-color: rgb(76, 76, 208);
 }
 
-#ap2{
+
+#ap2 {
     background-color: rgba(76, 76, 208, 0.4);
 }
 
-#ap2:hover {
-    background-color: rgb(76, 76, 208);
+#ap2:focus {
+    background-color: rgba(76, 76, 208, 1);
 }
+
 
 #ap3{
     background-color: rgba(76, 76, 208, 0.4);
@@ -217,7 +219,7 @@ body {
     color: white;
 }
 
-#ap3:hover {
+#ap3:focus {
     background-color: rgb(76, 76, 208);
 }
 
@@ -229,17 +231,16 @@ body {
     background-color: rgba(76, 76, 208, 0.4);
 }
 
-#ap4:hover {
+#ap4:focus {
     background-color: rgb(76, 76, 208);
 }
 
 #ap5{
     background-color: rgba(76, 76, 208, 0.4);
- 
     margin-bottom: 5px;
 }
 
-#ap5:hover {
+#ap5:focus {
     background-color: rgb(76, 76, 208);
 }
 
@@ -248,7 +249,7 @@ body {
  
 }
 
-#ap6:hover {
+#ap6:focus {
     background-color: rgb(76, 76, 208);
 }
 
@@ -258,10 +259,11 @@ body {
     cursor: pointer;
     float: right;
     margin-right: 20px;
+    margin-left: 20px;
     color: white;
     text-align: center;
     border-radius: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     padding: 0px 15px;
 }
 
