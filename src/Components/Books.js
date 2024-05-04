@@ -37,7 +37,7 @@ const Books = () => {
     return (  
         <div className="container">
             <br/>
-            <div className='center'><h2>Books 📚 i have read and liked 👍</h2></div>
+            <div className='center'><h2>Books 📚 i have read<br/> and liked 👍</h2></div>
             <br/>
             <form role="search" onSubmit={handleSearch}>
                 <input 

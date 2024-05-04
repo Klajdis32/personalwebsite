@@ -61,7 +61,7 @@ const Dap = () => {
                             allowFullScreen
                         ></iframe>
                     ) : null}
-                    <br/><br/>
+                    <br/>
                 </div>          
                 
                 <p><strong>Caption:</strong> <span id="apodCaption">{apodData.title}</span><br/><br/>
