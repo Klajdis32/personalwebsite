@@ -44,7 +44,6 @@ const Books = () => {
                     id="search" 
                     type="search" 
                     placeholder="Αναζήτηση..." 
-                    autoFocus 
                     required 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}

@@ -375,18 +375,6 @@ body {
         padding: 3px;
     }
 
-    .divmath {
-        text-align: center;  
-        justify-content: center; 
-        display: flex;
-    }
-
-    .math {
-        width: 7%;
-        border-radius: 100%;
-        padding: 3px;
-        margin-bottom: -10px;
-    }
 
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
@@ -460,8 +448,8 @@ body {
 }
 
 form {
-    width: 88%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2%;
     }
 
     .waves img {
@@ -504,9 +492,7 @@ form {
         border-radius: 10px 10px 0px 0px;
     }
 
-    .math {
-        width: 20%;
-    }
+
 }
 
 /* Κανόνες CSS για κινητά */
@@ -589,8 +575,8 @@ form {
 
 
         form {
-        width: 90%;
-        margin-left: 5%;
+        width: 95%;
+        margin-left: 2%;
         }
 
         .waves img {
@@ -640,7 +626,5 @@ form {
             border-radius: 10px 10px 0px 0px;
         }
 
-        .math {
-            width: 20%;
-        }
+    
 }

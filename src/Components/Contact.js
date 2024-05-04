@@ -71,7 +71,7 @@ const Contact = () => {
                     <p><strong>Klajdi Cami</strong></p>
                 </div>
                 <div className="right-item1">
-                    <p ><strong className='online'>• Online now</strong></p>
+                    <p ><strong className='onlinenow'>• Online now</strong></p>
                 </div>
             </div>
             <hr />

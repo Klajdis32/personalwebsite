@@ -24,7 +24,7 @@ const Projects = () => {
     
 
     return (
-        <div className="container">
+        <div className="container3">
             <br />
             <div className="divmath">
                 <img src={Math} alt="" className="math" />
@@ -36,7 +36,6 @@ const Projects = () => {
                     id="search" 
                     type="search" 
                     placeholder="Αναζήτηση..." 
-                    autoFocus 
                     required 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}

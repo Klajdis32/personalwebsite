@@ -38,7 +38,7 @@ body {
     align-items: center;
 }
 
-.container {
+.container3 {
 width: 70%;
 margin-left: 0%;
 max-width: 1100px;
@@ -147,6 +147,7 @@ border: 2px solid black;
 background: var(--color-brand);
 border-radius: var(--rad);
 }
+
 input, button {
 height: var(--height);
 font-family: var(--font-fam);
@@ -154,8 +155,9 @@ border: 0;
 color: var(--color-dark);
 font-size: 1.1rem;
 }
+
 input[type="search"] {
-outline: 0; /* <-- should probably remove this for better accessibility, adding for demo aesthetics for now. */
+
 width: 100%;
 background: var(--color-light);
 padding: 0 1.6rem;
@@ -202,7 +204,6 @@ box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
 display: flex;
 align-items: center;
 border-radius: .8rem;
-margin: 10px;
 margin-bottom: 3%;
 }
 
@@ -379,7 +380,8 @@ margin-top: 25px;
 
 @media screen and (max-width: 1068px) {
 .blog-post {
-    max-width: 80rem;
+    max-width: 96%;
+    margin-left: 15%;
     margin-bottom: 5%;
 }
 .blog-post_img {
@@ -392,7 +394,7 @@ margin-top: 25px;
 
 @media screen and (max-width: 868px) {
 .blog-post {
-    max-width: 70rem;
+    max-width: 96%;
     margin-bottom: 5%;
 }
 
@@ -400,8 +402,8 @@ margin-top: 25px;
 
 @media screen and (max-width: 768px) {
 .blog-post {
-    width: 91%;
-    margin-left: 5%;
+    width: 96%;
+    margin-left: 15%;
     padding: 0rem;
     margin-bottom: 5%;
     flex-direction: column;
@@ -439,7 +441,7 @@ margin-top: 25px;
 
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
-.container {
+.container3 {
     width: 100%;
     margin-left: 0%;
     padding: 0px;
@@ -510,10 +512,6 @@ margin-top: 25px;
 width: 40%;
 }
 
-form {
-    margin-left: 5%;
-    width: 90%;
-    }
 
     .todivmeimages {
         width: 25%;
@@ -539,7 +537,7 @@ form {
     }
 
     .math {
-        width: 13%;
+        width: 8%;
     }
     
   
@@ -547,9 +545,9 @@ form {
 
 /* Κανόνες CSS για κινητά */
 @media (max-width: 600px) {
-.container {
-    width: 100%;
-    margin-left: 0%;
+.container3 {
+    width: 98%;
+    margin-left: 1%;
     padding: 0px;
 }
 
@@ -602,13 +600,6 @@ margin-left: 0%;
     --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
 
-form {
-position: relative;
-width: 90%;
-margin-left: 5%;
-background: var(--color-brand);
-border-radius: var(--rad);
-}
 
 input, button {
     height: var(--height);
