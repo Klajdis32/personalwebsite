@@ -13,6 +13,7 @@ const Signin = () => {
 
     const handlePasswordChange = (event) => {
       setPassword(event.target.value);
+
     };
 
     const handleSubmit = (event) => {
@@ -25,28 +26,33 @@ const Signin = () => {
     return (
       <div className="grey">
         <div className="ContainertoyLogin">
-          <h2>Sign in</h2>
-            <form onSubmit={handleSubmit}>
-              <div>
-                <label>Όνομα Χρήστη:</label>
+              <h2 className="center">Sign in</h2> <br/>
+        
+                <span className="spanform">Username:</span><br/><br/>
                 <input
                   type="text"
+                  placeholder="Username..." 
                   value={username}
                   onChange={handleUsernameChange}
                   required
                 />
-              </div>
-              <div>
-                <label>Κωδικός Πρόσβασης:</label>
+            
+              <br/> <br/>
+            
+                <span className="spanform">Password:</span><br/><br/>
                 <input
                   type="password"
+                  placeholder="Password..." 
                   value={password}
                   onChange={handlePasswordChange}
                   required
                 />
+                  <br/><br/>
+          
+              <div className="todivtoya">
+                <a type="submit" className="tosubmit">Sign in</a>
               </div>
-              <button type="submit">Είσοδος</button>
-            </form>
+              <br/> <br/>
         </div>
       </div>
     );
