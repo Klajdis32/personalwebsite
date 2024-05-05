@@ -1,0 +1,17 @@
+.grey {
+  height: 100vh;
+}
+
+
+.ContainertoyLogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 30%;
+  height: 50vh;
+  padding: 20px;
+}

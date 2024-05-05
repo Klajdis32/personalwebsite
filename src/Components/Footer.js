@@ -3,7 +3,7 @@ import './footer.css';
 import profilePicture from '../assets/user12.png';
 import projectsPicture from '../assets/planning.png';
 import contactPicture from '../assets/send1.png';
-import booksPicture from '../assets/book.png';
+import loginPicture from '../assets/enter.png';
 import dapPicture from '../assets/astronomy.png';
 
 const Footer = () => {
@@ -21,16 +21,16 @@ const Footer = () => {
           <span >Projects</span>
         </div>
       </Link>
+      <Link to="/signin" className="toa">
+        <div className="todiv">
+          <img src={loginPicture} alt="" /><br/>
+          <span>Login</span>
+        </div>
+      </Link>
       <Link to="/contact" className="toa">
         <div className="todiv">
           <img src={contactPicture} alt="" /><br/>
           <span>Contact</span>
-        </div>
-      </Link>
-      <Link to="/books" className="toa">
-        <div className="todiv">
-          <img src={booksPicture} alt="" /><br/>
-          <span>Books</span>
         </div>
       </Link>
       <Link to="/dap" className="toa">

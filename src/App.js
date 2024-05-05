@@ -6,8 +6,8 @@ import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Components/Home.js'; 
 import Projects from './Components/Projects.js';
 import Contact from './Components/Contact.js'; 
-import Books from './Components/Books.js';
 import Dap from './Components/Dap.js'; 
+import Signin from './Components/Signin.js';
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
           <Routes>
             <Route path="/" exact element={<HomeWithHeader />} /> 
             <Route path="/projects" element={<ProjectsWithHeader />} /> 
+            <Route path="/signin" element={<SigninWithHeader />} /> 
             <Route path="/contact" element={<ContactWithHeader />} /> 
-            <Route path="/books" element={<BooksWithHeader />} /> 
             <Route path="/dap" element={<DapWithHeader />} />
           </Routes>
         <Footer />
@@ -35,14 +35,15 @@ function ProjectsWithHeader() {
   return <Projects />;
 }
 
+function SigninWithHeader() {
+  useDocumentTitle("Signin");
+  return <Signin />;
+}
+
+
 function ContactWithHeader() {
   useDocumentTitle("Contact");
   return <Contact />;
-}
-
-function BooksWithHeader() {
-  useDocumentTitle("Books");
-  return <Books />;
 }
 
 function DapWithHeader() {
