@@ -31,41 +31,41 @@ const Contact = () => {
       
       const toggleDivVisibility = (divId) => {
         if (divId === 'div4') {
-          setDivsVisible(prevState => ({
-            ...prevState,
-            div4: !prevState.div4,
-            div5: false
-          }));
-          setErVisible(prevState => ({
-            er4: divId !== 'div5',
-            er1: divId === 'div4'
-          }));
+            setDivsVisible(prevState => ({
+                ...prevState,
+                div4: !prevState.div4,
+                div5: false
+            }));
+            setErVisible(prevState => ({
+                er4: divId !== 'div5',
+                er1: divId === 'div4'
+            }));
         } else if (divId === 'div5') {
-          setDivsVisible(prevState => ({
-            ...prevState,
-            div4: false,
-            div5: !prevState.div5
-          }));
-          setErVisible(prevState => ({
-            er5: divId !== 'div4',
-            er1: divId === 'div5'
-          }));
+            setDivsVisible(prevState => ({
+                ...prevState,
+                div4: false,
+                div5: !prevState.div5
+            }));
+            setErVisible(prevState => ({
+                er5: divId !== 'div4',
+                er1: divId === 'div5'
+            }));
         } else {
-          setDivsVisible(prevState => ({
-            div1: divId === 'div1',
-            div2: divId === 'div2',
-            div3: divId === 'div3',
-            div4: prevState.div4,
-            div5: prevState.div5
-          }));
+            setDivsVisible(prevState => ({
+                div1: divId === 'div1',
+                div2: divId === 'div2',
+                div3: divId === 'div3',
+                div4: prevState.div4,
+                div5: prevState.div5
+            }));
 
-          setErVisible(prevState => ({
-            er1: divId !== 'div2' && divId !== 'div3',
-            er2: divId !== 'div1' && divId !== 'div3',
-            er3: divId !== 'div1' && divId !== 'div2',
-            er4: divId == 'div1',
-            er5: divId == 'div1'
-          }));
+            setErVisible(prevState => ({
+                er1: divId !== 'div2' && divId !== 'div3',
+                er2: divId !== 'div1' && divId !== 'div3',
+                er3: divId !== 'div1' && divId !== 'div2',
+                er4: divId === 'div1',
+                er5: divId === 'div1'
+            }));
         }
       };
 
@@ -94,6 +94,8 @@ const Contact = () => {
                     <img src={Logo} alt="" className="tologoAC" />
                     <p><strong>Klajdi Cami</strong></p>
                 </div>
+                
+                <p className='right-item1'right-item1>• Online now</p>
             </div>
             <hr />
             <br />

@@ -74,7 +74,6 @@ body {
 
 }
 
-
 .container1 {
     width: 60%;
     margin-left: 20%;
@@ -83,6 +82,7 @@ body {
     background-color: rgb(233, 233, 233);
     border-bottom: none;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container1top{
@@ -125,8 +125,8 @@ body {
 
 .online p{
     margin-left: 0px;
-    font-size: 14px;
-    margin-top: 7px;
+    font-size: 16px;
+    margin-top: 30px;
 }
 
 .minima {
@@ -273,9 +273,9 @@ body {
 }
 
 .right-item1 {
-    text-align: right;
-    margin-top: 21px;
-    margin-right: 10px;
+   font-size: 20px;
+   margin-right: 10px;
+    font-weight: 550;
 }
 
 .mode {
@@ -315,9 +315,9 @@ border-bottom : 2px solid blue;
 .left-item1 p {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 20px;
+    padding: 0px 20px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     white-space: nowrap;
 }
 
