@@ -230,7 +230,7 @@ const Contact = () => {
                     </div>
                     <br />
                     <div className="minima"  id="mnm5">
-                        <p><a href="https://github.com/Klajdis32/npw" target='_blanck' id="toa">https://github.com/Klajdis32/npw</a></p>
+                        <p><a href="https://github.com/Klajdis32/personalwebsite" target='_blanck' id="toa">https://github.com/Klajdis32/npw</a></p>
                     </div>
                     <br/>
                     <div className="apathsh" id="ap6" onClick={handleResetConversation}>
