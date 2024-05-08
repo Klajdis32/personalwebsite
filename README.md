@@ -1,4 +1,4 @@
-# My Personal Website
+## Personal Website
 
 Welcome to the repository for my personal website! This project is built using React, allowing for a dynamic and responsive web experience.
 
