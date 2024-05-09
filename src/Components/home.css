@@ -100,27 +100,6 @@ body {
     padding: 20px;
 }
 
-.footer {
-    z-index: 500;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    border-top: 2px solid grey;
-    border-radius: 50px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-
 .toa {
     cursor: pointer;
     text-decoration: none;
@@ -344,17 +323,6 @@ body {
 
 }
 
-.footer {
-    width: 100%;
-    margin-left: 0%;
-    margin-bottom: 0px;
-    border: 2px solid black;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 10px 10px 0px 0px;
-}
-
 
 .toreact {
     width: 4%;
@@ -408,16 +376,6 @@ body {
 
     }
     
-    .footer {
-        width: 100%;
-        margin-left: 0%;
-        margin-bottom: 0px;
-        border: 2px solid black;
-        border-left: none;
-        border-right: none;
-        border-bottom: none;
-        border-radius: 10px 10px 0px 0px;
-    }
     
     .toreact {
         width: 5%;
