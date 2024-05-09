@@ -127,7 +127,7 @@ const Contact = () => {
             {erVisible.er3 && 
             <div onClick={() => toggleDivVisibility('div3')}> 
                 <div className="apathsh" id="ap3" tabIndex="0">
-                    <p>How can i make a personal website like yours personal website like yours?</p>
+                    <p>How can i make a personal website like yours ?</p>
                 </div>
             </div>
             }
@@ -224,7 +224,7 @@ const Contact = () => {
                 <div id="apantisiapomena4">
                     <br/><br/><br/>
                     <div className="minima"  id="mnm4">
-                        <p>If you don't know html, css and javascript, you can contact me otherwise if you know programming you will find the code of the specific website on my github:</p>
+                        <p>If you don't know html, css and javascript, you can contact me otherwise if you know how to  programm οn your own you will find the code of the specific website on my github repository:</p>
                     </div>
                     <br />
                     <div className="minima"  id="mnm5">
