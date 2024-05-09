@@ -99,12 +99,12 @@ font-size: 18px;
 display: block;
 position: absolute;
 top: 45%;
-left: 65%;
+left: 50%;
 transform: translate(-50%, -50%);
 }
 
 .loading img{
-width: 20%;
+width: 80%;
 }
 
 .toerror{
@@ -208,6 +208,16 @@ width: 4%;
     padding: 0px;
 }
 
+.loading{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+    .loading img{
+    width: 100%;
+    }
 
 }
 
@@ -268,12 +278,12 @@ margin-left: 5%;
 .loading{
 position: absolute;
 top: 45%;
-left: 60%;
+left: 50%;
 transform: translate(-50%, -50%);
 }
 
 .loading img{
-width: 60%;
+width: 100%;
 }
 
 .divmaximg {

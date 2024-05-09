@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.918c10e6.css",
-    "main.js": "/static/js/main.e3069698.js",
+    "main.css": "/static/css/main.547d5f71.css",
+    "main.js": "/static/js/main.c06221ba.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
+    "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
     "static/media/Τετράπολα - Κυκλώματα Διαφόρισης .pdf": "/static/media/Τετράπολα - Κυκλώματα Διαφόρισης .84948d01b1fa9bd22414.pdf",
     "static/media/Ultrasound.pdf": "/static/media/Ultrasound.005da9cd315bb088614b.pdf",
     "static/media/MaPass.pdf": "/static/media/MaPass.ddb190c15012730514b8.pdf",
@@ -32,11 +33,11 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.918c10e6.css.map": "/static/css/main.918c10e6.css.map",
-    "main.e3069698.js.map": "/static/js/main.e3069698.js.map"
+    "main.547d5f71.css.map": "/static/css/main.547d5f71.css.map",
+    "main.c06221ba.js.map": "/static/js/main.c06221ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.918c10e6.css",
-    "static/js/main.e3069698.js"
+    "static/css/main.547d5f71.css",
+    "static/js/main.c06221ba.js"
   ]
 }

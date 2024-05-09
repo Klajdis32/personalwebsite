@@ -37,7 +37,8 @@ const Signin = () => {
                 <h2>Login</h2>
             </div>
             <br/>
-            <label className="tolabel" htmlFor="username">Όνομα :</label>
+            <span className="spanform" htmlFor="username">Name :</span>
+            <br/><br/>
             <input 
                 type="text" 
                 placeholder="Username" 
@@ -45,8 +46,9 @@ const Signin = () => {
                 onChange={handleChange} 
                 className="lInput" 
             />   
-            <label htmlFor="password">Κωδικός:</label>
-            <br/><br/><br/>
+            <br/><br/>
+            <span htmlFor="password" className="spanform">Password :</span>
+            <br/><br/>
             <input 
                 type="password" 
                 placeholder="Password" 

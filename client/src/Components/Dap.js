@@ -1,5 +1,6 @@
 import './dap.css';
 import React, { useState, useEffect } from 'react';
+import mars from "../assets/marsloading.gif";
 
 
 const Dap = () => {
@@ -13,7 +14,9 @@ const Dap = () => {
             .then(response => response.json())
             .then(data => {
                 setApodData(data);
-                setLoading(false);
+                setTimeout(() => {
+                    setLoading(false);
+                }, 2000);
             })
             .catch(error => {
                 console.error('Error fetching APOD:', error);
@@ -23,7 +26,11 @@ const Dap = () => {
     }, [nasaKey]);
 
     if (loading) {
-        return <div className='centerload'>Loading...</div>;
+        return  <div className='centerload'>        
+                    <div className="loading" id="loadingDiv">
+                        <img src={mars} alt="" />
+                    </div>
+                </div>;
     }
 
     if (error) {
@@ -36,15 +43,6 @@ const Dap = () => {
 
     return (
         <div className="container">
-
-            <div className="loading" id="loadingDiv">
-                <img src="images/marsloading.gif" alt="" />
-            </div>
-
-            <div className="toerror" id="errorDiv">
-                <img src="images/error.png" alt="" />
-            </div>
-
             <div className="kinito" id="kinitoDiv">
                 <div className='center'><h2>🌌 NASA's Astronomy Picture<br/>- Video of the Day</h2></div>
                 <br/>

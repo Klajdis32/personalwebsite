@@ -303,9 +303,19 @@ body {
  }
 
  .toreact {
-width: 1.8%;
-margin-top: -3px;
+    width: 1.8%;
+    margin-top: -3px;
+    animation: rotate 10s linear infinite;
  }
+
+ @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
