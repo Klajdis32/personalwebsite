@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './projects.css';
 import posts from './ProjectsDB.js'; 
 import Math from "../assets/math.png";
+import UpArrow from "../assets/up-arrow.png";
 import pdf from "../assets/pdf.png";
 import link from "../assets/link.png";
 import video from "../assets/video.png";
@@ -11,6 +12,11 @@ const Projects = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredPosts, setFilteredPosts] = useState(posts);
     const [postStates, setPostStates] = useState({});
+    const [visiblePosts, setVisiblePosts] = useState(10); // Αρχικά εμφανίζουμε τα πρώτα 10 posts
+
+    const loadMore = () => {
+        setVisiblePosts(prev => prev + 10); // Αυξάνουμε τον αριθμό των εμφανιζόμενων posts κατά 10
+    };
 
     const toggleText = (index) => {
         const newPostStates = { ...postStates };
@@ -33,9 +39,28 @@ const Projects = () => {
         });
         setFilteredPosts(filtered);
     }
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Μετακίνηση στην κορυφή της σελίδας με smooth scrolling
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 200) { // Εμφανίζουμε το κουμπί μόλις ο χρήστης φτάσει πιο κάτω από τα 200px
+                document.getElementById('uparrow').style.display = 'block';
+            } else {
+                document.getElementById('uparrow').style.display = 'none';
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     
 
     return (
+        <div>
         <div className="container3">
             <br />
             <div className="divmath">
@@ -60,7 +85,7 @@ const Projects = () => {
                 {filteredPosts.length === 0 ? (
                     <p className='notfound'>No project was found that contains the word - phrase: <strong>"{searchTerm}"</strong>...</p>
                 ) : (
-                    filteredPosts.map((post, index) => (
+                    filteredPosts.slice(0, visiblePosts).map((post, index) => (
                         <div className="blog-container" key={index}>
                             <div className="blog-post">
                                 {post.image && (
@@ -113,12 +138,20 @@ const Projects = () => {
                     ))
                 )}
             </div>
-            
-            {/* <div className="loadmore" id="loadmore">
-                <a>Load More</a><br />
-            </div> */}
+
+            {visiblePosts < posts.length && (
+                <div className="loadmore" id="loadmore" onClick={loadMore}>
+                    <a>Load More</a><br/>
+                </div>
+            )}
     
-            <br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            </div>
+
+                <div class="arrow" onClick={scrollToTop} >
+                    <img src={UpArrow} alt="" id="uparrow" />
+                </div>
+
         </div>
     );
 }

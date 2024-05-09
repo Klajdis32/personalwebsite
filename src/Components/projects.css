@@ -25,6 +25,10 @@ body {
         .blog-post_cta {
             color: white;
         }
+
+        .loadmore:hover {
+            background-color: #2d2d2d;
+        }
 }
 
 .header {
@@ -257,7 +261,7 @@ color: black;
 .arrow {
     position: sticky;
     bottom: 100px; 
-    text-align: right;
+    text-align: center;
     z-index: 9999;
     margin-left: 90%;
 }
@@ -265,10 +269,10 @@ color: black;
 .arrow img {
     cursor: pointer;
     width: 25%;
+    margin-right: 5%;
 }
 
 #uparrow {
-    display: none;
     border: 2px solid rgb(53, 168, 207);
     border-radius: 15px 15px 0 15px;
     padding: 3px;
@@ -318,7 +322,7 @@ margin-top: 25px;
 .loadmore {
     text-align: center;
     border-radius: 5px;
-    border: 1px solid darkgrey;
+    border: 2px solid darkgrey;
     cursor: pointer;
     padding: 10px 10px;
     font-size: 18px;
@@ -326,8 +330,8 @@ margin-top: 25px;
     margin-left: 42.5%;
 }
 
-#loadmore{
-    display: none;
+.loadmore:hover {
+    background-color: #dedede;
 }
 
 #cube {
