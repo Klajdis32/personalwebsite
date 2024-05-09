@@ -68,6 +68,11 @@
         width: 8%;
     }
 
+    .todiv span {
+        font-size: 1em;
+        color: #333;
+    }
+
 }
 
 /* Κανόνες CSS για κινητά */
@@ -85,6 +90,11 @@
 
     .todiv img {
         width: 14%;
+    }
+
+    .todiv span {
+        font-size: 0.85em;
+        color: #333;
     }
 
 }
