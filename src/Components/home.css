@@ -1,0 +1,427 @@
+
+
+:root {
+    background-color: white;
+    color: black;
+ 
+}
+
+[data-theme="dark"] {
+    background-color: #282828; /* Σκοτεινό φόντο */
+    color: #ffffff; /* Λευκό χρώμα κειμένου */
+
+
+    .toatoykeimenoy{
+        color: white;
+    }
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+
+    .dark-mode {
+        background-color: #282828; /* Σκοτεινό φόντο */
+        color: #ffffff; /* Λευκό χρώμα κειμένου */
+
+        .header {
+            background-color: #333;
+            color: white;
+        }
+
+        .left-item p {
+            color: rgb(255, 255, 255);
+        }
+
+
+        .footer {
+            background-color: #333;
+            border-top: 2px solid white;
+        }
+
+        .header {
+            border-bottom: 1px solid white;
+        }
+
+        .toatoykeimenoy{
+            color: white;
+        }
+        
+        .tasocial p{
+            color: white;
+        }
+
+        .form-select {
+            color: white;
+            border: 1px solid lightgrey;
+            background-color: #333;
+        }
+
+    }
+
+.header {
+    margin-top: 0px;
+    background-color: white;
+    color: #333;
+    height: 50px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.right-item {
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+.heikona {
+    margin-top: 5px;
+    padding: 30px;
+}
+
+.container {
+    width: 80%;
+    margin-left: 0%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.footer {
+    z-index: 500;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-top: 2px solid grey;
+    border-radius: 50px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+.toa {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.divlogo{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tologo{
+    z-index: 500;
+    border-radius: 100%;
+    width: 11%;
+    margin-bottom: -10px;
+    border: 2px solid darkgrey;
+}
+
+
+.divkeimeno {
+    padding: 20px;
+}
+
+.divkeimeno1{
+    padding: 0px 25px;
+}
+
+.divkeimeno strong {
+    font-size: 20px;
+}
+
+.divkeimeno p {
+    font-size: 18px;
+}
+
+#toepi {
+    border-bottom : 2px solid blue;
+}
+
+
+.form-select {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+#languages option[value="en"] {
+    font-size: 16px;
+}
+
+#languages option[value="gr"] {
+    font-size: 16px;
+}
+
+#languages option[value="ge"] {
+    font-size: 16px;
+}
+
+
+.mode {
+    cursor: pointer;
+    width: 1.8%;
+    margin-right: 20px;
+    padding: 0px 0px;
+}
+
+#en {
+    display: block;
+}
+
+#gr {
+    display: none;
+}
+
+#ge {
+    display: none;
+}
+
+.divmaximg {
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal{
+    display: none;
+    overflow: hidden;
+}
+
+.overlay {
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.maxlogo {
+    margin-left: 10%;
+    width: 80%;
+    z-index: 999;
+    border-radius: 100%;
+}
+
+
+#darkmode {
+    display: block;
+}
+
+#lightmode {
+    display: none;
+}
+
+.left-item {
+    flex: 1;
+    color: #000000;
+}
+
+.left-item p {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#tosig {
+    margin-top: -30px;
+}
+
+.toatoykeimenoy{
+    color: black;
+}
+
+#grname {
+    display: none;
+}
+
+.tasocial {
+    display: flex;
+
+}
+
+.tasocial img{
+   width: 3%;
+   height: 3%;
+}
+
+.tasocial p{
+    font-size: 18px;
+    color: black;
+    margin-top: 5px;
+    margin-left: 15px;
+ }
+
+ .toreact {
+    width: 1.8%;
+    margin-top: -3px;
+    animation: rotate 10s linear infinite;
+ }
+
+ @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Κανόνες CSS για tablet */
+@media (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0px;
+    }
+
+
+
+    .heikona {
+    margin-left: 0%;
+}
+
+    .tologo {
+        width: 17%;
+    } 
+
+
+    .divmaximg {
+        display: flex;
+        position: fixed;
+        top: 20%;
+        left: 20%;
+        transform: translate(-10%, -10%);
+    }
+
+    .maxlogo {
+        margin-left: 0%;
+        width: 100%;
+        z-index: 999;
+        border-radius: 100%;
+    }
+
+    .mode {
+    width: 4%;
+}
+
+.tasocial img{
+    width: 6%;
+
+}
+
+.footer {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 0px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.toreact {
+    width: 4%;
+    margin-top: 0px;
+}
+    
+
+}
+
+/* Κανόνες CSS για κινητά */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0px;
+    }
+
+    .heikona {
+    margin-left: 0%;
+}
+
+    .tologo {
+        border: 2px solid lightgrey;
+        width: 23%;
+    }
+    
+
+
+    .divmaximg {
+        display: flex;
+        position: fixed;
+        top: 30%;
+        left: 20%;
+        transform: translate(-12%, -10%);
+    }
+
+    .maxlogo {
+        margin-left: 0%;
+        width: 100%;
+        z-index: 999;
+        border-radius: 100%;
+    }
+
+    
+    .mode {
+        width: 6%;
+    }
+
+    .tasocial img{
+        width: 7%;
+
+    }
+    
+    .footer {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0px;
+        border: 2px solid black;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .toreact {
+        width: 5%;
+        margin-top: 0px;
+    }
+        
+}

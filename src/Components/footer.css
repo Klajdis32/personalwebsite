@@ -1,0 +1,90 @@
+.footer {
+    z-index: 500;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-top: 2px solid grey;
+    border-radius: 50px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+[data-theme="dark"] {
+
+    .footer {
+        background-color: #333;
+        border-top: 2px solid white;
+    }
+
+    .todiv span {
+        font-size: 1em;
+        color: white;
+    }
+
+}
+
+.todiv{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.toa {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.todiv img {
+    width: 4%;
+}
+
+.todiv span {
+    font-size: 1.05em;
+    color: #333;
+}
+
+/* Κανόνες CSS για tablet */
+@media (min-width: 601px) and (max-width: 768px) {
+    .footer {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0px;
+        border: 2px solid black;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .todiv img {
+        width: 8%;
+    }
+
+}
+
+/* Κανόνες CSS για κινητά */
+@media (max-width: 600px) {
+    .footer {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0px;
+        border: 2px solid black;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .todiv img {
+        width: 14%;
+    }
+
+}
