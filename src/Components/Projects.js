@@ -12,7 +12,8 @@ const Projects = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredPosts, setFilteredPosts] = useState(posts);
     const [postStates, setPostStates] = useState({});
-    const [visiblePosts, setVisiblePosts] = useState(10); // Αρχικά εμφανίζουμε τα πρώτα 10 posts
+    const [visiblePosts, setVisiblePosts] = useState(10);
+    const [showArrow, setShowArrow] = useState(true);
 
     const loadMore = () => {
         setVisiblePosts(prev => prev + 10); // Αυξάνουμε τον αριθμό των εμφανιζόμενων posts κατά 10
@@ -23,7 +24,6 @@ const Projects = () => {
         newPostStates[index] = !newPostStates[index];
         setPostStates(newPostStates);
     };
-
 
     const handleSearch = (event) => {
         event.preventDefault();
@@ -41,22 +41,22 @@ const Projects = () => {
     }
 
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Μετακίνηση στην κορυφή της σελίδας με smooth scrolling
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 200) { // Εμφανίζουμε το κουμπί μόλις ο χρήστης φτάσει πιο κάτω από τα 200px
-                document.getElementById('uparrow').style.display = 'block';
-            } else {
-                document.getElementById('uparrow').style.display = 'none';
-            }
+          if (window.scrollY > 200) {
+            setShowArrow(false);
+          } else {
+            setShowArrow(true);
+          }
         };
-
+    
         window.addEventListener('scroll', handleScroll);
-
+    
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+      }, []);
     
 
     return (
@@ -148,9 +148,11 @@ const Projects = () => {
             <br/><br/><br/><br/>
             </div>
 
+                {!showArrow && (
                 <div class="arrow" onClick={scrollToTop} >
                     <img src={UpArrow} alt="" id="uparrow" />
                 </div>
+                )}
 
         </div>
     );

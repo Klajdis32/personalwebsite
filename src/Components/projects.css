@@ -263,13 +263,12 @@ color: black;
     bottom: 100px; 
     text-align: center;
     z-index: 9999;
-    margin-left: 90%;
+    margin-left: 85%;
 }
 
 .arrow img {
     cursor: pointer;
-    width: 25%;
-    margin-right: 5%;
+    width: 15%;
 }
 
 #uparrow {
@@ -466,13 +465,15 @@ margin-top: 25px;
     bottom: 100px; 
     text-align: right;
     z-index: 9999;
-    margin-left: 85%;
+    margin-left: 70%;
+    margin-right: 5%;
 }
 
 .arrow img {
     cursor: pointer;
-    width: 40%;
+    width: 20%;
 }
+
 
 .waves img {
 width: 40%;
@@ -572,12 +573,13 @@ input, button {
     bottom: 100px; 
     text-align: right;
     z-index: 9999;
-    margin-left: 80%;
+    margin-left: 70%;
+    margin-right: 5%;
 }
 
 .arrow img {
     cursor: pointer;
-    width: 40%;
+    width: 30%;
 }
 
 .waves img {
