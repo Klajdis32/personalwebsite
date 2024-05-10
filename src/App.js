@@ -24,7 +24,7 @@ function App() {
 }
 
 function HomeWithHeader() {
-  useDocumentTitle("Carpe diem");
+  useDocumentTitle("Home");
   return <Home />;
 }
 

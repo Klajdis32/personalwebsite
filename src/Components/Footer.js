@@ -11,7 +11,7 @@ const Footer = () => {
       <Link to="/" className="toa">
         <div className="todiv">
           <img src={profilePicture} alt="" /><br/>
-          <span>Profile</span>
+          <span>About me</span>
         </div>
       </Link>
       <Link to="/projects" className="toa">

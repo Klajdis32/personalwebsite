@@ -14,6 +14,7 @@ const Projects = () => {
     const [postStates, setPostStates] = useState({});
     const [visiblePosts, setVisiblePosts] = useState(10);
     const [showArrow, setShowArrow] = useState(true);
+    const [showLoadMore, setShowLoadMore] = useState(false);
 
     const loadMore = () => {
         setVisiblePosts(prev => prev + 10); // Αυξάνουμε τον αριθμό των εμφανιζόμενων posts κατά 10
@@ -27,6 +28,7 @@ const Projects = () => {
 
     const handleSearch = (event) => {
         event.preventDefault();
+        setShowLoadMore(true);
         const filtered = posts.filter(post => {
             const lowerSearchTerm = searchTerm.toLowerCase();
             return (
@@ -139,7 +141,7 @@ const Projects = () => {
                 )}
             </div>
 
-            {visiblePosts < posts.length && (
+            {visiblePosts < posts.length && !showLoadMore && (
                 <div className="loadmore" id="loadmore" onClick={loadMore}>
                     <a>Load More</a><br/>
                 </div>
