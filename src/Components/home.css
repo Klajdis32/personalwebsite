@@ -35,10 +35,9 @@ body {
             color: white;
         }
 
-        .left-item p {
+        .left-item9 p {
             color: rgb(255, 255, 255);
         }
-
 
         .footer {
             background-color: #333;
@@ -62,6 +61,14 @@ body {
             border: 1px solid lightgrey;
             background-color: #333;
         }
+
+        .todivdeksia{
+            color: white;
+        }
+
+        .tolink {
+            color: white;
+        }  
 
     }
 
@@ -106,8 +113,14 @@ body {
 }
 
 .divlogo{
+    display: flex;
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.divlogo h3{
+margin-left: 5px;
 }
 
 .tologo{
@@ -120,7 +133,7 @@ body {
 
 
 .divkeimeno {
-    padding: 20px;
+    padding: 5px 20px;
 }
 
 .divkeimeno1{
@@ -223,17 +236,58 @@ body {
     display: none;
 }
 
-.left-item {
+.left-item9 {
+    width: 100%;
     flex: 1;
-    color: #000000;
+
 }
 
-.left-item p {
+.left-item9 p {
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 20px;
     font-weight: 500;
     font-size: 18px;
+}
+
+.tolink {
+
+    font-weight: 550;
+}
+
+.left-item9 img {
+ width: 20%;
+}
+
+.todivdeksia {
+    color: black;
+    text-align: right;
+    width: 50%;
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 20px;
+    height: 60px;
+}
+
+.todivdeksia img {
+width: 22%;
+margin-bottom: 5px;
+}
+
+#ligomegalhtero {
+    width: 26%;
+}
+
+#oxideksia{
+    border: none;
+}
+
+.todivdeksia1 {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 25%;
+ border-right: 2px solid lightgrey;
 }
 
 #tosig {
@@ -328,6 +382,37 @@ body {
     width: 4%;
     margin-top: 0px;
 }
+
+.left-item9 img {
+    width: 45%;
+   }
+
+   
+.todivdeksia {
+text-align: center;
+width: 60%;
+
+}
+
+
+.todivdeksia1 {
+display: inline-block;
+text-align: center;
+cursor: pointer;
+width: 30%;
+padding: 0px;
+border-right: 2px solid lightgrey;
+}
+
+
+#ligomegalhtero {
+width: 35%;
+}
+   
+   .todivdeksia img {
+    width: 30%;
+    margin-bottom: 5px;
+    }
     
 
 }
@@ -381,5 +466,37 @@ body {
         width: 5%;
         margin-top: 0px;
     }
+
+    .left-item9 img {
+        width: 55%;
+       }
+
+       
+.todivdeksia {
+    text-align: right;
+    width: 60%;
+
+}
+
+
+.todivdeksia1 {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    padding: 0px;
+ border-right: 2px solid lightgrey;
+}
+
+
+#ligomegalhtero {
+    width: 35%;
+}
+       
+       .todivdeksia img {
+        width: 30%;
+        margin-bottom: 5px;
+        }
+        
         
 }

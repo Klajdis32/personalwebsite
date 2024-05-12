@@ -1,7 +1,11 @@
 import './home.css';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/imagelogo.png';
 import React, { useState, useEffect } from "react";
 import imgreact from "../assets/react.png";
+import contact from "../assets/new-email.png";
+import github from "../assets/github.png";
+import Linkedin from "../assets/linkedin.png";
 
 const Home = () => {
 
@@ -39,9 +43,31 @@ const Home = () => {
     return (
     <div className="container">
         <div className="divlogo">
-            <img src={Logo} alt="" className="tologo" /><br />
-            <h3 id="enname">Klajdi Cami</h3>
-            <h3 id="grname">Κλάιντι Τσάμη</h3>
+            <div className='left-item9'>
+                <img src={Logo} alt="" className="tologo" /><br />
+                <h3 id="enname">Klajdi Cami</h3>
+                <h3 id="grname">Κλάιντι Τσάμη</h3>
+            </div>
+            <div className='todivdeksia'>
+                <Link to="/contact" className='tolink'>
+                    <div className='todivdeksia1'>
+                        <img src={contact} alt="" id='ligomegalhtero'/><br />
+                        <span>Contact</span>
+                    </div>
+                </Link>
+                <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/"  className='tolink'>
+                <div className='todivdeksia1'>
+                    <img src={Linkedin} alt="" /><br />
+                    <span>Linkedin</span>
+                </div>
+                </Link>
+                <Link to="https://github.com/Klajdis32"  className='tolink'>
+                <div className='todivdeksia1' id='oxideksia'>
+                    <img src={github} alt="" /><br />
+                    <span>Github</span>
+                </div>
+                </Link>
+            </div>
         </div>
 
         <div className="divkeimeno" id="en"> 
