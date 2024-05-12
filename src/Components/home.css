@@ -210,7 +210,10 @@ margin-left: 5px;
 .left-item9 {
     width: 100%;
     flex: 1;
+}
 
+.left-item9 h3{
+    white-space: nowrap;
 }
 
 .left-item9 p {

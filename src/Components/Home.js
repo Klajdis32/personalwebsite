@@ -1,6 +1,7 @@
 import './home.css';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/imagelogo.png';
+import Logo1 from '../assets/logo1.png';
 import React, { useState, useEffect } from "react";
 import imgreact from "../assets/react.png";
 import contact from "../assets/new-email.png";
@@ -10,11 +11,18 @@ import Linkedin from "../assets/linkedin.png";
 const Home = () => {
 
     const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
+    const [selectedTheme, setSelectedTheme] = useState(localStorage.getItem('selectedTheme') || 'light');
 
     useEffect(() => {
       const storedLanguage = localStorage.getItem('selectedLanguage');
+      const storedTheme = localStorage.getItem('selectedTheme');
+
       if (storedLanguage) {
         setSelectedLanguage(storedLanguage);
+      }
+
+      if (storedTheme) {
+        setSelectedLanguage(storedTheme);
       }
     }, []);
   
@@ -38,13 +46,23 @@ const Home = () => {
                 document.getElementById("grname").style.display = "none";
                 document.getElementById("enname").style.display = "block";
       }
+
+      if (selectedTheme === "light") {
+            document.getElementById("logo").style.display = "block";
+            document.getElementById("logo1").style.display = "none";
+      } else if (selectedTheme === "dark") {
+            document.getElementById("logo").style.display = "none";
+            document.getElementById("logo1").style.display = "block";
+      }
+
     }, [selectedLanguage]);
 
     return (
     <div className="container">
         <div className="divlogo">
             <div className='left-item9'>
-                <img src={Logo} alt="" className="tologo" /><br />
+                <img src={Logo} alt="" className="tologo" id='logo' />
+                <img src={Logo1} alt="" className="tologo" id='logo1' /><br />
                 <h3 id="enname">Klajdi Cami</h3>
                 <h3 id="grname">Κλάιντι Τσάμη</h3>
             </div>

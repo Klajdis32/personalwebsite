@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e14ea836.css",
-    "main.js": "/static/js/main.8857a6e9.js",
+    "main.css": "/static/css/main.d06ef7c8.css",
+    "main.js": "/static/js/main.e735df37.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
@@ -24,6 +24,7 @@
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
     "static/media/imagelogo.png": "/static/media/imagelogo.866d5938c7016fa01228.png",
+    "static/media/logo1.png": "/static/media/logo1.b3f926109817c6d6544c.png",
     "static/media/math.png": "/static/media/math.aaf0e20a3061f24f5c80.png",
     "static/media/astronomy.png": "/static/media/astronomy.43abc6027708a6f5d4a9.png",
     "static/media/planning.png": "/static/media/planning.18387ccc8fc3cadf2944.png",
@@ -38,11 +39,11 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.e14ea836.css.map": "/static/css/main.e14ea836.css.map",
-    "main.8857a6e9.js.map": "/static/js/main.8857a6e9.js.map"
+    "main.d06ef7c8.css.map": "/static/css/main.d06ef7c8.css.map",
+    "main.e735df37.js.map": "/static/js/main.e735df37.js.map"
   },
   "entrypoints": [
-    "static/css/main.e14ea836.css",
-    "static/js/main.8857a6e9.js"
+    "static/css/main.d06ef7c8.css",
+    "static/js/main.e735df37.js"
   ]
 }
