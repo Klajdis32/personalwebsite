@@ -7,6 +7,7 @@ import Home from './Components/Home.js';
 import Projects from './Components/Projects.js';
 import Contact from './Components/Contact.js'; 
 import Dap from './Components/Dap.js'; 
+import NotFoundC from './Components/NotFound.js';
 
 function App() {
   return (
@@ -17,10 +18,15 @@ function App() {
             <Route path="/projects" element={<ProjectsWithHeader />} /> 
             <Route path="/contact" element={<ContactWithHeader />} /> 
             <Route path="/dap" element={<DapWithHeader />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         <Footer />
     </Router>
   );
+}
+
+function NotFound() {
+  return <NotFoundC />;
 }
 
 function HomeWithHeader() {

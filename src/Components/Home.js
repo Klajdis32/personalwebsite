@@ -73,13 +73,13 @@ const Home = () => {
                         <span>Contact</span>
                     </div>
                 </Link>
-                <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/"  className='tolink'>
+                <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" className='tolink'>
                 <div className='todivdeksia1'>
                     <img src={Linkedin} alt="" /><br />
                     <span>Linkedin</span>
                 </div>
                 </Link>
-                <Link to="https://github.com/Klajdis32"  className='tolink'>
+                <Link to="https://github.com/Klajdis32" target="_blank" className='tolink'>
                 <div className='todivdeksia1' id='oxideksia'>
                     <img src={github} alt="" /><br />
                     <span>Github</span>
@@ -152,7 +152,7 @@ const Home = () => {
             </p>
         </div>
         
-        <br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
     </div>
     );
 

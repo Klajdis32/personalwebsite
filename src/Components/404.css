@@ -1,0 +1,33 @@
+.divcenter1 {
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.periexomena {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  
+  .pc{
+    width: 50%;
+  }
+
+  
+/* Κανόνες CSS για tablet */
+@media (min-width: 601px) and (max-width: 768px) {
+    .pc{
+        width: 50%;
+      }
+}
+
+
+  /* Κανόνες CSS για κινητά */
+@media (max-width: 600px) {
+
+    .pc{
+        width: 90%;
+      }
+}
