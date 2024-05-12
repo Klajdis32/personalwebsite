@@ -1,5 +1,3 @@
-
-
 :root {
     background-color: white;
     color: black;
@@ -14,6 +12,26 @@
     .toatoykeimenoy{
         color: white;
     }
+    
+    .left-item9 p {
+        color: rgb(255, 255, 255);
+    }
+
+
+
+
+    .toatoykeimenoy{
+        color: white;
+    }
+    
+
+    .todivdeksia1{
+        color: white;
+    }
+
+    .tolink {
+        color: white;
+    }  
 
 }
 
@@ -24,53 +42,6 @@ body {
     background-color: #f2f2f2;
 }
 
-
-
-    .dark-mode {
-        background-color: #282828; /* Σκοτεινό φόντο */
-        color: #ffffff; /* Λευκό χρώμα κειμένου */
-
-        .header {
-            background-color: #333;
-            color: white;
-        }
-
-        .left-item9 p {
-            color: rgb(255, 255, 255);
-        }
-
-        .footer {
-            background-color: #333;
-            border-top: 2px solid white;
-        }
-
-        .header {
-            border-bottom: 1px solid white;
-        }
-
-        .toatoykeimenoy{
-            color: white;
-        }
-        
-        .tasocial p{
-            color: white;
-        }
-
-        .form-select {
-            color: white;
-            border: 1px solid lightgrey;
-            background-color: #333;
-        }
-
-        .todivdeksia{
-            color: white;
-        }
-
-        .tolink {
-            color: white;
-        }  
-
-    }
 
 .header {
     margin-top: 0px;
@@ -283,6 +254,7 @@ margin-bottom: 5px;
 }
 
 .todivdeksia1 {
+    color: black;
     display: inline-block;
     text-align: center;
     cursor: pointer;
@@ -480,6 +452,7 @@ width: 35%;
 
 
 .todivdeksia1 {
+    font-size: 13px;
     display: inline-block;
     text-align: center;
     cursor: pointer;
