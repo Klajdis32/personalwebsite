@@ -239,20 +239,31 @@ margin-left: 5px;
     width: 50%;
     margin-top: 5px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 0px;
     height: 60px;
 }
 
 .todivdeksia img {
-width: 22%;
+width: 20%;
 margin-bottom: 5px;
 }
 
 #ligomegalhtero {
-    width: 26%;
+    width: 22%;
+}
+
+#monokin {
+    display: none;
 }
 
 #oxideksia{
+    border-right: none;
+    border-left: 2px solid lightgray;
+    padding: 0px;
+    margin-right: 50px;
+}
+
+#oxideksia1 {
     border: none;
 }
 
@@ -262,7 +273,7 @@ margin-bottom: 5px;
     text-align: center;
     cursor: pointer;
     width: 25%;
- border-right: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
 }
 
 #tosig {
@@ -359,13 +370,14 @@ margin-bottom: 5px;
 }
 
 .left-item9 img {
-    width: 45%;
+    width: 35%;
    }
 
    
 .todivdeksia {
-text-align: center;
-width: 60%;
+    text-align: center;
+    width: 50%;
+    margin-top: -15px;
 
 }
 
@@ -381,12 +393,16 @@ border-right: 2px solid lightgrey;
 
 
 #ligomegalhtero {
-width: 35%;
+width: 30%;
 }
    
    .todivdeksia img {
-    width: 30%;
+    width: 25%;
     margin-bottom: 5px;
+    }
+    
+    #oxideksia{
+        margin-right: 0px;
     }
     
 
@@ -443,14 +459,14 @@ width: 35%;
     }
 
     .left-item9 img {
-        width: 60%;
+        width: 45%;
        }
 
        
 .todivdeksia {
-    text-align: right;
-    width: 60%;
-
+    text-align: center;
+    width: 50%;
+    margin-top: -15px;
 }
 
 
@@ -459,20 +475,33 @@ width: 35%;
     display: inline-block;
     text-align: center;
     cursor: pointer;
-    width: 30%;
+    width: 45%;
     padding: 0px;
  border-right: 2px solid lightgrey;
 }
 
 
 #ligomegalhtero {
-    width: 35%;
+    width: 29%;
 }
        
        .todivdeksia img {
-        width: 30%;
+        width: 22%;
         margin-bottom: 5px;
         }
+
+        #oxideksia{
+            margin-top: -20px;
+            margin-right: 0px;
+            border-top: 2px solid lightgray;
+            border-left: none;
+            padding: 20px;
+        }
+
+        #monokin {
+            display: block;
+        }
+        
         
         
 }

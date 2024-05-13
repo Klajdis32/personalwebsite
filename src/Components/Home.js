@@ -74,11 +74,11 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" className='tolink'>
-                <div className='todivdeksia1'>
+                <div className='todivdeksia1' id='oxideksia1'>
                     <img src={Linkedin} alt="" /><br />
                     <span>Linkedin</span>
                 </div>
-                </Link>
+                </Link><div id='monokin'><br/><br/></div>
                 <Link to="https://github.com/Klajdis32" target="_blank" className='tolink'>
                 <div className='todivdeksia1' id='oxideksia'>
                     <img src={github} alt="" /><br />
