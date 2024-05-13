@@ -30,7 +30,7 @@ function NotFound() {
 }
 
 function HomeWithHeader() {
-  useDocumentTitle("Home");
+  useDocumentTitle("About me");
   return <Home />;
 }
 
