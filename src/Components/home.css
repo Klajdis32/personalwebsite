@@ -104,7 +104,7 @@ margin-left: 5px;
 
 
 .divkeimeno {
-    padding: 5px 20px;
+    padding: 0px 20px;
 }
 
 .divkeimeno1{
@@ -464,7 +464,7 @@ width: 30%;
 
        
 .todivdeksia {
-    text-align: center;
+    text-align: left;
     width: 50%;
     margin-top: -15px;
 }
@@ -491,11 +491,12 @@ width: 30%;
         }
 
         #oxideksia{
-            margin-top: -20px;
+            margin-top: -30px;
             margin-right: 0px;
+            margin-left: 30px;
             border-top: 2px solid lightgray;
             border-left: none;
-            padding: 20px;
+            padding: 10px;
         }
 
         #monokin {
