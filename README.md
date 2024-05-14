@@ -16,4 +16,5 @@ Feel free to explore the code and use it as a reference for your own projects or
 2. Install Node.js if you haven't already.
 3. Open the specific repository in Visual Studio Code.
 4. In the terminal, type `npm start` to run the app.
+5. Done 🚀
 
