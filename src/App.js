@@ -8,6 +8,7 @@ import Projects from './Components/Projects.js';
 import Contact from './Components/Contact.js'; 
 import Dap from './Components/Dap.js'; 
 import NotFoundC from './Components/NotFound.js';
+import Project from "./Components/Project.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<HomeWithHeader />} /> 
             <Route path="/projects" element={<ProjectsWithHeader />} /> 
+            <Route path="/project" element={<ProjectWithHeader />} /> 
             <Route path="/contact" element={<ContactWithHeader />} /> 
             <Route path="/dap" element={<DapWithHeader />} />
             <Route path="*" element={<NotFound />} />
@@ -37,6 +39,11 @@ function HomeWithHeader() {
 function ProjectsWithHeader() {
   useDocumentTitle("Projects");
   return <Projects />;
+}
+
+function ProjectWithHeader() {
+  useDocumentTitle("Project");
+  return <Project />;
 }
 
 function ContactWithHeader() {

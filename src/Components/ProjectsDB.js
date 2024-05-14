@@ -19,11 +19,13 @@ import KiklomaDiaforisis from "../attachments/pdfs/Τετράπολα - Κυκλ
 import VideoMaPass from "../attachments/videos/Mapass.mp4";
 import VideoAthlisoy from "../attachments/videos/athlisoy.mp4";
 import Aluzip from "../attachments/files/ALU.zip";
+import petasma from "../assets/petasma.jpg"
 
 const posts = [
     // {
     //     Ergastirio: "",
-    //     image: "", 
+    //     imageEksw: "", 
+    //     imageMesa: "", 
     //     Titlos: "", 
     //     Sigrafeas: "", 
     //     Linksigrafea: "",  
@@ -37,7 +39,8 @@ const posts = [
     // },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Athlisoy App, Kotlin", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -51,7 +54,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ατομικής Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Μέτρηση σταθεράς του Planck", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -65,7 +69,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ατομικής Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Θερμιονική Εκπομπή Ηλεκτρονίων", 
         Sigrafeas: "Me", 
         Linksigrafea: "",   
@@ -79,7 +84,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ατομικής Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Μέτρηση μάζας ηλεκτρόνιου", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -93,7 +99,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ατομικής Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: petasma,
         Titlos: "Απόδειξη της κυματικής φύσης των ηλεκτρόνιων", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -107,7 +114,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Συντονισμός Σειράς – Παράλληλος", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -121,7 +129,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Συχνοτική Απόκριση Φίλτρων", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -135,7 +144,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Τετράπολα Κυκλώματα Διαφόρισης", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -149,7 +159,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Θεώρημα Μέγιστης Μεταφοράς Ισχύος και Επαλληλίας", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -163,7 +174,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Θεώρημα Thevenin - Norton", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -177,7 +189,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Μέτρηση Τάσεων Mε Παλμογράφο", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -191,7 +204,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Κύκλωμα Γέφυρας - Μετασχηματισμοί Δ σε Υ", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -205,7 +219,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστήριο Ηλεκτρικών Κυκλωμάτων",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Νόμοι Kirchhoff - Διαιρέτης Τάσης", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -219,7 +234,8 @@ const posts = [
     },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Rocket Game With Python", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -233,7 +249,8 @@ const posts = [
     },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Skyline Problem Algorithm With Java", 
         Sigrafeas: "<a href='https://tsami.gr/' style='color: green;'>Kristi Cami</a>", 
         Linksigrafea: "https://tsami.gr/", 
@@ -247,7 +264,8 @@ const posts = [
     },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Android App Manage Passwords (MaPass)", 
         Sigrafeas: "<a href='https://tsami.gr/' style='color: green;'>Kristi Cami</a>", 
         Linksigrafea: "https://tsami.gr/", 
@@ -261,7 +279,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Ultrasound", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -275,7 +294,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Oscilloscope", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -289,7 +309,8 @@ const posts = [
     },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Arithmetic logic unit (Alu)", 
         Sigrafeas: "<a href='https://tsami.gr/' style='color: green;'>Kristi Cami</a>", 
         Linksigrafea: "https://tsami.gr/", 
@@ -303,7 +324,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Specific heat of materials", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -317,7 +339,8 @@ const posts = [
     },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Rotated Cube", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -331,7 +354,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Useful electrical circuits", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -345,7 +369,8 @@ const posts = [
     },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Pentagonal Fractal With C", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -359,7 +384,8 @@ const posts = [
     },
     {
         Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Simulation of linear motion", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
@@ -373,7 +399,8 @@ const posts = [
     },
     {
         Ergastirio: "",
-        image: "", 
+        imageEksw: "", 
+        imageMesa: "",
         Titlos: "Simple Arduino Project", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  

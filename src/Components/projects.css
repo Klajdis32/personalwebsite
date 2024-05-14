@@ -29,6 +29,10 @@ body {
         .loadmore:hover {
             background-color: #2d2d2d;
         }
+
+        .toseemore {
+            color: white;
+        }
 }
 
 .header {
@@ -177,7 +181,7 @@ margin-bottom: 3%;
 }
 
 .blog-post_info {
-padding: 15px;
+padding: 35px 25px;
 }
 
 .blog-post_img {
@@ -220,7 +224,7 @@ font-weight: 500;
 
 .blog-post_title {
 font-size: 20px;
-margin-top: -10px;
+margin-top: 0px;
 color: black;
 }
 
@@ -351,6 +355,10 @@ margin-top: 25px;
     text-decoration: underline;
     cursor: pointer;
     margin-left: 5px;
+}
+
+.toseemore {
+    color: black;
 }
 
 @media screen and (max-width: 1068px) {
