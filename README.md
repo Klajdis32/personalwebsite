@@ -10,3 +10,5 @@ This website serves as my personal portfolio and a showcase of my skills and pro
 
 Feel free to explore the code and use it as a reference for your own projects or portofolio.
 
+## How to run this react app on your pc
+
