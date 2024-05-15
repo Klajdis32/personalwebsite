@@ -117,7 +117,7 @@ const Contact = () => {
             
             </div>
             }
-            {erVisible.er2 && 
+            {/* {erVisible.er2 && 
                 <div onClick={() => toggleDivVisibility('div2')}> 
                     <div className="apathsh" id="ap2" tabIndex="0">
                         <p>Where else i can find you?</p>
@@ -130,7 +130,7 @@ const Contact = () => {
                     <p>How can i make a personal website like yours ?</p>
                 </div>
             </div>
-            }
+            } */}
             {divsVisible.div1 && 
                 <div>
                     <br/><br/><br/>

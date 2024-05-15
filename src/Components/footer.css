@@ -51,6 +51,7 @@
     color: #333;
 }
 
+
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
     .footer {
