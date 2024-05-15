@@ -90,6 +90,9 @@ border: 2px solid darkgrey;
 border-radius: 5px;
 }
 
+.kinito{
+    margin-top: -34%;
+}
 .kinito p {
 font-weight: 500;
 font-size: 18px;
