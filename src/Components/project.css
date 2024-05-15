@@ -3,7 +3,6 @@
         margin-left: 0%;
         max-width: 1100px;
         margin: 0 auto;
-        padding: 30px 0px;
         min-height: 100vh;
 }
 
@@ -21,7 +20,6 @@
 .back {
     display: flex;
     color: black;
-    text-decoration: none;
 }
 
 .back p{
@@ -70,14 +68,22 @@
     border: 2px solid rgb(144, 73, 73);
 }
 
+.waves4 {
+    z-index: 5;
+}
+
+.paneligopanw {
+    margin-top: -24%;
+    padding: 20px;
+}
+
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
     .container4 {
-        width: 90%;
+        width: 100%;
         margin-left: 0%;
         max-width: 1100px;
         margin: 0 auto;
-        padding: 30px 0px;
         min-height: 100vh;
 }
 
@@ -97,11 +103,11 @@
 /* Κανόνες CSS για κινητά */
 @media (max-width: 600px) {
     .container4 {
-        width: 90%;
+        width: 100%;
         margin-left: 0%;
         max-width: 1100px;
         margin: 0 auto;
-        padding: 30px 0px;
+
         min-height: 100vh;
 }
 

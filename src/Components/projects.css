@@ -300,9 +300,23 @@ color: black;
 }
 
 .divmath {
-    text-align: center;  
-    justify-content: center; 
+    text-align: left;  
     display: flex;
+}
+
+.center2 {
+    text-align: center;
+    justify-content: center;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+
+.wave3{
+    z-index: 5;
+}
+
+.panepanw {
+    margin-top: -30%;
 }
 
 .divmath h2 {
@@ -310,11 +324,11 @@ margin-top: 25px;
 }
 
 .math {
-    width: 7%;
+    z-index: 500;
+    width: 15%;
     border-radius: 100%;
-    border: 2px solid lightgrey;
-    padding: 3px;
-    margin-bottom: -10px;
+    padding: 30px;
+    margin-bottom: -80px;
 }
 
 .seemore {
@@ -501,7 +515,8 @@ width: 40%;
     }
 
     .math {
-        width: 8%;
+        width: 27%;
+        margin-bottom: -50px;
     }
     
   
@@ -608,7 +623,8 @@ width: 40%;
 }
 
 .math {
-    width: 13%;
+    width: 27%;
+    margin-bottom: -40px;
 }
 
 .loadmore {
