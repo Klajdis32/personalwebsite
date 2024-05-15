@@ -95,11 +95,11 @@ const Home = () => {
             <p>🎓 Physicist at Aristotle University Of Thessaloniki, 2022 - current (2024) </p>
 
             <strong>Future subject of employment :</strong>
-            <p>I can't choose yet physics has many beautiful paths 🗺️.</p>
+            <p>I can't choose yet physics has many beautiful paths.</p>
 
-            <strong>🧠 Knowledge :</strong>
+            <strong>🧠 Knowledge </strong>
             <p>I possess an insatiable passion for learning and am always eager to acquire new knowledge. Alongside the fundamental concepts taught in school, I have actively pursued my interests in astronomy 🚀 and computer programming 💻.<br /><br /> In 2021, I participated in the free online astronomy courses offered by the Patras astronomical company Orion and even qualified for the first stage of the Panhellenic Astronomy and Astrophysics Student Competition. I also took part in two other competitions organized by the Greek Physicist Association.
-            <br /><br />Furthermore with the help of my brother 🫂 &#40; <a href="https://tsami.gr/" className="toatoykeimenoy">Kristi Cami</a> &#41;, who is studying computer science 👨‍💻 at the same university, and through online resources like Github and videos from YouTube, I have learned the basics of computer languages such as C, Python, Php and JavaScript, and I am also proficient in HTML and CSS. This knowledge has been instrumental in helping me create this webpage. Incidentally from now &#40;04/05/2024&#41; and on, this website has been recreated with react js <img src={imgreact} alt="reactimg" className="toreact"  /> . You can find the new code on my <a href='https://github.com/Klajdis32' target='_blanck' className="toatoykeimenoy" >github</a> repository: <a href='https://github.com/Klajdis32/personalwebsite' target='_blanck' className="toatoykeimenoy" >personal website</a>.
+            <br /><br />Furthermore with the help of my brother 🫂 &#40; <a href="https://tsami.gr/" className="toatoykeimenoy">Kristi Cami</a> &#41;, who is studying computer science 👨‍💻 at the same university, and through online resources like Github and videos from YouTube, I have learned the basics of computer languages such as C, Python, Php and JavaScript, and I am also proficient in HTML and CSS. This knowledge has been instrumental in helping me create this webpage. Βy the way from now &#40;04/05/2024&#41; and on, this website has been recreated with react js <img src={imgreact} alt="reactimg" className="toreact"  /> . You can find the new code on my <a href='https://github.com/Klajdis32' target='_blanck' className="toatoykeimenoy" >github</a> repository: <a href='https://github.com/Klajdis32/personalwebsite' target='_blanck' className="toatoykeimenoy" >personal website</a>.
             <br />
             <br />Moreover, I enjoy reading books 📚 on a wide range of subjects including physics, economics, science fiction and philosophy.</p>
 
@@ -116,7 +116,7 @@ const Home = () => {
             <p>🎓 Φυσικός στο Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης, 2022 - σήμερα (2024)</p>
 
             <strong>Μελλοντικό αντικείμενο απασχόλησης :</strong>
-            <p>Δεν μπορώ να διαλέξω ακόμα η φυσική έχει πολλά όμορφα μονοπάτια 🗺️.</p>
+            <p>Δεν μπορώ να διαλέξω ακόμα η φυσική έχει πολλά όμορφα μονοπάτια.</p>
 
             <strong>🧠 Γνώσεις :</strong>
             <p>Διαθέτω ένα ακόρεστο πάθος για μάθηση και είμαι πάντα πρόθυμος να αποκτήσω νέες γνώσεις. Παράλληλα με τις θεμελιώδεις έννοιες που διδάσκονται στο σχολείο, έχω επιδιώξει ενεργά τα ενδιαφέροντά μου στην αστρονομία 🚀 και τον προγραμματισμό υπολογιστών 💻. 
@@ -138,7 +138,7 @@ const Home = () => {
             <p>🎓 Physiker an der Aristoteles-Universität Thessaloniki, 2022 – aktuell (2024)</p>
 
             <strong>Zukünftiges Beschäftigungsthema :</strong>
-            <p>Ich kann mich noch nicht entscheiden, die Physik hat viele schöne Wege 🗺️.</p>
+            <p>Ich kann mich noch nicht entscheiden, die Physik hat viele schöne Wege.</p>
 
             <strong>🧠 Wissen :</strong>
             <p>Ich besitze eine unstillbare Leidenschaft für das Lernen und bin stets bestrebt, mir neues Wissen anzueignen. Neben den in der Schule gelehrten Grundkonzepten habe ich mein Interesse an Astronomie 🚀 und Computerprogrammierung 💻 aktiv verfolgt. 

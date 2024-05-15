@@ -187,7 +187,7 @@ body {
 }
 
 .online {
-     color: #32e340; 
+     color: black; 
      font-size: 16px; 
      margin-right: 15px;
 }
@@ -398,6 +398,15 @@ border-bottom : 2px solid blue;
         text-align: center;
         width: 62%;
 
+    }
+
+    .waveContact {
+        z-index: 5;
+    }
+
+    .sinomilia {
+        z-index: 500;
+        margin-top: -28%;
     }
 
 /* Κανόνες CSS για tablet */
