@@ -422,6 +422,14 @@ width: 30%;
         padding: 0px;
     }
 
+    .divlogo{
+        z-index: 999;
+        display: flex;
+        margin-top: -37%;
+        text-align: left;
+        margin-left: 20px;
+    }
+
     .heikona {
     margin-left: 0%;
 }

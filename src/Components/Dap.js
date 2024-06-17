@@ -9,10 +9,16 @@ const Dap = () => {
     const [error, setError] = useState(false);
     const nasaKey = process.env.REACT_APP_NASA_KEY;
 
+    const convertDate = (dateString) => {
+        const [year, month, day] = dateString.split('-');
+        return `${day}/${month}/${year}`;
+    };
+
     useEffect(() => {
         fetch(`https://api.nasa.gov/planetary/apod?api_key=${nasaKey}`)
             .then(response => response.json())
             .then(data => {
+                data.date = convertDate(data.date);
                 setApodData(data);
                 setTimeout(() => {
                     setLoading(false);
