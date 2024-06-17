@@ -156,6 +156,18 @@ width: 100%;
 z-index: 999;
 }
 
+.todatedeksia {
+    text-align: right;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.kentrototitle {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
 
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
