@@ -78,6 +78,10 @@
     padding: 20px;
 }
 
+.back p {
+    margin-top: -5px;
+}
+
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
     .container4 {
