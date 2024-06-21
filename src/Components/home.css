@@ -108,6 +108,10 @@ margin-left: 5px;
     padding: 0px 20px;
 }
 
+#grcont {
+    display: none;
+}
+
 .divkeimeno1{
     padding: 0px 25px;
 }
@@ -261,7 +265,7 @@ margin-bottom: 5px;
     border-right: none;
     border-left: 2px solid lightgray;
     padding: 0px;
-    margin-right: 50px;
+    margin-right: -10px;
 }
 
 #oxideksia1 {
@@ -275,6 +279,11 @@ margin-bottom: 5px;
     cursor: pointer;
     width: 25%;
     border-right: 2px solid lightgrey;
+}
+
+.todivdeksia1:hover {
+    color: rgb(61, 61, 61);
+    text-decoration: underline;
 }
 
 #tosig {

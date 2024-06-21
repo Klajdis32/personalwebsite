@@ -33,18 +33,24 @@ const Home = () => {
                 document.getElementById("ge").style.display = "none";
                 document.getElementById("grname").style.display = "none";
                 document.getElementById("enname").style.display = "block";
+                document.getElementById("grcont").style.display = "none";
+                document.getElementById("encont").style.display = "block";
       } else if (selectedLanguage === "gr") {
                 document.getElementById("en").style.display = "none";
                 document.getElementById("gr").style.display = "block";
                 document.getElementById("ge").style.display = "none";
                 document.getElementById("grname").style.display = "block";
                 document.getElementById("enname").style.display = "none";
+                document.getElementById("grcont").style.display = "block";
+                document.getElementById("encont").style.display = "none";
       } else if (selectedLanguage === "ge") {
                 document.getElementById("en").style.display = "none";
                 document.getElementById("gr").style.display = "none";
                 document.getElementById("ge").style.display = "block";
                 document.getElementById("grname").style.display = "none";
                 document.getElementById("enname").style.display = "block";
+                document.getElementById("grcont").style.display = "none";
+                document.getElementById("encont").style.display = "block";
       }
 
       if (selectedTheme === "light") {
@@ -73,7 +79,8 @@ const Home = () => {
                 <Link to="/contact" className='tolink'>
                     <div className='todivdeksia1'>
                         <img src={contact} alt="" id='ligomegalhtero'/><br />
-                        <span>Contact</span>
+                        <span id="encont">Contact</span>
+                        <span id="grcont">Επικοινωνία</span>
                     </div>
                 </Link>
                 <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" className='tolink'>
@@ -97,7 +104,7 @@ const Home = () => {
             <strong>Future subject of employment :</strong>
             <p>I can't choose yet physics has many beautiful paths.</p>
 
-            <strong>🧠 Knowledge </strong>
+            <strong>🧠 Knowledge :</strong>
             <p>I possess an insatiable passion for learning and am always eager to acquire new knowledge. Alongside the fundamental concepts taught in school, I have actively pursued my interests in astronomy 🚀 and computer programming 💻.<br /><br /> In 2021, I participated in the free online astronomy courses offered by the Patras astronomical company Orion and even qualified for the first stage of the Panhellenic Astronomy and Astrophysics Student Competition. I also took part in two other competitions organized by the Greek Physicist Association.
             <br /><br />Furthermore with the help of my brother 🫂 &#40; <a href="https://tsami.gr/" className="toatoykeimenoy">Kristi Cami</a> &#41;, who is studying computer science 👨‍💻 at the same university, and through online resources like Github and videos from YouTube, I have learned the basics of computer languages such as C, Python, Php and JavaScript, and I am also proficient in HTML and CSS. This knowledge has been instrumental in helping me create this webpage. Βy the way from now &#40;04/05/2024&#41; and on, this website has been recreated with react js <img src={imgreact} alt="reactimg" className="toreact"  /> . You can find the new code on my <a href='https://github.com/Klajdis32' target='_blanck' className="toatoykeimenoy" >github</a> repository: <a href='https://github.com/Klajdis32/personalwebsite' target='_blanck' className="toatoykeimenoy" >personal website</a>.
             <br />
@@ -155,7 +162,7 @@ const Home = () => {
             </p>
         </div>
         
-        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/>
     </div>
     );
 

@@ -88,6 +88,7 @@ const Projects = () => {
                                     </div>
                                 )}
                                 <div className="blog-post_info">
+                                    <p className="blog-post_date">{post.Date}</p>
                                     <h1 className="blog-post_title">{post.Titlos}</h1>
                                     <p className="blog-post_text">
                                         {post.Keimeno.length > 300 ? (
@@ -109,8 +110,10 @@ const Projects = () => {
             </div>
             <br/><br/>
             {visiblePosts < posts.length && !showLoadMore && (
-                <div className="loadmore" id="loadmore" onClick={loadMore}>
-                    <a>Load More</a><br/>
+                <div className='toloadstokentro'>
+                    <div className="loadmore" id="loadmore" onClick={loadMore}>
+                        <a>Load More</a><br/>
+                    </div>
                 </div>
             )}
     

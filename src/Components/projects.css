@@ -213,6 +213,7 @@ border-radius: .8rem;
 
 .blog-post_date {
 text-align: right;
+margin-top: -10px;
 }
 
 .blog-post_date span {
@@ -337,15 +338,22 @@ margin-top: 25px;
     text-decoration: underline;
 }
 
+
+.toloadstokentro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .loadmore {
-    text-align: center;
     border-radius: 5px;
     border: 2px solid darkgrey;
     cursor: pointer;
-    padding: 10px 10px;
+    padding: 10px 40px;
     font-size: 18px;
-    width: 15%;
-    margin-left: 42.5%;
+    text-align: center;
+    margin-top: -10px;
 }
 
 .loadmore:hover {
@@ -628,10 +636,6 @@ width: 40%;
     margin-bottom: -40px;
 }
 
-.loadmore {
-    width: 35%;
-    margin-left: 30%;
-}
 
 
 }

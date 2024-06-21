@@ -32,8 +32,13 @@
 
 }
 
+  .footer .toa.active .todiv {
+    text-decoration: underline 3px lightblue;
+  }
+
+
 .todiv{
-    padding: 10px;
+    padding:  5px;
     text-decoration: none;
 }
 
@@ -43,7 +48,8 @@
 }
 
 .todiv img {
-    width: 4%;
+    margin-bottom: -5px;
+    width: 4.5%;
 }
 
 .todiv span {
