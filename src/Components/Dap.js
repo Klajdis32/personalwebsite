@@ -70,8 +70,8 @@ const Dap = () => {
                     <br/>
                 </div>   
                 <br/>
-                <div className='todatedeksia'><span id="apodDate">{apodData.date}</span></div><br/>
-                <p><div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/><br/>
+                <div className='todatedeksia'><span id="apodDate">{apodData.date}</span></div>
+                <p><div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/>
                 <strong>Explanation:<br/><br/></strong> <span id="apodExplanation">{apodData.explanation}</span><br/><br/>
                 
                 <strong>References:</strong> <a href="https://apod.nasa.gov/apod/" className="toa1">Apod.nasa.gov</a><br/><br/>
