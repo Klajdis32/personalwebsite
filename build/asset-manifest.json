@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.24213dfc.css",
-    "main.js": "/static/js/main.2c54623d.js",
+    "main.js": "/static/js/main.a4b5ad50.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
@@ -27,18 +27,18 @@
     "static/media/logo1.png": "/static/media/logo1.b3f926109817c6d6544c.png",
     "static/media/idea.png": "/static/media/idea.fe4a34bcbbd61ad28906.png",
     "static/media/imagelogo.png": "/static/media/imagelogo.5a2e0d6eeb57a6841221.png",
+    "static/media/dapblack.png": "/static/media/dapblack.23020fb8b3b8f06a6ce0.png",
+    "static/media/projectblack.png": "/static/media/projectblack.2fd7c49b757b5224509c.png",
     "static/media/dap.png": "/static/media/dap.48a2a681e80904560da5.png",
-    "static/media/projectblack.png": "/static/media/projectblack.e0da2530164713549545.png",
-    "static/media/dapblack.png": "/static/media/dapblack.21082dc3b13f2b7e83e2.png",
     "static/media/link.png": "/static/media/link.0657ce38511cbb05091e.png",
     "static/media/projects.png": "/static/media/projects.4591769be0e8132548e8.png",
     "static/media/github.png": "/static/media/github.f3d873d71aa989badfd2.png",
+    "static/media/sendblack.png": "/static/media/sendblack.11614e7fdaaee6b37915.png",
     "static/media/petasma.jpg": "/static/media/petasma.d2614772027cf8f0548b.jpg",
+    "static/media/userblack.png": "/static/media/userblack.f924a2ece9a71f0f6676.png",
     "static/media/video.png": "/static/media/video.c07fe566746d9d0d109c.png",
-    "static/media/userblack.png": "/static/media/userblack.c920752422c11377083e.png",
     "static/media/new-email.png": "/static/media/new-email.73702e84b0ca90a91abe.png",
     "static/media/user.png": "/static/media/user.961568814dceb733c85a.png",
-    "static/media/sendblack.png": "/static/media/sendblack.8698d16523c5f6ab7686.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/up-arrow.png": "/static/media/up-arrow.652545c1e5aa7f366dbe.png",
     "static/media/send1.png": "/static/media/send1.2ce2a557c3b6fe11e1dd.png",
@@ -47,10 +47,10 @@
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
     "main.24213dfc.css.map": "/static/css/main.24213dfc.css.map",
-    "main.2c54623d.js.map": "/static/js/main.2c54623d.js.map"
+    "main.a4b5ad50.js.map": "/static/js/main.a4b5ad50.js.map"
   },
   "entrypoints": [
     "static/css/main.24213dfc.css",
-    "static/js/main.2c54623d.js"
+    "static/js/main.a4b5ad50.js"
   ]
 }
