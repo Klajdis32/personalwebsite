@@ -27,7 +27,7 @@ const Projects = () => {
         });
         setFilteredPosts(filtered);
         setCurrentPage(1);
-        setShowPageNumbers(false);  // Αποκρύπτει τους αριθμούς σελίδων κατά την αναζήτηση
+        setShowPageNumbers(false); 
     };
 
     const scrollToTop = () => {
@@ -36,7 +36,7 @@ const Projects = () => {
 
     const handlePageClick = (pageNumber) => {
         setCurrentPage(pageNumber);
-        scrollToTop();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     useEffect(() => {
@@ -98,20 +98,6 @@ const Projects = () => {
                         <button type="submit">Go</button>    
                     </form>
                 </div>
-                <br />
-                {showPageNumbers && (
-                    <div className='paginationdeksia'>
-                        {pageNumbers.map(number => (
-                            <div 
-                                key={number} 
-                                className={`page-number ${number === currentPage ? 'active' : ''}`} 
-                                onClick={() => handlePageClick(number)}
-                            >
-                                {number}
-                            </div>
-                        ))}
-                    </div>
-                )}
                 <br />
                 <div id="dynamicContentContainer">
                     {filteredPosts.length === 0 ? (
