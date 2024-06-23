@@ -2,6 +2,7 @@ import './contact.css';
 import React, { useState } from 'react';
 import Logo from '../assets/imagelogo.png';
 import Forma from './Forma';
+import dots from '../assets/dots.gif';
 
 const Contact = () => {
     const [divsVisible, setDivsVisible] = useState({
