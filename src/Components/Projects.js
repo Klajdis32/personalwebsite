@@ -35,8 +35,8 @@ const Projects = () => {
     };
 
     const handlePageClick = (pageNumber) => {
-        setCurrentPage(pageNumber);
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        setCurrentPage(pageNumber);
     };
 
     useEffect(() => {
