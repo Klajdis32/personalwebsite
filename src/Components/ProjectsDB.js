@@ -20,6 +20,7 @@ import VideoMaPass from "../attachments/videos/Mapass.mp4";
 import VideoAthlisoy from "../attachments/videos/athlisoy.mp4";
 import Aluzip from "../attachments/files/ALU.zip";
 import petasma from "../assets/petasma.jpg"
+import beabeast from '../attachments/images/beastimage.png';
 
 const posts = [
     // {
@@ -37,6 +38,21 @@ const posts = [
     //     file: "",
     //     video: ""
     // },
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: beabeast, 
+        Titlos: "Be a beast React App", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "14/07/2024",
+        Katigoria: "Programming", 
+        Keimeno: "Η σελίδα Be a Beast είναι μια νέα πλατφόρμα γυμναστικής, η οποία έχει δημιουργηθεί χρησιμοποιώντας την τεχνολογία React και φιλοξενείται στο GitHub Pages. Στόχος της είναι να παρέχει προγράμματα γυμναστικής μέσω του διαδικτύου. Η πλατφόρμα διαθέτει έναν διαδραστικό προσομοιωτή, ο οποίος επιτρέπει στους χρήστες να επιλέγουν τη μυϊκή ομάδα που επιθυμούν μέσω SVG γραφικών και να λαμβάνουν προτεινόμενες ασκήσεις για την επιλεγμένη ομάδα. Επιπλέον, παρέχεται η δυνατότητα να ζητηθούν εξατομικευμένα προγράμματα γυμναστικής από άτομα με προσωπική εμπειρία στον τομέα της γυμναστικής. Η σελίδα Be a Beast έχει σχεδιαστεί για να βοηθήσει τους χρήστες να ανακαλύψουν τη δύναμη του σώματός τους και να επιτύχουν τους στόχους της φυσικής τους κατάστασης, μέσω μιας εύχρηστης και καινοτόμας πλατφόρμας.",
+        Link: "https://beabeastgr.github.io/beabeast/#/" ,
+        pdf: "",
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 
