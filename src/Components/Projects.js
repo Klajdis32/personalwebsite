@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './projects.css';
 import posts from './ProjectsDB.js'; 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import MathImage from "../assets/idea.png";
 import UpArrow from "../assets/up-arrow.png";
 
@@ -12,6 +12,9 @@ const Projects = () => {
     const [postsPerPage] = useState(10);
     const [showArrow, setShowArrow] = useState(true);
     const [showPageNumbers, setShowPageNumbers] = useState(true);
+    
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleSearch = (event) => {
         event.preventDefault();
@@ -37,7 +40,16 @@ const Projects = () => {
     const handlePageClick = (pageNumber) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         setCurrentPage(pageNumber);
+        navigate(`/projects?page=${pageNumber}`);
     };
+
+    useEffect(() => {
+        const query = new URLSearchParams(location.search);
+        const page = query.get('page');
+        if (page) {
+            setCurrentPage(Number(page));
+        }
+    }, [location.search]);
 
     useEffect(() => {
         const handleScroll = () => {
