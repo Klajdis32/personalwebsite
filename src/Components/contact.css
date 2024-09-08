@@ -1,4 +1,4 @@
-body {
+.container1 {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,6 +8,10 @@ body {
 [data-theme="dark"] {
     background-color: #282828; /* Σκοτεινό φόντο */
     color: #ffffff; /* Λευκό χρώμα κειμένου */
+
+    .container1 {
+        background-color: #282828; /* Σκοτεινό φόντο */
+    }
 
     .contactdiv {
     color: white;
@@ -68,8 +72,10 @@ body {
 }
 
 .toolocont {
+    overflow-x: hidden; 
     position: relative;
     width: 100%;
+    min-height: 100vh; 
 }
 
 .container1 {
