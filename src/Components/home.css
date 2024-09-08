@@ -1,4 +1,4 @@
-:root {
+.toolo {
     background-color: white;
     color: black;
  
@@ -12,19 +12,19 @@
     .toatoykeimenoy{
         color: white;
     }
+
+    .toolo{
+        color: white;
+    }
     
     .left-item9 p {
         color: rgb(255, 255, 255);
     }
 
-
-
-
     .toatoykeimenoy{
         color: white;
     }
     
-
     .todivdeksia1{
         color: white;
     }
@@ -42,18 +42,10 @@ body {
     background-color: #f2f2f2;
 }
 
-
-.header {
-    margin-top: 0px;
-    background-color: white;
-    color: #333;
-    height: 50px;
-    border-bottom: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.toolo {
+    position: relative;
+    width: 100%;
 }
-
 
 .right-item {
     text-align: right;
@@ -67,15 +59,19 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin-left: 0%;
-    max-width: 1100px;
+    position: absolute;
+    top: 0;
     margin: 0 auto;
-    padding: 0px;
+    left: 0;
+    right: 0; /* Διασφαλίζει ότι το πλάτος θα προσαρμοστεί */
+    max-width: 1100px;
+    width: 100%; /* Καταλαμβάνει το 100% του διαθέσιμου πλάτους του γονέα */
+    z-index: 200;
 }
 
+
 .content {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .toa {
@@ -84,11 +80,11 @@ body {
 }
 
 .divlogo{
-    z-index: 999;
-    display: flex;
-    margin-top: -40%;
+    margin-top: 2%;
+    padding: 0 20px;
+    margin-left: 0px;
     text-align: left;
-    margin-left: 20px;
+    display: flex;
 }
 
 .divlogo h3{
@@ -105,7 +101,7 @@ margin-left: 5px;
 
 
 .divkeimeno {
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 #grcont {
@@ -322,8 +318,11 @@ margin-bottom: 5px;
  }
 
  .tawaves {
+    position: absolute; 
     margin-top: 0%;
     z-index: 1;
+    width: 100%;
+
  }
 
  @keyframes rotate {
@@ -343,6 +342,15 @@ margin-bottom: 5px;
         padding: 0px;
     }
 
+    .divlogo{
+        z-index: 999;
+        display: flex;
+        margin-top: 5%;
+        text-align: left;
+        padding: 0 0px;
+        margin-left: 20px;
+    }
+
 
 
     .heikona {
@@ -350,7 +358,7 @@ margin-bottom: 5px;
 }
 
     .tologo {
-        width: 17%;
+        width: 15%;
     } 
 
 
@@ -432,9 +440,10 @@ width: 30%;
     }
 
     .divlogo{
-        z-index: 999;
+        z-index: 100;
         display: flex;
-        margin-top: -37%;
+        margin-top: 5%;
+        padding: 0 0px;
         text-align: left;
         margin-left: 20px;
     }

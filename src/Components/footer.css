@@ -1,5 +1,5 @@
 .footer {
-    z-index: 500;
+    z-index: 999;
     display: flex;
     position: fixed;
     bottom: 0;

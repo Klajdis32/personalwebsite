@@ -74,21 +74,33 @@ body {
 
 }
 
+.toolocont {
+    position: relative;
+    width: 100%;
+}
+
 .container1 {
-    width: 60%;
-    margin-left: 20%;
-    border: 2px solid black;
-    border-top: none;
-    background-color: rgb(233, 233, 233);
-    border-bottom: none;
-    min-height: 100vh;
-    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1100px; /* Αν θέλεις να παραμείνει περιορισμένο σε μεγάλα πλάτη */
+    margin-top: 3%;
+    z-index: 200;
+    margin: 0 auto;
 }
 
 .container1top{
     font-size: 20px;
     font-weight: 550;
 }
+
+
+.waveContact {
+    z-index: 5;
+}
+
 
 .tologoAC{
     width: auto;
@@ -399,18 +411,7 @@ border-bottom : 2px solid blue;
     .container1 h2{
         text-align: center;
         width: 62%;
-
     }
-
-    .waveContact {
-        z-index: 5;
-    }
-
-    .sinomilia {
-        z-index: 500;
-        margin-top: -28%;
-    }
-
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
 
@@ -515,7 +516,7 @@ border-bottom : 2px solid blue;
 
     /* Κανόνες CSS για κινητά */
     @media (max-width: 600px) {
-
+        
     .heikona {
     margin-left: 0%;
     }

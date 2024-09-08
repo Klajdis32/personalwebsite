@@ -33,13 +33,12 @@
 }
 
 .left-item {
-
     flex: 1;
     color: #000000;
 }
 
 .left-item p {
-    width: 10%;
+    width: 100%;
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 15px 5px;

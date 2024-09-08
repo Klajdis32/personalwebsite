@@ -10,6 +10,11 @@ body {
     background-color: #282828; /* Σκοτεινό φόντο */
     color: #ffffff; /* Λευκό χρώμα κειμένου */
 
+        .blog-post {
+            background-color: #282828;
+            border: 1px solid darkgray;
+        }
+
         .blog-post_date span {
             color: lightgray;
         }
@@ -35,24 +40,34 @@ body {
         }
 }
 
-.header {
-    margin-top: 0px;
-    background-color: white;
-    color: #333;
-    height: 50px;
-    border-bottom: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.toolo3 {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .container3 {
-width: 70%;
-margin-left: 0%;
-max-width: 1100px;
-margin: 0 auto;
-padding: 0px;
-min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1100px; /* Αν θέλεις να παραμείνει περιορισμένο σε μεγάλα πλάτη */
+    margin-top: 1%;
+    z-index: 200;
+}
+
+.wave3 {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+.toolo3, .container3 {
+    box-sizing: border-box;
 }
 
 .left-item {
@@ -172,7 +187,7 @@ overflow: hidden;
 
 .blog-post {
 width: 100%;
-background-color: #dbf4ff21;
+background-color: #ffffff;
 box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
 display: flex;
 align-items: center;
@@ -312,13 +327,6 @@ color: black;
     margin-bottom: 5%;
 }
 
-.wave3{
-    z-index: 5;
-}
-
-.panepanw {
-    margin-top: -30%;
-}
 
 .divmath h2 {
 margin-top: 25px;
@@ -555,7 +563,7 @@ width: 40%;
     }
 
     .math {
-        width: 27%;
+        width: 20%;
         margin-bottom: -50px;
     }
     
@@ -663,8 +671,9 @@ width: 40%;
 }
 
 .math {
-    width: 27%;
-    margin-bottom: -40px;
+    width: 25%;
+    margin-top: -5px;
+    margin-bottom: -65px;
 }
 
 
