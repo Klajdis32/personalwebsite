@@ -173,7 +173,7 @@ const Contact = () => {
                                     <p><a id="tocopy">Click on this message to copy my email</a></p>
                                 </div>
                                 <br/>
-                                <div className="minima"  id="mnm5">
+                                <div className="minima"  id="mnm7">
                                     <p>Or you can :</p>
                                 </div>
                                 <br/>
