@@ -21,7 +21,9 @@ const Header = () => {
   }, [selectedLanguage, location]);
 
   return (
+    <div className="tooloheader">
     <div className="header">
+
       <div className="left-item">
           <Link to="/" className="tolink">
               <p><strong>Klajdi Cami</strong></p>
@@ -37,6 +39,8 @@ const Header = () => {
         </div>
       )}
       <DarkMode />
+ 
+    </div>
     </div>
   );
 }

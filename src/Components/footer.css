@@ -3,9 +3,11 @@
     display: flex;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 90%;
-    margin-left: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     margin-bottom: 20px;
     border: 2px solid black;
     border-top: 2px solid grey;
@@ -16,6 +18,7 @@
     text-align: center;
     text-decoration: none;
 }
+
 
 
 [data-theme="dark"] {
@@ -50,7 +53,7 @@ text-decoration: underline 3px lightblue;
 
 .todiv img {
     margin-bottom: -5px;
-    width: 5%;
+    width: 7%;
 }
 
 .todiv span {
@@ -73,7 +76,7 @@ text-decoration: underline 3px lightblue;
     }
 
     .todiv img {
-        width: 8%;
+        width: 12%;
     }
 
     .todiv span {

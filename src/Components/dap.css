@@ -119,9 +119,10 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.loading img{
-width: 60%;
+.loading img {
+    width: 60%;
 }
+
 
 .toerror{
 display: none;

@@ -54,7 +54,7 @@ const Dap = () => {
           </div>
         <div className="containerdap">
             <div className="kinito" id="kinitoDiv">
-                <div className='center'><h2>🌌 NASA's Astronomy Picture<br/>- Video of the Day</h2></div>
+            <p><div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/>
         
                 <div className="image-container" id="imageContainer" >
                     {apodData.media_type === 'image' ? (
@@ -74,7 +74,6 @@ const Dap = () => {
                 </div>   
                 <br/>
                 <div className='todatedeksia'><span id="apodDate">{apodData.date}</span></div>
-                <p><div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/>
                 <strong>Explanation:<br/><br/></strong> <span id="apodExplanation">{apodData.explanation}</span><br/><br/>
                 
                 <strong>References:</strong> <a href="https://apod.nasa.gov/apod/" className="toa1">Apod.nasa.gov</a><br/><br/>

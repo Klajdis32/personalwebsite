@@ -116,7 +116,7 @@ const Contact = () => {
                     <p>How can i help you?</p>
                 </div>
                 <br />
-                <div id="hr1"><p >Choose what you want:</p><hr id="tohr" /><br /></div>
+                <div id="hr1"><p className='tochoose'>Choose what you want:</p><hr id="tohr" /><br /></div>
                 {erVisible.er1 &&  <div onClick={() => toggleDivVisibility('div1')}> 
                     <div className="apathsh" id="ap1" tabIndex="0">
                         <p>I want to contact with you!</p>
@@ -146,7 +146,7 @@ const Contact = () => {
                                 <p>You can contact with me via email or by filling out a form. Which one do you prefer?</p>
                             </div>
                         </div>
-                        <div id="hr1"><p >Choose what you want:</p><hr id="tohr" /><br /></div>
+                        <div id="hr1"><p className='tochoose'>Choose what you want:</p><hr id="tohr" /><br /></div>
                         {erVisible.er4 &&
                             <div onClick={() => toggleDivVisibility('div4')}>
                                 <div className="apathsh" id="ap4" tabIndex="0">
