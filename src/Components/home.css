@@ -31,8 +31,17 @@
 
     .tolink {
         color: white;
-    }  
+    }
+    
+    .tacart {
+        color: white;
+      }
 
+      .timeline-item::before {
+        background: white;
+        border: 4px solid #0a58a0;
+      }
+      
 }
 
 body {
@@ -379,7 +388,6 @@ margin-bottom: 5px;
     width: 2%;
     height: 2%;
     margin-top: 20px;
-    margin-left: 15px;
   }
   
   .timeline-item::before {
@@ -511,7 +519,6 @@ width: 30%;
         width: 4%;
         height: 4%;
         margin-top: 20px;
-        margin-left: 5px;
       }
     
 
@@ -622,10 +629,9 @@ width: 30%;
         }
         
         #pdficon {
-            width: 5%;
-            height: 5%;
+            width: 8%;
+            height: 10%;
             margin-top: 20px;
-            margin-left: 5px;
           }
         
         
