@@ -7,6 +7,8 @@ import imgreact from "../assets/react.png";
 import contact from "../assets/new-email.png";
 import github from "../assets/github.png";
 import Linkedin from "../assets/linkedin.png";
+import pdf from "../assets/pdf.png";
+import qiskit from '../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf'
 
 const Home = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
@@ -133,12 +135,29 @@ const Home = () => {
                     <br />Επιπλέον, μου αρέσει να διαβάζω βιβλία 📚 για ένα ευρύ φάσμα θεμάτων, όπως η φυσική, τα οικονομικά, η επιστημονική φαντασία και η φιλοσοφία.
                 </p>
 
+                <strong>Πιστοποιητικά :</strong>
+                <br/><br/>
+                <div className="timeline">
+                    <div className="timeline-item right">
+                    <a href={qiskit} target="_blank" className='tacart'>
+                        <div className="content">
+                            <p>Qiskit FallFest AUTH 2023 Certificate 2024-08-05</p>
+                            <img src={pdf} alt='pdf icon' id='pdficon' />    
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <br/>
+
                 <strong>Εκτός μάθησης, μου αρέσει :</strong>
                 <p>
                     - 💪 Η γυμναστική.<br />
                     - 🛩️ Τα ταξίδια.<br />
                     - 👥 Να περνάω χρόνο με φίλους.<br />
                 </p>
+
+            
             </div>
 
             <div className="divkeimeno" id="ge"> 
@@ -161,7 +180,7 @@ const Home = () => {
                     - 👥 Verbringen Sie Zeit mit Freunden.<br />
                 </p>
             </div>
-            
+
             <br/><br/><br/><br/>
         </div>
     </div>

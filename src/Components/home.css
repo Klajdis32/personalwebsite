@@ -334,6 +334,85 @@ margin-bottom: 5px;
     }
 }
 
+.timeline {
+    position: relative;
+    width: 100%;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    margin-left: 7px;
+  }
+  
+  .timeline-item {
+    padding: 10px 30px;
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 0%;
+  }
+  
+  .timeline-item .content {
+    padding: 0px;
+    display: flex;
+    border-radius: 6px;
+  }
+
+  .tacart {
+    color: black;
+
+  }
+
+  #pdficon {
+    width: 2%;
+    height: 2%;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    margin-left: 17px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 4px solid #000000;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item.left::before {
+    right: -16px;
+  }
+  
+  .timeline-item.right::before {
+    left: -17px; /* Αλλαγή από 'right' σε 'left' για σωστή ευθυγράμμιση */
+  }
+  
+  .timeline-item.left .content {
+     text-align: right;
+  }
+  
+  .timeline-item.right .content {
+    margin-left: auto;
+  }
+  
+
+  
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
     .container {
@@ -427,6 +506,13 @@ width: 30%;
     #oxideksia{
         margin-right: 0px;
     }
+
+    #pdficon {
+        width: 4%;
+        height: 4%;
+        margin-top: 20px;
+        margin-left: 5px;
+      }
     
 
 }
@@ -535,6 +621,12 @@ width: 30%;
             display: block;
         }
         
+        #pdficon {
+            width: 5%;
+            height: 5%;
+            margin-top: 20px;
+            margin-left: 5px;
+          }
         
         
 }
