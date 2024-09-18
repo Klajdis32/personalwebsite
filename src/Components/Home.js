@@ -118,7 +118,7 @@ const Home = () => {
                     <div className="timeline-item right">
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
-                            <p>Qiskit FallFest AUTH 2023 05/08/2024</p>
+                            <p>Qiskit FallFest AUTH 2023 04/12/2023</p>
                             <img src={pdf} alt='pdf icon' id='pdficon' />    
                         </div>
                     </a>
@@ -156,7 +156,7 @@ const Home = () => {
                     <div className="timeline-item right">
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
-                            <p>Qiskit FallFest AUTH 2023 05/08/2024</p>
+                            <p>Qiskit FallFest AUTH 2023 04/12/2023</p>
                             <img src={pdf} alt='pdf icon' id='pdficon' />    
                         </div>
                     </a>
@@ -194,7 +194,7 @@ const Home = () => {
                     <div className="timeline-item right">
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
-                            <p>Qiskit FallFest AUTH 2023 05/08/2024</p>
+                            <p>Qiskit FallFest AUTH 2023 04/12/2023</p>
                             <img src={pdf} alt='pdf icon' id='pdficon' />    
                         </div>
                     </a>

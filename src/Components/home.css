@@ -387,6 +387,7 @@ margin-bottom: 5px;
   #pdficon {
     width: 2%;
     height: 2%;
+    padding: 0px 10px;
     margin-top: 20px;
   }
   
@@ -516,6 +517,7 @@ width: 30%;
     }
 
     #pdficon {
+        padding: 0px 0px;
         width: 4%;
         height: 4%;
         margin-top: 20px;
@@ -629,6 +631,7 @@ width: 30%;
         }
         
         #pdficon {
+            padding: 0px 0px;
             width: 8%;
             height: 10%;
             margin-top: 20px;
