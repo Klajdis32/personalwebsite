@@ -8,7 +8,8 @@ import contact from "../assets/new-email.png";
 import github from "../assets/github.png";
 import Linkedin from "../assets/linkedin.png";
 import pdf from "../assets/pdf.png";
-import qiskit from '../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf'
+import qiskit from '../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
+import EEF from '../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
 
 const Home = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
@@ -116,10 +117,19 @@ const Home = () => {
                 <br/><br/>
                 <div className="timeline">
                     <div className="timeline-item right">
+                    <a href={EEF} target="_blank" className='tacart'>
+                        <div className="content">
+                            <p className='todatep'>20/3/2021</p>
+                            <p className='tokatwp'>Certificate of Participation in the 31st Panhellenic High School Physics Competition     <img src={pdf} alt='pdf icon' id='pdficon' /></p>  
+                        </div>
+                    </a>
+                    </div>
+
+                    <div className="timeline-item right">
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
-                            <p>Qiskit FallFest AUTH 2023 04/12/2023</p>
-                            <img src={pdf} alt='pdf icon' id='pdficon' />    
+                            <p className='todatep'>04/12/2023</p>
+                            <p className='tokatwp'>Qiskit FallFest AUTH 2023 <img src={pdf} alt='pdf icon' id='pdficon' /></p> 
                         </div>
                     </a>
                     </div>
@@ -154,10 +164,19 @@ const Home = () => {
                 <br/><br/>
                 <div className="timeline">
                     <div className="timeline-item right">
+                    <a href={EEF} target="_blank" className='tacart'>
+                        <div className="content">
+                            <p className='todatep'>20/3/2021</p>
+                            <p className='tokatwp'>Βεβαίωση συμμέτοχης στον 31ο Πανελλήνιο διαγωνισμό φυσικής λυκείου     <img src={pdf} alt='pdf icon' id='pdficon' /></p>  
+                        </div>
+                    </a>
+                    </div>
+
+                    <div className="timeline-item right">
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
-                            <p>Qiskit FallFest AUTH 2023 04/12/2023</p>
-                            <img src={pdf} alt='pdf icon' id='pdficon' />    
+                        <p className='todatep'>04/12/2023</p>
+                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 <img src={pdf} alt='pdf icon' id='pdficon' /></p>     
                         </div>
                     </a>
                     </div>
@@ -192,10 +211,19 @@ const Home = () => {
                 <br/><br/>
                 <div className="timeline">
                     <div className="timeline-item right">
+                    <a href={EEF} target="_blank" className='tacart'>
+                        <div className="content">
+                            <p className='todatep'>20/3/2021</p>
+                            <p className='tokatwp'>Teilnahmebescheinigung am 31. Panhellenischen Physikwettbewerb für Gymnasien     <img src={pdf} alt='pdf icon' id='pdficon' /></p>  
+                        </div>
+                    </a>
+                    </div>
+
+                    <div className="timeline-item right">
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
-                            <p>Qiskit FallFest AUTH 2023 04/12/2023</p>
-                            <img src={pdf} alt='pdf icon' id='pdficon' />    
+                        <p className='todatep'>04/12/2023</p>
+                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 <img src={pdf} alt='pdf icon' id='pdficon' /></p>    
                         </div>
                     </a>
                     </div>

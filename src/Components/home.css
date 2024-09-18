@@ -80,6 +80,7 @@ body {
 
 
 .content {
+    display: block;
     padding: 0 20px;
 }
 
@@ -270,7 +271,7 @@ margin-bottom: 5px;
     border-right: none;
     border-left: 2px solid lightgray;
     padding: 0px;
-    margin-right: -10px;
+    margin-right: -25px;
 }
 
 #oxideksia1 {
@@ -360,7 +361,7 @@ margin-bottom: 5px;
   }
   
   .timeline-item {
-    padding: 10px 30px;
+    padding: 5px 30px;
     position: relative;
     max-width: 100%;
   }
@@ -375,13 +376,24 @@ margin-bottom: 5px;
   
   .timeline-item .content {
     padding: 0px;
-    display: flex;
+    display: block;
     border-radius: 6px;
+  }
+
+  .todatep {
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgb(88, 88, 88);
+  }
+
+  .tokatwp {
+    margin-top: -40px;
+    text-decoration: underline;
   }
 
   .tacart {
     color: black;
-
+    text-decoration: none;
   }
 
   #pdficon {
@@ -540,7 +552,7 @@ width: 30%;
         margin-top: 5%;
         padding: 0 0px;
         text-align: left;
-        margin-left: 20px;
+        margin-left: 17px;
     }
 
     .heikona {
