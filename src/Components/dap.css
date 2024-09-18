@@ -16,8 +16,13 @@ color: #ffffff; /* Λευκό χρώμα κειμένου */
     height: 100vh;
     text-align: center;
     margin-top: 20%;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
+#marsimge{
+    width: 100px;
+}
 
 .left-item {
 flex: 1;

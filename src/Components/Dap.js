@@ -34,7 +34,7 @@ const Dap = () => {
     if (loading) {
         return  <div className='centerload'>        
                     <div className="loading" id="loadingDiv">
-                        <img src={mars} alt="" />
+                        <img src={mars} alt="" id='marsimge'/>
                     </div>
                 </div>;
     }
