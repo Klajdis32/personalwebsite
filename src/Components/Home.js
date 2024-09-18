@@ -120,7 +120,7 @@ const Home = () => {
                     <a href={EEF} target="_blank" className='tacart'>
                         <div className="content">
                             <p className='todatep'>20/3/2021</p>
-                            <p className='tokatwp'>Certificate of Participation in the 31st Panhellenic High School Physics Competition     <img src={pdf} alt='pdf icon' id='pdficon' /></p>  
+                            <p className='tokatwp'>Certificate of Participation in the 31st Panhellenic High School Physics Competition (Pdf)</p>  
                         </div>
                     </a>
                     </div>
@@ -129,7 +129,7 @@ const Home = () => {
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
                             <p className='todatep'>04/12/2023</p>
-                            <p className='tokatwp'>Qiskit FallFest AUTH 2023 <img src={pdf} alt='pdf icon' id='pdficon' /></p> 
+                            <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
                         </div>
                     </a>
                     </div>
@@ -167,7 +167,7 @@ const Home = () => {
                     <a href={EEF} target="_blank" className='tacart'>
                         <div className="content">
                             <p className='todatep'>20/3/2021</p>
-                            <p className='tokatwp'>Βεβαίωση συμμέτοχης στον 31ο Πανελλήνιο διαγωνισμό φυσικής λυκείου     <img src={pdf} alt='pdf icon' id='pdficon' /></p>  
+                            <p className='tokatwp'>Βεβαίωση συμμέτοχης στον 31ο Πανελλήνιο διαγωνισμό φυσικής λυκείου (Pdf)</p>  
                         </div>
                     </a>
                     </div>
@@ -176,7 +176,7 @@ const Home = () => {
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
                         <p className='todatep'>04/12/2023</p>
-                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 <img src={pdf} alt='pdf icon' id='pdficon' /></p>     
+                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p>     
                         </div>
                     </a>
                     </div>
@@ -214,7 +214,7 @@ const Home = () => {
                     <a href={EEF} target="_blank" className='tacart'>
                         <div className="content">
                             <p className='todatep'>20/3/2021</p>
-                            <p className='tokatwp'>Teilnahmebescheinigung am 31. Panhellenischen Physikwettbewerb für Gymnasien     <img src={pdf} alt='pdf icon' id='pdficon' /></p>  
+                            <p className='tokatwp'>Teilnahmebescheinigung am 31. Panhellenischen Physikwettbewerb für Gymnasien (Pdf)</p>  
                         </div>
                     </a>
                     </div>
@@ -223,7 +223,7 @@ const Home = () => {
                     <a href={qiskit} target="_blank" className='tacart'>
                         <div className="content">
                         <p className='todatep'>04/12/2023</p>
-                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 <img src={pdf} alt='pdf icon' id='pdficon' /></p>    
+                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p>    
                         </div>
                     </a>
                     </div>
