@@ -5,7 +5,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 98%;
     max-width: 1400px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -53,7 +53,8 @@ text-decoration: underline 3px lightblue;
 
 .todiv img {
     margin-bottom: -5px;
-    width: 7%;
+    margin-top: 3px;
+    width: 6%;
 }
 
 .todiv span {
