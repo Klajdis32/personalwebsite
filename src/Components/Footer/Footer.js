@@ -1,9 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
 import './footer.css';
-import profilexroma from '../assets/user.png';
-import projectmexroma from '../assets/projects.png';
-import contactmexroma from '../assets/send1.png';
-import dapmexroma from '../assets/dap.png';
+import profilexroma from '../../assets/user.png';
+import projectmexroma from '../../assets/projects.png';
+import contactmexroma from '../../assets/send1.png';
+import dapmexroma from '../../assets/dap.png';
 
 const Footer = () => {
   const location = useLocation();

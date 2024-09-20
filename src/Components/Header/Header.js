@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import './header.css';
-import DarkMode from './DarkMode/DarkMode.js';
+import DarkMode from '../DarkMode/DarkMode.js';
 
 const Header = () => {
   const location = useLocation();

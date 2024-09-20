@@ -1,26 +1,26 @@
-import Plank from "../attachments/pdfs/Planck.pdf";
-import MaPass from "../attachments/pdfs/MaPass.pdf";
-import oscilloscope from "../attachments/pdfs/oscilloscope.pdf";
-import SimulationOfLinearMotion from "../attachments/pdfs/SimulationOfLinearMotion.pdf";
-import SpecificHeatOfMaterials from "../attachments/pdfs/SpecificHeatOfMaterials.pdf";
-import Ultrasound from "../attachments/pdfs/Ultrasound.pdf";
-import UsefulElectricalCircuits from "../attachments/pdfs/UsefulElectricalCircuits.pdf";
-import Thermioniki from "../attachments/pdfs/Θερμιονική Εκπομπή Ηλεκτρονίων.pdf";
-import Thevenin_Norton from "../attachments/pdfs/Θεώρημα Thevenin - Norton.pdf";
-import MegistiMetaforaIsxyos from "../attachments/pdfs/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .pdf";
-import MetasxhmatismosDseY from "../attachments/pdfs/Κύκλωμα Γέφυρας – Μετασχηματισμοί Δ ↔ Υ.pdf";
-import Logose_m from "../attachments/pdfs/Λόγος e πρός m.pdf";
-import Palmografos from "../attachments/pdfs/Μέτρηση Τάσεων Mε Παλμογράφο.pdf";
-import Kirchhoff_dierethsTashs from "../attachments/pdfs/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf";
-import Perithlasi_e from "../attachments/pdfs/Περίθλαση Ηλεκτρονίων.pdf";
-import Sintonismos from "../attachments/pdfs/Συντονισμός Σειράς – Παράλληλος.pdf";
-import SixnotikhApokrisi from "../attachments/pdfs/Συχνοτική Απόκριση Φίλτρων.pdf";
-import KiklomaDiaforisis from "../attachments/pdfs/Τετράπολα - Κυκλώματα Διαφόρισης .pdf";
-import VideoMaPass from "../attachments/videos/Mapass.mp4";
-import VideoAthlisoy from "../attachments/videos/athlisoy.mp4";
-import Aluzip from "../attachments/files/ALU.zip";
-import petasma from "../assets/petasma.jpg"
-import beabeast from '../attachments/images/beastimage.png';
+import Plank from "../../attachments/pdfs/Planck.pdf";
+import MaPass from "../../attachments/pdfs/MaPass.pdf";
+import oscilloscope from "../../attachments/pdfs/oscilloscope.pdf";
+import SimulationOfLinearMotion from "../../attachments/pdfs/SimulationOfLinearMotion.pdf";
+import SpecificHeatOfMaterials from "../../attachments/pdfs/SpecificHeatOfMaterials.pdf";
+import Ultrasound from "../../attachments/pdfs/Ultrasound.pdf";
+import UsefulElectricalCircuits from "../../attachments/pdfs/UsefulElectricalCircuits.pdf";
+import Thermioniki from "../../attachments/pdfs/Θερμιονική Εκπομπή Ηλεκτρονίων.pdf";
+import Thevenin_Norton from "../../attachments/pdfs/Θεώρημα Thevenin - Norton.pdf";
+import MegistiMetaforaIsxyos from "../../attachments/pdfs/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .pdf";
+import MetasxhmatismosDseY from "../../attachments/pdfs/Κύκλωμα Γέφυρας – Μετασχηματισμοί Δ ↔ Υ.pdf";
+import Logose_m from "../../attachments/pdfs/Λόγος e πρός m.pdf";
+import Palmografos from "../../attachments/pdfs/Μέτρηση Τάσεων Mε Παλμογράφο.pdf";
+import Kirchhoff_dierethsTashs from "../../attachments/pdfs/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf";
+import Perithlasi_e from "../../attachments/pdfs/Περίθλαση Ηλεκτρονίων.pdf";
+import Sintonismos from "../../attachments/pdfs/Συντονισμός Σειράς – Παράλληλος.pdf";
+import SixnotikhApokrisi from "../../attachments/pdfs/Συχνοτική Απόκριση Φίλτρων.pdf";
+import KiklomaDiaforisis from "../../attachments/pdfs/Τετράπολα - Κυκλώματα Διαφόρισης .pdf";
+import VideoMaPass from "../../attachments/videos/Mapass.mp4";
+import VideoAthlisoy from "../../attachments/videos/athlisoy.mp4";
+import Aluzip from "../../attachments/files/ALU.zip";
+import petasma from "../../assets/petasma.jpg"
+import beabeast from '../../attachments/images/beastimage.png';
 
 const posts = [
     // {

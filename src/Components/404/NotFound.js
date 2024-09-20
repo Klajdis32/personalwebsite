@@ -1,5 +1,5 @@
 import "./404.css";
-import gif from "../assets/404.gif";
+import gif from "../../assets/404.gif";
 const NotFound = () => {
 
     return (

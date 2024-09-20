@@ -45,6 +45,11 @@
       .todatep {
         color: rgb(161, 161, 161);
       }
+
+      .tocertimg {
+        border: 2px solid #0a58a0;
+        background-color: rgba(255, 255, 255, 0);
+    }
       
 }
 
@@ -348,9 +353,39 @@ margin-bottom: 5px;
     }
 }
 
+.tocertimg {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.todivcart {
+    display: flex;
+}
+
 .timeline {
+    margin-top: -64px;
+    margin-left: 8px;
     position: relative;
     width: 100%;
+  }
+
+  #tonow {
+    margin-top: -35px;
+    margin-left: 8px;
+    }
+
+    .tokatwpnow {
+        margin-top: -15px;
+    }
+
+  .tostrongcert {
+    font-weight: 600;
+    margin-top: 5px;
   }
   
   .timeline::after {
@@ -455,11 +490,19 @@ margin-bottom: 5px;
         margin-left: 20px;
     }
 
-
+    .tocertimg {
+        width: 22px;
+        height: 5%;
+    }
+    
+    .timeline {
+        margin-left: 9px;
+      }
+    
 
     .heikona {
-    margin-left: 0%;
-}
+        margin-left: 0%;
+    }
 
     .tologo {
         width: 15%;
@@ -652,6 +695,17 @@ width: 30%;
             height: 10%;
             margin-top: 20px;
           }
+
+          
+.tocertimg {
+    width: 20px;
+    height: 5%;
+}
+
+.timeline {
+    margin-left: 8px;
+  }
+
         
         
 }

@@ -1,13 +1,13 @@
 import React from 'react';
-import posts from './ProjectsDB.js'; 
+import posts from '../Data/ProjectsDB.js'; 
 import './project.css';
 import { useLocation, Navigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { SlArrowLeft } from "react-icons/sl";
-import pdf from "../assets/pdf.png";
-import link from "../assets/link.png";
-import video from "../assets/video.png";
-import folder from "../assets/folder.png";
+import pdf from "../../assets/pdf.png";
+import link from "../../assets/link.png";
+import video from "../../assets/video.png";
+import folder from "../../assets/folder.png";
 
 const Project = () => {
     const location = useLocation();

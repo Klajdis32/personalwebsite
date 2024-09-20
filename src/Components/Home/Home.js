@@ -1,19 +1,28 @@
 import './home.css';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/imagelogo.png';
-import Logo1 from '../assets/logo1.png';
+import Logo from '../../assets/imagelogo.png';
+import Logo1 from '../../assets/logo1.png';
 import React, { useState, useEffect } from "react";
-import imgreact from "../assets/react.png";
-import contact from "../assets/new-email.png";
-import github from "../assets/github.png";
-import Linkedin from "../assets/linkedin.png";
-import pdf from "../assets/pdf.png";
-import qiskit from '../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
-import EEF from '../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
+import imgreact from "../../assets/react.png";
+import contact from "../../assets/new-email.png";
+import github from "../../assets/github.png";
+import Linkedin from "../../assets/linkedin.png";
+import cert from "../../assets/certificate.png";
+import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
+import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
+ const today = new Date().toLocaleDateString();
 
 const Home = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
     const [selectedTheme, setSelectedTheme] = useState(localStorage.getItem('selectedTheme') || 'light');
+    const today = new Date();
+
+    const day = String(today.getDate()).padStart(2, '0'); // Προσθέτουμε 0 μπροστά αν η μέρα είναι μονοψήφια
+    const month = String(today.getMonth() + 1).padStart(2, '0'); // Προσθέτουμε 0 μπροστά αν ο μήνας είναι μονοψήφιος
+    const year = today.getFullYear();
+  
+    const formattedDate = `${day}/${month}/${year}`; // Φόρματ της ημερομηνίας σε μορφή DD/MM/YYYY
+  
 
     useEffect(() => {
       const storedLanguage = localStorage.getItem('selectedLanguage');
@@ -101,6 +110,7 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* English  */}
             <div className="divkeimeno" id="en"> 
                 <p>🎓 Physicist at Aristotle University Of Thessaloniki, 2022 - current (2024) </p>
 
@@ -113,7 +123,10 @@ const Home = () => {
                 <br />
                 <br />Moreover, I enjoy reading books 📚 on a wide range of subjects including physics, economics, science fiction and philosophy.</p>
 
-                <strong>Certificates :</strong>
+                <div className='todivcart'>
+                    <img src={cert} alt='certificats' className='tocertimg' />
+                    <p className='tostrongcert'>Certificates :</p>
+                </div>
                 <br/><br/>
                 <div className="timeline">
                     <div className="timeline-item right">
@@ -133,9 +146,15 @@ const Home = () => {
                         </div>
                     </a>
                     </div>
-                </div>
 
-                <br/>
+                    <br/>
+                </div>
+                <div className="timeline-item right" id='tonow'>
+                        <div className="content">
+                            <p className='todatep'>{formattedDate}</p>
+                            <p className='tokatwpnow'>Now</p> 
+                        </div>
+                </div>
 
                 <strong>Outside of learning, I enjoy :</strong>
                 <p>
@@ -146,6 +165,7 @@ const Home = () => {
 
             </div>
 
+            {/* Greek  */}
             <div className="divkeimeno" id="gr"> 
                 <p>🎓 Φυσικός στο Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης, 2022 - σήμερα (2024)</p>
 
@@ -160,7 +180,10 @@ const Home = () => {
                     <br />Επιπλέον, μου αρέσει να διαβάζω βιβλία 📚 για ένα ευρύ φάσμα θεμάτων, όπως η φυσική, τα οικονομικά, η επιστημονική φαντασία και η φιλοσοφία.
                 </p>
 
-                <strong>Πιστοποιητικά :</strong>
+                <div className='todivcart'>
+                    <img src={cert} alt='certificats' className='tocertimg' />
+                    <p className='tostrongcert'>Πιστοποιητικά :</p>
+                </div>
                 <br/><br/>
                 <div className="timeline">
                     <div className="timeline-item right">
@@ -180,9 +203,14 @@ const Home = () => {
                         </div>
                     </a>
                     </div>
+                    <br/>
                 </div>
-
-                <br/>
+                <div className="timeline-item right" id='tonow'>
+                        <div className="content">
+                            <p className='todatep'>{formattedDate}</p>
+                            <p className='tokatwpnow'>Σήμερα</p> 
+                        </div>
+                </div>
 
                 <strong>Εκτός μάθησης, μου αρέσει :</strong>
                 <p>
@@ -191,9 +219,9 @@ const Home = () => {
                     - 👥 Να περνάω χρόνο με φίλους.<br />
                 </p>
 
-            
             </div>
 
+            {/* German  */}
             <div className="divkeimeno" id="ge"> 
                 <p>🎓 Physiker an der Aristoteles-Universität Thessaloniki, 2022 – aktuell (2024)</p>
 
@@ -207,7 +235,10 @@ const Home = () => {
                 <br />
                 <br />Außerdem lese ich gerne Bücher zu einem breiten Themenspektrum darunter Physik, Wirtschaftswissenschaften, Science-Fiction und Philosophie.</p>
 
-                <strong>Zertifikate :</strong>
+                <div className='todivcart'>
+                    <img src={cert} alt='certificats' className='tocertimg' />
+                    <p className='tostrongcert'>Zertifikate :</p>
+                </div>
                 <br/><br/>
                 <div className="timeline">
                     <div className="timeline-item right">
@@ -227,9 +258,14 @@ const Home = () => {
                         </div>
                     </a>
                     </div>
+                    <br/>
                 </div>
-
-                <br/>
+                <div className="timeline-item right" id='tonow'>
+                        <div className="content">
+                            <p className='todatep'>{formattedDate}</p>
+                            <p className='tokatwpnow'>Heute</p> 
+                        </div>
+                </div>
 
                 <strong>Außerhalb des Lernens macht mir Folgendes Spaß :</strong>
                 <p>

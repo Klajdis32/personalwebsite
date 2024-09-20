@@ -1,6 +1,6 @@
 import './dap.css';
 import React, { useState, useEffect } from 'react';
-import mars from "../assets/marsloading.gif";
+import mars from "../../assets/marsloading.gif";
 
 
 const Dap = () => {

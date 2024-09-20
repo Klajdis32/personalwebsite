@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Header from './Components/Header.js';
-import Footer from './Components/Footer.js';
+import Header from './Components/Header/Header.js';
+import Footer from './Components/Footer/Footer.js';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'; 
-import Home from './Components/Home.js'; 
-import Projects from './Components/Projects.js';
-import Contact from './Components/Contact.js'; 
-import Dap from './Components/Dap.js'; 
-import NotFoundC from './Components/NotFound.js';
-import Project from "./Components/Project.js";
+import Home from './Components/Home/Home.js'; 
+import Projects from './Components/Projects/Projects.js';
+import Contact from './Components/Contact/Contact.js'; 
+import Dap from './Components/Dap/Dap.js'; 
+import NotFoundC from './Components/404/NotFound.js';
+import Project from "./Components/Project/Project.js";
 
 function App() {
   return (

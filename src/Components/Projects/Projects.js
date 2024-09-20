@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './projects.css';
-import posts from './ProjectsDB.js'; 
+import posts from '../Data/ProjectsDB.js'; 
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import MathImage from "../assets/idea.png";
-import UpArrow from "../assets/up-arrow.png";
+import MathImage from "../../assets/idea.png";
+import UpArrow from "../../assets/up-arrow.png";
 
 const Projects = () => {
     const [searchTerm, setSearchTerm] = useState('');
