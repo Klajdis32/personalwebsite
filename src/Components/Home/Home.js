@@ -2,7 +2,7 @@ import './home.css';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/imagelogo.png';
 import Logo1 from '../../assets/logo1.png';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef  } from "react";
 import imgreact from "../../assets/react.png";
 import contact from "../../assets/new-email.png";
 import github from "../../assets/github.png";
@@ -23,6 +23,19 @@ const Home = () => {
   
     const formattedDate = `${day}/${month}/${year}`; // Φόρματ της ημερομηνίας σε μορφή DD/MM/YYYY
   
+    const timelineRef = useRef(null);
+
+    const scrollLeft = () => {
+      if (timelineRef.current) {
+        timelineRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+      }
+    };
+  
+    const scrollRight = () => {
+      if (timelineRef.current) {
+        timelineRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+      }
+    };
 
     useEffect(() => {
       const storedLanguage = localStorage.getItem('selectedLanguage');
@@ -123,39 +136,42 @@ const Home = () => {
                 <br />
                 <br />Moreover, I enjoy reading books 📚 on a wide range of subjects including physics, economics, science fiction and philosophy.</p>
 
+                <strong>Certificates :</strong>
+                <br/> <br/><br/>
                 <div className='todivcart'>
                     <img src={cert} alt='certificats' className='tocertimg' />
-                    <p className='tostrongcert'>Certificates :</p>
+                    <div className="horizontal-line"></div>
                 </div>
-                <br/><br/>
-                <div className="timeline">
-                    <div className="timeline-item right">
-                    <a href={EEF} target="_blank" className='tacart'>
-                        <div className="content">
-                            <p className='todatep'>20/3/2021</p>
-                            <p className='tokatwp'>Certificate of Participation in the 31st Panhellenic High School Physics Competition (Pdf)</p>  
+                <div className='toolohor'>
+                    <div className="timeline-container">
+                        <button onClick={scrollLeft} className="timeline-button">Left</button>
+                        <div className="timeline" ref={timelineRef}>
+                            
+                            <a href={EEF} target="_blank" className='tacart'>
+                                <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>20/3/2021</p>
+                                    <p className='tokatwp'>Participation in the 31st Panhellenic High School Physics Competition (Pdf)</p>  
+                                </div>
+                            </a>
+
+                            <a href={qiskit} target="_blank" className='tacart'>
+                            <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>04/12/2023</p>
+                                    <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
+                                </div>
+                            </a>
+                            <div className="tacart" id='tonow'>
+                                <div className='mpalaki'></div>
+                                <p className='todatep'>{formattedDate}</p>
+                                <p className='tokatwpnow'>Now</p> 
+                            </div>
                         </div>
-                    </a>
+                        <button onClick={scrollRight} className="timeline-button">Right</button>
+                        </div>
                     </div>
-
-                    <div className="timeline-item right">
-                    <a href={qiskit} target="_blank" className='tacart'>
-                        <div className="content">
-                            <p className='todatep'>04/12/2023</p>
-                            <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
-                        </div>
-                    </a>
-                    </div>
-
-                    <br/>
-                </div>
-                <div className="timeline-item right" id='tonow'>
-                        <div className="content">
-                            <p className='todatep'>{formattedDate}</p>
-                            <p className='tokatwpnow'>Now</p> 
-                        </div>
-                </div>
-
+                    <br/><br/>
                 <strong>Outside of learning, I enjoy :</strong>
                 <p>
                     - 💪 Exercising.<br />
@@ -180,38 +196,43 @@ const Home = () => {
                     <br />Επιπλέον, μου αρέσει να διαβάζω βιβλία 📚 για ένα ευρύ φάσμα θεμάτων, όπως η φυσική, τα οικονομικά, η επιστημονική φαντασία και η φιλοσοφία.
                 </p>
 
+                <strong>Πιστοποιητικά :</strong>
+                <br/> <br/><br/>
                 <div className='todivcart'>
                     <img src={cert} alt='certificats' className='tocertimg' />
-                    <p className='tostrongcert'>Πιστοποιητικά :</p>
+                    <div className="horizontal-line"></div>
                 </div>
-                <br/><br/>
-                <div className="timeline">
-                    <div className="timeline-item right">
-                    <a href={EEF} target="_blank" className='tacart'>
-                        <div className="content">
-                            <p className='todatep'>20/3/2021</p>
-                            <p className='tokatwp'>Βεβαίωση συμμέτοχης στον 31ο Πανελλήνιο διαγωνισμό φυσικής λυκείου (Pdf)</p>  
-                        </div>
-                    </a>
-                    </div>
+                <div className='toolohor'>
+                    <div className="timeline-container">
+                        <button onClick={scrollLeft} className="timeline-button">Left</button>
+                        <div className="timeline" ref={timelineRef}>
+                            
+                            <a href={EEF} target="_blank" className='tacart'>
+                                <div className='mpalaki'></div>
+                                <div className="content">
+                                <p className='todatep'>20/3/2021</p>
+                                <p className='tokatwp'>Βεβαίωση συμμέτοχης στον 31ο Πανελλήνιο διαγωνισμό φυσικής λυκείου (Pdf)</p>  
+                                </div>
+                            </a>
 
-                    <div className="timeline-item right">
-                    <a href={qiskit} target="_blank" className='tacart'>
-                        <div className="content">
-                        <p className='todatep'>04/12/2023</p>
-                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p>     
+                            <a href={qiskit} target="_blank" className='tacart'>
+                            <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>04/12/2023</p>
+                                    <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
+                                </div>
+                            </a>
+                            <div className="tacart" id='tonow'>
+                                <div className='mpalaki'></div>
+                                <p className='todatep'>{formattedDate}</p>
+                                <p className='tokatwpnow'>Σήμερα</p> 
+                            </div>
                         </div>
-                    </a>
+                        <button onClick={scrollRight} className="timeline-button">Right</button>
+                        </div>
                     </div>
-                    <br/>
-                </div>
-                <div className="timeline-item right" id='tonow'>
-                        <div className="content">
-                            <p className='todatep'>{formattedDate}</p>
-                            <p className='tokatwpnow'>Σήμερα</p> 
-                        </div>
-                </div>
-
+                    <br/><br/>
+              
                 <strong>Εκτός μάθησης, μου αρέσει :</strong>
                 <p>
                     - 💪 Η γυμναστική.<br />
@@ -235,37 +256,42 @@ const Home = () => {
                 <br />
                 <br />Außerdem lese ich gerne Bücher zu einem breiten Themenspektrum darunter Physik, Wirtschaftswissenschaften, Science-Fiction und Philosophie.</p>
 
+                <strong>Zertifikate :</strong>
+                <br/> <br/><br/>
                 <div className='todivcart'>
                     <img src={cert} alt='certificats' className='tocertimg' />
-                    <p className='tostrongcert'>Zertifikate :</p>
+                    <div className="horizontal-line"></div>
                 </div>
-                <br/><br/>
-                <div className="timeline">
-                    <div className="timeline-item right">
-                    <a href={EEF} target="_blank" className='tacart'>
-                        <div className="content">
-                            <p className='todatep'>20/3/2021</p>
-                            <p className='tokatwp'>Teilnahmebescheinigung am 31. Panhellenischen Physikwettbewerb für Gymnasien (Pdf)</p>  
-                        </div>
-                    </a>
-                    </div>
+                <div className='toolohor'>
+                    <div className="timeline-container">
+                        <button onClick={scrollLeft} className="timeline-button">Left</button>
+                        <div className="timeline" ref={timelineRef}>
+                            
+                            <a href={EEF} target="_blank" className='tacart'>
+                                <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>20/3/2021</p>
+                                    <p className='tokatwp'>Teilnahmebescheinigung am 31. Panhellenischen Physikwettbewerb für Gymnasien (Pdf)</p>  
+                                </div>
+                            </a>
 
-                    <div className="timeline-item right">
-                    <a href={qiskit} target="_blank" className='tacart'>
-                        <div className="content">
-                        <p className='todatep'>04/12/2023</p>
-                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p>    
+                            <a href={qiskit} target="_blank" className='tacart'>
+                            <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>04/12/2023</p>
+                                    <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
+                                </div>
+                            </a>
+                            <div className="tacart" id='tonow'>
+                                <div className='mpalaki'></div>
+                                <p className='todatep'>{formattedDate}</p>
+                                <p className='tokatwpnow'>Heute</p> 
+                            </div>
                         </div>
-                    </a>
+                        <button onClick={scrollRight} className="timeline-button">Right</button>
+                        </div>
                     </div>
-                    <br/>
-                </div>
-                <div className="timeline-item right" id='tonow'>
-                        <div className="content">
-                            <p className='todatep'>{formattedDate}</p>
-                            <p className='tokatwpnow'>Heute</p> 
-                        </div>
-                </div>
+                    <br/><br/>
 
                 <strong>Außerhalb des Lernens macht mir Folgendes Spaß :</strong>
                 <p>
