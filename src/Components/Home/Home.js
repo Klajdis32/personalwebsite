@@ -171,7 +171,7 @@ const Home = () => {
                         <button onClick={scrollRight} className="timeline-button">Right</button>
                         </div>
                     </div>
-                    <br/><br/>
+                    <br/>
                 <strong>Outside of learning, I enjoy :</strong>
                 <p>
                     - 💪 Exercising.<br />
@@ -231,7 +231,7 @@ const Home = () => {
                         <button onClick={scrollRight} className="timeline-button">Right</button>
                         </div>
                     </div>
-                    <br/><br/>
+                    <br/>
               
                 <strong>Εκτός μάθησης, μου αρέσει :</strong>
                 <p>
@@ -291,7 +291,7 @@ const Home = () => {
                         <button onClick={scrollRight} className="timeline-button">Right</button>
                         </div>
                     </div>
-                    <br/><br/>
+                    <br/>
 
                 <strong>Außerhalb des Lernens macht mir Folgendes Spaß :</strong>
                 <p>
