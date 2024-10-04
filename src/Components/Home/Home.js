@@ -10,7 +10,7 @@ import Linkedin from "../../assets/linkedin.png";
 import cert from "../../assets/certificate.png";
 import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
 import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
- const today = new Date().toLocaleDateString();
+import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
 
 const Home = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
@@ -162,10 +162,20 @@ const Home = () => {
                                     <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
                                 </div>
                             </a>
+
+                            <a href={Esa} target="_blank" className='tacart'>
+                            <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>28/09/2023</p>
+                                    <p className='tokatwp'>Αttendance certificate of the first annual ESERO Greece Symposium 
+                                    from Esa (Pdf)</p> 
+                                </div>
+                            </a>
+
                             <div className="tacart" id='tonow'>
-                                <div className='mpalaki'></div>
+                                <div className='mpalaki' id='tonowmpalaki'></div>
                                 <p className='todatep'>{formattedDate}</p>
-                                <p className='tokatwpnow'>Now</p> 
+                                <p className='tokatwpnow'>Today</p> 
                             </div>
                         </div>
                         <button onClick={scrollRight} className="timeline-button">Right</button>
@@ -222,6 +232,17 @@ const Home = () => {
                                     <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
                                 </div>
                             </a>
+
+                            <a href={Esa} target="_blank" className='tacart'>
+                            <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>28/09/2023</p>
+                                    <p className='tokatwp'>Βεβαίωση παρακολούθησης του  πρώτου  ετήσιου  ESERO  Greece  Symposium 
+                                    απο την Esa (Pdf)</p> 
+                                </div>
+                            </a>
+
+
                             <div className="tacart" id='tonow'>
                                 <div className='mpalaki'></div>
                                 <p className='todatep'>{formattedDate}</p>
@@ -282,6 +303,16 @@ const Home = () => {
                                     <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
                                 </div>
                             </a>
+
+                            <a href={Esa} target="_blank" className='tacart'>
+                            <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>28/09/2023</p>
+                                    <p className='tokatwp'>Αttendance certificate of the first annual ESERO Greece Symposium 
+                                    from Esa (Pdf)</p> 
+                                </div>
+                            </a>
+                            
                             <div className="tacart" id='tonow'>
                                 <div className='mpalaki'></div>
                                 <p className='todatep'>{formattedDate}</p>

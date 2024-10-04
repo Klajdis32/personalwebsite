@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5745f1b2.css",
-    "main.js": "/static/js/main.d734c7d5.js",
+    "main.css": "/static/css/main.8b513bbe.css",
+    "main.js": "/static/js/main.b89f6d50.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
@@ -25,6 +25,7 @@
     "static/media/SimulationOfLinearMotion.pdf": "/static/media/SimulationOfLinearMotion.cc81f6f4c4c615433874.pdf",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
+    "static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf": "/static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.d2097622356bd467ccae.pdf",
     "static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf": "/static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.e8a331e8e88b10a997a4.pdf",
     "static/media/logo1.png": "/static/media/logo1.b3f926109817c6d6544c.png",
     "static/media/idea.png": "/static/media/idea.fe4a34bcbbd61ad28906.png",
@@ -47,11 +48,11 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.5745f1b2.css.map": "/static/css/main.5745f1b2.css.map",
-    "main.d734c7d5.js.map": "/static/js/main.d734c7d5.js.map"
+    "main.8b513bbe.css.map": "/static/css/main.8b513bbe.css.map",
+    "main.b89f6d50.js.map": "/static/js/main.b89f6d50.js.map"
   },
   "entrypoints": [
-    "static/css/main.5745f1b2.css",
-    "static/js/main.d734c7d5.js"
+    "static/css/main.8b513bbe.css",
+    "static/js/main.b89f6d50.js"
   ]
 }
