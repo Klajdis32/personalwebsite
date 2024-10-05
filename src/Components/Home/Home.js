@@ -166,7 +166,7 @@ const Home = () => {
                             <a href={Esa} target="_blank" className='tacart'>
                             <div className='mpalaki'></div>
                                 <div className="content">
-                                    <p className='todatep'>28/09/2023</p>
+                                    <p className='todatep'>28/09/2024</p>
                                     <p className='tokatwp'>Αttendance certificate of the first annual ESERO Greece Symposium 
                                     from Esa (Pdf)</p> 
                                 </div>
@@ -236,7 +236,7 @@ const Home = () => {
                             <a href={Esa} target="_blank" className='tacart'>
                             <div className='mpalaki'></div>
                                 <div className="content">
-                                    <p className='todatep'>28/09/2023</p>
+                                    <p className='todatep'>28/09/2024</p>
                                     <p className='tokatwp'>Βεβαίωση παρακολούθησης του  πρώτου  ετήσιου  ESERO  Greece  Symposium 
                                     απο την Esa (Pdf)</p> 
                                 </div>
@@ -307,7 +307,7 @@ const Home = () => {
                             <a href={Esa} target="_blank" className='tacart'>
                             <div className='mpalaki'></div>
                                 <div className="content">
-                                    <p className='todatep'>28/09/2023</p>
+                                    <p className='todatep'>28/09/2024</p>
                                     <p className='tokatwp'>Αttendance certificate of the first annual ESERO Greece Symposium 
                                     from Esa (Pdf)</p> 
                                 </div>

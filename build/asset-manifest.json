@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8b513bbe.css",
-    "main.js": "/static/js/main.b89f6d50.js",
+    "main.js": "/static/js/main.c086537c.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
@@ -49,10 +49,10 @@
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
     "main.8b513bbe.css.map": "/static/css/main.8b513bbe.css.map",
-    "main.b89f6d50.js.map": "/static/js/main.b89f6d50.js.map"
+    "main.c086537c.js.map": "/static/js/main.c086537c.js.map"
   },
   "entrypoints": [
     "static/css/main.8b513bbe.css",
-    "static/js/main.b89f6d50.js"
+    "static/js/main.c086537c.js"
   ]
 }
