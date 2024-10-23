@@ -21,23 +21,24 @@ import VideoAthlisoy from "../../attachments/videos/athlisoy.mp4";
 import Aluzip from "../../attachments/files/ALU.zip";
 import petasma from "../../assets/petasma.jpg"
 import beabeast from '../../attachments/images/beastimage.png';
+import registerPage from '../../attachments/images/registerPage.png';
 
 const posts = [
-    // {
-    //     Ergastirio: "",
-    //     imageEksw: "", 
-    //     imageMesa: "", 
-    //     Titlos: "", 
-    //     Sigrafeas: "", 
-    //     Linksigrafea: "",  
-    //     Date: "",
-    //     Katigoria: "", 
-    //     Keimeno: "",
-    //     Link: "" ,
-    //     pdf: "",
-    //     file: "",
-    //     video: ""
-    // },
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: registerPage, 
+        Titlos: "Hacktober Fest 2024 WebApplication In React", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "23/10/2024",
+        Katigoria: "Programming", 
+        Keimeno: "Το συγκεκριμένο project αποτελεί μέρος της συμμετοχής μου στο HacktoberFest 2024. Στο πλαίσιο του Fest μας ζητήθηκε να δημιουργήσουμε μια σελίδα εγγραφής (regist) χρησιμοποιώντας οποιοδήποτε framework προτιμούσαμε. Επέλεξα να υλοποιήσω το project με React. Μπορείτε να βρείτε όλα τα αρχεία του project στο GitHub μου, στον παρακάτω σύνδεσμο:",
+        Link: "https://github.com/Klajdis32/HacktoberFest2024-WebApplication" ,
+        pdf: "",
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 
