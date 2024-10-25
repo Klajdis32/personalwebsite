@@ -59,7 +59,19 @@
       .horizontal-line {
         background-color: rgb(255, 255, 255);
     }
-      
+
+    .timeline-container::before {
+        background: linear-gradient(to right, #282828, transparent);
+    }
+    
+    .timeline-container::after {
+        background: linear-gradient(to left, #282828, transparent);
+    }
+
+    .toolohor {
+        border-left: 2px solid #282828;
+        border-right: 2px solid #282828;
+      }
 }
 
 body {
