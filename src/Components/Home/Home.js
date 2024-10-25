@@ -178,8 +178,10 @@ const Home = () => {
                                 <p className='tokatwpnow'>Today</p> 
                             </div>
                         </div>
+                        
                         <button onClick={scrollRight} className="timeline-button">Right</button>
                         </div>
+
                     </div>
                     <br/>
                 <strong>Outside of learning, I enjoy :</strong>
@@ -214,42 +216,40 @@ const Home = () => {
                 </div>
                 <div className='toolohor'>
                     <div className="timeline-container">
-                        <button onClick={scrollLeft} className="timeline-button">Left</button>
                         <div className="timeline" ref={timelineRef}>
-                            
-                            <a href={EEF} target="_blank" className='tacart'>
+
+                                <a href={EEF} target="_blank" className='tacart'>
+                                    <div className='mpalaki'></div>
+                                    <div className="content">
+                                    <p className='todatep'>20/3/2021</p>
+                                    <p className='tokatwp'>Βεβαίωση συμμέτοχης στον 31ο Πανελλήνιο διαγωνισμό φυσικής λυκείου (Pdf)</p>  
+                                    </div>
+                                </a>
+
+                                <a href={qiskit} target="_blank" className='tacart'>
                                 <div className='mpalaki'></div>
-                                <div className="content">
-                                <p className='todatep'>20/3/2021</p>
-                                <p className='tokatwp'>Βεβαίωση συμμέτοχης στον 31ο Πανελλήνιο διαγωνισμό φυσικής λυκείου (Pdf)</p>  
-                                </div>
-                            </a>
+                                    <div className="content">
+                                        <p className='todatep'>04/12/2023</p>
+                                        <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
+                                    </div>
+                                </a>
 
-                            <a href={qiskit} target="_blank" className='tacart'>
-                            <div className='mpalaki'></div>
-                                <div className="content">
-                                    <p className='todatep'>04/12/2023</p>
-                                    <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
-                                </div>
-                            </a>
-
-                            <a href={Esa} target="_blank" className='tacart'>
-                            <div className='mpalaki'></div>
-                                <div className="content">
-                                    <p className='todatep'>28/09/2024</p>
-                                    <p className='tokatwp'>Βεβαίωση παρακολούθησης του  πρώτου  ετήσιου  ESERO  Greece  Symposium 
-                                    απο την Esa (Pdf)</p> 
-                                </div>
-                            </a>
-
-
-                            <div className="tacart" id='tonow'>
+                                <a href={Esa} target="_blank" className='tacart'>
                                 <div className='mpalaki'></div>
-                                <p className='todatep'>{formattedDate}</p>
-                                <p className='tokatwpnow'>Σήμερα</p> 
-                            </div>
+                                    <div className="content">
+                                        <p className='todatep'>28/09/2024</p>
+                                        <p className='tokatwp'>Βεβαίωση παρακολούθησης του  πρώτου  ετήσιου  ESERO  Greece  Symposium 
+                                        απο την Esa (Pdf)</p> 
+                                    </div>
+                                </a>
+
+                                <div className="tacart" id='tonow'>
+                                    <div className='mpalaki'></div>
+                                    <p className='todatep'>{formattedDate}</p>
+                                    <p className='tokatwpnow'>Σήμερα</p> 
+                                </div>
+
                         </div>
-                        <button onClick={scrollRight} className="timeline-button">Right</button>
                         </div>
                     </div>
                     <br/>
