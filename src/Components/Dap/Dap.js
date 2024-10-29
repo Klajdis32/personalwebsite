@@ -32,12 +32,19 @@ const Dap = () => {
     }, [nasaKey]);
 
     if (loading) {
-        return  <div className='centerload'>        
-                    <div className="loading" id="loadingDiv">
-                        <img src={mars} alt="" id='marsimge'/>
-                    </div>
-                </div>;
-    }
+        return (
+            <div className='centerload'>
+ 
+                    <div className="skeleton skeleton-title"></div>
+                    <div className="skeleton skeleton-image"></div>
+                    <div className="skeleton skeleton-date"></div>
+                    <div className="skeleton skeleton-text"></div>
+                    <div className="skeleton skeleton-end1"></div>
+                    <div className="skeleton skeleton-end2"></div>
+      
+            </div>
+        );
+    }    
 
     if (error) {
         return <div className='center'>Error fetching APOD data</div>;

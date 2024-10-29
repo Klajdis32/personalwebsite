@@ -31,7 +31,7 @@ const Footer = () => {
       <Link to="/dap" className={`toa ${location.pathname === '/dap' ? 'active' : ''}`}>
         <div className="todiv">
         <img src={dapmexroma} alt="Profile" /><br />
-          <span>DAP</span>
+          <span>APOD</span>
         </div>
       </Link>
     </div>
