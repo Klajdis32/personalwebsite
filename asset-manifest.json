@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.29aa0264.css",
-    "main.js": "/static/js/main.073eac12.js",
+    "main.css": "/static/css/main.0f02ed70.css",
+    "main.js": "/static/js/main.093d03e6.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
@@ -49,11 +49,11 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.29aa0264.css.map": "/static/css/main.29aa0264.css.map",
-    "main.073eac12.js.map": "/static/js/main.073eac12.js.map"
+    "main.0f02ed70.css.map": "/static/css/main.0f02ed70.css.map",
+    "main.093d03e6.js.map": "/static/js/main.093d03e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.29aa0264.css",
-    "static/js/main.073eac12.js"
+    "static/css/main.0f02ed70.css",
+    "static/js/main.093d03e6.js"
   ]
 }
