@@ -133,10 +133,10 @@ margin-left: 5px;
 
 .tologo{
     z-index: 500;
-    border-radius: 100%;
+    border-radius: 20%;
     width: 11%;
     margin-bottom: -20px;
-    border: 2px solid darkgrey;
+    border: 2px solid rgb(150, 150, 150);
 }
 
 
@@ -299,7 +299,6 @@ margin-bottom: 5px;
 
 #oxideksia{
     border-right: none;
-    border-left: 2px solid lightgray;
     padding: 0px;
     margin-right: -25px;
 }
@@ -314,12 +313,10 @@ margin-bottom: 5px;
     text-align: center;
     cursor: pointer;
     width: 25%;
-    border-right: 2px solid lightgrey;
 }
 
 .todivdeksia1:hover {
-    color: rgb(61, 61, 61);
-    text-decoration: underline;
+    color: rgb(121, 121, 121);
 }
 
 #tosig {
@@ -404,7 +401,7 @@ margin-bottom: 5px;
         align-items: center;
         margin-bottom: 0px;
         scrollbar-width: thin;
-        scrollbar-color: #444444 #f1f1f1;
+        scrollbar-color: #b4b4b4 #f1f1f1;
         overflow: hidden; /* για να περιορίσουμε το περιεχόμενο */
     }
     
@@ -447,14 +444,6 @@ margin-bottom: 5px;
         gap: 0px; 
     }
 
-
-    .timeline-container::-webkit-scrollbar-thumb {
-        background-color: #888; /* Χρώμα της λαβής */
-        border-radius: 10px; /* Στρογγυλοποίηση της λαβής */
-        border: 3px solid #f1f1f1; /* Περίγραμμα γύρω από τη λαβή */
-    }
-    
-  
     .timeline {
         display: flex;
         overflow-x: auto;

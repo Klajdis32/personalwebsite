@@ -137,7 +137,7 @@ const Home = () => {
                 <br />Moreover, I enjoy reading books 📚 on a wide range of subjects including physics, economics, science fiction and philosophy.</p>
 
                 <strong>Certificates :</strong>
-                <br/> <br/><br/>
+                <br/> <br/>
                 <div className='todivcart'>
                     <img src={cert} alt='certificats' className='tocertimg' />
                     <div className="horizontal-line"></div>
@@ -209,7 +209,7 @@ const Home = () => {
                 </p>
 
                 <strong>Πιστοποιητικά :</strong>
-                <br/> <br/><br/>
+                <br/> <br/>
                 <div className='todivcart'>
                     <img src={cert} alt='certificats' className='tocertimg' />
                     <div className="horizontal-line"></div>
@@ -278,7 +278,7 @@ const Home = () => {
                 <br />Außerdem lese ich gerne Bücher zu einem breiten Themenspektrum darunter Physik, Wirtschaftswissenschaften, Science-Fiction und Philosophie.</p>
 
                 <strong>Zertifikate :</strong>
-                <br/> <br/><br/>
+                <br/> <br/>
                 <div className='todivcart'>
                     <img src={cert} alt='certificats' className='tocertimg' />
                     <div className="horizontal-line"></div>

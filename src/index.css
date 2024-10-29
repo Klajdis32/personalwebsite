@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif; /* Εναλλακτικά πρόσθεσε την γραμματοσειρά της επιλογής σου */
+    font-family: 'Space Grotesk', sans-serif;/* Εναλλακτικά πρόσθεσε την γραμματοσειρά της επιλογής σου */
     line-height: 1.5; /* Βελτιώνει την αναγνωσιμότητα */
 }
