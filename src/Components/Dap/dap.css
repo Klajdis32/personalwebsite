@@ -24,6 +24,7 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 1100px;
+
 }
 
 #marsimge{
@@ -98,6 +99,15 @@ border-bottom : 2px solid blue;
 }
 
 .tosvgdap{
+    position: absolute;
+    width: 100%;
+}
+
+.toloading {
+    margin-top: 0%;
+}
+
+.tosvgdapload {
     position: absolute;
     width: 100%;
 }
@@ -229,7 +239,6 @@ z-index: 999;
     margin: 0 auto;
     height: 24px;
     margin-bottom: 16px;
-    margin-top: 2%;
 }
 
 .skeleton-image {
@@ -340,7 +349,6 @@ width: 4%;
     
 .skeleton-title {
     width: 50%;
-    margin-top: 5%;
 }
 
 .skeleton-image {
@@ -449,7 +457,6 @@ transform: translate( -6%, -40%);
 
 .skeleton-title {
     width: 90%;
-    margin-top: 5%;
 }
 
 .skeleton-image {
