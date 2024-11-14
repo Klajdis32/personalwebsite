@@ -3,14 +3,12 @@ import './projects.css';
 import posts from '../Data/ProjectsDB.js'; 
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import MathImage from "../../assets/idea.png";
-import UpArrow from "../../assets/up-arrow.png";
 
 const Projects = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredPosts, setFilteredPosts] = useState(posts);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
-    const [showArrow, setShowArrow] = useState(true);
     const [showPageNumbers, setShowPageNumbers] = useState(true);
     
     const navigate = useNavigate();
@@ -33,17 +31,16 @@ const Projects = () => {
         setShowPageNumbers(false); 
     };
 
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
     const handlePageClick = (pageNumber) => {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); 
-        setCurrentPage(pageNumber);
+        setCurrentPage(pageNumber); // Μόνο η αλλαγή σελίδας εδώ
         navigate(`/projects?page=${pageNumber}`);
     };
     
-
+    useEffect(() => {
+        // Όταν αλλάζει η currentPage, κάνε scroll στην κορυφή
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [currentPage]); // Τρέχει κάθε φορά που αλλάζει η currentPage
+    
     useEffect(() => {
         const query = new URLSearchParams(location.search);
         const page = query.get('page');
@@ -51,20 +48,7 @@ const Projects = () => {
             setCurrentPage(Number(page));
         }
     }, [location.search]);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 200) {
-                setShowArrow(false);
-            } else {
-                setShowArrow(true);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    
 
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -158,14 +142,10 @@ const Projects = () => {
                         ))}
                     </div>
                 )}
-                <br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/>
             </div>
 
-            {!showArrow && (
-                <div className="arrow" onClick={scrollToTop} >
-                    <img src={UpArrow} alt="" id="uparrow" />
-                </div>
-            )}
+        
         </div>
     );
 }

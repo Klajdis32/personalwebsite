@@ -34,7 +34,7 @@ const Project = () => {
                 </div>
 
                 <div className="Sigr-date-Katigoria">
-                    <span><strong>Author:</strong> {post.Linksigrafea ? <a href={post.Linksigrafea} target="_blank" style={{ color: 'green' }} dangerouslySetInnerHTML={{ __html: post.Sigrafeas }}></a> : post.Sigrafeas}</span><br/>
+                    <span><strong>Author:</strong> {post.Linksigrafea ? <a href={post.Linksigrafea} target="_blank"  rel="noopener noreferrer" style={{ color: 'green' }} dangerouslySetInnerHTML={{ __html: post.Sigrafeas }}></a> : post.Sigrafeas}</span><br/>
                     <span><strong>Date:</strong> {post.Date}</span><br/>
                     <span><strong>Category:</strong> {post.Katigoria}</span><br/>
                 </div>
@@ -48,19 +48,37 @@ const Project = () => {
                 <p className='summary'>Attachments:</p>
                 <div className="todivmetaa1">
                         {post.Link && (
-                        <a href={post.Link} target="_blank" className="blog-post_cta"><img src={link} alt="" className="todivmeimages" />Link</a>
+                        <a href={post.Link} target="_blank"  rel="noopener noreferrer" className="blog-post_cta"><img src={link} alt="" className="todivmeimages" />Link</a>
                         )}
-                        {post.pdf && (
-                        <a href={post.pdf} download={post.pdf} className="blog-post_cta">
-                        <img src={pdf} alt="" className="todivmeimages" />
-                        Pdf
-                        </a>
+                        {post.pdf && Array.isArray(post.pdf) ? (
+                            post.pdf.map((pdfFile, index) => (
+                                <a 
+                                    key={index} 
+                                    href={pdfFile} 
+                                    download={pdfFile} 
+                                    className="blog-post_cta"
+                                    title={`${pdfFile}`} // Το tooltip με το όνομα του αρχείου
+                                >
+                                    <img src={pdf} alt="" className="todivmeimages" />
+                                    Pdf {index + 1}
+                                </a>
+                            ))
+                        ) : (
+                            <a 
+                                href={post.pdf} 
+                                download={post.pdf} 
+                                className="blog-post_cta" 
+                                title={`${post.pdf}`} // Το tooltip με το όνομα του αρχείου
+                            >
+                                <img src={pdf} alt="" className="todivmeimages" />
+                                Pdf
+                            </a>
                         )}
                         {post.file && (
                             <a href={post.file} className="blog-post_cta"><img src={folder} alt="" className="todivmeimages" />File</a>
                         )}
                         {post.video && (
-                            <a href={post.video} target="_blank" className="blog-post_cta"><img src={video} alt="" className="todivmeimages" />Video</a>
+                            <a href={post.video} target="_blank"  rel="noopener noreferrer" className="blog-post_cta"><img src={video} alt="" className="todivmeimages" />Video</a>
                         )}
                 </div>
             </div>

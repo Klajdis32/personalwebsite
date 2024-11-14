@@ -20,10 +20,64 @@ import VideoMaPass from "../../attachments/videos/Mapass.mp4";
 import VideoAthlisoy from "../../attachments/videos/athlisoy.mp4";
 import Aluzip from "../../attachments/files/ALU.zip";
 import petasma from "../../assets/petasma.jpg"
-import beabeast from '../../attachments/images/beastimage.png';
-import registerPage from '../../attachments/images/registerPage.png';
-
+import beabeast from "../../attachments/images/beastimage.png";
+import registerPage from "../../attachments/images/registerPage.png";
+import HlektrAsk1 from "../../attachments/pdfs/Electronics1stLabExercise.pdf";
+import HlektrAsk2 from "../../attachments/pdfs/Electronics2ndLabExercise.pdf";
+import HlektrAsk3 from "../../attachments/pdfs/Electronics3LabExercise.pdf";
+import HlektrAsk4 from "../../attachments/pdfs/Electronics4LabExercise.pdf";
+import HlektrAsk5 from "../../attachments/pdfs/Electronics5LabExercise.pdf";
+import HlektrProso1 from "../../attachments/pdfs/Electronics1stLabSim.pdf"
+import HlektrProso2 from "../../attachments/pdfs/Electronics2ndLabSim.pdf"
+import HlektrProso3 from "../../attachments/pdfs/Electronics3LabSim.pdf"
+import HlektrProso4 from "../../attachments/pdfs/Electronics4LabSim.pdf"
+import HlektrProso5 from "../../attachments/pdfs/Electronics5LabSim.pdf"
 const posts = [
+    {
+        Ergastirio: "Ηλεκτρονικής",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "5η Εργαστηριακή άσκηση ηλεκτρονικής", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "6/11/2024",
+        Katigoria: "Electronics", 
+        Keimeno: "Στην παρακάτω εργασία ασχοληθήκαμε με την ανάλυση και την μελέτη διαφόρων ηλεκτρονικών κυκλωμάτων. Συγκεκριμένα, εξετάσαμε κυκλώματα όπως το κύκλωμα τελεστικού ενισχυτή με πυκνωτή και δίοδο, το κύκλωμα Schmitt trigger, το κύκλωμα γεννήτριας ορθογωνίων παλμών και το κύκλωμα ασύμμετρου πολυδονητή, μελετήσαμε τα αποτελέσματα που προέκυψαν και αποδείξαμε βασικές θεωρητικές αρχές. Μέσα από τη διαδικασία αυτή, αποκομίσαμε σημαντικές γνώσεις για τη λειτουργία και τις εφαρμογές των ηλεκτρονικών κυκλωμάτων στην πράξη.",
+        Link: "" ,
+        pdf: [HlektrAsk5, HlektrProso5],
+        file: "",
+        video: ""
+    },
+    {
+        Ergastirio: "Ηλεκτρονικής",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "4η Εργαστηριακή άσκηση ηλεκτρονικής", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "3/11/2024",
+        Katigoria: "Electronics", 
+        Keimeno: "Στην παρακάτω εργασία ασχοληθήκαμε με την ανάλυση και την μελέτη διαφόρων ηλεκτρονικών κυκλωμάτων. Συγκεκριμένα, εξετάσαμε κυκλώματα όπως το κύκλωμα ενισχυτή αντιστροφής με τελεστικό ενισχυτή, το κύκλωμα ενισχυτή χωρίς αντιστροφή με τελεστικό ενισχυτή, το κύκλωμα διαιρέτη τάσης με και χωρίς ακολουθητή τάσης και το κύκλωμα ολοκλήρωσης με τελεστικό ενισχυτή, μελετήσαμε τα αποτελέσματα που προέκυψαν και αποδείξαμε βασικές θεωρητικές αρχές. Μέσα από τη διαδικασία αυτή, αποκομίσαμε σημαντικές γνώσεις για τη λειτουργία και τις εφαρμογές των ηλεκτρονικών κυκλωμάτων στην πράξη.",
+        Link: "" ,
+        pdf: [HlektrAsk4, HlektrProso4],
+        file: "",
+        video: ""
+    },
+    {
+        Ergastirio: "Ηλεκτρονικής",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "3η Εργαστηριακή άσκηση ηλεκτρονικής", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "25/10/2024",
+        Katigoria: "Electronics",  
+        Keimeno: "Στην παρακάτω εργασία ασχοληθήκαμε με την ανάλυση και την μελέτη διαφόρων ηλεκτρονικών κυκλωμάτων. Συγκεκριμένα, εξετάσαμε κυκλώματα όπως το κύκλωμα ενισχυτή τάσης κοινού εκπομπού, το κύκλωμα ενισχυτή τάσης με πυκνωτή στον εκπομπό, το κύκλωμα ενισχυτή τάσης με φορτίο καθώς και το πλήρες κύκλωμα ενισχυτή δυο βαθμίδων με φορτίο, μελετήσαμε τα αποτελέσματα που προέκυψαν και αποδείξαμε βασικές θεωρητικές αρχές. Μέσα από τη διαδικασία αυτή, αποκομίσαμε σημαντικές γνώσεις για τη λειτουργία και τις εφαρμογές των ηλεκτρονικών κυκλωμάτων στην πράξη.",
+        Link: "" ,
+        pdf: [HlektrAsk3, HlektrProso3],
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 
@@ -36,6 +90,36 @@ const posts = [
         Keimeno: "Το συγκεκριμένο project αποτελεί μέρος της συμμετοχής μου στο HacktoberFest 2024. Στο πλαίσιο του Fest μας ζητήθηκε να δημιουργήσουμε μια σελίδα εγγραφής (regist) χρησιμοποιώντας οποιοδήποτε framework προτιμούσαμε. Επέλεξα να υλοποιήσω το project με React. Μπορείτε να βρείτε όλα τα αρχεία του project στο GitHub μου, στον παρακάτω σύνδεσμο:",
         Link: "https://github.com/Klajdis32/HacktoberFest2024-WebApplication" ,
         pdf: "",
+        file: "",
+        video: ""
+    },
+    {
+        Ergastirio: "Ηλεκτρονικής",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "2η Εργαστηριακή άσκηση ηλεκτρονικής", 
+        Sigrafeas: "", 
+        Linksigrafea: "",  
+        Date: "19/10/2024",
+        Katigoria: "Electronics", 
+        Keimeno: "Στην παρακάτω εργασία ασχοληθήκαμε με την ανάλυση και την μελέτη διαφόρων ηλεκτρονικών κυκλωμάτων. Συγκεκριμένα, εξετάσαμε κυκλώματα όπως το κύκλωμα ηλεκτρονικού διακόπτη με ένα τρανζίστορ, κύκλωμα ηλεκτρονικού διακόπτη με δύο τρανζίστορ, κύκλωμα πριονωτή τάσης, καθώς και δυο πύλες NOT και NOR. Σε κάθε πείραμα, μελετήσαμε τα αποτελέσματα που προέκυψαν και αποδείξαμε βασικές θεωρητικές αρχές. Μέσα από τη διαδικασία αυτή, αποκομίσαμε σημαντικές γνώσεις για τη λειτουργία και τις εφαρμογές των ηλεκτρονικών κυκλωμάτων στην πράξη.",
+        Link: "" ,
+        pdf: [HlektrAsk2, HlektrProso2],
+        file: "",
+        video: ""
+    },
+    {
+        Ergastirio: "Ηλεκτρονικής",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "1η Εργαστηριακή άσκηση ηλεκτρονικής", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "12/10/2024",
+        Katigoria: "Electronics", 
+        Keimeno: "Στην παρακάτω εργασία ασχοληθήκαμε με την ανάλυση και την μελέτη διαφόρων ηλεκτρονικών κυκλωμάτων. Συγκεκριμένα, εξετάσαμε κυκλώματα όπως ο διαιρέτης τάσης, η απλή ανορθωτική διάταξη, η διπλή ανορθωτική διάταξη με γέφυρα μαζί με πυκνωτή εξομάλυνσης και δίοδο Zener, καθώς και το κύκλωμα ψαλιδισμού με Zener. Σε κάθε πείραμα, μελετήσαμε τα αποτελέσματα που προέκυψαν και αποδείξαμε βασικές θεωρητικές αρχές. Μέσα από τη διαδικασία αυτή, αποκομίσαμε σημαντικές γνώσεις για τη λειτουργία και τις εφαρμογές των ηλεκτρονικών κυκλωμάτων στην πράξη.",
+        Link: "" ,
+        pdf: [HlektrAsk1, HlektrProso1],
         file: "",
         video: ""
     },
