@@ -47,10 +47,13 @@ const Project = () => {
                 <p className='tokeimeno'>{post.Keimeno}</p>
                 <p className='summary'>Attachments:</p>
                 <div className="todivmetaa1">
-                        {post.Link && (
-                        <a href={post.Link} target="_blank"  rel="noopener noreferrer" className="blog-post_cta"><img src={link} alt="" className="todivmeimages" />Link</a>
-                        )}
-                        {post.pdf && Array.isArray(post.pdf) ? (
+                    {post.Link && (
+                        <a href={post.Link} target="_blank" rel="noopener noreferrer" className="blog-post_cta">
+                            <img src={link} alt="" className="todivmeimages" />Link
+                        </a>
+                    )}
+                    {post.pdf && (
+                        Array.isArray(post.pdf) && post.pdf.length > 0 ? (
                             post.pdf.map((pdfFile, index) => (
                                 <a 
                                     key={index} 
@@ -64,22 +67,29 @@ const Project = () => {
                                 </a>
                             ))
                         ) : (
-                            <a 
-                                href={post.pdf} 
-                                download={post.pdf} 
-                                className="blog-post_cta" 
-                                title={`${post.pdf}`} // Το tooltip με το όνομα του αρχείου
-                            >
-                                <img src={pdf} alt="" className="todivmeimages" />
-                                Pdf
-                            </a>
-                        )}
-                        {post.file && (
-                            <a href={post.file} className="blog-post_cta"><img src={folder} alt="" className="todivmeimages" />File</a>
-                        )}
-                        {post.video && (
-                            <a href={post.video} target="_blank"  rel="noopener noreferrer" className="blog-post_cta"><img src={video} alt="" className="todivmeimages" />Video</a>
-                        )}
+                            typeof post.pdf === 'string' && post.pdf.trim() !== '' && (
+                                <a 
+                                    href={post.pdf} 
+                                    download={post.pdf} 
+                                    className="blog-post_cta" 
+                                    title={`${post.pdf}`} // Το tooltip με το όνομα του αρχείου
+                                >
+                                    <img src={pdf} alt="" className="todivmeimages" />
+                                    Pdf
+                                </a>
+                            )
+                        )
+                    )}
+                    {post.file && (
+                        <a href={post.file} className="blog-post_cta">
+                            <img src={folder} alt="" className="todivmeimages" />File
+                        </a>
+                    )}
+                    {post.video && (
+                        <a href={post.video} target="_blank" rel="noopener noreferrer" className="blog-post_cta">
+                            <img src={video} alt="" className="todivmeimages" />Video
+                        </a>
+                    )}
                 </div>
             </div>
 
