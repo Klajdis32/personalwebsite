@@ -46,8 +46,8 @@ const Contact = () => {
                         <p>My email address is: <strong id='tostrong'>ktsami@auth.gr</strong></p>
                     </div>
                     <br/>
-                    <div className="minima" id="tocopy" onClick={handleCopyEmail}>
-                        <p><a>"Click on this message to copy my email"</a></p>
+                    <div className="minima" onClick={handleCopyEmail}>
+                        <p><a id="tocopy">"Click on this message to copy my email"</a></p>
                     </div>
                     <br/>
                     <div className="minima">
