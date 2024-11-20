@@ -1,628 +1,204 @@
 .container1 {
     font-family: 'Space Grotesk', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: #f2f2f200;
-}
-
-[data-theme="dark"] {
-    background-color: #282828; /* Σκοτεινό φόντο */
-    color: #ffffff; /* Λευκό χρώμα κειμένου */
-
-    .container1 {
-        background-color: #28282800; /* Σκοτεινό φόντο */
-    }
-
-    .contactdiv {
-    color: white;
-        box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
-    }  
-
-    .tochoose {
-        color: rgb(238, 238, 238);
-    }
-
-    .contactdiv:hover {
-     box-shadow: rgba(255, 255, 255, 0.9) 0px 5px 15px;
-    }
-
-    #nocursor:hover {
-        box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
-    }
-
-    .contactdiv p {
-        color: white;
-    }
-
-    .tologoAC{
-        border: 2px solid rgb(255, 255, 255);
-    }
-    
-    .info {
-        border: 2px solid white;
-        border-top: none;
-        border-radius: 0pxrgb(66, 66, 66)10px 10px;
-        box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 5px 0px;
-    }  
-
-    .hgrammh a {
-        color: white;
-        border: 1px solid white;
-    }
-
-    .hgrammh a {
-        box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
-    }
-
-    .hgrammh a:hover {
-        box-shadow: rgba(255, 255, 255, 0.9) 0px 5px 15px;
-    }
-
-    .left-item1 p {
-        color: white;
-    }
-    @media (min-width: 601px) and (max-width: 768px) {
-        .container1 {
-            border: none;
-        }
-    }
-
-        @media (max-width: 600px) {
-            .container1 {
-                border: none;
-            }
-        }
-
-}
-
-.toolocont {
-    overflow-x: hidden; 
-    position: relative;
-    width: 100%;
-    min-height: 100vh; 
-}
-
-.container1 {
+    max-width: 1100px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    max-width: 1100px; /* Αν θέλεις να παραμείνει περιορισμένο σε μεγάλα πλάτη */
-    margin-top: 3%;
+    margin-top: 0%;
     z-index: 200;
-    margin: 0 auto;
 }
 
-.container1top{
-    font-size: 20px;
-    font-weight: 550;
+[data-theme="dark"] {
+    background-color: #282828;
+    color: #ffffff;
+
+    .container1 {
+        background-color: #28282800;
+    }
+
+    .tologoAC {
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .online {
+        color: rgb(255, 255, 255);
+    }
+
+    .right-item1 {
+        color: rgb(255, 255, 255); /* Χρώμα του κειμένου */
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Δημιουργία περιγράμματος γύρω από τα γράμματα */
+    }
 }
 
-
-.waveContact {
-    z-index: 5;
-}
-
-
-.tologoAC{
+.tologoAC {
     width: auto;
     height: 70%;
     border-radius: 100%;
-    margin-left: 20px;
-    margin-top: 12px;
-    margin-bottom: 0px;
+    margin: 12px 0 0 20px;
+    margin-right: 10px;
     border: 2px solid black;
+    
 }
 
-.reset {
+.toolocont {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left-item1 {
+    width: 100%;
+
+    display: flex;
+}
+
+.left-item1 p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.toonline {
+    width: 20%;
+    text-align: right;
+}
+
+.online {
+    height: 70px;
+    display: flex;
+    color: black;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.online p {
+    margin-left: 0;
+    font-size: 17px;
+    margin-top: 27px;
+}
+
+.minima {
+    margin: 5px 20px;
+    background-color: rgb(44, 134, 176);
+    color: white;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+
+#mnm5 {
     cursor: pointer;
-    width: 110%;
-    height: 50%;
-    margin-top: 22px;
-    transition: transform 1s ease;
 }
 
-.reset.rotate {
-    transform: rotate(360deg);
+#hr1 {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
 }
 
 #tohr {
     width: 90%;
 }
 
-.online p{
-    margin-left: 0px;
-    font-size: 16px;
-    margin-top: 30px;
-}
-
-.minima {
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: rgb(44, 134, 176);
-    color: white;
-    margin-bottom: 5px;
-    display: inline-block;
-    padding: 0px 15px;
-}
-
-
-.tasocial{
-    width: 5%;
-}
-
-.loading {
-    width: 10%;
-    margin-left: 10px;
-}
-
-#tolodaing1, #tolodaing2, #tolodaing3, #tolodaing4, #tolodaing5 {
-    display: none;
-}
-
-#hr2 {
-    display: none;
-}
-
-#mnm1{
-    border-radius: 20px 20px 20px 0px;
-}
-
-#mnm2{
-    border-radius: 0px 20px 20px 20px;
-}
-
-#mnm3{
-    border-radius: 20px 20px 20px 0px;
-}
-
-#mnm4{
-    border-radius: 20px 20px 20px 0px;
-}
-
-#mnm5{
-    border-radius: 0px 20px 20px 0px;
+.apathsh {
     cursor: pointer;
-}
-
-#mnm7{
-    border-radius: 0px 20px 20px 0px;
-}
-
-#mnm6{
-    border-radius: 0px 20px 20px 20px;
-}
-
-#ap1 {
+    float: right;
+    margin: 5px 20px;
+    color: white;
+    text-align: center;
     background-color: rgba(76, 76, 208, 0.4);
+    border-radius: 20px;
+    padding: 0 15px;
 }
 
-.online {
-    height: 70px;
-    display: flex;
-     color: black; 
-     font-size: 16px; 
-     margin-right: 15px;
-}
-
-#hr1 {
-    text-align: center; font-size: 14px; color: grey;
-}
-
-#ap1:focus {
+.apathsh:focus {
     background-color: rgb(76, 76, 208);
 }
 
-
-#ap2 {
-    background-color: rgba(76, 76, 208, 0.4);
-}
-
-#ap2:focus {
-    background-color: rgba(76, 76, 208, 1);
-}
-
-
-#ap3{
-    background-color: rgba(76, 76, 208, 0.4);
-
+.right-item1 {
+    font-size: 16px;
+    margin: -45px 20px 30px;
+    font-weight: 550;
 }
 
 #toa {
     color: white;
-}
-
-#ap3:focus {
-    background-color: rgb(76, 76, 208);
-}
-
-#ap3{
-    background-color: rgba(76, 76, 208, 0.4);
-}
-
-#ap4 {
-    background-color: rgba(76, 76, 208, 0.4);
-}
-
-#ap4:focus {
-    background-color: rgb(76, 76, 208);
-}
-
-#ap5{
-    background-color: rgba(76, 76, 208, 0.4);
-    margin-bottom: 5px;
-}
-
-#ap5:focus {
-    background-color: rgb(76, 76, 208);
-}
-
-#ap6{
-    background-color: rgba(76, 76, 208, 0.4);
- 
-}
-
-#ap6:focus {
-    background-color: rgb(76, 76, 208);
-}
-
-
-
-.apathsh{
-    cursor: pointer;
-    float: right;
-    margin-right: 20px;
-    margin-left: 20px;
-    color: white;
-    text-align: center;
-    border-radius: 20px;
-    margin-bottom: 5px;
-    padding: 0px 15px;
-}
-
-.left-item1 {
-    flex: 1;
-    display: flex;
-}
-
-.right-item1 {
-   font-size: 16px;
-   margin-top: -45px;
-   margin-bottom: 30px;
-   margin-right: 20px;
-    font-weight: 550;
-}
-
-.toonline {
-    text-align: right;
-}
-
-.mode {
-cursor: pointer;
-width: 1.8%;
-margin-right: 20px;
-padding: 0px 0px;
-}
-
-.heikona {
-margin-top: 5px;
-padding: 30px;
-}
-
-
-#darkmode {
-display: block;
-}
-
-#lightmode {
-display: none;
-}
-
-.toa {
-cursor: pointer;
-text-decoration: none;
-}
-
-.toa1 {
-color: green;
-}
-
-#toepi {
-border-bottom : 2px solid blue;
-}
-
-.left-item1 p {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 0px 10px;
-    margin-top: 25px;
-    font-weight: 500;
-    font-size: 18px;
-    white-space: nowrap;
-}
-
-#nocursor {
-    cursor: default;
-}
-
-#nocursor:hover {
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-
-#megalhtero {
-    width: 6%;     
-}
-
-.contactdiv p { 
-    text-align: center;
-    margin-top: 5px;
-    font-size: 18px;
-}
-
-.info {
-    border: 2px solid white;
-    border-top: none;
-    border-radius: 0px 0px 10px 10px;
-    margin-top: -38px;
-    width: 60%;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px 0px;
-    padding: 10px; 
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 15s ease-out;
-}
-
-.info.open {
-    max-height: 2000px; /* Το μέγιστο ύψος που θέλουμε να φτάσει το div */
-}
-
-.hgrammh {
-    display: flex;
-}
-
-.hgrammh p {
-    width: 60%;
-    font-size: 18px;
-    margin-right: auto; 
-}
-
-.hgrammh a {
-    text-decoration: none;
-    color: black;
     cursor: pointer;
-    text-align: center;
-    padding: 5px 10px;
-    height: 3%;
-    margin-top: 13px;
-    border: 1px solid grey;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-    border-radius: 5px;
-    margin-left: auto; /* Τοποθέτησε το a στο δεξί άκρο */
 }
 
-.hgrammh a:hover {
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
-    }
+#mnm6, #mnm7 {
+    border-radius: 0 20px 20px 20px;
+}
 
-    .hforma{
-        width: 100%;
-        margin-left: -5%;
-    }
+.hforma {
+    width: 100%;
+}
 
-    #hforma {
-        display: none;
-    }
-    
-    .container1 h2{
-        text-align: center;
-        width: 62%;
-    }
-/* Κανόνες CSS για tablet */
+.waveContact {
+    z-index: 5;
+}
+
+#tocopy {
+    cursor: pointer;
+}
+
+#tostrong {
+    color: rgb(17, 15, 107);
+}
+
+/* Responsive Styles */
 @media (min-width: 601px) and (max-width: 768px) {
-
-
-    .heikona {
-    margin-left: 0%;
-    }
-
-
-    .divmaximg {
-        display: flex;
-        position: fixed;
-        top: 20%;
-        left: 20%;
-        transform: translate(-10%, -10%);
-    }
-
-    .maxlogo {
-        margin-left: 0%;
-        width: 100%;
-        z-index: 999;
-        border-radius: 100%;
-    }
-
-    .mode {
-    width: 4%;
-    }
-
-
     .container1 {
         margin-top: 10%;
         width: 90%;
-        margin-left: 5%;
     }
 
     .contactdiv {
         width: 95%;
         height: 40px;
-    }  
+    }
 
-    .contactdiv img {
-        width: 7%;
-        } 
-
-        .contactdiv p {
-            margin-top: 10px;
-            }
-
-          
-
-            .info {
-                margin-top: -45px;
-                width: 95%;
-                box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px 0px;
-                border-radius: 0px 0px 10px 10px;
-                padding: 10px; 
-            }
-                
-
-            
-    .hforma{
-              width: 100%;
+    .hforma {
+        width: 100%;
         margin-left: -5%;
     }
+}
 
-    .container1 h2{
-        text-align: center;
-        width: 98%;
-    }
-
-
+@media (max-width: 600px) {
     .container1 {
         width: 100%;
-        margin-left: 0%;
-        margin-top: 0px;
-        border: none;
-        background-color: rgb(233, 233, 233);
+        margin-left: 0;
+        margin-top: 0;
         min-height: 100vh;
-    }
-
-    .tologoAC{
-        height: 70%;
-        border-radius: 100%;
-        margin-left: 20px;
-        margin-top: 12px;
-        margin-bottom: 0px;
-        border: 2px solid black;
-    }
-
-    .loading {
-        width: 20%;
-    }
-
-
-    .reset {
-        width: 18%;
-        height: 50%;
-    }
-    
-
-    }
-
-    /* Κανόνες CSS για κινητά */
-    @media (max-width: 600px) {
-        
-    .heikona {
-    margin-left: 0%;
-    }
-
-
-    .divmaximg {
-        display: flex;
-        position: fixed;
-        top: 30%;
-        left: 30%;
-        transform: translate(-20%, -10%);
-    }
-
-    .maxlogo {
-        margin-left: 0%;
-        width: 100%;
-        z-index: 999;
-        border-radius: 100%;
-    }
-
-
-    .mode {
-    width: 6%;
-    }
-
-    .kinito p {
-    width: 90%;
-    margin-left: 5%;
     }
 
     .contactdiv {
         width: 95%;
         height: 25px;
-    }  
-
-    .contactdiv img {
-    width: 7%;
-    } 
-
-    #megalhtero {
-        width: 7.5%;     
-    }
-
-    .contactdiv p {
-        margin-top: 2px;
-    }
-
-    .container1 h3{
-
-        width: 100%;
-    }
-
-    .info {
-        margin-top: -45px;
-        width: 95%;
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px 0px;
-        border-radius: 0px 0px 10px 10px;
-        padding: 10px; 
-    }
-
-    .hgrammh p {
-        width: 50%;
-    }
-
-    .hforma{
-        width: 100%;
-        margin-left: -5%;
-    }
-
-    .container1 h2{
-        text-align: center;
-        width: 100%;
-    }
-
-
-    .container1 {
-        width: 100%;
-        margin-left: 0%;
-        margin-top: 0px;
-        border: none;
-        min-height: 100vh;
-    }
-
-    .tologoAC{
-        height: 70%;
-        border-radius: 100%;
-        margin-left: 20px;
-        margin-top: 12px;
-        margin-bottom: 0px;
-        border: 2px solid black;
-    }
-
-    .loading {
-        width: 20%;
     }
 
     .hforma {
         width: 90%;
-        margin-left: 0%;
+        margin-left: 0;
     }
     
+    .left-item1 {
+        width: 100%;
+        display: flex;
+    }
+    
+    .left-item1 p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .toonline {
+        width: 100%;
+        text-align: right;
+    }
+
 }

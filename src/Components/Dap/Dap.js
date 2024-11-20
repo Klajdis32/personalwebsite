@@ -45,6 +45,7 @@ const Dap = () => {
                         <div className="skeleton skeleton-end1"></div>
                         <div className="skeleton skeleton-end2"></div>
                 </div>
+                <br/><br/><br/>
             </div>
         );
     }    
