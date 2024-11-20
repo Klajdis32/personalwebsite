@@ -55,7 +55,7 @@ const Contact = () => {
                     </div>
                     <br/>
                     <div className="minima">
-                        <p><a href="mailto:test@test.com">Directly contact me from your email app!</a></p>
+                        <p><a href="mailto:ktsami@auth.gr">Directly contact me from your email app!</a></p>
                     </div>
                     <br/>
                     <div id="hr1">
