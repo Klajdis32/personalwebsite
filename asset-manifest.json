@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8de4ed43.css",
-    "main.js": "/static/js/main.51c17a8b.js",
+    "main.css": "/static/css/main.89813eeb.css",
+    "main.js": "/static/js/main.3dbb1184.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
@@ -40,7 +40,6 @@
     "static/media/logo1.png": "/static/media/logo1.b3f926109817c6d6544c.png",
     "static/media/idea.png": "/static/media/idea.fe4a34bcbbd61ad28906.png",
     "static/media/imagelogo.png": "/static/media/imagelogo.5a2e0d6eeb57a6841221.png",
-    "static/media/dots.gif": "/static/media/dots.f079cd04142a73b68307.gif",
     "static/media/beastimage.png": "/static/media/beastimage.b6e1700a8cab9d561763.png",
     "static/media/registerPage.png": "/static/media/registerPage.099c186330683051d0c1.png",
     "static/media/dap.png": "/static/media/dap.48a2a681e80904560da5.png",
@@ -58,11 +57,11 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.8de4ed43.css.map": "/static/css/main.8de4ed43.css.map",
-    "main.51c17a8b.js.map": "/static/js/main.51c17a8b.js.map"
+    "main.89813eeb.css.map": "/static/css/main.89813eeb.css.map",
+    "main.3dbb1184.js.map": "/static/js/main.3dbb1184.js.map"
   },
   "entrypoints": [
-    "static/css/main.8de4ed43.css",
-    "static/js/main.51c17a8b.js"
+    "static/css/main.89813eeb.css",
+    "static/js/main.3dbb1184.js"
   ]
 }
