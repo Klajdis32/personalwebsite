@@ -192,13 +192,12 @@
     }
     
     .left-item1 p {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600;
     }
     
     .toonline {
-        width: 100%;
-        text-align: right;
+        display: none;
     }
 
 }
