@@ -40,7 +40,7 @@ const Project = () => {
                 </div>
                 {post.imageMesa && <div className='center'>
                     <br/><br/>
-                    <img src={post.imageMesa} />
+                    <img src={post.imageMesa}  className='imageMesa'/>
                 </div>}
                 <br/>
                 <p className='summary'>Summary:</p>
