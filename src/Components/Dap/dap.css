@@ -253,7 +253,7 @@ z-index: 999;
 .skeleton-date {
     height: 16px;
     width: 10%;
-    margin-right: 5%;
+    margin-right: 0%;
     border-radius: 4px;
     margin-left: auto; 
     margin-top: 5%;
@@ -281,7 +281,7 @@ z-index: 999;
     margin-bottom: 5%;
 }
 
-.center {
+.centererrdap {
     position: absolute;
     top: 45%;
     left: 50%;
