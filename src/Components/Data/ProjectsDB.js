@@ -104,7 +104,7 @@ const posts = [
         Linksigrafea: "",  
         Date: "23/10/2024",
         Katigoria: "Programming", 
-        Keimeno: "Το συγκεκριμένο project αποτελεί μέρος της συμμετοχής μου στο HacktoberFest 2024. Στο πλαίσιο του Fest μας ζητήθηκε να δημιουργήσουμε μια σελίδα εγγραφής (regist) χρησιμοποιώντας οποιοδήποτε framework προτιμούσαμε. Επέλεξα να υλοποιήσω το project με React. Μπορείτε να βρείτε όλα τα αρχεία του project στο GitHub μου, στον παρακάτω σύνδεσμο:",
+        Keimeno: "Το συγκεκριμένο project αποτελεί μέρος της συμμετοχής μου στο HacktoberFest 2024. Στο πλαίσιο του Fest μας ζητήθηκε να δημιουργήσουμε μια σελίδα εγγραφής (register) χρησιμοποιώντας οποιοδήποτε framework προτιμούσαμε. Επέλεξα να υλοποιήσω το project με React. Μπορείτε να βρείτε όλα τα αρχεία του project στο GitHub μου, στον παρακάτω σύνδεσμο:",
         Link: "https://github.com/Klajdis32/HacktoberFest2024-WebApplication" ,
         pdf: "",
         file: "",
