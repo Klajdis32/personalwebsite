@@ -57,7 +57,7 @@ const Contact = () => {
                     <div className="minima">
                         <p><a href="mailto:ktsami@auth.gr">Directly contact me from your email app!</a></p>
                     </div>
-                    <br/>
+                    <br/> <br/>
                     <div id="hr1">
                         <p className="tochoose">Form</p>
                         <hr id="tohr" />
@@ -70,6 +70,7 @@ const Contact = () => {
                     <div className="minima">
                         <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSd6LOszquAAok0-Lx6nGSRkwJhHvKL77HBuwIyHdkJ3juaj6Q/viewform?embedded=true">https://docs.google.com/forms/....</a></p>
                     </div>
+                    <br/> <br/>
                     <div id="hr1">
                         <p className="tochoose">Encrypted messaging apps</p>
                         <hr id="tohr" />
