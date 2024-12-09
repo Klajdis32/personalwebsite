@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dd6ddbc1.css",
-    "main.js": "/static/js/main.e469e50b.js",
+    "main.js": "/static/js/main.234e860f.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/marsloading.gif": "/static/media/marsloading.9bded2a15c10e69683a7.gif",
@@ -28,6 +28,7 @@
     "static/media/SpecificHeatOfMaterials.pdf": "/static/media/SpecificHeatOfMaterials.e7b60abee814ae96a4e3.pdf",
     "static/media/UsefulElectricalCircuits.pdf": "/static/media/UsefulElectricalCircuits.c1eb3e0f1d154a2f769f.pdf",
     "static/media/SimulationOfLinearMotion.pdf": "/static/media/SimulationOfLinearMotion.cc81f6f4c4c615433874.pdf",
+    "static/media/llamachat.png": "/static/media/llamachat.cb363c493d3d370046b0.png",
     "static/media/Electronics5LabSim.pdf": "/static/media/Electronics5LabSim.ad83e62089cf758594f4.pdf",
     "static/media/Electronics3LabExercise.pdf": "/static/media/Electronics3LabExercise.77201ca1b875864cf9f6.pdf",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
@@ -54,14 +55,14 @@
     "static/media/send1.png": "/static/media/send1.2ce2a557c3b6fe11e1dd.png",
     "static/media/projects.png": "/static/media/projects.4372406f98e61b097930.png",
     "static/media/ALU.zip": "/static/media/ALU.e4a920d94b85c67db4a8.zip",
-    "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
-    "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
+    "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
     "main.dd6ddbc1.css.map": "/static/css/main.dd6ddbc1.css.map",
-    "main.e469e50b.js.map": "/static/js/main.e469e50b.js.map"
+    "main.234e860f.js.map": "/static/js/main.234e860f.js.map"
   },
   "entrypoints": [
     "static/css/main.dd6ddbc1.css",
-    "static/js/main.e469e50b.js"
+    "static/js/main.234e860f.js"
   ]
 }

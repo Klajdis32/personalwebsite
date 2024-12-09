@@ -27,12 +27,29 @@ import HlektrAsk2 from "../../attachments/pdfs/Electronics2ndLabExercise.pdf";
 import HlektrAsk3 from "../../attachments/pdfs/Electronics3LabExercise.pdf";
 import HlektrAsk4 from "../../attachments/pdfs/Electronics4LabExercise.pdf";
 import HlektrAsk5 from "../../attachments/pdfs/Electronics5LabExercise.pdf";
-import HlektrProso1 from "../../attachments/pdfs/Electronics1stLabSim.pdf"
-import HlektrProso2 from "../../attachments/pdfs/Electronics2ndLabSim.pdf"
-import HlektrProso3 from "../../attachments/pdfs/Electronics3LabSim.pdf"
-import HlektrProso4 from "../../attachments/pdfs/Electronics4LabSim.pdf"
-import HlektrProso5 from "../../attachments/pdfs/Electronics5LabSim.pdf"
+import HlektrProso1 from "../../attachments/pdfs/Electronics1stLabSim.pdf";
+import HlektrProso2 from "../../attachments/pdfs/Electronics2ndLabSim.pdf";
+import HlektrProso3 from "../../attachments/pdfs/Electronics3LabSim.pdf";
+import HlektrProso4 from "../../attachments/pdfs/Electronics4LabSim.pdf";
+import HlektrProso5 from "../../attachments/pdfs/Electronics5LabSim.pdf";
+import Llama from "../../attachments/images/llamachat.png";
+
 const posts = [
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: Llama, 
+        Titlos: "Llama AI Chat Application", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "9/12/2024",
+        Katigoria: "Programming", 
+        Keimeno: "Το συγκεκριμένο project αφορά την προσπάθειά μου να δημιουργήσω μια διαδικτυακή εφαρμογή συνομιλίας με AI, αξιοποιώντας το μοντέλο Llama-3.3-70B-Versatile της Meta. Με βάση τις γνώσεις μου στη React, δημιούργησα μια φιλική και εύχρηστη πλατφόρμα που προσφέρει φυσική και έξυπνη αλληλεπίδραση, αξιοποιώντας τις προηγμένες δυνατότητες του συγκεκριμένου μοντέλου τεχνητής νοημοσύνης. Μπορείτε να βρείτε περισσότερες πληροφορίες και να εκτελέσετε το project, ακολουθώντας τις οδηγίες στον παρακάτω σύνδεσμο.",
+        Link: "https://github.com/Klajdis32/llama-chat-app",
+        pdf: "",
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "Ηλεκτρονικής",
         imageEksw: "", 
