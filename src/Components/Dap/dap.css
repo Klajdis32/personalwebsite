@@ -367,7 +367,7 @@ width: 4%;
 }
 
 .skeleton-date {
-    margin-right: 2%;
+    margin-right: 5%;
     width: 20%;
 }
 
@@ -475,6 +475,7 @@ transform: translate( -6%, -40%);
 }
 
 .skeleton-date {
+    margin-right: 5%;
     width: 40%;
 }
 

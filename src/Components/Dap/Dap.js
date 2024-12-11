@@ -5,7 +5,6 @@ const Dap = () => {
     const [apodData, setApodData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
-    const nasaKey = process.env.REACT_APP_NASA_KEY;
 
     const convertDate = (dateString) => {
         const [year, month, day] = dateString.split('-');
@@ -13,7 +12,7 @@ const Dap = () => {
     };
 
     useEffect(() => {
-        fetch(`https://api.nasa.gov/planetary/apod?api_key=${nasaKey}`)
+        fetch(`https://api.nasa.gov/planetary/apod?api_key=wNu2CW6MkRKeGOLgiAeLxoxVkLPGhQpj0KIqz0Tf`)
             .then(response => response.json())
             .then(data => {
                 data.date = convertDate(data.date);
@@ -27,7 +26,7 @@ const Dap = () => {
                 setError(true);
                 setLoading(false);
             });
-    }, [nasaKey]);
+    });
 
     if (loading) {
         return (

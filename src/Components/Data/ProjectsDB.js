@@ -39,7 +39,7 @@ const posts = [
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: Llama, 
-        Titlos: "Llama AI Chat Application", 
+        Titlos: "Chat Interface for Llama LLM", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
         Date: "9/12/2024",
