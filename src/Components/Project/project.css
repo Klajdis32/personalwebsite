@@ -138,12 +138,6 @@
     width: 90%;
 }
 
-.todivmetaa1 a {
-    padding: 10px 20px;
-    margin-right: 20px;
-    border: 2px solid lightgrey;
-    border-radius: 20px;
-}
 
 
 }
@@ -163,16 +157,15 @@
     width: 90%;
 }
 
-.todivmetaa1 a {
-    padding: 10px 20px;
-    margin-right: 20px;
-    border: 2px solid lightgrey;
-    border-radius: 20px;
-}
 
 .imageMesa {
     width: 100%;
 }
+
+.todivmeimages {
+    width: 20px;
+    height: 20px;
+  }
 
 }
   

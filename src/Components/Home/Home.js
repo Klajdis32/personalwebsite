@@ -183,7 +183,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <br/>
+                  
                 {/* <strong>Outside of learning, I enjoy :</strong>
                 <p>
                     - 💪 Exercising.<br />
@@ -252,7 +252,7 @@ const Home = () => {
                         </div>
                         </div>
                     </div>
-                    <br/>
+                   
               
                 {/* <strong>Εκτός μάθησης, μου αρέσει :</strong>
                 <p>
@@ -322,7 +322,7 @@ const Home = () => {
                         <button onClick={scrollRight} className="timeline-button">Right</button>
                         </div>
                     </div>
-                    <br/>
+                    
 
                 {/* <strong>Außerhalb des Lernens macht mir Folgendes Spaß :</strong>
                 <p>
