@@ -12,7 +12,7 @@ body {
 
         .blog-post {
             background-color: #282828;
-            border: 1px solid darkgray;
+            border: 2px solid darkgray;
             color: white;
         }
 
@@ -47,6 +47,17 @@ body {
         .todivmetaa {
             color: white;
         }
+
+
+        .page-number:hover {
+            border: 2px solid lightblue;
+        }
+
+        .page-number.active {
+            color: white;
+            border: 2px solid lightblue;
+        }
+
 }
 
 .toolo3 {
@@ -213,6 +224,11 @@ overflow: hidden;
     margin-bottom: 20px;
     text-decoration: none;
     color: black;
+    border: 2px solid transparent;
+  }
+
+  .blog-post:hover {
+    border: 2px solid blue;
   }
 
 .blog-post_info {
@@ -427,16 +443,16 @@ margin-top: 25px;
     border-radius: 10px;
     padding: 0px 8px;
     margin: 10px;
+    color: rgb(105, 105, 105);
 }
 
 .page-number:hover {
-    border: 2px solid darkgray;
+    border: 2px solid blue;
 }
 
 .page-number.active {
-    background-color: #8ed1fc;
-    color: white;
-    border: 2px solid darkgray;
+    color: black;
+    border: 2px solid blue;
 }
 
 .toarrow {
