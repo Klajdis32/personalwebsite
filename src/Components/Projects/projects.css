@@ -13,6 +13,11 @@ body {
         .blog-post {
             background-color: #282828;
             border: 1px solid darkgray;
+            color: white;
+        }
+
+        .blog-post_date {
+            color: white;
         }
 
         .blog-post_date span {
@@ -36,6 +41,10 @@ body {
         }
 
         .toseemore {
+            color: white;
+        }
+
+        .todivmetaa {
             color: white;
         }
 }
@@ -270,11 +279,7 @@ color: black;
 .todivmetaa {
     text-align: left;
     font-size: 18px;
-}
-
-.todivmetaa a {
-    text-decoration: none;
-    padding: 10px 0px;
+    color: black;
 }
 
 .toerror {

@@ -43,52 +43,70 @@ const Project = () => {
                     <img src={post.imageMesa}  className='imageMesa'/>
                 </div>}
                 <br/>
-                <p className='summary'>Summary:</p>
+                <p className='summary'>Description</p>
                 <p className='tokeimeno'>{post.Keimeno}</p>
-                <p className='summary'>Attachments:</p>
+                <p className='summary'>Attachments</p>
                 <div className="todivmetaa1">
                     {post.Link && (
-                        <a href={post.Link} target="_blank" rel="noopener noreferrer" className="blog-post_cta">
-                            <img src={link} alt="" className="todivmeimages" />Link
-                        </a>
+                        <div className='blog-post_ctaP'>
+                            <a href={post.Link} target="_blank" rel="noopener noreferrer" className="tapdfs">
+                                <img src={link} alt="" className="todivmeimages" />
+                                <p>{post.Link}</p>
+                            </a>
+                        </div>
                     )}
-                    {post.pdf && (
-                        Array.isArray(post.pdf) && post.pdf.length > 0 ? (
-                            post.pdf.map((pdfFile, index) => (
-                                <a 
-                                    key={index} 
-                                    href={pdfFile} 
-                                    download={pdfFile} 
-                                    className="blog-post_cta"
-                                    title={`${pdfFile}`} // Το tooltip με το όνομα του αρχείου
-                                >
-                                    <img src={pdf} alt="" className="todivmeimages" />
-                                    Pdf {index + 1}
-                                </a>
-                            ))
-                        ) : (
-                            typeof post.pdf === 'string' && post.pdf.trim() !== '' && (
-                                <a 
-                                    href={post.pdf} 
-                                    download={post.pdf} 
-                                    className="blog-post_cta" 
-                                    title={`${post.pdf}`} // Το tooltip με το όνομα του αρχείου
-                                >
-                                    <img src={pdf} alt="" className="todivmeimages" />
-                                    Pdf
-                                </a>
-                            )
+                   {post.pdf && (
+                    Array.isArray(post.pdf) && post.pdf.length > 0 ? (
+                        post.pdf.map((pdfFile, index) => {
+                        // Απόσπαση του "καθαρού" ονόματος αρχείου
+                        const fileNameWithHash = pdfFile.split('/').pop(); // Παίρνουμε το τελευταίο κομμάτι του path
+                        const fileName = fileNameWithHash.replace(/\.pdf$/, '').replace(/\..+$/, ''); // Καθαρίζουμε hash και επέκταση
+
+                        return (
+                            <div className="blog-post_ctaP" key={index}>
+                            <a 
+                                href={pdfFile} 
+                                download={fileNameWithHash} 
+                                className="tapdfs"
+                                title={`Download ${fileName}`} // Προαιρετικό tooltip
+                            >
+                                <img src={pdf} alt="" className="todivmeimages" />
+                                <p>{fileName}</p>
+                            </a>
+                            </div>
+                        );
+                        })
+                    ) : (
+                        typeof post.pdf === 'string' && post.pdf.trim() !== '' && (
+                        <div className="blog-post_ctaP">
+                            <a 
+                            href={post.pdf} 
+                            download={post.pdf.split('/').pop()} 
+                            className="tapdfs" 
+                            title={`Download ${post.pdf.split('/').pop()}`}
+                            >
+                            <img src={pdf} alt="" className="todivmeimages" />
+                            <p>{post.pdf.split('/').pop().replace(/\.pdf$/, '').replace(/\..+$/, '')}</p>
+                            </a>
+                        </div>
                         )
+                    )
                     )}
                     {post.file && (
-                        <a href={post.file} className="blog-post_cta">
-                            <img src={folder} alt="" className="todivmeimages" />File
-                        </a>
+                        <div className='blog-post_ctaP'>
+                            <a href={post.file} className="tapdfs">
+                                <img src={folder} alt="" className="todivmeimages" />
+                                <p>File</p>
+                            </a>
+                        </div>
                     )}
                     {post.video && (
-                        <a href={post.video} target="_blank" rel="noopener noreferrer" className="blog-post_cta">
-                            <img src={video} alt="" className="todivmeimages" />Video
-                        </a>
+                        <div className='blog-post_ctaP'>
+                            <a href={post.video} target="_blank" rel="noopener noreferrer" className="tapdfs">
+                                <img src={video} alt="" className="todivmeimages" />
+                                <p>Video</p>
+                            </a>
+                        </div>
                     )}
                 </div>
             </div>

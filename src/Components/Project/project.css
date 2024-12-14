@@ -28,6 +28,9 @@
         border: 2px solid lightgray;
     }
 
+    .tapdfs p {
+        color: white;
+    }
 }
 
 .back {
@@ -63,6 +66,7 @@
 }
 
 .todivmetaa1 {
+    display: block;
     text-align: left;
     font-size: 20px;
 }
@@ -72,14 +76,8 @@
 }
 
 .todivmetaa1 a {
-    padding: 10px 0px;
     margin-right: 20px;
-    border: 2px solid lightgrey;
-    border-radius: 20px;
-}
 
-.todivmetaa1 a:hover {
-    border: 2px solid rgb(144, 73, 73);
 }
 
 .waves4 {
@@ -98,6 +96,33 @@
 .imageMesa {
     width: 60%;
 }
+
+.blog-post_ctaP {
+    width: 100%;
+    height: 30px;
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.tapdfs {
+    display: flex;
+    padding: 0px;
+}
+
+.tapdfs p {
+    margin-top: 0px;
+    margin-left: 10px;
+    color: black;
+}
+
+
+.todivmeimages {
+    width: 30px;
+    height: 30px;
+  }
+  
+
 
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
