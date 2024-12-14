@@ -3,12 +3,13 @@ import './projects.css';
 import posts from '../Data/ProjectsDB.js'; 
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import MathImage from "../../assets/idea.png";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Projects = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredPosts, setFilteredPosts] = useState(posts);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(10);
+    const [postsPerPage] = useState(12);
     const [showPageNumbers, setShowPageNumbers] = useState(true);
     
     const navigate = useNavigate();
@@ -97,37 +98,40 @@ const Projects = () => {
                 </div>
                 <br />
                 <div id="dynamicContentContainer">
-                    {filteredPosts.length === 0 ? (
-                        <p className='notfound'>No project was found that contains the word - phrase: <strong>"{searchTerm}"</strong>...</p>
-                    ) : (
-                        currentPosts.map((post, index) => (
-                            <div className="blog-container" key={index}>
-                                <div className="blog-post">
-                                    {post.image && (
-                                        <div className="blog-post_img">
-                                            <img src={post.image} alt="" />
-                                        </div>
-                                    )}
-                                    <div className="blog-post_info">
-                                        <p className="blog-post_date">{post.Date}</p>
-                                        <h1 className="blog-post_title">{post.Titlos}</h1>
-                                        <p className="blog-post_text">
-                                            {post.Keimeno.length > 300 ? (
-                                                <>
-                                                    {post.Keimeno.substring(0, 300)}...
-                                                </>
-                                            ) : (
-                                                post.Keimeno
-                                            )}
-                                        </p>
-                                        <div className="todivmetaa">
-                                            <Link to={`/project?to=${post.Titlos}`} className='toseemore'>See more</Link>
-                                        </div>
-                                    </div>
-                                </div>
+                {filteredPosts.length === 0 ? (
+                    <p className="notfound">
+                    No project was found that contains the word - phrase: <strong>"{searchTerm}"</strong>...
+                    </p>
+                ) : (
+                    <div className="blog-container">
+                    {currentPosts.map((post, index) => (
+                        <Link to={`/project?to=${post.Titlos}`} className="blog-post" key={index}>
+                        {post.imageEksw && (
+                            <div className="blog-post_img">
+                                <img src={post.imageEksw} alt="" />
                             </div>
-                        ))
-                    )}
+                        )}
+                        <div className="blog-post_info">
+                            <p className="blog-post_date">{post.Date}</p>
+                            <h1 className="blog-post_title">{post.Titlos}</h1>
+                            <p className="blog-post_text">
+                            {post.Keimeno.length > 200 ? (
+                                <>
+                                {post.Keimeno.substring(0, 200)}...
+                                </>
+                            ) : (
+                                post.Keimeno
+                            )}
+                            </p>
+                            <div className="todivmetaa">
+                                Read more 
+                                <FaArrowRightLong  className='toarrow'/>
+                            </div>
+                        </div>
+                        </Link>
+                    ))}
+                    </div>
+                )}
                 </div>
                 {showPageNumbers && (
                     <div className='pagination'>

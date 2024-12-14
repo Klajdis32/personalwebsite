@@ -185,24 +185,33 @@ width: 1px;
 overflow: hidden;
 }
 
-.blog-post {
-width: 100%;
-background-color: #ffffff;
-box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
-display: flex;
-align-items: center;
-border-radius: .8rem;
-margin-bottom: 3%;
-}
+.blog-container {
+    display: flex; /* Τα στοιχεία διατάσσονται σε σειρά */
+    flex-wrap: wrap; /* Τα στοιχεία πηγαίνουν σε νέα γραμμή αν δεν χωράνε */
+    gap: 16px; /* Απόσταση μεταξύ των στοιχείων */
+    justify-content: space-between; /* Κατανομή χώρου ανάμεσα στα στοιχεία */
+  }
+  
+  .blog-post {
+    flex: 1 1 calc(33% - 16px); /* Κάθε post καταλαμβάνει το 30% του πλάτους */
+    max-width: calc(33% - 16px); /* Διασφαλίζουμε μέγιστο πλάτος */
+    background-color: #ffffff;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Κάθετο layout για το περιεχόμενο */
+    align-items: center;
+    border-radius: 0.8rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+  }
 
 .blog-post_info {
 padding: 35px 25px;
 }
 
 .blog-post_img {
-min-width: 30%;
-max-width: 30%;
-height: 30%;
+width: 100%;
 padding: 20px;
 position: relative;
 }
@@ -259,11 +268,12 @@ color: black;
 }
 
 .todivmetaa {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
 }
 
 .todivmetaa a {
+    text-decoration: none;
     padding: 10px 0px;
 }
 
@@ -396,6 +406,7 @@ margin-top: 25px;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 .paginationdeksia {
@@ -423,36 +434,14 @@ margin-top: 25px;
     border: 2px solid darkgray;
 }
 
-@media screen and (max-width: 1068px) {
-.blog-post {
-    width: 100%;
-    margin-left: 0%;
-    margin-bottom: 5%;
-}
-.blog-post_img {
-    margin-top: 15px;
-    min-width: 30rem;
-    max-width: 30rem;
+.toarrow {
+    margin-left: 5px;
+    font-size: 12px;
 }
 
-}
-
-@media screen and (max-width: 868px) {
-.blog-post {
-    width: 100%;
-    margin-left: 0%;
-}
-
-}
 
 @media screen and (max-width: 768px) {
-.blog-post {
-    width: 100%;
-    margin-left: 0%;
-    padding: 0rem;
-    margin-bottom: 5%;
-    flex-direction: column;
-}
+
 .blog-post_img {
     min-width: 80%;
     max-width: 80%;
@@ -485,6 +474,28 @@ margin-top: 25px;
 
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
+
+    .blog-container {
+        display: flex; /* Τα στοιχεία διατάσσονται σε σειρά */
+        flex-wrap: wrap; /* Τα στοιχεία πηγαίνουν σε νέα γραμμή αν δεν χωράνε */
+        gap: 16px; /* Απόσταση μεταξύ των στοιχείων */
+        justify-content: space-between; /* Κατανομή χώρου ανάμεσα στα στοιχεία */
+      }
+      
+      .blog-post {
+        flex: 1 1 calc(50% - 16px); /* Κάθε post καταλαμβάνει το 30% του πλάτους */
+        max-width: calc(50% - 16px); /* Διασφαλίζουμε μέγιστο πλάτος */
+        background-color: #ffffff;
+        box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column; /* Κάθετο layout για το περιεχόμενο */
+        align-items: center;
+        border-radius: 0.8rem;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+      }
+
 .container3 {
     width: 90%;
     margin-left: 5%;
@@ -572,6 +583,23 @@ width: 40%;
 
 /* Κανόνες CSS για κινητά */
 @media (max-width: 600px) {
+    .blog-container {
+        display: block;
+      }
+      
+      .blog-post {
+        max-width: 100%; /* Διασφαλίζουμε μέγιστο πλάτος */
+        background-color: #ffffff;
+        box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column; /* Κάθετο layout για το περιεχόμενο */
+        align-items: center;
+        border-radius: 0.8rem;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+      }
+
 .container3 {
     width: 90%;
     margin-left: 5%;
