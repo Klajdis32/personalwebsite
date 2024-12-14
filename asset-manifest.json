@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ffe85d6.css",
-    "main.js": "/static/js/main.ea144f11.js",
+    "main.css": "/static/css/main.73f46eac.css",
+    "main.js": "/static/js/main.45dcff13.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
@@ -57,11 +57,11 @@
     "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
-    "main.0ffe85d6.css.map": "/static/css/main.0ffe85d6.css.map",
-    "main.ea144f11.js.map": "/static/js/main.ea144f11.js.map"
+    "main.73f46eac.css.map": "/static/css/main.73f46eac.css.map",
+    "main.45dcff13.js.map": "/static/js/main.45dcff13.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ffe85d6.css",
-    "static/js/main.ea144f11.js"
+    "static/css/main.73f46eac.css",
+    "static/js/main.45dcff13.js"
   ]
 }
