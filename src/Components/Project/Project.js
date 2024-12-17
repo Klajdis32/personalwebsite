@@ -44,7 +44,7 @@ const Project = () => {
                     {post.imageMesa ? (
                     <img src={post.imageMesa} className='imageMesa' alt="Post Image" />
                     ) : (
-                    <video controls className='videoMesa'>
+                    <video controls className='videoMesa' poster={post.videoThubnail}>
                         <source src={post.videoMesa} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>

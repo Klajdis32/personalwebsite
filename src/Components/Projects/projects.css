@@ -517,6 +517,10 @@ margin-top: 25px;
         color: black;
       }
 
+      .blog-post:hover {
+        border: 2px solid transparent;
+      }
+
 .container3 {
     width: 90%;
     margin-left: 5%;
@@ -619,6 +623,11 @@ width: 40%;
         margin-bottom: 20px;
         text-decoration: none;
         color: black;
+      }
+
+
+      .blog-post:hover {
+        border: 2px solid transparent;
       }
 
 .container3 {

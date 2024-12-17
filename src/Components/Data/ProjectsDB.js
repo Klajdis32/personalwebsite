@@ -34,6 +34,7 @@ import HlektrProso4 from "../../attachments/pdfs/Electronics4LabSim.pdf";
 import HlektrProso5 from "../../attachments/pdfs/Electronics5LabSim.pdf";
 import Llama from "../../attachments/images/llamachat.png";
 import LunarLander from "../../attachments/videos/lunarlander_best3.mp4";
+import LunLandThub from "../../attachments/images/lunar.png";
 
 const posts = [
     // {
@@ -56,6 +57,7 @@ const posts = [
         imageEksw: "", 
         imageMesa: "", 
         videoMesa: LunarLander,
+        videoThubnail: LunLandThub,
         Titlos: "Lunar Lander Agent", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
