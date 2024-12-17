@@ -33,8 +33,40 @@ import HlektrProso3 from "../../attachments/pdfs/Electronics3LabSim.pdf";
 import HlektrProso4 from "../../attachments/pdfs/Electronics4LabSim.pdf";
 import HlektrProso5 from "../../attachments/pdfs/Electronics5LabSim.pdf";
 import Llama from "../../attachments/images/llamachat.png";
+import LunarLander from "../../attachments/videos/lunarlander_best3.mp4";
 
 const posts = [
+    // {
+    //     Ergastirio: "",
+    //     imageEksw: "", 
+    //     imageMesa: "", 
+    //     Titlos: "", 
+    //     Sigrafeas: "Me", 
+    //     Linksigrafea: "",  
+    //     Date: "17/12/2024",
+    //     Katigoria: "Programming", 
+    //     Keimeno: "",
+    //     Link: "",
+    //     pdf: "",
+    //     file: "",
+    //     video: ""
+    // },
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "", 
+        videoMesa: LunarLander,
+        Titlos: "Lunar Lander Agent", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "17/12/2024",
+        Katigoria: "Programming", 
+        Keimeno: "This project focuses on training an agent to successfully land a lunar module on the flattest possible surface to avoid damage. The agent is trained using Reinforcement Learning (RL) techniques, specifically with the Proximal Policy Optimization (PPO) algorithm implemented in Ray RLlib.  In the video generated, you can see the top 3 landings of the lunar module using the trained model. These landings demonstrate the agent's ability to control the lander effectively and achieve safe touchdowns. For more details about the code implementation and instructions on how to run the agent, please refer to the following link below.",
+        Link: "https://github.com/Klajdis32/LunarLanderAgent",
+        pdf: "",
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 

@@ -38,10 +38,19 @@ const Project = () => {
                     <span><strong>Date:</strong> {post.Date}</span><br/>
                     <span><strong>Category:</strong> {post.Katigoria}</span><br/>
                 </div>
-                {post.imageMesa && <div className='center'>
+                {(post.imageMesa || post.videoMesa) && (
+                <div className='center'>
                     <br/><br/>
-                    <img src={post.imageMesa}  className='imageMesa'/>
-                </div>}
+                    {post.imageMesa ? (
+                    <img src={post.imageMesa} className='imageMesa' alt="Post Image" />
+                    ) : (
+                    <video controls className='videoMesa'>
+                        <source src={post.videoMesa} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    )}
+                </div>
+                )}
                 <br/>
                 <p className='summary'>Description</p>
                 <p className='tokeimeno'>{post.Keimeno}</p>
@@ -109,6 +118,10 @@ const Project = () => {
                         </div>
                     )}
                 </div>
+            </div>
+
+            <div className='cc'>       
+                <p>© 2024 Klajdi Cami</p>
             </div>
 
             <br/><br/><br/><br/>
