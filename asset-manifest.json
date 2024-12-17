@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.85f1b50d.css",
-    "main.js": "/static/js/main.aa62aff2.js",
+    "main.css": "/static/css/main.1ae1f473.css",
+    "main.js": "/static/js/main.c84246eb.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
@@ -37,6 +37,7 @@
     "static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf": "/static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.d2097622356bd467ccae.pdf",
     "static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf": "/static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.e8a331e8e88b10a997a4.pdf",
     "static/media/Electronics4LabSim.pdf": "/static/media/Electronics4LabSim.cfe0cd5c5e3ffa606672.pdf",
+    "static/media/lunarlander_best3.mp4": "/static/media/lunarlander_best3.cb51f773d4cb5df575e0.mp4",
     "static/media/logo1.png": "/static/media/logo1.b3f926109817c6d6544c.png",
     "static/media/idea.png": "/static/media/idea.fe4a34bcbbd61ad28906.png",
     "static/media/imagelogo.png": "/static/media/imagelogo.5a2e0d6eeb57a6841221.png",
@@ -57,11 +58,11 @@
     "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
-    "main.85f1b50d.css.map": "/static/css/main.85f1b50d.css.map",
-    "main.aa62aff2.js.map": "/static/js/main.aa62aff2.js.map"
+    "main.1ae1f473.css.map": "/static/css/main.1ae1f473.css.map",
+    "main.c84246eb.js.map": "/static/js/main.c84246eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.85f1b50d.css",
-    "static/js/main.aa62aff2.js"
+    "static/css/main.1ae1f473.css",
+    "static/js/main.c84246eb.js"
   ]
 }
