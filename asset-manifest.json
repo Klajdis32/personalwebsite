@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f18fa67.css",
-    "main.js": "/static/js/main.20c26d9e.js",
+    "main.css": "/static/css/main.033ef441.css",
+    "main.js": "/static/js/main.0caca58c.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
@@ -38,8 +38,8 @@
     "static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf": "/static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.e8a331e8e88b10a997a4.pdf",
     "static/media/Electronics4LabSim.pdf": "/static/media/Electronics4LabSim.cfe0cd5c5e3ffa606672.pdf",
     "static/media/lunarlander_best3.mp4": "/static/media/lunarlander_best3.cb51f773d4cb5df575e0.mp4",
+    "static/media/idea.png": "/static/media/idea.f88abf14db74d3bb05aa.png",
     "static/media/logo1.png": "/static/media/logo1.b3f926109817c6d6544c.png",
-    "static/media/idea.png": "/static/media/idea.fe4a34bcbbd61ad28906.png",
     "static/media/imagelogo.png": "/static/media/imagelogo.5a2e0d6eeb57a6841221.png",
     "static/media/beastimage.png": "/static/media/beastimage.b6e1700a8cab9d561763.png",
     "static/media/registerPage.png": "/static/media/registerPage.099c186330683051d0c1.png",
@@ -59,11 +59,11 @@
     "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
-    "main.2f18fa67.css.map": "/static/css/main.2f18fa67.css.map",
-    "main.20c26d9e.js.map": "/static/js/main.20c26d9e.js.map"
+    "main.033ef441.css.map": "/static/css/main.033ef441.css.map",
+    "main.0caca58c.js.map": "/static/js/main.0caca58c.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f18fa67.css",
-    "static/js/main.20c26d9e.js"
+    "static/css/main.033ef441.css",
+    "static/js/main.0caca58c.js"
   ]
 }
