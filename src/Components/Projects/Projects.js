@@ -50,6 +50,25 @@ const Projects = () => {
         }
     }, [location.search]);
     
+    useEffect(() => {
+        const query = new URLSearchParams(location.search);
+        const fromPr = query.get('fromPr'); // Τίτλος project
+        const fromPg = query.get('fromPg'); // Αριθμός σελίδας
+    
+        if (fromPg) {
+            setCurrentPage(Number(fromPg)); // Μεταβαίνει στη σωστή σελίδα
+        }
+    
+        if (fromPr) {
+            // Κάνε scroll στο αντίστοιχο project
+            setTimeout(() => {
+                const element = document.querySelector(`[data-title="${fromPr}"]`);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }, 500); // Καθυστέρηση για να φορτωθούν τα στοιχεία
+        }
+    }, [location.search]);
 
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -105,7 +124,7 @@ const Projects = () => {
                 ) : (
                     <div className="blog-container">
                     {currentPosts.map((post, index) => (
-                        <Link to={`/project?to=${post.Titlos}`} className="blog-post" key={index}>
+                        <Link to={`/project?to=${post.Titlos}&fromPage=${currentPage}`} className="blog-post" key={index}  data-title={post.Titlos} >
                         {post.imageEksw && (
                             <div className="blog-post_img">
                                 <img src={post.imageEksw} alt="" />

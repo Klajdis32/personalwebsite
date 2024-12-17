@@ -365,10 +365,10 @@ margin-top: 25px;
 
 .math {
     z-index: 500;
-    margin-top: 30px;
-    width: 8%;
+    margin-top: 20px;
+    width: 7%;
     padding: 30px;
-    margin-bottom: -90px;
+    margin-bottom: -100px;
 }
 
 .seemore {
@@ -597,8 +597,8 @@ width: 40%;
     }
 
     .math {
-        width: 13%;
-        margin-bottom: -60px;
+        width: 10%;
+        margin-bottom: -80px;
     }
     
   
@@ -726,7 +726,7 @@ width: 40%;
 }
 
 .math {
-    width: 20%;
+    width: 18%;
     margin-top: -5px;
     margin-bottom: -65px;
 }

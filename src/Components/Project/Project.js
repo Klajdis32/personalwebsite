@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import posts from '../Data/ProjectsDB.js'; 
 import './project.css';
 import { useLocation, Navigate } from 'react-router-dom';
@@ -14,6 +14,16 @@ const Project = () => {
     const searchParams = new URLSearchParams(location.search);
     const title = searchParams.get('to');
     const post = posts.find(post => post.Titlos === title);
+    const [fromPage, setFromPage] = useState(null); 
+
+    useEffect(() => {
+        // Εξαγωγή του 'fromPage' από το URL
+        const queryParams = new URLSearchParams(location.search);
+        const page = queryParams.get('fromPage'); // Παίρνουμε το fromPage
+        if (page) {
+          setFromPage(Number(page)); // Αποθηκεύουμε τον αριθμό στη μεταβλητή
+        }
+      }, [location.search]); // Τρέχει όταν αλλάζει το query string
 
     if (!post) {
         return <Navigate to="/projects" />;
@@ -27,8 +37,14 @@ const Project = () => {
         </div>
         
         <div className="container4">
-            <div className='paneligopanw'>
-                <Link to="/projects" className='back'><SlArrowLeft /><p className='ligopanw'>Projects</p></Link>
+                <div className='paneligopanw'>
+                <Link 
+                    to={`/projects?fromPr=${encodeURIComponent(post.Titlos)}&fromPg=${fromPage}`} 
+                    className='back'
+                    >
+                    <SlArrowLeft />
+                    <p className='ligopanw'>Projects</p>
+                </Link>
                 <div className='center'>   
                     <h2>{title}</h2>
                 </div>

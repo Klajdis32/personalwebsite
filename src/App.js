@@ -44,7 +44,11 @@ function ProjectsWithHeader() {
 }
 
 function ProjectWithHeader() {
-  useDocumentTitle("Project");
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const title = params.get("to") || "Project"; // Αν δεν υπάρχει το query "to", χρησιμοποιεί το "Project"
+  
+  useDocumentTitle(title);
   useScrollToTop();
   return <Project />;
 }

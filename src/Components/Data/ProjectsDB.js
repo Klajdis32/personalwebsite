@@ -58,7 +58,7 @@ const posts = [
         imageMesa: "", 
         videoMesa: LunarLander,
         videoThubnail: LunLandThub,
-        Titlos: "Lunar Lander Agent", 
+        Titlos: "Lunar Lander Ai Agent", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
         Date: "17/12/2024",
