@@ -11,7 +11,7 @@ body {
     color: #ffffff; /* Λευκό χρώμα κειμένου */
 
         .blog-post {
-            background-color: #282828;
+            background-color: transparent;
             border: 2px solid darkgray;
             color: white;
         }
@@ -215,7 +215,7 @@ overflow: hidden;
   .blog-post {
     flex: 1 1 calc(33% - 16px); /* Κάθε post καταλαμβάνει το 30% του πλάτους */
     max-width: calc(33% - 16px); /* Διασφαλίζουμε μέγιστο πλάτος */
-    background-color: #ffffff;
+    background-color: transparent;
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column; /* Κάθετο layout για το περιεχόμενο */
@@ -228,7 +228,7 @@ overflow: hidden;
   }
 
   .blog-post:hover {
-    border: 2px solid blue;
+    border: 2px solid rgb(52, 52, 52);
   }
 
 .blog-post_info {
@@ -365,9 +365,8 @@ margin-top: 25px;
 
 .math {
     z-index: 500;
-    margin-top: 20px;
-    width: 10%;
-    border-radius: 100%;
+    margin-top: 30px;
+    width: 8%;
     padding: 30px;
     margin-bottom: -90px;
 }
@@ -447,12 +446,12 @@ margin-top: 25px;
 }
 
 .page-number:hover {
-    border: 2px solid blue;
+    border: 2px solid rgb(52, 52, 52);
 }
 
 .page-number.active {
     color: black;
-    border: 2px solid blue;
+    border: 3px solid rgb(52, 52, 52);
 }
 
 .toarrow {
@@ -506,7 +505,6 @@ margin-top: 25px;
       .blog-post {
         flex: 1 1 calc(50% - 16px); /* Κάθε post καταλαμβάνει το 30% του πλάτους */
         max-width: calc(50% - 16px); /* Διασφαλίζουμε μέγιστο πλάτος */
-        background-color: #ffffff;
         box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
         display: flex;
         flex-direction: column; /* Κάθετο layout για το περιεχόμενο */
@@ -599,8 +597,8 @@ width: 40%;
     }
 
     .math {
-        width: 20%;
-        margin-bottom: -50px;
+        width: 13%;
+        margin-bottom: -60px;
     }
     
   
@@ -614,7 +612,6 @@ width: 40%;
       
       .blog-post {
         max-width: 100%; /* Διασφαλίζουμε μέγιστο πλάτος */
-        background-color: #ffffff;
         box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
         display: flex;
         flex-direction: column; /* Κάθετο layout για το περιεχόμενο */
@@ -729,7 +726,7 @@ width: 40%;
 }
 
 .math {
-    width: 25%;
+    width: 20%;
     margin-top: -5px;
     margin-bottom: -65px;
 }
