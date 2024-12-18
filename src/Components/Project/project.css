@@ -99,6 +99,7 @@
 
 .videoMesa {
     width: 60%;
+    max-height: 600px;
     border-radius: 10px;
 }
 

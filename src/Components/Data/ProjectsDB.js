@@ -193,16 +193,17 @@ const posts = [
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: "",
+        videoMesa: VideoAthlisoy,
         Titlos: "Athlisoy Android app, Kotlin", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
         Date: "09/05/2024",
         Katigoria: "Programming", 
-        Keimeno: "The Athlisoy application is a simple, unified, and advanced directory for those who love physical activity and a healthy lifestyle, designed and developed using the Kotlin programming language. Through the app, users can discover a variety of exercises, from basic to advanced, accompanied by specialized videos and explanations to facilitate understanding and proper execution. Additionally, the app offers customized dietary advice and plans, providing a comprehensive guide for achieving individual physical goals. Note that the app has not been fully developed and is not available for download. However, you can find a video excerpt of the app below.",
+        Keimeno: "The Athlisoy application is a simple, unified, and advanced directory for those who love physical activity and a healthy lifestyle, designed and developed using the Kotlin programming language. Through the app, users can discover a variety of exercises, from basic to advanced, accompanied by specialized videos and explanations to facilitate understanding and proper execution. Additionally, the app offers customized dietary advice and plans, providing a comprehensive guide for achieving individual physical goals. Note that the app has not been fully developed and is not available for download.",
         Link: "" ,
         pdf: "",
         file: "",
-        video: VideoAthlisoy
+        video: ""
     },
     {
         Ergastirio: "Εργαστήριο Ατομικής Φυσικής",
@@ -414,21 +415,21 @@ const posts = [
     //     file: "",
     //     video: ""
     // },
-    {
-        Ergastirio: "",
-        imageEksw: "", 
-        imageMesa: "",
-        Titlos: "Android App Manage Passwords (MaPass)", 
-        Sigrafeas: "<a href='https://tsami.gr/' style='color: green;'>Kristi Cami</a>", 
-        Linksigrafea: "https://tsami.gr/", 
-        Date: "13/07/2023",
-        Katigoria: "Programming", 
-        Keimeno: "In this project, our aim was to create a password management application for Android called MaPass. In today's digital world, the need for strong passwords is essential to protect our personal and sensitive information. However, managing these passwords can be quite challenging. MaPass is an innovative password management application that we have developed specifically for Android, combining security and convenience into one functional tool. With MaPass, you can securely store and organize all your passwords in one place, ensuring easy access whenever you need them.",
-        Link: "https://github.com/KristiCami/PasswordManager" ,
-        pdf: MaPass,
-        file: "",
-        video: VideoMaPass
-    },
+    // {
+    //     Ergastirio: "",
+    //     imageEksw: "", 
+    //     imageMesa: "",
+    //     Titlos: "Android App Manage Passwords (MaPass)", 
+    //     Sigrafeas: "<a href='https://tsami.gr/' style='color: green;'>Kristi Cami</a>", 
+    //     Linksigrafea: "https://tsami.gr/", 
+    //     Date: "13/07/2023",
+    //     Katigoria: "Programming", 
+    //     Keimeno: "In this project, our aim was to create a password management application for Android called MaPass. In today's digital world, the need for strong passwords is essential to protect our personal and sensitive information. However, managing these passwords can be quite challenging. MaPass is an innovative password management application that we have developed specifically for Android, combining security and convenience into one functional tool. With MaPass, you can securely store and organize all your passwords in one place, ensuring easy access whenever you need them.",
+    //     Link: "https://github.com/KristiCami/PasswordManager" ,
+    //     pdf: MaPass,
+    //     file: "",
+    //     video: VideoMaPass
+    // },
     {
         Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
         imageEksw: "", 

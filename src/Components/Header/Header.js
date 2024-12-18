@@ -29,7 +29,7 @@ const Header = () => {
               <p><strong>Klajdi Cami</strong></p>
           </Link>
       </div>
-      {showHeaderDiv && (
+      {/* {showHeaderDiv && (
         <div className="right-item">
             <select className="form-select" id="languages" name="languages" value={selectedLanguage} onChange={handleChange}>
                 <option value="en">English</option>
@@ -37,7 +37,7 @@ const Header = () => {
                 <option value="ge">German</option>
             </select>
         </div>
-      )}
+      )} */}
       <DarkMode />
  
     </div>
