@@ -530,6 +530,20 @@ margin-bottom: 5px;
     margin: 5px;
   }
 
+  .taCv {
+    margin: 25px 0 25px 0;
+    font-size: 18px;
+    display: flex;
+  }
+
+  .toaCv {
+    padding: 0 10px;
+    color: black;
+    margin: 0 10px;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+  }
+
   /* MEgalitero apo tablet mikrotero apo 1100px */
   @media (min-width: 769px) and (max-width: 1100px) {
     

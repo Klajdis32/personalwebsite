@@ -11,6 +11,8 @@ import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUT
 import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
 import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
 import AiSim from '../../attachments/certificates/Certificate of Attendance_.pdf';
+import GreeCv from '../../attachments/cv/KlajdiCami_GreekCv.pdf';
+import EnglishCv from "../../attachments/cv/KlajdiCami_EnglishCv.pdf";
 
 const Home = () => {
     const today = new Date();
@@ -71,10 +73,7 @@ const Home = () => {
 
             {/* English  */}
             <div className="divkeimeno" id="en"> 
-                <p>🎓 Physicist at Aristotle University Of Thessaloniki, 2022 - current (2024) </p>
-
-                <strong>Future subject of employment</strong>
-                <p>I can't choose yet physics has many beautiful paths.</p>
+                <p>🎓 Physics student at the Aristotle University of Thessaloniki  &#40; 2022–Present &#41;</p>
 
                 <strong>About me</strong>
                 <p>
@@ -82,6 +81,13 @@ const Home = () => {
                     <br/><br/>
                     At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions. By learning languages like C, Python, PHP, and JavaScript, as well as web technologies such as HTML and CSS, I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools. This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
                 </p>
+
+                <div className='taCv'>
+                    <strong>Cv</strong>
+                    <a href={GreeCv} target="_blank" className="toaCv"  rel="noopener noreferrer">Greek</a><br/>
+                    <a href={EnglishCv} target="_blank" className="toaCv" rel="noopener noreferrer">English</a>
+                </div>
+
                 <strong>Certificates and attestations</strong>
                 <br/> <br/>
                 <div className='todivcart'>
@@ -145,11 +151,11 @@ const Home = () => {
                     - 👥 Spend time with friends.<br />
                 </p> */}
 
-            <br/>
             <strong>Skills</strong>
             <div className='taskills'>
                 <p>Physics</p>
                 <p>Mathematics</p>
+                <p>Electronics</p>
                 <p>C</p>
                 <p>Python</p>
                 <p>JavaScript</p>
