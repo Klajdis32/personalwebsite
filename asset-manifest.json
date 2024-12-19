@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e68dd22.css",
-    "main.js": "/static/js/main.c79ca02e.js",
+    "main.css": "/static/css/main.ccdffbe8.css",
+    "main.js": "/static/js/main.edfd9513.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
@@ -30,6 +30,7 @@
     "static/media/llamachat.png": "/static/media/llamachat.cb363c493d3d370046b0.png",
     "static/media/Electronics5LabSim.pdf": "/static/media/Electronics5LabSim.ad83e62089cf758594f4.pdf",
     "static/media/Electronics3LabExercise.pdf": "/static/media/Electronics3LabExercise.77201ca1b875864cf9f6.pdf",
+    "static/media/Certificate of Attendance_.pdf": "/static/media/Certificate of Attendance_.c19d65af042e2a8c2e49.pdf",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
     "static/media/Electronics3LabSim.pdf": "/static/media/Electronics3LabSim.85d59e87fed337758e61.pdf",
@@ -39,7 +40,6 @@
     "static/media/Electronics4LabSim.pdf": "/static/media/Electronics4LabSim.cfe0cd5c5e3ffa606672.pdf",
     "static/media/lunarlander_best3.mp4": "/static/media/lunarlander_best3.cb51f773d4cb5df575e0.mp4",
     "static/media/idea.png": "/static/media/idea.8a618d44a2f4ec6e57c2.png",
-    "static/media/logo1.png": "/static/media/logo1.b3f926109817c6d6544c.png",
     "static/media/imagelogo.png": "/static/media/imagelogo.5a2e0d6eeb57a6841221.png",
     "static/media/beastimage.png": "/static/media/beastimage.b6e1700a8cab9d561763.png",
     "static/media/registerPage.png": "/static/media/registerPage.099c186330683051d0c1.png",
@@ -51,6 +51,7 @@
     "static/media/certificate.png": "/static/media/certificate.ad8ddd254a916a66448b.png",
     "static/media/user.png": "/static/media/user.45a0af68515332b42be9.png",
     "static/media/video.png": "/static/media/video.c07fe566746d9d0d109c.png",
+    "static/media/next.png": "/static/media/next.1c41bbc4f93e96b4756b.png",
     "static/media/new-email.png": "/static/media/new-email.73702e84b0ca90a91abe.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/send1.png": "/static/media/send1.2ce2a557c3b6fe11e1dd.png",
@@ -59,11 +60,11 @@
     "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
-    "main.9e68dd22.css.map": "/static/css/main.9e68dd22.css.map",
-    "main.c79ca02e.js.map": "/static/js/main.c79ca02e.js.map"
+    "main.ccdffbe8.css.map": "/static/css/main.ccdffbe8.css.map",
+    "main.edfd9513.js.map": "/static/js/main.edfd9513.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e68dd22.css",
-    "static/js/main.c79ca02e.js"
+    "static/css/main.ccdffbe8.css",
+    "static/js/main.edfd9513.js"
   ]
 }
