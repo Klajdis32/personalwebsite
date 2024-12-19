@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.168b9cb7.css",
-    "main.js": "/static/js/main.edfd9513.js",
+    "main.css": "/static/css/main.c89b3895.css",
+    "main.js": "/static/js/main.f78510d6.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
@@ -35,6 +35,8 @@
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
     "static/media/Electronics3LabSim.pdf": "/static/media/Electronics3LabSim.85d59e87fed337758e61.pdf",
     "static/media/Electronics1stLabSim.pdf": "/static/media/Electronics1stLabSim.c586b61abcabe16e63e3.pdf",
+    "static/media/KlajdiCami_GreekCv.pdf": "/static/media/KlajdiCami_GreekCv.9701b6298c9ddcdc2887.pdf",
+    "static/media/KlajdiCami_EnglishCv.pdf": "/static/media/KlajdiCami_EnglishCv.9d1d984dd99a309834ca.pdf",
     "static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf": "/static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.d2097622356bd467ccae.pdf",
     "static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf": "/static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.e8a331e8e88b10a997a4.pdf",
     "static/media/Electronics4LabSim.pdf": "/static/media/Electronics4LabSim.cfe0cd5c5e3ffa606672.pdf",
@@ -60,11 +62,11 @@
     "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
-    "main.168b9cb7.css.map": "/static/css/main.168b9cb7.css.map",
-    "main.edfd9513.js.map": "/static/js/main.edfd9513.js.map"
+    "main.c89b3895.css.map": "/static/css/main.c89b3895.css.map",
+    "main.f78510d6.js.map": "/static/js/main.f78510d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.168b9cb7.css",
-    "static/js/main.edfd9513.js"
+    "static/css/main.c89b3895.css",
+    "static/js/main.f78510d6.js"
   ]
 }
