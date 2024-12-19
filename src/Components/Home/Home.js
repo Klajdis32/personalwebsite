@@ -1,19 +1,18 @@
 import './home.css';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/imagelogo.png';
-import Logo1 from '../../assets/logo1.png';
-import React, { useState, useEffect, useRef  } from "react";
-import imgreact from "../../assets/react.png";
+import React, { useRef  } from "react";
 import contact from "../../assets/new-email.png";
 import github from "../../assets/github.png";
 import Linkedin from "../../assets/linkedin.png";
 import cert from "../../assets/certificate.png";
+import rightArr from '../../assets/next.png';
 import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
 import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
 import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
+import AiSim from '../../attachments/certificates/Certificate of Attendance_.pdf';
 
 const Home = () => {
-    const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
     const today = new Date();
 
     const day = String(today.getDate()).padStart(2, '0'); // Προσθέτουμε 0 μπροστά αν η μέρα είναι μονοψήφια
@@ -36,14 +35,6 @@ const Home = () => {
       }
     };
 
-    useEffect(() => {
-      const storedTheme = localStorage.getItem('selectedTheme');
-
-      if (storedTheme) {
-        setSelectedLanguage(storedTheme);
-      }
-    }, []);
-
     return (
         <div className='toolo'>
         <div className='tawaves'>
@@ -63,13 +54,13 @@ const Home = () => {
                             <span id="grcont">Επικοινωνία</span>
                         </div>
                     </Link>
-                    <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" className='tolink'>
+                    <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" rel="noreferrer" className='tolink'>
                     <div className='todivdeksia1' id='oxideksia1'>
                         <img src={Linkedin} alt="" /><br />
                         <span>Linkedin</span>
                     </div>
                     </Link><div id='monokin'><br/><br/></div>
-                    <Link to="https://github.com/Klajdis32" target="_blank" className='tolink'>
+                    <Link to="https://github.com/Klajdis32" target="_blank" rel="noreferrer" className='tolink'>
                     <div className='todivdeksia1' id='oxideksia'>
                         <img src={github} alt="" /><br />
                         <span>Github</span>
@@ -96,13 +87,14 @@ const Home = () => {
                 <div className='todivcart'>
                     <img src={cert} alt='certificats' className='tocertimg' />
                     <div className="horizontal-line"></div>
+                    <img src={rightArr} alt='certificats' className='torightArrimg' />
                 </div>
                 <div className='toolohor'>
                     <div className="timeline-container">
                         <button onClick={scrollLeft} className="timeline-button">Left</button>
                         <div className="timeline" ref={timelineRef}>
                             
-                            <a href={EEF} target="_blank" className='tacart'>
+                            <a href={EEF} target="_blank" rel="noreferrer" className='tacart'>
                                 <div className='mpalaki'></div>
                                 <div className="content">
                                     <p className='todatep'>20/3/2021</p>
@@ -110,20 +102,27 @@ const Home = () => {
                                 </div>
                             </a>
 
-                            <a href={qiskit} target="_blank" className='tacart'>
+                            <a href={qiskit} target="_blank" rel="noreferrer" className='tacart'>
                             <div className='mpalaki'></div>
                                 <div className="content">
                                     <p className='todatep'>04/12/2023</p>
-                                    <p className='tokatwp'>Qiskit FallFest AUTH 2023 (Pdf)</p> 
+                                    <p className='tokatwp'>Quantum computing with Qiskit, FallFest AUTH 2023 (Pdf)</p> 
                                 </div>
                             </a>
 
-                            <a href={Esa} target="_blank" className='tacart'>
+                            <a href={Esa} target="_blank" rel="noreferrer" className='tacart'>
                             <div className='mpalaki'></div>
                                 <div className="content">
                                     <p className='todatep'>28/09/2024</p>
-                                    <p className='tokatwp'>Αttendance certificate of the first annual ESERO Greece Symposium 
-                                    from Esa (Pdf)</p> 
+                                    <p className='tokatwp'>ESERO Greece Symposium from Esa (Pdf)</p> 
+                                </div>
+                            </a>
+
+                            <a href={AiSim} target="_blank" rel="noreferrer" className='tacart'>
+                            <div className='mpalaki'></div>
+                                <div className="content">
+                                    <p className='todatep'>01/12/2024</p>
+                                    <p className='tokatwp'>The applications of AI in everyday life, symposium (Pdf)</p> 
                                 </div>
                             </a>
 

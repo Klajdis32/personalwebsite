@@ -624,7 +624,7 @@ width: 40%;
 
 
       .blog-post:hover {
-        border: 2px solid transparent;
+        border: none;
       }
 
 .container3 {
