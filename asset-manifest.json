@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7ba1676.css",
-    "main.js": "/static/js/main.f78510d6.js",
+    "main.css": "/static/css/main.24519029.css",
+    "main.js": "/static/js/main.0e17fa38.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
@@ -17,7 +17,6 @@
     "static/media/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .pdf": "/static/media/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .86e565d7a6b181b18901.pdf",
     "static/media/Mapass.mp4": "/static/media/Mapass.63de77a2362da76a210d.mp4",
     "static/media/Μέτρηση Τάσεων Mε Παλμογράφο.pdf": "/static/media/Μέτρηση Τάσεων Mε Παλμογράφο.7916f091448d303fd1f7.pdf",
-    "static/media/404.gif": "/static/media/404.533b1681799e11cd2dd6.gif",
     "static/media/Planck.pdf": "/static/media/Planck.900c690bf21244ebba14.pdf",
     "static/media/Περίθλαση Ηλεκτρονίων.pdf": "/static/media/Περίθλαση Ηλεκτρονίων.716353741bf5a6444eb4.pdf",
     "static/media/Electronics2ndLabSim.pdf": "/static/media/Electronics2ndLabSim.ba8713e99eba8bb85f74.pdf",
@@ -50,10 +49,8 @@
     "static/media/link.png": "/static/media/link.0657ce38511cbb05091e.png",
     "static/media/github.png": "/static/media/github.f3d873d71aa989badfd2.png",
     "static/media/petasma.jpg": "/static/media/petasma.d2614772027cf8f0548b.jpg",
-    "static/media/certificate.png": "/static/media/certificate.ad8ddd254a916a66448b.png",
     "static/media/user.png": "/static/media/user.45a0af68515332b42be9.png",
     "static/media/video.png": "/static/media/video.c07fe566746d9d0d109c.png",
-    "static/media/next.png": "/static/media/next.1c41bbc4f93e96b4756b.png",
     "static/media/new-email.png": "/static/media/new-email.73702e84b0ca90a91abe.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/send1.png": "/static/media/send1.2ce2a557c3b6fe11e1dd.png",
@@ -62,11 +59,11 @@
     "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
-    "main.e7ba1676.css.map": "/static/css/main.e7ba1676.css.map",
-    "main.f78510d6.js.map": "/static/js/main.f78510d6.js.map"
+    "main.24519029.css.map": "/static/css/main.24519029.css.map",
+    "main.0e17fa38.js.map": "/static/js/main.0e17fa38.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7ba1676.css",
-    "static/js/main.f78510d6.js"
+    "static/css/main.24519029.css",
+    "static/js/main.0e17fa38.js"
   ]
 }
