@@ -76,7 +76,6 @@
       .toaCv {
         color: white;
       }
-    
 }
 
 body {
@@ -467,13 +466,25 @@ margin-bottom: 5px;
     .horizontal-line {
         height: 2px;
         margin-top: 20px;
-        margin-left: -10px;
         background-color: black;
         flex-grow: 1;
+        margin-left: -5px;
         position: relative;
         z-index: 1; /* Τοποθετεί τη γραμμή κάτω από το timeline */
     }
 
+
+.left-dot {
+    margin-top: -20px;
+    font-size: 50px; /* Μέγεθος της τελείας */
+    color: #0056b3;/* Χρώμα της τελείας */
+}
+
+.right-arrows {
+    font-size: 30px; /* Μέγεθος των βελάκων */
+    color: #0056b3; /* Χρώμα των βελάκων */
+    margin-top: -5px;
+}
   .tokatwpnow {
     margin-top: 0px;
   }

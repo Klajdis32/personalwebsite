@@ -5,8 +5,6 @@ import React, { useRef  } from "react";
 import contact from "../../assets/new-email.png";
 import github from "../../assets/github.png";
 import Linkedin from "../../assets/linkedin.png";
-import cert from "../../assets/certificate.png";
-import rightArr from '../../assets/next.png';
 import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
 import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
 import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
@@ -90,10 +88,10 @@ const Home = () => {
 
                 <strong>Certificates and attestations</strong>
                 <br/> <br/>
-                <div className='todivcart'>
-                    <img src={cert} alt='certificats' className='tocertimg' />
-                    <div className="horizontal-line"></div>
-                    <img src={rightArr} alt='certificats' className='torightArrimg' />
+                <div class="todivcart">
+                    <span class="left-dot">•</span>
+                    <div class="horizontal-line"></div>
+                    <span class="right-arrows">»</span>
                 </div>
                 <div className='toolohor'>
                     <div className="timeline-container">
@@ -133,7 +131,7 @@ const Home = () => {
                             </a>
 
                             <div className="tacart" id='tonow'>
-                                <div className='mpalaki' id='tonowmpalaki'></div>
+                                <div className='mpalaki'></div>
                                 <p className='todatep'>{formattedDate}</p>
                                 <p className='tokatwpnow'>Today</p> 
                             </div>
