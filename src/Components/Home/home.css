@@ -76,6 +76,14 @@
       .toaCv {
         color: white;
       }
+
+      .left-dot {
+        color: white;
+    }
+    
+    .right-arrows {
+        color: white;
+    }
 }
 
 body {
@@ -475,14 +483,14 @@ margin-bottom: 5px;
 
 
 .left-dot {
-    margin-top: -20px;
-    font-size: 50px; /* Μέγεθος της τελείας */
-    color: #0056b3;/* Χρώμα της τελείας */
+    margin-top: -29px;
+    font-size: 60px; /* Μέγεθος της τελείας */
+    color: black;/* Χρώμα της τελείας */
 }
 
 .right-arrows {
     font-size: 30px; /* Μέγεθος των βελάκων */
-    color: #0056b3; /* Χρώμα των βελάκων */
+    color: black; /* Χρώμα των βελάκων */
     margin-top: -5px;
 }
   .tokatwpnow {
