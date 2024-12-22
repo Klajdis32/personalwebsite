@@ -5,12 +5,13 @@ import React, { useRef  } from "react";
 import contact from "../../assets/new-email.png";
 import github from "../../assets/github.png";
 import Linkedin from "../../assets/linkedin.png";
-import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
-import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
-import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
-import AiSim from '../../attachments/certificates/Certificate of Attendance_.pdf';
-import GreeCv from '../../attachments/cv/KlajdiCami_GreekCv.pdf';
-import EnglishCv from "../../attachments/cv/KlajdiCami_EnglishCv.pdf";
+// import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
+// import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
+// import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
+// import AiSim from '../../attachments/certificates/Certificate of Attendance_.pdf';
+// import GreeCv from '../../attachments/cv/KlajdiCami_GreekCv.pdf';
+// import EnglishCv from "../../attachments/cv/KlajdiCami_EnglishCv.pdf";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Home = () => {
     const today = new Date();
@@ -80,11 +81,11 @@ const Home = () => {
                     At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions. By learning languages like C, Python, PHP, and JavaScript, as well as web technologies such as HTML and CSS, I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools. This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
                 </p>
 
-                <div className='taCv'>
+                {/* <div className='taCv'>
                     <strong>Cv</strong>
                     <a href={GreeCv} target="_blank" className="toaCv"  rel="noopener noreferrer">Greek</a><br/>
                     <a href={EnglishCv} target="_blank" className="toaCv" rel="noopener noreferrer">English</a>
-                </div>
+                </div> */}
 
                 {/* <strong>Certificates and attestations</strong>
                 <br/> <br/>
@@ -141,31 +142,41 @@ const Home = () => {
                         </div>
 
                     </div> */}
-                  
-                {/* <strong>Outside of learning, I enjoy :</strong>
-                <p>
-                    - 💪 Exercising.<br />
-                    - 🛩️ Traveling.<br />
-                    - 👥 Spend time with friends.<br />
-                </p> */}
 
-            <strong>Skills</strong>
-            <div className='taskills'>
-                <p>Physics</p>
-                <p>Mathematics</p>
-                <p>Electronics</p>
-                <p>C</p>
-                <p>Python</p>
-                <p>JavaScript</p>
-                <p>React</p>
-                <p>Php</p>
-                <p>Mysql</p>
-                <p>MonogDb</p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>English</p>
-                <p>Greek</p>
-            </div>
+                <strong>Skills</strong>
+                <div className='taskills'>
+                    <p>Physics</p>
+                    <p>Mathematics</p>
+                    <p>Electronics</p>
+                    <p>C</p>
+                    <p>Python</p>
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>Php</p>
+                    <p>Mysql</p>
+                    <p>MonogDb</p>
+                    <p>HTML, CSS</p>
+                    <p>English</p>
+                    <p>Greek</p>
+                </div>
+
+                <br/>
+                <strong>Selected works</strong>
+
+                <div className="toEpilegmeno">
+                    <p className='topEpi'>Lunar Lander Ai Agent</p>
+                    <Link to='/project?to=Lunar%20Lander%20Ai%20Agent' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                </div>
+
+                <div className="toEpilegmeno">
+                    <p className='topEpi'>Chat Interface for Llama LLM</p>
+                    <Link to='/project?to=Chat%20Interface%20for%20Llama%20LLM' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                </div>
+
+                <div className="toEpilegmeno">
+                    <p className='topEpi'>All projects</p>
+                    <Link to='/project' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
+                </div>
 
             </div>
 

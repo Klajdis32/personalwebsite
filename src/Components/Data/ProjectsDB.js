@@ -79,7 +79,7 @@ const posts = [
         Date: "9/12/2024",
         Katigoria: "Programming", 
         Keimeno: "This project involves my attempt to create a web-based AI chat interface utilizing Meta's Llama-3.3-70B-Versatile model. Leveraging my knowledge of React, I developed a user-friendly platform offering natural and intelligent interaction, utilizing the advanced capabilities of this AI model. You can find more information and run the project by following the instructions in the link below.",
-        Link: "https://github.com/Klajdis32/llama-chat-app",
+        Link: "https://github.com/Klajdis32/llama-chat-Interface-react",
         pdf: "",
         file: "",
         video: ""

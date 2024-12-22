@@ -55,19 +55,24 @@ const Projects = () => {
         const fromPr = query.get('fromPr'); // Τίτλος project
         const fromPg = query.get('fromPg'); // Αριθμός σελίδας
     
-        if (fromPg) {
-            setCurrentPage(Number(fromPg)); // Μεταβαίνει στη σωστή σελίδα
+        // Εκτέλεση μόνο αν υπάρχουν και τα δύο
+        if (fromPr === null || fromPg === null || fromPg === "null") {
+            return; // Αν λείπει οποιοδήποτε από τα δύο, δεν κάνει τίποτα
         }
     
-        if (fromPr) {
-            // Κάνε scroll στο αντίστοιχο project
-            setTimeout(() => {
-                const element = document.querySelector(`[data-title="${fromPr}"]`);
-                if (element) {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-            }, 500); // Καθυστέρηση για να φορτωθούν τα στοιχεία
-        }
+        // Μετατροπή του fromPg σε αριθμό
+        const page = Number(fromPg);
+    
+        // Ενημέρωση της τρέχουσας σελίδας
+        setCurrentPage(page);
+    
+        // Κάνε scroll στο αντίστοιχο project
+        setTimeout(() => {
+            const element = document.querySelector(`[data-title="${fromPr}"]`);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 500); // Καθυστέρηση για να φορτωθούν τα στοιχεία
     }, [location.search]);
 
     const indexOfLastPost = currentPage * postsPerPage;
