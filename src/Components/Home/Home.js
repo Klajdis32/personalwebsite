@@ -86,7 +86,7 @@ const Home = () => {
                     <a href={EnglishCv} target="_blank" className="toaCv" rel="noopener noreferrer">English</a>
                 </div>
 
-                <strong>Certificates and attestations</strong>
+                {/* <strong>Certificates and attestations</strong>
                 <br/> <br/>
                 <div class="todivcart">
                     <span class="left-dot">•</span>
@@ -140,7 +140,7 @@ const Home = () => {
                         <button onClick={scrollRight} className="timeline-button">Right</button>
                         </div>
 
-                    </div>
+                    </div> */}
                   
                 {/* <strong>Outside of learning, I enjoy :</strong>
                 <p>
