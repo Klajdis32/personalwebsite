@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f71b7e3.css",
-    "main.js": "/static/js/main.bdc30ee0.js",
+    "main.css": "/static/css/main.3bde1084.css",
+    "main.js": "/static/js/main.2efb5b81.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
     "static/media/Τετράπολα - Κυκλώματα Διαφόρισης .pdf": "/static/media/Τετράπολα - Κυκλώματα Διαφόρισης .84948d01b1fa9bd22414.pdf",
-    "static/media/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf": "/static/media/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.87bb393a9bb44df9ba2f.pdf",
     "static/media/Ultrasound.pdf": "/static/media/Ultrasound.005da9cd315bb088614b.pdf",
     "static/media/Electronics5LabExercise.pdf": "/static/media/Electronics5LabExercise.86bbe0bbbb62b47a2b15.pdf",
     "static/media/Electronics1stLabExercise.pdf": "/static/media/Electronics1stLabExercise.2f7c767939388702f670.pdf",
@@ -29,15 +28,10 @@
     "static/media/llamachat.png": "/static/media/llamachat.cb363c493d3d370046b0.png",
     "static/media/Electronics5LabSim.pdf": "/static/media/Electronics5LabSim.ad83e62089cf758594f4.pdf",
     "static/media/Electronics3LabExercise.pdf": "/static/media/Electronics3LabExercise.77201ca1b875864cf9f6.pdf",
-    "static/media/Certificate of Attendance_.pdf": "/static/media/Certificate of Attendance_.c19d65af042e2a8c2e49.pdf",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
     "static/media/Electronics3LabSim.pdf": "/static/media/Electronics3LabSim.85d59e87fed337758e61.pdf",
     "static/media/Electronics1stLabSim.pdf": "/static/media/Electronics1stLabSim.c586b61abcabe16e63e3.pdf",
-    "static/media/KlajdiCami_GreekCv.pdf": "/static/media/KlajdiCami_GreekCv.9701b6298c9ddcdc2887.pdf",
-    "static/media/KlajdiCami_EnglishCv.pdf": "/static/media/KlajdiCami_EnglishCv.9d1d984dd99a309834ca.pdf",
-    "static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf": "/static/media/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.d2097622356bd467ccae.pdf",
-    "static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf": "/static/media/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.e8a331e8e88b10a997a4.pdf",
     "static/media/Electronics4LabSim.pdf": "/static/media/Electronics4LabSim.cfe0cd5c5e3ffa606672.pdf",
     "static/media/lunarlander_best3.mp4": "/static/media/lunarlander_best3.cb51f773d4cb5df575e0.mp4",
     "static/media/idea.png": "/static/media/idea.8a618d44a2f4ec6e57c2.png",
@@ -59,11 +53,11 @@
     "static/media/Sun.svg": "/static/media/Sun.aef8f60b836976321d24aa4163dbfb7f.svg",
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
-    "main.2f71b7e3.css.map": "/static/css/main.2f71b7e3.css.map",
-    "main.bdc30ee0.js.map": "/static/js/main.bdc30ee0.js.map"
+    "main.3bde1084.css.map": "/static/css/main.3bde1084.css.map",
+    "main.2efb5b81.js.map": "/static/js/main.2efb5b81.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f71b7e3.css",
-    "static/js/main.bdc30ee0.js"
+    "static/css/main.3bde1084.css",
+    "static/js/main.2efb5b81.js"
   ]
 }
