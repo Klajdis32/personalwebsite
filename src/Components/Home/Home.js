@@ -154,7 +154,7 @@ const Home = () => {
                     <p>React</p>
                     <p>Php</p>
                     <p>Mysql</p>
-                    <p>MonogDb</p>
+                    <p>MongoDB</p>
                     <p>HTML, CSS</p>
                     <p>English</p>
                     <p>Greek</p>
