@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3bde1084.css",
-    "main.js": "/static/js/main.b8323a7b.js",
+    "main.js": "/static/js/main.b9b85dd6.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Electronics2ndLabExercise.pdf": "/static/media/Electronics2ndLabExercise.76512e6e79a2d226e100.pdf",
@@ -54,10 +54,10 @@
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
     "main.3bde1084.css.map": "/static/css/main.3bde1084.css.map",
-    "main.b8323a7b.js.map": "/static/js/main.b8323a7b.js.map"
+    "main.b9b85dd6.js.map": "/static/js/main.b9b85dd6.js.map"
   },
   "entrypoints": [
     "static/css/main.3bde1084.css",
-    "static/js/main.b8323a7b.js"
+    "static/js/main.b9b85dd6.js"
   ]
 }
