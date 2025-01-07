@@ -15,26 +15,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Home = () => {
     const today = new Date();
-
-    const day = String(today.getDate()).padStart(2, '0'); // Προσθέτουμε 0 μπροστά αν η μέρα είναι μονοψήφια
-    const month = String(today.getMonth() + 1).padStart(2, '0'); // Προσθέτουμε 0 μπροστά αν ο μήνας είναι μονοψήφιος
     const year = today.getFullYear();
-  
-    const formattedDate = `${day}/${month}/${year}`; // Φόρματ της ημερομηνίας σε μορφή DD/MM/YYYY
-  
-    const timelineRef = useRef(null);
-
-    const scrollLeft = () => {
-      if (timelineRef.current) {
-        timelineRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-      }
-    };
-  
-    const scrollRight = () => {
-      if (timelineRef.current) {
-        timelineRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-      }
-    };
 
     return (
         <div className='toolo'>
@@ -151,11 +132,8 @@ const Home = () => {
                     <p>C</p>
                     <p>Python</p>
                     <p>JavaScript</p>
-                    <p>React</p>
-                    <p>Php</p>
-                    <p>Mysql</p>
-                    <p>MongoDB</p>
-                    <p>HTML, CSS</p>
+                    <p>App Developer</p>
+                    <p>Web App Developer</p>
                     <p>English</p>
                     <p>Greek</p>
                 </div>
@@ -181,7 +159,7 @@ const Home = () => {
             </div>
 
              <div className='cc'>       
-            <p>© 2025 Klajdi Cami</p>
+            <p>© {year} Klajdi Cami</p>
             </div>
             <br/><br/><br/><br/>
         </div>

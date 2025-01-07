@@ -15,7 +15,9 @@ const Project = () => {
     const title = searchParams.get('to');
     const post = posts.find(post => post.Titlos === title);
     const [fromPage, setFromPage] = useState(null); 
-
+    const today = new Date();
+    const year = today.getFullYear();
+    
     useEffect(() => {
         // Εξαγωγή του 'fromPage' από το URL
         const queryParams = new URLSearchParams(location.search);
@@ -137,7 +139,7 @@ const Project = () => {
             </div>
 
             <div className='cc'>       
-                <p>© 2025 Klajdi Cami</p>
+                <p>© {year} Klajdi Cami</p>
             </div>
 
             <br/><br/><br/><br/>
