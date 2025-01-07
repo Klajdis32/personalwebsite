@@ -66,6 +66,7 @@ text-decoration: none;
 }
 
 .toa1 {
+    margin-left: 10px;
 color: green;
 }
 
@@ -194,7 +195,7 @@ z-index: 999;
     text-align: right;
     font-weight: 500;
     font-size: 18px;
-    margin-right: 25px;
+    margin-right: 0px;
 }
 
 .kentrototitle {
