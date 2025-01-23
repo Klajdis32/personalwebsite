@@ -132,6 +132,7 @@ const Home = () => {
                     <p>C</p>
                     <p>Python</p>
                     <p>JavaScript</p>
+                    <p>React</p>
                     <p>App Developer</p>
                     <p>Web App Developer</p>
                     <p>English</p>
@@ -153,7 +154,7 @@ const Home = () => {
 
                 <div className="toEpilegmeno">
                     <p className='topEpi'>All projects</p>
-                    <Link to='/project' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
+                    <Link to='/projects' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
                 </div>
 
             </div>

@@ -87,6 +87,35 @@
     display: inline-block;
     padding: 0 15px;
     border-radius: 20px;
+    width: auto;
+}
+
+.pgb {
+    margin: 5px 20px;
+    background-color: rgb(44, 134, 176);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    word-break: break-word; /* Σπάει τη λέξη αν χρειάζεται */
+    overflow-wrap: break-word; /* Εναλλακτική υποστήριξη για σπάσιμο λέξεων */
+    white-space: normal; /* Επιτρέπει το περιεχόμενο να τυλιχθεί σε νέες γραμμές */
+}
+
+.pgbDiv {
+    width: 100%;
+    justify-content: right;
+    display: flex;
+    text-align: center;
+}
+
+.toPgbCopya {
+    font-weight: 500;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
 }
 
 #mnm5 {
