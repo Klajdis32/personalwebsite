@@ -1,7 +1,7 @@
 import './home.css';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/imagelogo.png';
-import React, { useRef  } from "react";
+import React from "react";
 import contact from "../../assets/new-email.png";
 import github from "../../assets/github.png";
 import Linkedin from "../../assets/linkedin.png";
@@ -53,7 +53,7 @@ const Home = () => {
 
             {/* English  */}
             <div className="divkeimeno" id="en"> 
-                <p>🎓 Physics student at the Aristotle University of Thessaloniki  &#40; 2022 – Present &#41;</p>
+                <p>🎓 Physics student at the Aristotle University of Thessaloniki  <small>&#40; 2022 – Present &#41;</small></p>
 
                 <strong>About me</strong>
                 <p>

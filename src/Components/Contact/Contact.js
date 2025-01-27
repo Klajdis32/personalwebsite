@@ -80,7 +80,6 @@ H88/ipfuN6yjAkGimELuusKwuQeS+VR9GuZoYYxf
         }
     };
 
-
     return (
         <div className="toolocont">
             <div className="waveContact">
