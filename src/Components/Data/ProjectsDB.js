@@ -22,19 +22,23 @@ import Aluzip from "../../attachments/files/ALU.zip";
 import petasma from "../../assets/petasma.jpg"
 import beabeast from "../../attachments/images/beastimage.png";
 import registerPage from "../../attachments/images/registerPage.png";
-import HlektrAsk1 from "../../attachments/pdfs/Electronics1stLabExercise.pdf";
-import HlektrAsk2 from "../../attachments/pdfs/Electronics2ndLabExercise.pdf";
-import HlektrAsk3 from "../../attachments/pdfs/Electronics3LabExercise.pdf";
-import HlektrAsk4 from "../../attachments/pdfs/Electronics4LabExercise.pdf";
-import HlektrAsk5 from "../../attachments/pdfs/Electronics5LabExercise.pdf";
-import HlektrProso1 from "../../attachments/pdfs/Electronics1stLabSim.pdf";
-import HlektrProso2 from "../../attachments/pdfs/Electronics2ndLabSim.pdf";
-import HlektrProso3 from "../../attachments/pdfs/Electronics3LabSim.pdf";
-import HlektrProso4 from "../../attachments/pdfs/Electronics4LabSim.pdf";
-import HlektrProso5 from "../../attachments/pdfs/Electronics5LabSim.pdf";
+import HlektrAsk1 from "../../attachments/pdfs/Lab1Exercise_InGreek.pdf";
+import HlektrAsk2 from "../../attachments/pdfs/Lab2Exercise_InGreek.pdf";
+import HlektrAsk3 from "../../attachments/pdfs/Lab3Exercise_InGreek.pdf";
+import HlektrAsk4 from "../../attachments/pdfs/Lab4Exercise_InGreek.pdf";
+import HlektrAsk5 from "../../attachments/pdfs/Lab5Exercise_InGreek.pdf";
+import HlektrProso1 from "../../attachments/pdfs/Lab1Simulation_InGreek.pdf";
+import HlektrProso2 from "../../attachments/pdfs/Lab2Simulation_InGreek.pdf";
+import HlektrProso3 from "../../attachments/pdfs/Lab3Simulation_InGreek.pdf";
+import HlektrProso4 from "../../attachments/pdfs/Lab4Simulation_InGreek.pdf";
+import HlektrProso5 from "../../attachments/pdfs/Lab5Simulation_InGreek.pdf";
 import Llama from "../../attachments/images/llamachat.png";
 import LunarLander from "../../attachments/videos/lunarlander_best3.mp4";
 import LunLandThub from "../../attachments/images/lunar.png";
+import firstTxtFile from "../../attachments/files/1.txt";
+import firstaTxtFile from "../../attachments/files/1a.txt";
+import secondTxtFile from "../../attachments/files/2.txt";
+import thirdTxtFile from "../../attachments/files/3.txt";
 
 const posts = [
     // {
@@ -52,6 +56,23 @@ const posts = [
     //     file: "",
     //     video: ""
     // },
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "Κρυπτογράφηση-Κρυπτανάλυση με το εργαλείο Cryptool", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "27/1/2025",
+        Katigoria: "Cryptography", 
+        Keimeno: "Το παρόν project αποτελεί την πρώτη μου προσπάθεια στο πλαίσιο της δραστηριότητας-εργασίας που ανατέθηκε στα Σεμινάρια Κυβερνοασφάλειας της Google.org (1ος Κύκλος, Δραστηριότητα 1: Εισαγωγή στην Κρυπτογραφία). Παρακάτω θα βρείτε τις απαντήσεις μου στα ερωτήματα της δραστηριότητας. Επιπλέον, στην αρχή της σελίδας περιλαμβάνεται ένας σύνδεσμος για το εργαλείο Cryptool 1, ενώ στο τέλος της σελίδας περιλαμβάνονται όλα τα .txt αρχεία που χρησιμοποιήθηκαν.",
+        Link: "",
+        htmlPdf: "/htmls/cyberSecurityCryptography1.html",
+        pdf: "",
+        txt: [firstTxtFile, firstaTxtFile, secondTxtFile, thirdTxtFile],
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 

@@ -98,8 +98,8 @@ const Dap = () => {
                         </div>
                         <br />
                         <div className='todatedeksia'><span id="apodDate">{convertDate(apodData.date)}</span></div>
-                        <strong>Explanation:<br/><br/></strong>
-                        <span id="apodExplanation">{apodData.explanation}</span><br/><br/>
+                        <strong>Explanation:<br/></strong>
+                        <p id="apodExplanation">{apodData.explanation}</p>
                         <strong>References:</strong>
                         <a href="https://apod.nasa.gov/apod/" className="toa1">Apod.nasa.gov</a><br/><br/>
                         <strong>Data provided by NASA Astronomy Picture of the Day (APOD)</strong>

@@ -53,12 +53,14 @@ const Home = () => {
 
             {/* English  */}
             <div className="divkeimeno" id="en"> 
-                <p>🎓 Physics student at the Aristotle University of Thessaloniki  &#40; 2022–Present &#41;</p>
+                <p>🎓 Physics student at the Aristotle University of Thessaloniki  &#40; 2022 – Present &#41;</p>
 
                 <strong>About me</strong>
                 <p>
                     I have a deep interest in physics, a field I am currently studying, which allows me to explore and understand the fundamental principles that govern the natural world. Through my studies, I have developed strong problem-solving skills, using the scientific method to approach challenges logically and effectively. This process has taught me to analyze situations critically and find practical solutions to complex issues.
-                    <br/><br/>
+                </p>   
+                
+                <p>
                     At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions. By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools. This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
                 </p>
 
@@ -124,22 +126,30 @@ const Home = () => {
 
                     </div> */}
 
-                <strong>Skills</strong>
-                <div className='taskills'>
-                    <p>Physics</p>
-                    <p>Mathematics</p>
-                    <p>Electronics</p>
-                    <p>C</p>
-                    <p>Python</p>
-                    <p>JavaScript</p>
-                    <p>React</p>
-                    <p>App Developer</p>
-                    <p>Web App Developer</p>
-                    <p>English</p>
-                    <p>Greek</p>
-                </div>
+                    <strong>Skills</strong>
+                    <div className="taskills">
+                        <span>Physics, </span>
+                        <span>Mathematics, </span>
+                        <span>Electronics, </span>
+                        <span>C, </span>
+                        <span>Python, </span>
+                        <span>JavaScript, </span>
+                        <span>React, </span>
+                        <span>App Developer, </span>
+                        <span>Web App Developer</span>
+                    </div>
 
-                <br/>
+                    <br/>
+
+                    <strong>Languages</strong>
+                    <div className="taskills">
+                        <span>English, </span>
+                        <span>Greek, </span>
+                        <span>Albanian</span>
+                    </div>
+
+                    <br/>
+
                 <strong>Selected works</strong>
 
                 <div className="toEpilegmeno">

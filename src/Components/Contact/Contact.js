@@ -75,7 +75,7 @@ H88/ipfuN6yjAkGimELuusKwuQeS+VR9GuZoYYxf
         if (paragraph) {
             paragraph.textContent = 'Copied!';
             setTimeout(() => {
-                paragraph.textContent = 'Copy';
+                paragraph.textContent = 'Copy PGP';
             }, 2000);
         }
     };
@@ -97,7 +97,7 @@ H88/ipfuN6yjAkGimELuusKwuQeS+VR9GuZoYYxf
                             <p className="right-item1">• Online now</p>
                         </div>
                     </div>
-                    <hr />
+                    
                     <div className="minima">
                         <p>Hello 👋</p>
                     </div>
@@ -140,12 +140,10 @@ H88/ipfuN6yjAkGimELuusKwuQeS+VR9GuZoYYxf
                         <hr id="tohr" />
                     </div>
                     <br/>
+                    <div className="pgbDiv">
+                        <a className="toPgbCopya" id="tocopyPgb" onClick={handleCopyPgb}>Copy PGP</a>
+                    </div>
                     <div className="pgb">
-
-                        <div className="pgbDiv" onClick={handleCopyPgb}>
-                                <a className="toPgbCopya" id="tocopyPgb">Copy</a>
-                        </div>
-
                     <p>-----BEGIN PGP PUBLIC KEY BLOCK-----
                     <br/><br/>
                     mQINBGeTcekBEADgeUSDEcqoG1K3vDJZOhvxHLPZWplT3MLguckeQL8/zW7Vrbxh

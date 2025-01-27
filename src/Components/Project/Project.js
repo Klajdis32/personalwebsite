@@ -1,23 +1,24 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import posts from '../Data/ProjectsDB.js'; 
 import './project.css';
 import { useLocation, Navigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { SlArrowLeft } from "react-icons/sl";
 import pdf from "../../assets/pdf.png";
 import link from "../../assets/link.png";
 import video from "../../assets/video.png";
 import folder from "../../assets/folder.png";
+import txtIcon from "../../assets/txt.png";
 
 const Project = () => {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const title = searchParams.get('to');
     const post = posts.find(post => post.Titlos === title);
+    const iframeRef = useRef(null); // Αναφορά στο iframe
     const [fromPage, setFromPage] = useState(null); 
     const today = new Date();
     const year = today.getFullYear();
-    
+
     useEffect(() => {
         // Εξαγωγή του 'fromPage' από το URL
         const queryParams = new URLSearchParams(location.search);
@@ -25,7 +26,27 @@ const Project = () => {
         if (page) {
           setFromPage(Number(page)); // Αποθηκεύουμε τον αριθμό στη μεταβλητή
         }
-      }, [location.search]); // Τρέχει όταν αλλάζει το query string
+    }, [location.search]); // Τρέχει όταν αλλάζει το query string
+
+    // Υπολογισμός δυναμικού ύψους
+    const adjustIframeHeight = () => {
+        if (iframeRef.current && iframeRef.current.contentWindow) {
+            const iframeDocument = iframeRef.current.contentWindow.document;
+            const iframeHeight = iframeDocument.body.scrollHeight;
+            iframeRef.current.style.height = `${iframeHeight}px`;
+        }
+    };
+
+    useEffect(() => {
+        if (iframeRef.current) {
+            iframeRef.current.addEventListener('load', adjustIframeHeight); // Προσθήκη listener
+        }
+        return () => {
+            if (iframeRef.current) {
+                iframeRef.current.removeEventListener('load', adjustIframeHeight); // Καθαρισμός
+            }
+        };
+    }, [iframeRef]);
 
     if (!post) {
         return <Navigate to="/projects" />;
@@ -44,8 +65,7 @@ const Project = () => {
                     to={`/projects?fromPr=${encodeURIComponent(post.Titlos)}&fromPg=${fromPage}`} 
                     className='back'
                     >
-                    <SlArrowLeft />
-                    <p className='ligopanw'>Projects</p>
+                    <p className='ligopanw'>&larr; Projects</p>
                 </Link>
                 <div className='center'>   
                     <h2>{title}</h2>
@@ -70,9 +90,31 @@ const Project = () => {
                 </div>
                 )}
                 <br/>
-                <p className='summary'>Description</p>
-                <p className='tokeimeno'>{post.Keimeno}</p>
-                <p className='summary'>Attachments</p>
+                {(post.Keimeno) && (
+                    <div>
+                        <p className='summary'>Description</p>
+                        <p className='tokeimeno'>{post.Keimeno}</p>
+                    </div>
+                )}
+
+                {post.htmlPdf && (
+                    <div className='toIframe'>
+                        <iframe
+                            ref={iframeRef} // Προσθήκη αναφοράς
+                            src={post.htmlPdf}
+                            title="HTML Viewer"
+                            style={{
+                                width: '100%',
+                                border: 'none',
+                            }}
+                        />
+                        </div>
+                )}
+
+                {(post.Link || post.pdf || post.txt || post.file || post.video) && (
+                    <p className='summary'>Attachments</p>
+                )}
+                
                 <div className="todivmetaa1">
                     {post.Link && (
                         <div className='blog-post_ctaP'>
@@ -118,6 +160,43 @@ const Project = () => {
                         </div>
                         )
                     )
+                    )}
+                    {post.txt && (
+                        Array.isArray(post.txt) && post.txt.length > 0 ? (
+                            post.txt.map((txtFile, index) => {
+                            // Απόσπαση του "καθαρού" ονόματος αρχείου
+                            const fileNameWithHash = txtFile.split('/').pop(); // Παίρνουμε το τελευταίο κομμάτι του path
+                            const fileName = fileNameWithHash.replace(/\.txt$/, '').replace(/\..+$/, ''); // Καθαρίζουμε hash και επέκταση
+
+                            return (
+                                <div className="blog-post_ctaT" key={index}>
+                                <a 
+                                    href={txtFile} 
+                                    download={fileNameWithHash} 
+                                    className="tatxts"
+                                    title={`Download ${fileName}`} // Προαιρετικό tooltip
+                                >
+                                    <img src={txtIcon} alt="" className="todivmeimages" />
+                                    <p>{fileName}</p>
+                                </a>
+                                </div>
+                            );
+                            })
+                        ) : (
+                            typeof post.txt === 'string' && post.txt.trim() !== '' && (
+                            <div className="blog-post_ctaT">
+                                <a 
+                                href={post.txt} 
+                                download={post.txt.split('/').pop()} 
+                                className="tatxts" 
+                                title={`Download ${post.txt.split('/').pop()}`}
+                                >
+                                <img src={txtIcon} alt="" className="todivmeimages" />
+                                <p>{post.txt.split('/').pop().replace(/\.txt$/, '').replace(/\..+$/, '')}</p>
+                                </a>
+                            </div>
+                            )
+                        )
                     )}
                     {post.file && (
                         <div className='blog-post_ctaP'>

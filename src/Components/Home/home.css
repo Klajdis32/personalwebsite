@@ -547,16 +547,15 @@ margin-bottom: 5px;
   
   .taskills {
     display: flex;
-    margin-top: 20px;
     width: 100%;
     flex-wrap: wrap; 
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 18px;
   }
 
   .taskills p {
-    padding: 0 10px;
-    border: 2px solid grey;
     border-radius: 20px;
-    margin: 5px;
   }
 
   .taCv {

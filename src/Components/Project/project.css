@@ -31,6 +31,15 @@
     .tapdfs p {
         color: white;
     }
+
+    .tatxts p {
+        color: white;
+    }
+
+    .toIframe {
+        background-color: white;
+        border-radius: 10px;
+    }
 }
 
 .back {
@@ -117,6 +126,20 @@
 }
 
 .tapdfs p {
+    margin-top: 0px;
+    margin-left: 10px;
+    color: black;
+    white-space: nowrap; /* Εμποδίζει τη γραμμή από το να τυλίγεται */
+    overflow: hidden; /* Κρύβει το περιεχόμενο που περισσεύει */
+    text-overflow: ellipsis; /* Προσθέτει τα αποσιωπητικά (...) */
+}
+
+.tatxts {
+    display: flex;
+    padding: 0px;
+}
+
+.tatxts p {
     margin-top: 0px;
     margin-left: 10px;
     color: black;

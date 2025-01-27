@@ -1,0 +1,16 @@
+Several key issues should be addressed when designing location-aware software applications
+that deliver real-time traveler information to GPS-enabled mobile phones. First, the user
+experience is severely constrained due to the limited user interface. To provide an effective
+user experience, every effort must be made to design intelligent applications which require
+user input only when necessary. Reduced user input has become more important in recent
+months with several states passing laws that ban the use of handheld devices while driving
+(6). Some studies have documented that the distraction of multi-tasking, and not the physical act of holding a phone is a danger to drivers. Therefore, user interaction must be minimized
+to avoid distracting drivers even when wireless Bluetooth™ headset devices are used (7).
+Companies employing location-aware applications will also want to avoid such distractions
+for liability reasons. Therefore, a predictive mechanism is desired that will passively monitor
+the traveler’s behavior and give alerts to travelers before they enter major areas of traffic, or
+before they actually begin traveling, without requiring any user input. This always-on, push
+method is in contrast to traditional phone-based traffic information systems such as 511,
+where the driver must call a phone number and retrieve traffic information from the system
+(8). While some 511 systems allow the user to subscribe to emailed traffic alerts about
+particular roadways, such subscription lists require significant user effort to register for every road they might use for traveling (9). Additionally, these lists are static and do not change based on the driver’s real-time location or historical travel behavior. For this reason, the user is likely to either receive an overwhelming number of irrelevant alerts if they have subscribed for many roadways, or will miss critical information for atypical travel behavior on roads for which they did not subscribe.
