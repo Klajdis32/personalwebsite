@@ -48,8 +48,8 @@ const posts = [
     //     Titlos: "", 
     //     Sigrafeas: "Me", 
     //     Linksigrafea: "",  
-    //     Date: "17/12/2024",
-    //     Katigoria: "Programming", 
+    //     Date: "//2025",
+    //     Katigoria: "", 
     //     Keimeno: "",
     //     Link: "",
     //     pdf: "",
@@ -65,7 +65,7 @@ const posts = [
         Linksigrafea: "",  
         Date: "27/1/2025",
         Katigoria: "Cryptography", 
-        Keimeno: "Το παρόν project αποτελεί την πρώτη μου προσπάθεια στο πλαίσιο της δραστηριότητας-εργασίας που ανατέθηκε στα Σεμινάρια Κυβερνοασφάλειας της Google.org (1ος Κύκλος, Δραστηριότητα 1: Εισαγωγή στην Κρυπτογραφία). Παρακάτω θα βρείτε τις απαντήσεις μου στα ερωτήματα της δραστηριότητας. Επιπλέον, στην αρχή της σελίδας περιλαμβάνεται ένας σύνδεσμος για το εργαλείο Cryptool 1, ενώ στο τέλος της σελίδας περιλαμβάνονται όλα τα .txt αρχεία που χρησιμοποιήθηκαν.",
+        Keimeno: "Το παρόν project αποτελεί την προσπάθεια μου στο πλαίσιο της δραστηριότητας-εργασίας που ανατέθηκε στα Σεμινάρια Κυβερνοασφάλειας της Google.org (1ος Κύκλος, Δραστηριότητα 1: Εισαγωγή στην Κρυπτογραφία). Παρακάτω θα βρείτε τις απαντήσεις μου στα ερωτήματα της δραστηριότητας. Επιπλέον, στην αρχή της σελίδας περιλαμβάνεται ένας σύνδεσμος για το εργαλείο Cryptool 1, ενώ στο τέλος της σελίδας περιλαμβάνονται όλα τα .txt αρχεία που χρησιμοποιήθηκαν.",
         Link: "",
         htmlPdf: "/htmls/cyberSecurityCryptography1.html",
         pdf: "",
@@ -452,7 +452,7 @@ const posts = [
     //     video: VideoMaPass
     // },
     {
-        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
+        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής - Γενικό Εργαστήριο",
         imageEksw: "", 
         imageMesa: "",
         Titlos: "Ultrasound", 
@@ -467,7 +467,7 @@ const posts = [
         video: ""
     },
     {
-        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
+        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής - Γενικό Εργαστήριο",
         imageEksw: "", 
         imageMesa: "",
         Titlos: "Oscilloscope", 
@@ -497,7 +497,7 @@ const posts = [
         video: ""
     },
     {
-        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
+        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής - Γενικό Εργαστήριο",
         imageEksw: "", 
         imageMesa: "",
         Titlos: "Specific heat of materials", 
@@ -527,7 +527,7 @@ const posts = [
     //     video: ""
     // },
     {
-        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
+        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής - Γενικό Εργαστήριο",
         imageEksw: "", 
         imageMesa: "",
         Titlos: "Useful electrical circuits", 
@@ -557,7 +557,7 @@ const posts = [
     //     video: ""
     // },
     {
-        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής",
+        Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής - Γενικό Εργαστήριο",
         imageEksw: "", 
         imageMesa: "",
         Titlos: "Simulation of linear motion", 
