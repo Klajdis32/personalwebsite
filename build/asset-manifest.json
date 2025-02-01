@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2ff0211b.css",
-    "main.js": "/static/js/main.fc04cdd1.js",
+    "main.js": "/static/js/main.bb3ee655.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Lab2Exercise_InGreek.pdf": "/static/media/Lab2Exercise_InGreek.76512e6e79a2d226e100.pdf",
@@ -59,10 +59,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.2ff0211b.css.map": "/static/css/main.2ff0211b.css.map",
-    "main.fc04cdd1.js.map": "/static/js/main.fc04cdd1.js.map"
+    "main.bb3ee655.js.map": "/static/js/main.bb3ee655.js.map"
   },
   "entrypoints": [
     "static/css/main.2ff0211b.css",
-    "static/js/main.fc04cdd1.js"
+    "static/js/main.bb3ee655.js"
   ]
 }

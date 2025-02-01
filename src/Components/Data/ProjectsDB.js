@@ -41,21 +41,21 @@ import secondTxtFile from "../../attachments/files/2.txt";
 import thirdTxtFile from "../../attachments/files/3.txt";
 
 const posts = [
-    // {
-    //     Ergastirio: "",
-    //     imageEksw: "", 
-    //     imageMesa: "", 
-    //     Titlos: "", 
-    //     Sigrafeas: "Me", 
-    //     Linksigrafea: "",  
-    //     Date: "//2025",
-    //     Katigoria: "", 
-    //     Keimeno: "",
-    //     Link: "",
-    //     pdf: "",
-    //     file: "",
-    //     video: ""
-    // },
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "Express.js-React-MySQL Authentication System", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "01/02/2025",
+        Katigoria: "Programming", 
+        Keimeno: "This project is about a web application with a robust authentication system built using React for the frontend, Express.js for the backend, and MySQL as the database. User interaction with the backend is handled via cookies for authentication and session management. The application follows modern security best practices, including password hashing, token expiration handling, and CSRF protection. It also supports role-based access control (RBAC) to differentiate between user permissions, ensuring that only authorized users can access specific resources. Additionally, the frontend is designed with a responsive UI, providing a seamless experience across different devices. The backend API is structured using RESTful principles, making it scalable and easy to integrate with other services. You can find more information and run the project by following the instructions in the link below.",
+        Link: "https://github.com/Klajdis32/Express.js-React-MySQL-Authentication-System",
+        pdf: "",
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 
