@@ -103,7 +103,7 @@ const Dap = () => {
                         <strong>References:</strong>
                         <a href="https://apod.nasa.gov/apod/" className="toa1">Apod.nasa.gov</a><br/><br/>
                         <strong>Data provided by NASA Astronomy Picture of the Day (APOD)</strong>
-                        <a href="https://api.nasa.gov/planetary/apod" className="toa1">API</a>
+                        <a href="https://api.nasa.gov/planetary/apod" className="toa1">API</a><br/><br/>
                     </p>
                 </div>
             </div>

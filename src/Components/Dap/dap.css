@@ -17,6 +17,13 @@ body {
         background: linear-gradient(90deg, transparent, rgba(196, 196, 196, 0.2), transparent);
     }
 
+    .kentrototitle {
+        text-shadow: -1px -1px 0 black,  
+        1px -1px 0 black,  
+        -1px 1px 0 black,  
+        1px 1px 0 black;
+    }
+
 }
 
 .centerload {
@@ -98,10 +105,6 @@ border-bottom : 2px solid blue;
     z-index: 200;
 }
 
-#apodExplanation {
-    text-align: justify;
-}
-
 .tosvgdap{
     position: absolute;
     width: 100%;
@@ -122,7 +125,7 @@ border-bottom : 2px solid blue;
 
 .NasaImg {
 cursor: pointer;
-width: 50%;
+width: 90%;
 border: 2px solid darkgrey;
 border-radius: 15px;
 }
@@ -203,7 +206,7 @@ z-index: 999;
 }
 
 .kentrototitle {
-    text-align: center;
+    text-align: left;
     font-size: 22px;
     font-weight: 600;
 }
@@ -443,7 +446,7 @@ width: 6%;
 
 
 .NasaImg {
-width: 98%;
+width: 99%;
 border: 2px solid darkgrey;
 border-radius: 5px;
 }
@@ -499,6 +502,11 @@ transform: translate( -6%, -40%);
     width: 60%;
     margin-left: 5%;
     margin-top: 5%;
+}
+
+#teleytaio {
+    margin-bottom: 5%;
+    border: red 2px solid;
 }
 
 }

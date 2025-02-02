@@ -168,10 +168,7 @@ const Home = () => {
                 </div>
 
             </div>
-
-             <div className='cc'>       
-            <p>© {year} Klajdi Cami</p>
-            </div>
+            
             <br/><br/><br/><br/>
         </div>
     </div>

@@ -11,9 +11,13 @@ body {
     color: #ffffff; /* Λευκό χρώμα κειμένου */
 
         .blog-post {
-            background-color: #181818b1;
+            background-color: #373737b1;
             border: 2px solid transparent;
             color: white;
+        }
+
+        .blog-post:hover {
+            border: 2px solid lightgray;
         }
 
         .blog-post_date {
@@ -57,6 +61,14 @@ body {
             color: white;
             border: 2px solid lightblue;
         }
+
+        .center2 {
+            text-shadow: -1px -1px 0 black,  
+            1px -1px 0 black,  
+            -1px 1px 0 black,  
+            1px 1px 0 black;
+        }
+        
 
 }
 
@@ -352,7 +364,6 @@ color: black;
 }
 
 .center2 {
-    color: black;
     text-align: center;
     justify-content: center;
 }

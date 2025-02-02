@@ -43,12 +43,6 @@
         rgba(255, 255, 255, 0.3) -10px 10px,
         rgba(255, 255, 255, 0.2) -15px 15px;
     }
-
-    .sinomilia {
-        border: 2px solid  white;
-        border-top: none;
-        border-bottom: none;
-    }
 }
 
 .tologoAC {
@@ -131,7 +125,7 @@
 }
 
 .sinomilia {
-    border: 2px solid black;
+    border: 2px solid lightgray;
     border-top: none;
     border-bottom: none;
 }
@@ -247,6 +241,12 @@
         margin-left: 0;
         margin-top: 0;
         min-height: 100vh;
+    }
+
+
+    .sinomilia {
+        border: none;
+        border-left: none;
     }
 
     .contactdiv {
