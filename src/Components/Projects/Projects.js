@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './projects.css';
 import posts from '../Data/ProjectsDB.js'; 
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import MathImage from "../../assets/idea.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Projects = () => {
@@ -106,7 +105,7 @@ const Projects = () => {
                 </div>
             <div className="container3">
                 <div className='panepanw'>
-                    <div className="center2"><img src={MathImage} alt="" className="math" /></div>
+                    <div className="center2"><h2>Projects 🚀</h2></div>
                     <br />
                     <form role="search" onSubmit={handleSearch}>
                         <input 
