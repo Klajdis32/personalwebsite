@@ -43,6 +43,12 @@
         rgba(255, 255, 255, 0.3) -10px 10px,
         rgba(255, 255, 255, 0.2) -15px 15px;
     }
+
+    .sinomilia {
+        border: 2px solid  white;
+        border-top: none;
+        border-bottom: none;
+    }
 }
 
 .tologoAC {
@@ -122,6 +128,12 @@
     justify-content: right;
     display: flex;
 
+}
+
+.sinomilia {
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
 }
 
 .toPgbCopya {

@@ -106,7 +106,7 @@ const Projects = () => {
             <div className="container3">
                 <div className='panepanw'>
                     <div className="center2"><h2>Projects 🚀</h2></div>
-                    <br />
+                    
                     <form role="search" onSubmit={handleSearch}>
                         <input 
                             id="search" 
