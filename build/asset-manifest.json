@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b6170f2a.css",
-    "main.js": "/static/js/main.fa976324.js",
+    "main.js": "/static/js/main.af4a2e8c.js",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/Lab2Exercise_InGreek.pdf": "/static/media/Lab2Exercise_InGreek.76512e6e79a2d226e100.pdf",
@@ -34,7 +34,7 @@
     "static/media/Lab1Simulation_InGreek.pdf": "/static/media/Lab1Simulation_InGreek.c586b61abcabe16e63e3.pdf",
     "static/media/Lab4Simulation_InGreek.pdf": "/static/media/Lab4Simulation_InGreek.cfe0cd5c5e3ffa606672.pdf",
     "static/media/lunarlander_best3.mp4": "/static/media/lunarlander_best3.cb51f773d4cb5df575e0.mp4",
-    "static/media/imagelogo.png": "/static/media/imagelogo.6abbce6e8e2edf7a5a71.png",
+    "static/media/imagelogo.png": "/static/media/imagelogo.26d43be7053312ab518d.png",
     "static/media/beastimage.png": "/static/media/beastimage.b6e1700a8cab9d561763.png",
     "static/media/registerPage.png": "/static/media/registerPage.099c186330683051d0c1.png",
     "static/media/lunar.png": "/static/media/lunar.833e70d5329bc4e54a99.png",
@@ -58,10 +58,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.b6170f2a.css.map": "/static/css/main.b6170f2a.css.map",
-    "main.fa976324.js.map": "/static/js/main.fa976324.js.map"
+    "main.af4a2e8c.js.map": "/static/js/main.af4a2e8c.js.map"
   },
   "entrypoints": [
     "static/css/main.b6170f2a.css",
-    "static/js/main.fa976324.js"
+    "static/js/main.af4a2e8c.js"
   ]
 }
