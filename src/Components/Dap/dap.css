@@ -132,11 +132,10 @@ border-radius: 15px;
 
 .kinito {
     padding: 0 20px;
-    margin-bottom: 12%;
+    margin-bottom: 10%;
 }
 .kinito p {
-font-weight: 500;
-font-size: 18px;
+    font-size: 18px;
 }
 
 .loading{
@@ -200,9 +199,13 @@ z-index: 999;
 
 .todatedeksia {
     text-align: right;
-    font-weight: 500;
     font-size: 18px;
     margin-right: 0px;
+}
+
+.video {
+    border-radius: 20px;
+    border: 2px solid grey;
 }
 
 .kentrototitle {
@@ -229,6 +232,11 @@ z-index: 999;
     width: 100%;
     background: linear-gradient(90deg, transparent, rgba(58, 58, 58, 0.2), transparent);
     animation: loading 1.5s infinite;
+}
+
+.references {
+    font-size: 16px;
+    text-align: center;
 }
 
 @keyframes loading {

@@ -79,7 +79,7 @@ const Dap = () => {
             </div>
             <div className="containerdap">
                 <div className="kinito" id="kinitoDiv">
-                    <p>
+                        <br/>
                         <div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/>
                         <div className="image-container" id="imageContainer">
                             {apodData.media_type === 'image' ? (
@@ -88,6 +88,7 @@ const Dap = () => {
                                 <iframe
                                     width="90%"
                                     height="600"
+                                    className='video'
                                     src={apodData.url}
                                     title={apodData.title}
                                     frameBorder="1"
@@ -97,15 +98,18 @@ const Dap = () => {
                             ) : null}
                         </div>
                         <br />
-                        <div className='todatedeksia'><span id="apodDate">{convertDate(apodData.date)}</span></div>
-                        <strong>Explanation:<br/></strong>
+                        <div className='todatedeksia'>
+                            <span id="apodDate">{convertDate(apodData.date)}</span>
+                        </div>
+                        <p>Explanation:</p>
                         <p id="apodExplanation">{apodData.explanation}</p>
-                        <strong>References:</strong>
-                        <a href="https://apod.nasa.gov/apod/" className="toa1">Apod.nasa.gov</a><br/><br/>
-                        <strong>Data provided by NASA Astronomy Picture of the Day (APOD)</strong>
-                        <a href="https://api.nasa.gov/planetary/apod" className="toa1">API</a><br/><br/>
-                    </p>
-                </div>
+                        <div className='references'>
+                            <span>References:</span>
+                            <a href="https://apod.nasa.gov/apod/" className="toa1">Apod.nasa.gov</a><br/>
+                            <span>Data provided by NASA Astronomy Picture of the Day (APOD)</span>
+                            <a href="https://api.nasa.gov/planetary/apod" className="toa1">API</a>
+                        </div>
+                        </div>
             </div>
         </div>
     );
