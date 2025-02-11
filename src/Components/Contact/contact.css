@@ -80,9 +80,10 @@
 .online {
     height: 70px;
     display: flex;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     border-bottom: 2px solid black;
+    border-top: none;
     margin-bottom: 20px;
 }
 
@@ -125,7 +126,6 @@
 }
 
 .sinomilia {
-    border: 2px solid darkgray;
     border-top: none;
     border-bottom: none;
 }
