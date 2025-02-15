@@ -5,6 +5,7 @@ const Dap = () => {
     const [apodData, setApodData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     const convertDate = (dateString) => {
         const [year, month, day] = dateString.split('-');
@@ -81,10 +82,21 @@ const Dap = () => {
                 <div className="kinito" id="kinitoDiv">
                         <br/>
                         <div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/>
-                        <div className="image-container" id="imageContainer">
-                            {apodData.media_type === 'image' ? (
-                                <img src={apodData.url} className="NasaImg" alt={apodData.title} />
-                            ) : apodData.media_type === 'video' ? (
+                        <div className="image-container">
+                            {/* Skeleton εμφανίζεται αν η εικόνα δεν έχει φορτωθεί */}
+                            {!imageLoaded && <div className="skeleton skeleton-image"></div>}
+
+                            {apodData.media_type === 'image' && (
+                                <img 
+                                    src={apodData.url} 
+                                    alt={apodData.title} 
+                                    onLoad={() => setImageLoaded(true)} 
+                                    style={{ display: imageLoaded ? 'block' : 'none' }} 
+                                    className="NasaImg" 
+                                />
+                            )}
+
+                            {apodData.media_type === 'video' && (
                                 <iframe
                                     width="90%"
                                     height="600"
@@ -95,13 +107,13 @@ const Dap = () => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowFullScreen
                                 ></iframe>
-                            ) : null}
+                            )}
                         </div>
                         <br />
                         <div className='todatedeksia'>
                             <span id="apodDate">{convertDate(apodData.date)}</span>
                         </div>
-                        <p>Explanation:</p>
+                        <p><strong>Explanation:</strong></p>
                         <p id="apodExplanation">{apodData.explanation}</p>
                         <div className='references'>
                             <span>References:</span>
@@ -109,7 +121,7 @@ const Dap = () => {
                             <span>Data provided by NASA Astronomy Picture of the Day (APOD)</span>
                             <a href="https://api.nasa.gov/planetary/apod" className="toa1">API</a>
                         </div>
-                        </div>
+                </div>
             </div>
         </div>
     );
