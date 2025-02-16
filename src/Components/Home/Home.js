@@ -61,7 +61,11 @@ const Home = () => {
                 </p>   
                 
                 <p>
-                    At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions. By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools. This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
+                    At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions. By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools.
+                </p>
+
+                <p>
+                    This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
                 </p>
 
                 {/* <div className='taCv'>

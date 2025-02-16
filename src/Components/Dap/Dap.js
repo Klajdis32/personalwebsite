@@ -84,7 +84,7 @@ const Dap = () => {
                         <div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/>
                         <div className="image-container">
                             {/* Skeleton εμφανίζεται αν η εικόνα δεν έχει φορτωθεί */}
-                            {!imageLoaded && <div className="skeleton skeleton-image"></div>}
+                            {!imageLoaded && !apodData.media_type === 'video' && <div className="skeleton skeleton-image"></div>}
 
                             {apodData.media_type === 'image' && (
                                 <img 
@@ -98,7 +98,7 @@ const Dap = () => {
 
                             {apodData.media_type === 'video' && (
                                 <iframe
-                                    width="90%"
+                                    width="100%"
                                     height="600"
                                     className='video'
                                     src={apodData.url}
@@ -106,6 +106,7 @@ const Dap = () => {
                                     frameBorder="1"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowFullScreen
+                                    onLoad={() => setImageLoaded(true)}
                                 ></iframe>
                             )}
                         </div>
