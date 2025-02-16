@@ -103,7 +103,7 @@
 }
 
 .imageMesa {
-    width: 60%;
+    width: 40%;
 }
 
 .videoMesa {
@@ -152,6 +152,12 @@
     width: 30px;
     height: 30px;
   }
+
+  .toIframe {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
   
 
 

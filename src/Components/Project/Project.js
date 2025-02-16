@@ -98,17 +98,20 @@ const Project = () => {
                 )}
 
                 {post.htmlPdf && (
-                    <div className='toIframe'>
-                        <iframe
-                            ref={iframeRef} // Προσθήκη αναφοράς
-                            src={post.htmlPdf}
-                            title="HTML Viewer"
-                            style={{
-                                width: '100%',
-                                border: 'none',
-                            }}
-                        />
+                    <div>
+                        <p className='summary'>Project File</p>
+                        <div className='toIframe'>
+                            <iframe
+                                ref={iframeRef} // Προσθήκη αναφοράς
+                                src={post.htmlPdf}
+                                title="HTML Viewer"
+                                style={{
+                                    width: '100%',
+                                    border: 'none',
+                                }}
+                            />
                         </div>
+                    </div>
                 )}
 
                 {(post.Link || post.pdf || post.txt || post.file || post.video) && (
