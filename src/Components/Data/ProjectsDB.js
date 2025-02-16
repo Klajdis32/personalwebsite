@@ -45,7 +45,7 @@ const posts = [
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: "", 
-        Titlos: "Google Cyber Security 1st Exercise", 
+        Titlos: "Users and Permissions on Linux Machines", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
         Date: "15/02/2025",
