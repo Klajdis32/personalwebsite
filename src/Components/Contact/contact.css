@@ -229,6 +229,11 @@
     font-weight: 550;
 }
 
+.toshow {
+    margin-top: 50px;
+    text-align: center;
+}
+
 /* Responsive Styles */
 @media (min-width: 601px) and (max-width: 768px) {
     .container1 {

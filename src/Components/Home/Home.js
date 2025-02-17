@@ -36,12 +36,13 @@ const Home = () => {
                             <span id="grcont">Επικοινωνία</span>
                         </div>
                     </Link>
-                    <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" rel="noreferrer" className='tolink'>
+                    {/* <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" rel="noreferrer" className='tolink'>
                     <div className='todivdeksia1' id='oxideksia1'>
                         <img src={Linkedin} alt="" /><br />
                         <span>Linkedin</span>
                     </div>
-                    </Link><div id='monokin'><br/><br/></div>
+                    </Link>*/}
+               
                     <Link to="https://github.com/Klajdis32" target="_blank" rel="noreferrer" className='tolink'>
                     <div className='todivdeksia1' id='oxideksia'>
                         <img src={github} alt="" /><br />

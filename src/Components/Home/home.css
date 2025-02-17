@@ -588,9 +588,6 @@ margin-bottom: 5px;
     cursor: pointer;
   }
 
-  .topEpi {
-    font-weight: 500;
-  }
 
 
   /* MEgalitero apo tablet mikrotero apo 1100px
@@ -803,9 +800,9 @@ width: 30%;
         }
 
         #oxideksia{
-            margin-top: -30px;
+            margin-top: 0px;
             margin-right: 0px;
-            margin-left: 40px;
+            margin-left: 70px;
             border-top: none;
             border-left: none;
             padding: 10px;

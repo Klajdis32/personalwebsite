@@ -1,8 +1,13 @@
 import './contact.css';
-import React from 'react';
+import { useState } from "react";
 import Logo from '../../assets/imagelogo.png';
 
 const Contact = () => {
+    const [showPGP, setShowPGP] = useState(false);
+
+    const togglePGP = () => {
+        setShowPGP(prev => !prev);
+    };
 
     const handleCopyEmail = () => {
         const email = 'ktsami@auth.gr'; 
@@ -142,6 +147,13 @@ H88/ipfuN6yjAkGimELuusKwuQeS+VR9GuZoYYxf
                     <div className="pgbDiv">
                         <a className="toPgbCopya" id="tocopyPgb" onClick={handleCopyPgb}>Copy PGP</a>
                     </div>
+                    <div className="toshow">
+                        <a onClick={togglePGP}>
+                            {showPGP ? "Hide PGP" : "Show PGP"}
+                        </a>
+                    </div>
+
+                    {showPGP && (
                     <div className="pgb">
                     <p>-----BEGIN PGP PUBLIC KEY BLOCK-----
                     <br/><br/>
@@ -197,6 +209,7 @@ H88/ipfuN6yjAkGimELuusKwuQeS+VR9GuZoYYxf
                     -----END PGP PUBLIC KEY BLOCK-----
                     </p>
                     </div>
+                    )}
                     <br/><br/><br/><br/><br/>
                 </div>
             </div>

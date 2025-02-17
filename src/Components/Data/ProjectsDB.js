@@ -215,7 +215,7 @@ const posts = [
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: beabeast, 
-        Titlos: "Be a beast, React App", 
+        Titlos: "Be a beast, website", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
         Date: "14/07/2024",
