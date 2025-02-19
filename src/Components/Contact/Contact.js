@@ -149,7 +149,7 @@ H88/ipfuN6yjAkGimELuusKwuQeS+VR9GuZoYYxf
                     </div>
                     <div className="toshow">
                         <a onClick={togglePGP}>
-                            {showPGP ? "Hide PGP" : "Show PGP"}
+                            {showPGP ? "Hide PGP" : "Show PGP 👀"}
                         </a>
                     </div>
 
