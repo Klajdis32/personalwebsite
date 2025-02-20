@@ -114,6 +114,43 @@ const Project = () => {
                     </div>
                 )}
 
+                {post.pdf && (
+                    <div>
+                        <p className='summary'>Project Files Preview</p>
+
+                        {/* Αν το post.pdf είναι array και περιέχει πολλά PDFs */}
+                        {Array.isArray(post.pdf) && post.pdf.length > 1 ? (
+                            post.pdf.map((pdfFile, index) => (
+                                <div key={index} className='toIframe'>
+                                    <iframe
+                                        src={pdfFile}
+                                        title={`PDF Viewer ${index + 1}`}
+                                        style={{
+                                            width: '100%',
+                                            height: '100vh', // Ύψος όσο το παράθυρο
+                                            border: 'none',
+                                            marginBottom: '20px' // Απόσταση μεταξύ των PDFs
+                                        }}
+                                    />
+                                </div>
+                            ))
+                        ) : (
+                            // Αν το post.pdf είναι ένα μόνο αρχείο, εμφανίζει ένα iframe
+                            <div className='toIframe'>
+                                <iframe
+                                    src={Array.isArray(post.pdf) ? post.pdf[0] : post.pdf} 
+                                    title="PDF Viewer"
+                                    style={{
+                                        width: '100%',
+                                        height: '100vh',
+                                        border: 'none'
+                                    }}
+                                />
+                            </div>
+                        )}
+                    </div>
+                )}
+
                 {(post.Link || post.pdf || post.txt || post.file || post.video) && (
                     <p className='summary'>Attachments</p>
                 )}
