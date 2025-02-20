@@ -114,6 +114,7 @@ const Project = () => {
                     </div>
                 )}
 
+                <div className='pdfsOnMobile'>
                 {post.pdf && (
                     <div>
                         <p className='summary'>Project Files Preview</p>
@@ -150,6 +151,7 @@ const Project = () => {
                         )}
                     </div>
                 )}
+                </div>
 
                 {(post.Link || post.pdf || post.txt || post.file || post.video) && (
                     <p className='summary'>Attachments</p>

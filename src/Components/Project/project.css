@@ -103,7 +103,7 @@
 }
 
 .imageMesa {
-    width: 40%;
+    width: 60%;
 }
 
 .videoMesa {
@@ -176,7 +176,9 @@
     width: 90%;
 }
 
-
+.pdfsOnMobile{
+    display: none;
+}
 
 }
 
@@ -195,6 +197,9 @@
     width: 90%;
 }
 
+.pdfsOnMobile{
+    display: none;
+}
 
 .imageMesa {
     width: 100%;
