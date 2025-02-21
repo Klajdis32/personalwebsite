@@ -310,6 +310,10 @@ z-index: 999;
     text-align: center;
 }
 
+.monoKin {
+    display: none;
+}
+
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
 .containerdap {
@@ -521,6 +525,10 @@ transform: translate( -6%, -40%);
 #teleytaio {
     margin-bottom: 5%;
     border: red 2px solid;
+}
+
+.monoKin {
+    display: block;
 }
 
 }

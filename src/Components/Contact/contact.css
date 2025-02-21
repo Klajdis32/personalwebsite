@@ -231,8 +231,8 @@
 }
 
 .toshow {
-    margin-top: 50px;
     text-align: center;
+    margin: 50px 0 50px 0;
 }
 
 /* Responsive Styles */

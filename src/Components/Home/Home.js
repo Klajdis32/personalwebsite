@@ -4,7 +4,7 @@ import Logo from '../../assets/imagelogo.png';
 import React from "react";
 import contact from "../../assets/new-email.png";
 import github from "../../assets/github.png";
-import Linkedin from "../../assets/linkedin.png";
+// import Linkedin from "../../assets/linkedin.png";
 // import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
 // import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
 // import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
@@ -14,8 +14,7 @@ import Linkedin from "../../assets/linkedin.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Home = () => {
-    const today = new Date();
-    const year = today.getFullYear();
+
 
     return (
         <div className='toolo'>
@@ -68,68 +67,6 @@ const Home = () => {
                 <p>
                     This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
                 </p>
-
-                {/* <div className='taCv'>
-                    <strong>Cv</strong>
-                    <a href={GreeCv} target="_blank" className="toaCv"  rel="noopener noreferrer">Greek</a><br/>
-                    <a href={EnglishCv} target="_blank" className="toaCv" rel="noopener noreferrer">English</a>
-                </div> */}
-
-                {/* <strong>Certificates and attestations</strong>
-                <br/> <br/>
-                <div class="todivcart">
-                    <span class="left-dot">•</span>
-                    <div class="horizontal-line"></div>
-                    <span class="right-arrows">»</span>
-                </div>
-                <div className='toolohor'>
-                    <div className="timeline-container">
-                        <button onClick={scrollLeft} className="timeline-button">Left</button>
-                        <div className="timeline" ref={timelineRef}>
-                            
-                            <a href={EEF} target="_blank" rel="noreferrer" className='tacart'>
-                                <div className='mpalaki'></div>
-                                <div className="content">
-                                    <p className='todatep'>20/3/2021</p>
-                                    <p className='tokatwp'>Participation in the 31st Panhellenic High School Physics Competition (Pdf)</p>  
-                                </div>
-                            </a>
-
-                            <a href={qiskit} target="_blank" rel="noreferrer" className='tacart'>
-                            <div className='mpalaki'></div>
-                                <div className="content">
-                                    <p className='todatep'>04/12/2023</p>
-                                    <p className='tokatwp'>Quantum computing with Qiskit, FallFest AUTH 2023 (Pdf)</p> 
-                                </div>
-                            </a>
-
-                            <a href={Esa} target="_blank" rel="noreferrer" className='tacart'>
-                            <div className='mpalaki'></div>
-                                <div className="content">
-                                    <p className='todatep'>28/09/2024</p>
-                                    <p className='tokatwp'>ESERO Greece Symposium from Esa (Pdf)</p> 
-                                </div>
-                            </a>
-
-                            <a href={AiSim} target="_blank" rel="noreferrer" className='tacart'>
-                            <div className='mpalaki'></div>
-                                <div className="content">
-                                    <p className='todatep'>01/12/2024</p>
-                                    <p className='tokatwp'>The applications of AI in everyday life, symposium (Pdf)</p> 
-                                </div>
-                            </a>
-
-                            <div className="tacart" id='tonow'>
-                                <div className='mpalaki'></div>
-                                <p className='todatep'>{formattedDate}</p>
-                                <p className='tokatwpnow'>Today</p> 
-                            </div>
-                        </div>
-                        
-                        <button onClick={scrollRight} className="timeline-button">Right</button>
-                        </div>
-
-                    </div> */}
 
                     <strong>Skills</strong>
                     <div className="taskills">

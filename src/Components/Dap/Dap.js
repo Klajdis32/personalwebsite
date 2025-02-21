@@ -122,6 +122,9 @@ const Dap = () => {
                             <span>Data provided by NASA Astronomy Picture of the Day (APOD)</span>
                             <a href="https://api.nasa.gov/planetary/apod" className="toa1">API</a>
                         </div>
+                        <div className='monoKin'>
+                            <br/>
+                        </div>
                 </div>
             </div>
         </div>

@@ -39,21 +39,22 @@ import firstTxtFile from "../../attachments/files/1.txt";
 import firstaTxtFile from "../../attachments/files/1a.txt";
 import secondTxtFile from "../../attachments/files/2.txt";
 import thirdTxtFile from "../../attachments/files/3.txt";
+import WiresharkAndNmap from "../../attachments/pdfs/WiresharkAndNmap_En.pdf";
 
 const posts = [
     {
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: "", 
-        Titlos: "Wireshark and Νmap", 
+        Titlos: "Wireshark and Nmap", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
         Date: "19/02/2025",
         Katigoria: "Cybersecurity", 
         Keimeno: "This project is an assignment given to me during the Google.org Cybersecurity Seminars and focuses on Wireshark and Nmap. Wireshark is a powerful network protocol analyzer used to capture and inspect network traffic in real time, helping in network troubleshooting and security analysis. Nmap (Network Mapper) is a widely used tool for network discovery and security auditing, allowing users to scan hosts and services. Below, you will find my answers to the questions provided in the assignment.",
         Link: "",
-        htmlPdf: "/htmls/Wireshark&Νmap.html",
-        pdf: "",
+        htmlPdf: "",
+        pdf: WiresharkAndNmap,
         file: "",
         video: ""
     },

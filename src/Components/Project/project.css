@@ -40,6 +40,27 @@
         background-color: white;
         border-radius: 10px;
     }
+
+    .ligopanw {
+            text-shadow: -1px -1px 0 black,  
+            1px -1px 0 black,  
+            -1px 1px 0 black,  
+            1px 1px 0 black;
+    }
+
+    .center {
+        text-shadow: -1px -1px 0 black,  
+        1px -1px 0 black,  
+        -1px 1px 0 black,  
+        1px 1px 0 black;
+    }
+
+    .Sigr-date-Katigoria {
+        text-shadow: -1px -1px 0 black,  
+        1px -1px 0 black,  
+        -1px 1px 0 black,  
+        1px 1px 0 black;     
+    }
 }
 
 .back {
@@ -156,7 +177,7 @@
   .toIframe {
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 40px;
 }
   
