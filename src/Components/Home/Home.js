@@ -12,9 +12,11 @@ import github from "../../assets/github.png";
 // import GreeCv from '../../attachments/cv/KlajdiCami_GreekCv.pdf';
 // import EnglishCv from "../../attachments/cv/KlajdiCami_EnglishCv.pdf";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ClustrMaps from "./ClustrMaps.js";
 
 const Home = () => {
-
+    const today = new Date();
+    const year = today.getFullYear();
 
     return (
         <div className='toolo'>
@@ -109,8 +111,15 @@ const Home = () => {
                     <Link to='/projects' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
                 </div>
 
+                <br/><br/><hr/><br/>
+
+                <div className='maps'>
+                    <ClustrMaps  className="tomap"/>
+                    <div className='ccHome'>       
+                        <p>© {year} Klajdi Cami</p>
+                    </div>
+                </div>
             </div>
-            
             <br/><br/><br/><br/><br/>
         </div>
     </div>
