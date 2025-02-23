@@ -33,6 +33,10 @@
             1px 1px 0 black;
     }
 
+    .todivdeksia1:hover {
+        color: rgb(216, 216, 216);
+    }
+
     .tolink {
         color: white;
     }
@@ -337,7 +341,7 @@ margin-bottom: 5px;
 }
 
 .todivdeksia1:hover {
-    color: rgb(121, 121, 121);
+    color: rgb(110, 90, 90);
 }
 
 #tosig {
@@ -607,7 +611,8 @@ margin-bottom: 5px;
  }
 
  .ccHome p{
-    margin-top: 55px;
+    margin-top: -5px;
+    font-size: 17px;
  }
 
  .clustrmaps-container {
@@ -891,6 +896,7 @@ margin-left: 0px;
  .ccHome p{
     margin-top: 20px;
     margin-bottom: -20px;
+    font-size: 13px;
  }
 
  .clustrmaps-container {

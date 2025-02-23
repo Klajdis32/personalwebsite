@@ -111,7 +111,7 @@ const Home = () => {
                     <Link to='/projects' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
                 </div>
 
-                <br/><br/><hr/><br/>
+                <br/><hr/><br/>
 
                 <div className='maps'>
                     <ClustrMaps  className="tomap"/>
