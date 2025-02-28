@@ -163,7 +163,7 @@ const Project = () => {
                         {/* Αν το post.pdf είναι array και περιέχει πολλά PDFs */}
                         {Array.isArray(post.pdf) && post.pdf.length > 1 ? (
                             post.pdf.map((pdfFile, index) => (
-                                <div key={index} className='toIframe'>
+                                <div key={index} className='toIframePdf'>
                                     <iframe
                                         src={pdfFile}
                                         title={`PDF Viewer ${index + 1}`}
@@ -177,7 +177,7 @@ const Project = () => {
                             ))
                         ) : (
                             // Αν το post.pdf είναι ένα μόνο αρχείο, εμφανίζει ένα iframe
-                            <div className='toIframe'>
+                            <div className='toIframePdf'>
                                 <iframe
                                     src={Array.isArray(post.pdf) ? post.pdf[0] : post.pdf} 
                                     title="PDF Viewer"

@@ -175,13 +175,21 @@
   }
 
   .toIframe {
+    background-color: white;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 40px;
+    padding: 20px;
+    margin-bottom: 0px;
 }
   
 
+.toIframePdf {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    height: 100vh;
+    margin-bottom: 20px;
+}
 
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
@@ -234,6 +242,10 @@
     width: 20px;
     height: 20px;
   }
+
+  .toIframe {
+    padding: 5px;
+}
 
 }
   
