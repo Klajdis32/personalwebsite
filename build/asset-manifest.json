@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7458ebb2.css",
-    "main.js": "/static/js/main.596d3701.js",
+    "main.css": "/static/css/main.0b0122d5.css",
+    "main.js": "/static/js/main.1a22cab4.js",
+    "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
@@ -11,11 +12,9 @@
     "static/media/Lab5Exercise_InGreek.pdf": "/static/media/Lab5Exercise_InGreek.86bbe0bbbb62b47a2b15.pdf",
     "static/media/Lab1Exercise_InGreek.pdf": "/static/media/Lab1Exercise_InGreek.2f7c767939388702f670.pdf",
     "static/media/athlisoy.mp4": "/static/media/athlisoy.b289c53720a3c65d6249.mp4",
-    "static/media/MaPass.pdf": "/static/media/MaPass.ddb190c15012730514b8.pdf",
     "static/media/Lab4Exercise_InGreek.pdf": "/static/media/Lab4Exercise_InGreek.f41779804cec60d6464b.pdf",
     "static/media/oscilloscope.pdf": "/static/media/oscilloscope.c1459b1128b767ec9552.pdf",
     "static/media/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .pdf": "/static/media/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .86e565d7a6b181b18901.pdf",
-    "static/media/Mapass.mp4": "/static/media/Mapass.63de77a2362da76a210d.mp4",
     "static/media/Μέτρηση Τάσεων Mε Παλμογράφο.pdf": "/static/media/Μέτρηση Τάσεων Mε Παλμογράφο.7916f091448d303fd1f7.pdf",
     "static/media/Planck.pdf": "/static/media/Planck.900c690bf21244ebba14.pdf",
     "static/media/Περίθλαση Ηλεκτρονίων.pdf": "/static/media/Περίθλαση Ηλεκτρονίων.716353741bf5a6444eb4.pdf",
@@ -57,11 +56,11 @@
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
-    "main.7458ebb2.css.map": "/static/css/main.7458ebb2.css.map",
-    "main.596d3701.js.map": "/static/js/main.596d3701.js.map"
+    "main.0b0122d5.css.map": "/static/css/main.0b0122d5.css.map",
+    "main.1a22cab4.js.map": "/static/js/main.1a22cab4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7458ebb2.css",
-    "static/js/main.596d3701.js"
+    "static/css/main.0b0122d5.css",
+    "static/js/main.1a22cab4.js"
   ]
 }

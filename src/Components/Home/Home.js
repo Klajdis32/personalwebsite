@@ -102,8 +102,18 @@ const Home = () => {
                 </div>
 
                 <div className="toEpilegmeno">
-                    <p className='topEpi'>Chat Interface for Llama LLM</p>
+                    <p className='topEpi'>React-Express.js-MySQL Authentication System</p>
                     <Link to='/project?to=Chat%20Interface%20for%20Llama%20LLM' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                </div>
+
+                <div className="toEpilegmeno">
+                    <p className='topEpi'>Measurement of Electron Mass</p>
+                    <Link to='/project?to=Measurement%20of%20Electron%20Mass' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                </div>
+
+                <div className="toEpilegmeno">
+                    <p className='topEpi'>Proof of the Wave Nature of Electrons</p>
+                    <Link to='/project?to=Proof%20of%20the%20Wave%20Nature%20of%20Electrons' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
                 </div>
 
                 <div className="toEpilegmeno">

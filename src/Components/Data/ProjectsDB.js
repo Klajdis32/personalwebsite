@@ -1,5 +1,4 @@
 import Plank from "../../attachments/pdfs/Planck.pdf";
-import MaPass from "../../attachments/pdfs/MaPass.pdf";
 import oscilloscope from "../../attachments/pdfs/oscilloscope.pdf";
 import SimulationOfLinearMotion from "../../attachments/pdfs/SimulationOfLinearMotion.pdf";
 import SpecificHeatOfMaterials from "../../attachments/pdfs/SpecificHeatOfMaterials.pdf";
@@ -16,7 +15,6 @@ import Perithlasi_e from "../../attachments/pdfs/Περίθλαση Ηλεκτρ
 import Sintonismos from "../../attachments/pdfs/Συντονισμός Σειράς – Παράλληλος.pdf";
 import SixnotikhApokrisi from "../../attachments/pdfs/Συχνοτική Απόκριση Φίλτρων.pdf";
 import KiklomaDiaforisis from "../../attachments/pdfs/Τετράπολα - Κυκλώματα Διαφόρισης .pdf";
-import VideoMaPass from "../../attachments/videos/Mapass.mp4";
 import VideoAthlisoy from "../../attachments/videos/athlisoy.mp4";
 import Aluzip from "../../attachments/files/ALU.zip";
 import petasma from "../../assets/petasma.jpg"
@@ -40,8 +38,25 @@ import firstaTxtFile from "../../attachments/files/1a.txt";
 import secondTxtFile from "../../attachments/files/2.txt";
 import thirdTxtFile from "../../attachments/files/3.txt";
 import WiresharkAndNmap from "../../attachments/pdfs/WiresharkAndNmap_En.pdf";
+import LinuxMachineCommunication from "../../attachments/pdfs/LinuxMachineCommunication.pdf";
 
 const posts = [
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "Linux Machine Communication", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "03/03/2025",
+        Katigoria: "Cybersecurity", 
+        Keimeno: "This project is an assignment given to me during the Google.org Cybersecurity Seminars and focuses on Linux machine communication. Throughout this project, I worked on various aspects of secure file transfer and system auditing, including: Setting up FTP/SCP servers for secure file exchange. Transferring files using SCP to ensure encrypted communication. Encrypting directories using PGP, enhancing data security. Configuring auditd for event logging, monitoring system activities.Creating backups, ensuring data integrity and disaster recovery. The assignment provided hands-on experience in Linux system administration, security best practices, and network communication, reinforcing my skills in cybersecurity and infrastructure management.",
+        Link: "",
+        htmlPdf: "",
+        pdf: LinuxMachineCommunication,
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 
@@ -78,7 +93,7 @@ const posts = [
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: "", 
-        Titlos: "Express.js-React-MySQL Authentication System", 
+        Titlos: "React-Express.js-MySQL Authentication System", 
         Sigrafeas: "Me", 
         Linksigrafea: "",  
         Date: "01/02/2025",
@@ -468,21 +483,6 @@ const posts = [
     //     pdf: "",
     //     file: "",
     //     video: ""
-    // },
-    // {
-    //     Ergastirio: "",
-    //     imageEksw: "", 
-    //     imageMesa: "",
-    //     Titlos: "Android App Manage Passwords (MaPass)", 
-    //     Sigrafeas: "<a href='https://tsami.gr/' style='color: green;'>Kristi Cami</a>", 
-    //     Linksigrafea: "https://tsami.gr/", 
-    //     Date: "13/07/2023",
-    //     Katigoria: "Programming", 
-    //     Keimeno: "In this project, our aim was to create a password management application for Android called MaPass. In today's digital world, the need for strong passwords is essential to protect our personal and sensitive information. However, managing these passwords can be quite challenging. MaPass is an innovative password management application that we have developed specifically for Android, combining security and convenience into one functional tool. With MaPass, you can securely store and organize all your passwords in one place, ensuring easy access whenever you need them.",
-    //     Link: "https://github.com/KristiCami/PasswordManager" ,
-    //     pdf: MaPass,
-    //     file: "",
-    //     video: VideoMaPass
     // },
     {
         Ergastirio: "Εργαστηριακές Ασκήσεις Φυσικής - Γενικό Εργαστήριο",
