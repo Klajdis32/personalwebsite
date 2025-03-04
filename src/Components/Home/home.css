@@ -903,15 +903,21 @@ margin-left: 0px;
  }
  
  .toEpilegmeno {
-    margin: 0 0 -5px 0;
+    margin: 0 0 -20px 0;
  }
 
 .topEpi {
-    width: 60%;
+    width: 70%;
 }
 
 .toLinkEpil {
-    width: 30%;;
+    width: 40%;
+    margin-left: 10px;
+    display: flex;
+}
+
+.toarrow {
+    margin-top: 7px;
 }
         
 }

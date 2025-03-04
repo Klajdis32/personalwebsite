@@ -103,7 +103,7 @@ const Home = () => {
 
                 <div className="toEpilegmeno">
                     <p className='topEpi'>React-Express.js-MySQL Authentication System</p>
-                    <Link to='/project?to=Chat%20Interface%20for%20Llama%20LLM' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                    <Link to='/project?to=React-Express.js-MySQL%20Authentication%20System' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
                 </div>
 
                 <div className="toEpilegmeno">
