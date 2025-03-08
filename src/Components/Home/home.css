@@ -914,6 +914,7 @@ margin-left: 0px;
     width: 40%;
     margin-left: 10px;
     display: flex;
+    justify-content: right;
 }
 
 .toarrow {

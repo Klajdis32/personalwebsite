@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.c99bda53.css",
-    "main.js": "/static/js/main.73982da1.js",
+    "main.css": "/static/css/main.45fed958.css",
+    "main.js": "/static/js/main.eafb847f.js",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
+    "static/media/malware5thExercise.pdf": "/static/media/malware5thExercise.8052461695685efd51cd.pdf",
     "static/media/Lab2Exercise_InGreek.pdf": "/static/media/Lab2Exercise_InGreek.76512e6e79a2d226e100.pdf",
     "static/media/Τετράπολα - Κυκλώματα Διαφόρισης .pdf": "/static/media/Τετράπολα - Κυκλώματα Διαφόρισης .84948d01b1fa9bd22414.pdf",
     "static/media/Ultrasound.pdf": "/static/media/Ultrasound.005da9cd315bb088614b.pdf",
@@ -56,11 +57,11 @@
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
-    "main.c99bda53.css.map": "/static/css/main.c99bda53.css.map",
-    "main.73982da1.js.map": "/static/js/main.73982da1.js.map"
+    "main.45fed958.css.map": "/static/css/main.45fed958.css.map",
+    "main.eafb847f.js.map": "/static/js/main.eafb847f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c99bda53.css",
-    "static/js/main.73982da1.js"
+    "static/css/main.45fed958.css",
+    "static/js/main.eafb847f.js"
   ]
 }

@@ -39,8 +39,26 @@ import secondTxtFile from "../../attachments/files/2.txt";
 import thirdTxtFile from "../../attachments/files/3.txt";
 import WiresharkAndNmap from "../../attachments/pdfs/WiresharkAndNmap_En.pdf";
 import LinuxMachineCommunication from "../../attachments/pdfs/LinuxMachineCommunication.pdf";
+import malware from "../../attachments/pdfs/malware5thExercise.pdf"
+
 
 const posts = [
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "Malware and antivirus systems", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "08/03/2025",
+        Katigoria: "Cybersecurity", 
+        Keimeno: "This project is an assignment I was given during the Google.org Cybersecurity Seminars, focusing on malware and antivirus systems. In this assignment, we explored various aspects of Windows Defender's functionality, testing its capabilities through different methods. Additionally, at the end of the project, we conducted a simulated attack involving sniffing and spoofing techniques to further understand potential vulnerabilities and defense mechanisms.",
+        Link: "",
+        htmlPdf: "",
+        pdf: malware,
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 
