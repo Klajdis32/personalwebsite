@@ -40,9 +40,25 @@ import thirdTxtFile from "../../attachments/files/3.txt";
 import WiresharkAndNmap from "../../attachments/pdfs/WiresharkAndNmap_En.pdf";
 import LinuxMachineCommunication from "../../attachments/pdfs/LinuxMachineCommunication.pdf";
 import malware from "../../attachments/pdfs/malware5thExercise.pdf"
-
+import Firewalls from "../../attachments/pdfs/FirewallsExercise.pdf";
 
 const posts = [
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "", 
+        Titlos: "Firewall on a Linux system", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "15/03/2025",
+        Katigoria: "Cybersecurity", 
+        Keimeno: "This project is an assignment I was given during the Google.org Cybersecurity Seminars, focusing on firewalls. Specifically, in this assignment, we worked with the firewall on a Linux system. We explored how to block the connection to a specific device using its IP address or MAC address, how to block access to a specific URL, and how to restrict traffic to a specific destination port. Through this process, we gained a deeper understanding of how firewalls operate, how to implement security policies to control network traffic, and how to enhance system security by managing access rules.",
+        Link: "",
+        htmlPdf: "",
+        pdf: Firewalls,
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 

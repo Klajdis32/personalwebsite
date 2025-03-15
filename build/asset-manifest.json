@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.45fed958.css",
-    "main.js": "/static/js/main.eafb847f.js",
+    "main.js": "/static/js/main.4fe7056c.js",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
@@ -9,6 +9,7 @@
     "static/media/malware5thExercise.pdf": "/static/media/malware5thExercise.8052461695685efd51cd.pdf",
     "static/media/Lab2Exercise_InGreek.pdf": "/static/media/Lab2Exercise_InGreek.76512e6e79a2d226e100.pdf",
     "static/media/Τετράπολα - Κυκλώματα Διαφόρισης .pdf": "/static/media/Τετράπολα - Κυκλώματα Διαφόρισης .84948d01b1fa9bd22414.pdf",
+    "static/media/FirewallsExercise.pdf": "/static/media/FirewallsExercise.bc94be3cb1942c04c92f.pdf",
     "static/media/Ultrasound.pdf": "/static/media/Ultrasound.005da9cd315bb088614b.pdf",
     "static/media/Lab5Exercise_InGreek.pdf": "/static/media/Lab5Exercise_InGreek.86bbe0bbbb62b47a2b15.pdf",
     "static/media/Lab1Exercise_InGreek.pdf": "/static/media/Lab1Exercise_InGreek.2f7c767939388702f670.pdf",
@@ -58,10 +59,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.45fed958.css.map": "/static/css/main.45fed958.css.map",
-    "main.eafb847f.js.map": "/static/js/main.eafb847f.js.map"
+    "main.4fe7056c.js.map": "/static/js/main.4fe7056c.js.map"
   },
   "entrypoints": [
     "static/css/main.45fed958.css",
-    "static/js/main.eafb847f.js"
+    "static/js/main.4fe7056c.js"
   ]
 }
