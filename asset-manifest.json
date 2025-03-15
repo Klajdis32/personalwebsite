@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.45fed958.css",
-    "main.js": "/static/js/main.c9e113fe.js",
+    "main.js": "/static/js/main.4fe7056c.js",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
@@ -59,10 +59,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.45fed958.css.map": "/static/css/main.45fed958.css.map",
-    "main.c9e113fe.js.map": "/static/js/main.c9e113fe.js.map"
+    "main.4fe7056c.js.map": "/static/js/main.4fe7056c.js.map"
   },
   "entrypoints": [
     "static/css/main.45fed958.css",
-    "static/js/main.c9e113fe.js"
+    "static/js/main.4fe7056c.js"
   ]
 }
