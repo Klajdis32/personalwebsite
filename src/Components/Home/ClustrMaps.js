@@ -4,7 +4,7 @@ import "./home.css";
 const ClustrMaps = () => {
     useEffect(() => {
         const script = document.createElement("script");
-        script.src = "//clustrmaps.com/map_v2.js?d=G_WuskgjFcZapPC6EQwgJvIM1oYbYcbM3rCdOyjx9zs&cl=ffffff&w=a";
+        script.src = "//clustrmaps.com/map_v2.js?d=G5LFgZ6pXFb4ELbn-49m_0hcy7bS3ZsSOh5-b5nlZDs&cl=ffffff&w=a";
         script.id = "clustrmaps";
         script.type = "text/javascript";
     
