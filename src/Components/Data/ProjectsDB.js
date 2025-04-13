@@ -41,8 +41,26 @@ import WiresharkAndNmap from "../../attachments/pdfs/WiresharkAndNmap_En.pdf";
 import LinuxMachineCommunication from "../../attachments/pdfs/LinuxMachineCommunication.pdf";
 import malware from "../../attachments/pdfs/malware5thExercise.pdf"
 import Firewalls from "../../attachments/pdfs/FirewallsExercise.pdf";
+import TempMeter from "../../attachments/pdfs/LM35TemperatureMeter.pdf";
+import tempMeterImg from "../../attachments/images/TempMeter.png";
 
 const posts = [
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: tempMeterImg, 
+        Titlos: "LM35 Temperature Meter – Arduino Uno", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "13/04/2025",
+        Katigoria: "Electronics", 
+        Keimeno: "This project uses an LM35 analog temperature sensor connected to an Arduino Uno to measure ambient temperature in real time. The temperature readings are displayedon a 16x2 LCD screen. The LM35 sensor outputs a voltage that is linearly proportional to the temperature in degrees Celsius (10 mV per °C). The Arduino reads this analog voltage through pin A0, calculates the temperature, and updates the LCD display every 500 milliseconds. The LCD screen is connected directly to the Arduino using digital pins (RS, EN, D4–D7), and shows the current temperature with one decimal precision, e.g., “Temp: 24.7°C”. This project is a simple and effective way to monitor temperature using basic components and is ideal for beginners learning how to interface sensors and displays with Arduino. You can find the circuit connections and the project code in the PDF below.",
+        Link: "",
+        htmlPdf: "",
+        pdf: TempMeter,
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 

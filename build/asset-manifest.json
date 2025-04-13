@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.45fed958.css",
-    "main.js": "/static/js/main.4fe7056c.js",
+    "main.js": "/static/js/main.75adb3d2.js",
+    "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
+    "static/media/LM35TemperatureMeter.pdf": "/static/media/LM35TemperatureMeter.0cc952b6e66c1627de60.pdf",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
     "static/media/malware5thExercise.pdf": "/static/media/malware5thExercise.8052461695685efd51cd.pdf",
@@ -59,10 +61,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.45fed958.css.map": "/static/css/main.45fed958.css.map",
-    "main.4fe7056c.js.map": "/static/js/main.4fe7056c.js.map"
+    "main.75adb3d2.js.map": "/static/js/main.75adb3d2.js.map"
   },
   "entrypoints": [
     "static/css/main.45fed958.css",
-    "static/js/main.4fe7056c.js"
+    "static/js/main.75adb3d2.js"
   ]
 }
