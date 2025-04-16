@@ -43,8 +43,25 @@ import malware from "../../attachments/pdfs/malware5thExercise.pdf"
 import Firewalls from "../../attachments/pdfs/FirewallsExercise.pdf";
 import TempMeter from "../../attachments/pdfs/LM35TemperatureMeter.pdf";
 import tempMeterImg from "../../attachments/images/TempMeter.png";
+import scp from "../../attachments/pdfs/SCP.pdf";
 
 const posts = [
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "",
+        Titlos: "Passwordless SSH Connections Between Linux machines", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "16/04/2025",
+        Katigoria: "Cybersecurity", 
+        Keimeno: "This project is an assignment I was given during the Google.org Cybersecurity Seminars, focusing on Passwordless SSH Connections Between Linux machines. ",
+        Link: "",
+        htmlPdf: "",
+        pdf: scp,
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 
