@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.45fed958.css",
-    "main.js": "/static/js/main.75adb3d2.js",
+    "main.js": "/static/js/main.a26d1e08.js",
     "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
@@ -23,6 +23,7 @@
     "static/media/Planck.pdf": "/static/media/Planck.900c690bf21244ebba14.pdf",
     "static/media/Περίθλαση Ηλεκτρονίων.pdf": "/static/media/Περίθλαση Ηλεκτρονίων.716353741bf5a6444eb4.pdf",
     "static/media/Lab2Simulation_InGreek.pdf": "/static/media/Lab2Simulation_InGreek.ba8713e99eba8bb85f74.pdf",
+    "static/media/SCP.pdf": "/static/media/SCP.272719ff9f3d365c304a.pdf",
     "static/media/Θερμιονική Εκπομπή Ηλεκτρονίων.pdf": "/static/media/Θερμιονική Εκπομπή Ηλεκτρονίων.ce85bb688cc0f5c1c6f3.pdf",
     "static/media/Κύκλωμα Γέφυρας – Μετασχηματισμοί Δ ↔ Υ.pdf": "/static/media/Κύκλωμα Γέφυρας – Μετασχηματισμοί Δ ↔ Υ.34f94c37d9f9d2b5aa61.pdf",
     "static/media/Λόγος e πρός m.pdf": "/static/media/Λόγος e πρός m.168ea2335cc6af7d3af3.pdf",
@@ -61,10 +62,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.45fed958.css.map": "/static/css/main.45fed958.css.map",
-    "main.75adb3d2.js.map": "/static/js/main.75adb3d2.js.map"
+    "main.a26d1e08.js.map": "/static/js/main.a26d1e08.js.map"
   },
   "entrypoints": [
     "static/css/main.45fed958.css",
-    "static/js/main.75adb3d2.js"
+    "static/js/main.a26d1e08.js"
   ]
 }
