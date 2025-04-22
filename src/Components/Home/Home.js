@@ -59,12 +59,16 @@ const Home = () => {
 
                 <strong>About me</strong>
                 <p>
-                    I have a deep interest in physics, a field I am currently studying, which allows me to explore and understand the fundamental principles that govern the natural world. Through my studies, I have developed strong problem-solving skills, using the scientific method to approach challenges logically and effectively. This process has taught me to analyze situations critically and find practical solutions to complex issues.
-                </p>   
-                
-                <p>
-                    At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions. By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools.
+                    I have a deep interest in physics, a field I am currently studying, which allows me to explore and understand the fundamental principles that govern the natural world. 
+             
+
+                {/* <p>Through my studies, I have developed strong problem-solving skills, using the scientific method to approach challenges logically and effectively. This process has taught me to analyze situations critically and find practical solutions to complex issues.</p>   
+                 */}
+               
+                    At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions.
                 </p>
+{/* 
+                <p>By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools.</p> */}
 
                 <p>
                     This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
@@ -79,8 +83,7 @@ const Home = () => {
                         <span>Python, </span>
                         <span>JavaScript, </span>
                         <span>React, </span>
-                        <span>App Developer, </span>
-                        <span>Web App Developer</span>
+                        <span>App & Web App Developer, </span>
                     </div>
 
                     <br/>
@@ -125,7 +128,7 @@ const Home = () => {
 
                     <strong>Some of the books i have reed</strong>
                     <div className="taskills">
-                        <a href='https://www.goodreads.com/review/list/189751853-klajdi?shelf=read&view=covers' target="_blank" className='toaGood'>www.goodreads.com/klajdi</a>
+                        <a href='https://www.goodreads.com/review/list/189751853-klajdi?shelf=read&view=covers' target="_blank" className='toaGood'>www.goodreads.com/review/list/189751853?shelf=read</a>
                     </div>
 
                     <br/><hr/><br/>
