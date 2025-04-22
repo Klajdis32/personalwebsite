@@ -125,7 +125,7 @@ const Home = () => {
 
                     <strong>Some of the books i have reed</strong>
                     <div className="taskills">
-                        <a href='https://www.goodreads.com/review/list/189751853-klajdi?view=covers' target="_blank" className='toaGood'>www.goodreads.com/klajdi</a>
+                        <a href='https://www.goodreads.com/review/list/189751853-klajdi?shelf=read&view=covers' target="_blank" className='toaGood'>www.goodreads.com/klajdi</a>
                     </div>
 
                     <br/><hr/><br/>
