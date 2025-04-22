@@ -94,41 +94,48 @@ const Home = () => {
 
                     <br/>
 
-                <strong>Selected works</strong>
+                    <strong>Selected works</strong>
 
-                <div className="toEpilegmeno">
-                    <p className='topEpi'>Lunar Lander Ai Agent</p>
-                    <Link to='/project?to=Lunar%20Lander%20Ai%20Agent' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                </div>
-
-                <div className="toEpilegmeno">
-                    <p className='topEpi'>React-Express.js-MySQL Authentication System</p>
-                    <Link to='/project?to=React-Express.js-MySQL%20Authentication%20System' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                </div>
-
-                <div className="toEpilegmeno">
-                    <p className='topEpi'>Measurement of Electron Mass</p>
-                    <Link to='/project?to=Measurement%20of%20Electron%20Mass' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                </div>
-
-                <div className="toEpilegmeno">
-                    <p className='topEpi'>Proof of the Wave Nature of Electrons</p>
-                    <Link to='/project?to=Proof%20of%20the%20Wave%20Nature%20of%20Electrons' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                </div>
-
-                <div className="toEpilegmeno">
-                    <p className='topEpi'>All projects</p>
-                    <Link to='/projects' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
-                </div>
-
-                <br/><hr/><br/>
-
-                <div className='maps'>
-                    <ClustrMaps  className="tomap"/>
-                    <div className='ccHome'>       
-                        <p>© {year} Klajdi Cami</p>
+                    <div className="toEpilegmeno">
+                        <p className='topEpi'>Lunar Lander Ai Agent</p>
+                        <Link to='/project?to=Lunar%20Lander%20Ai%20Agent' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
                     </div>
-                </div>
+
+                    <div className="toEpilegmeno">
+                        <p className='topEpi'>React-Express.js-MySQL Authentication System</p>
+                        <Link to='/project?to=React-Express.js-MySQL%20Authentication%20System' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                    </div>
+
+                    <div className="toEpilegmeno">
+                        <p className='topEpi'>Measurement of Electron Mass</p>
+                        <Link to='/project?to=Measurement%20of%20Electron%20Mass' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                    </div>
+
+                    <div className="toEpilegmeno">
+                        <p className='topEpi'>Proof of the Wave Nature of Electrons</p>
+                        <Link to='/project?to=Proof%20of%20the%20Wave%20Nature%20of%20Electrons' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
+                    </div>
+
+                    <div className="toEpilegmeno">
+                        <p className='topEpi'>All projects</p>
+                        <Link to='/projects' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
+                    </div>
+
+                    <br/>
+
+                    <strong>Some of the books i have reed</strong>
+                    <div className="taskills">
+                        <a href='https://www.goodreads.com/review/list/189751853-klajdi?view=covers' target="_blank" className='toaGood'>www.goodreads.com/klajdi</a>
+                    </div>
+
+                    <br/><hr/><br/>
+
+                    <div className='maps'>
+                        <ClustrMaps  className="tomap"/>
+                        <div className='ccHome'>       
+                            <p>© {year} Klajdi Cami</p>
+                        </div>
+                    </div>
             </div>
             <br/><br/><br/><br/><br/>
         </div>

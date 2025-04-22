@@ -314,6 +314,10 @@ z-index: 999;
     display: none;
 }
 
+#apodExplanation {
+    text-align: justify;
+}
+
 /* Κανόνες CSS για tablet */
 @media (min-width: 601px) and (max-width: 768px) {
 .containerdap {
