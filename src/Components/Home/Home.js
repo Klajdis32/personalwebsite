@@ -59,17 +59,16 @@ const Home = () => {
 
                 <strong>About me</strong>
                 <p>
-                    I have a deep interest in physics, a field I am currently studying, which allows me to explore and understand the fundamental principles that govern the natural world. 
-             
-
-                {/* <p>Through my studies, I have developed strong problem-solving skills, using the scientific method to approach challenges logically and effectively. This process has taught me to analyze situations critically and find practical solutions to complex issues.</p>   
-                 */}
-               
-                    At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions.
+                    I have a deep interest in physics, a field I am currently studying, which allows me to explore and understand the fundamental principles that govern the natural world. At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions.
                 </p>
-{/* 
-                <p>By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools.</p> */}
 
+                {/* 
+                <p>By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools.</p> 
+                */}
+                {/* 
+                <p>Through my studies, I have developed strong problem-solving skills, using the scientific method to approach challenges logically and effectively. This process has taught me to analyze situations critically and find practical solutions to complex issues.</p>   
+                */}
+                
                 <p>
                     This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
                 </p>
