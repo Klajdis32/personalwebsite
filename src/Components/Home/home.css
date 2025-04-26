@@ -96,6 +96,12 @@
     .toLinkEpil {
         color: white;
       }
+
+      .toaGood {
+        color: rgb(255, 255, 255);
+     }
+
+     
 }
 
 body {

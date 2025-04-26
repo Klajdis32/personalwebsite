@@ -83,17 +83,26 @@ const Dap = () => {
                         <br/>
                         <div className='kentrototitle'><span id="apodCaption">{apodData.title}</span></div><br/>
                         <div className="image-container">
-                            {/* Skeleton εμφανίζεται αν η εικόνα δεν έχει φορτωθεί */}
-                            {!imageLoaded && !apodData.media_type === 'video' && <div className="skeleton skeleton-image"></div>}
+                            {/* Εμφάνισε skeleton αν: 
+                                - είναι image ΚΑΙ δεν έχει φορτώσει 
+                                - είναι video ΚΑΙ δεν έχει φορτώσει 
+                            */}
+                            {apodData.media_type === 'image' && !imageLoaded && (
+                                <div className="skeleton skeleton-image"></div>
+                            )}
 
                             {apodData.media_type === 'image' && (
-                                <img 
-                                    src={apodData.url} 
-                                    alt={apodData.title} 
-                                    onLoad={() => setImageLoaded(true)} 
-                                    style={{ display: imageLoaded ? 'block' : 'none' }} 
-                                    className="NasaImg" 
+                                <img
+                                    src={apodData.url}
+                                    alt={apodData.title}
+                                    onLoad={() => setImageLoaded(true)}
+                                    style={{ display: imageLoaded ? 'block' : 'none' }}
+                                    className="NasaImg"
                                 />
+                            )}
+
+                            {apodData.media_type === 'video' && !imageLoaded && (
+                                <div className="skeleton skeleton-image"></div>
                             )}
 
                             {apodData.media_type === 'video' && (
@@ -107,6 +116,7 @@ const Dap = () => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowFullScreen
                                     onLoad={() => setImageLoaded(true)}
+                                    style={{ display: imageLoaded ? 'block' : 'none' }}
                                 ></iframe>
                             )}
                         </div>
