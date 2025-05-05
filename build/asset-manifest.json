@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7186173b.css",
-    "main.js": "/static/js/main.678ad875.js",
+    "main.css": "/static/css/main.e4a244ee.css",
+    "main.js": "/static/js/main.dd265b7d.js",
+    "static/media/MilkyWay.jpg": "/static/media/MilkyWay.e1b36cbb40ddd8fc05ad.jpg",
     "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
@@ -35,6 +36,7 @@
     "static/media/Lab3Exercise_InGreek.pdf": "/static/media/Lab3Exercise_InGreek.77201ca1b875864cf9f6.pdf",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
+    "static/media/WindowsUsers.pdf": "/static/media/WindowsUsers.5bbaa33b5f419fd1452c.pdf",
     "static/media/Lab3Simulation_InGreek.pdf": "/static/media/Lab3Simulation_InGreek.85d59e87fed337758e61.pdf",
     "static/media/Lab1Simulation_InGreek.pdf": "/static/media/Lab1Simulation_InGreek.c586b61abcabe16e63e3.pdf",
     "static/media/Lab4Simulation_InGreek.pdf": "/static/media/Lab4Simulation_InGreek.cfe0cd5c5e3ffa606672.pdf",
@@ -61,11 +63,11 @@
     "static/media/Moon.svg": "/static/media/Moon.af99a536ce1d19f741275b8554beaa63.svg",
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
-    "main.7186173b.css.map": "/static/css/main.7186173b.css.map",
-    "main.678ad875.js.map": "/static/js/main.678ad875.js.map"
+    "main.e4a244ee.css.map": "/static/css/main.e4a244ee.css.map",
+    "main.dd265b7d.js.map": "/static/js/main.dd265b7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7186173b.css",
-    "static/js/main.678ad875.js"
+    "static/css/main.e4a244ee.css",
+    "static/js/main.dd265b7d.js"
   ]
 }

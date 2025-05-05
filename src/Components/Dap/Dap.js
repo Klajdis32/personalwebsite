@@ -1,10 +1,11 @@
 import './dap.css';
 import React, { useState, useEffect } from 'react';
+import MilkyWay from "../../attachments/images/MilkyWay.jpg";
 
 const Dap = () => {
     const [apodData, setApodData] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
+    const [error, setError] = useState(true);
     const [imageLoaded, setImageLoaded] = useState(false);
 
     const convertDate = (dateString) => {
@@ -57,8 +58,8 @@ const Dap = () => {
                         <div className="skeleton skeleton-image"></div>
                         <div className="skeleton skeleton-date"></div>
                         <div className="skeleton skeleton-text"></div>
-                        <div className="skeleton skeleton-end1"></div>
                         <div className="skeleton skeleton-end2"></div>
+                        <div className="skeleton skeleton-end1"></div>
                 </div>
                 <br/><br/><br/>
             </div>
@@ -66,7 +67,12 @@ const Dap = () => {
     }    
 
     if (error) {
-        return <div className='errorDiv'>Error fetching APOD data</div>;
+        return <div className='errorDiv'>
+            <p>Error fetching APOD data, please try again later!</p>
+            <img src={MilkyWay} className='mwImage'/>
+            <br/>
+            <small>Image from <a href='https://en.wikipedia.org/wiki/Milky_Way#/media/File:ESO-VLT-Laser-phot-33a-07.jpg'>Wikipedia</a></small>
+            </div>;
     }
 
     if (!apodData) {

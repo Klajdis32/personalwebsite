@@ -44,8 +44,25 @@ import Firewalls from "../../attachments/pdfs/FirewallsExercise.pdf";
 import TempMeter from "../../attachments/pdfs/LM35TemperatureMeter.pdf";
 import tempMeterImg from "../../attachments/images/TempMeter.png";
 import scp from "../../attachments/pdfs/SCP.pdf";
+import windowsUsersAndPerm from "../../attachments/pdfs/WindowsUsers.pdf"
 
 const posts = [
+    {
+        Ergastirio: "",
+        imageEksw: "", 
+        imageMesa: "",
+        Titlos: "Users and Permissions on Windows Machines", 
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "05/05/2025",
+        Katigoria: "Cybersecurity", 
+        Keimeno: "This project is an assignment I was given during the Google.org Cybersecurity Seminars, focusing on users and permissions on Windows machines. ",
+        Link: "",
+        htmlPdf: "",
+        pdf: windowsUsersAndPerm,
+        file: "",
+        video: ""
+    },
     {
         Ergastirio: "",
         imageEksw: "", 

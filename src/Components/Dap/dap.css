@@ -259,9 +259,9 @@ z-index: 999;
 }
 
 .skeleton-image {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    height: 400px;
+    height: 600px;
     margin-bottom: 16px;
     border-radius: 8px;
     margin-top: 3%;
@@ -289,15 +289,14 @@ z-index: 999;
     margin: 0 auto;
     height: 16px;
     margin-bottom: 8px;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .skeleton-end2 {
     width: 30%;
     margin: 0 auto;
     height: 16px;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin-top: 4%;
 }
 
 .centererrdap {
@@ -316,6 +315,25 @@ z-index: 999;
 
 #apodExplanation {
     text-align: justify;
+}
+
+.errorDiv {
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 1100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+
+}
+
+.errorDiv a{
+    color: rgb(129, 179, 195);
+}
+
+.mwImage {
+    width: 80%;
+    border-radius: 30px;
 }
 
 /* Κανόνες CSS για tablet */
@@ -533,6 +551,12 @@ transform: translate( -6%, -40%);
 
 .monoKin {
     display: block;
+}
+
+
+.mwImage {
+    width: 100%;
+    border-radius: 30px;
 }
 
 }
