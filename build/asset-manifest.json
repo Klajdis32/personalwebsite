@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e4a244ee.css",
-    "main.js": "/static/js/main.dd265b7d.js",
+    "main.js": "/static/js/main.f3e80463.js",
     "static/media/MilkyWay.jpg": "/static/media/MilkyWay.e1b36cbb40ddd8fc05ad.jpg",
     "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
@@ -64,10 +64,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.e4a244ee.css.map": "/static/css/main.e4a244ee.css.map",
-    "main.dd265b7d.js.map": "/static/js/main.dd265b7d.js.map"
+    "main.f3e80463.js.map": "/static/js/main.f3e80463.js.map"
   },
   "entrypoints": [
     "static/css/main.e4a244ee.css",
-    "static/js/main.dd265b7d.js"
+    "static/js/main.f3e80463.js"
   ]
 }

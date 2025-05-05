@@ -5,7 +5,7 @@ import MilkyWay from "../../attachments/images/MilkyWay.jpg";
 const Dap = () => {
     const [apodData, setApodData] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(true);
+    const [error, setError] = useState(false);
     const [imageLoaded, setImageLoaded] = useState(false);
 
     const convertDate = (dateString) => {
