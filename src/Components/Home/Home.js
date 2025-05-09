@@ -78,11 +78,8 @@ const Home = () => {
                         <span>Physics, </span>
                         <span>Mathematics, </span>
                         <span>Electronics, </span>
-                        <span>C, </span>
-                        <span>Python, </span>
-                        <span>JavaScript, </span>
-                        <span>React, </span>
-                        <span>App & Web App Developer, </span>
+                        <span>Computer programming ( C, Python, JavaScript ) ,</span>
+                        <span>App & Web App Developer ( Kotlin, Swift, React, Angular, php, Express.js, MySQL ) </span>
                     </div>
 
                     <br/>
