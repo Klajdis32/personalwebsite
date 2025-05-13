@@ -45,6 +45,11 @@ import TempMeter from "../../attachments/pdfs/LM35TemperatureMeter.pdf";
 import tempMeterImg from "../../attachments/images/TempMeter.png";
 import scp from "../../attachments/pdfs/SCP.pdf";
 import windowsUsersAndPerm from "../../attachments/pdfs/WindowsUsers.pdf"
+import Polarization_Greek from "../../attachments/pdfs/Πόλωση.pdf";
+import Dispersion from "../../attachments/pdfs/Διασκεδασμός.pdf";
+import Diffraction from "../../attachments/pdfs/Περίθλαση.pdf";
+import Interference from "../../attachments/pdfs/Συμβολή.pdf";
+import geometricOptics from "../../attachments/pdfs/ΓΟ.pdf";
 
 const posts = [
     {
@@ -60,6 +65,22 @@ const posts = [
         Link: "",
         htmlPdf: "",
         pdf: windowsUsersAndPerm,
+        file: "",
+        video: ""
+    },
+    {
+        Ergastirio: "Εργαστήριο Οπτικής",
+        imageEksw: "", 
+        imageMesa: "",
+        Titlos: "Geometric optics",
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "05/05/2025",
+        Katigoria: "Physics",
+        Keimeno: "This work focuses on phenomena of geometric optics, including light propagation through optical media and the study of lenses and prisms. We determine refractive indices using total internal reflection and prism deviation methods. Additionally, we measure focal lengths of converging lenses and analyze image formation and magnification. Through these experiments, we gain a deeper understanding of core optical principles and their experimental validation.",
+        Link: "",
+        htmlPdf: "",
+        pdf: geometricOptics,
         file: "",
         video: ""
     },
@@ -80,6 +101,22 @@ const posts = [
         video: ""
     },
     {
+        Ergastirio: "Εργαστήριο Οπτικής",
+        imageEksw: "", 
+        imageMesa: "",
+        Titlos: "Wave interference",
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "16/04/2025",
+        Katigoria: "Physics",
+        Keimeno: "In this work, we explore the phenomenon of interference in optics, highlighting the wave nature of light. Using setups such as Lloyd’s mirror, Newton’s rings, and Michelson’s interferometer, we analyze interference under various conditions. Through experiments and theoretical analysis, we extract physical quantities like wavelength. The goal is to deepen our understanding of light behavior and enhance our familiarity with optical measurement techniques.",
+        Link: "",
+        htmlPdf: "",
+        pdf: Interference,
+        file: "",
+        video: ""
+    },
+    {
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: tempMeterImg, 
@@ -92,6 +129,22 @@ const posts = [
         Link: "",
         htmlPdf: "",
         pdf: TempMeter,
+        file: "",
+        video: ""
+    },
+    {
+        Ergastirio: "Εργαστήριο Οπτικής",
+        imageEksw: "", 
+        imageMesa: "",
+        Titlos: "Diffraction in optics",
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "09/04/2025",
+        Katigoria: "Physics",
+        Keimeno: "In this work, we studied the phenomenon of diffraction in optics through various experiments using a diffraction setup. We examined diffraction patterns from different types of apertures and gratings, analyzing the data to extract key optical properties. Additionally, we used a spectrometer to investigate diffraction spectra and determine characteristics such as grating constants. This process enhanced our understanding of light behavior and the connection between theory and experiment.",
+        Link: "",
+        htmlPdf: "",
+        pdf: Diffraction,
         file: "",
         video: ""
     },
@@ -112,6 +165,22 @@ const posts = [
         video: ""
     },
     {
+        Ergastirio: "Εργαστήριο Οπτικής",
+        imageEksw: "", 
+        imageMesa: "",
+        Titlos: "Dispersion of Light",
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "15/03/2025",
+        Katigoria: "Physics",
+        Keimeno: "In the present work, the phenomenon of dispersion in optics is examined. Specifically, using specialized experimental setups, measurements were carried out to study the deviation angle of a prism, the absorption of colored transparent materials, and the calculation of the absorption coefficient of a specific material. An analysis and processing of the collected experimental data follows, with the aim of gaining an in-depth understanding of the phenomena and the mechanisms that govern them. Through this analysis, a better comprehension of dispersion and its practical applications in optics is pursued. The work focuses both on the experimental investigation and the analysis of the results, in order to clearly convey the physical interpretation of the phenomena related to the dispersion of light.",
+        Link: "",
+        htmlPdf: "",
+        pdf: Dispersion,
+        file: "",
+        video: ""
+    },
+    {
         Ergastirio: "",
         imageEksw: "", 
         imageMesa: "", 
@@ -124,6 +193,22 @@ const posts = [
         Link: "",
         htmlPdf: "",
         pdf: malware,
+        file: "",
+        video: ""
+    },
+    {
+        Ergastirio: "Εργαστήριο Οπτικής",
+        imageEksw: "", 
+        imageMesa: "",
+        Titlos: "Light polarization",
+        Sigrafeas: "Me", 
+        Linksigrafea: "",  
+        Date: "04/03/2025",
+        Katigoria: "Physics",
+        Keimeno: "This project is part of my Laboratory work in Optics and focuses on the study of light polarization. Experimental measurements were carried out to produce and detect polarized light, verify Malus’s law, measure reflectance, determine the degree of polarization, and investigate the phenomenon of double refraction. Through data analysis, a deeper understanding of polarization phenomena and the factors affecting them was achieved, contributing to the connection between theory and experiment in the field of optics.",
+        Link: "",
+        htmlPdf: "",
+        pdf: Polarization_Greek,
         file: "",
         video: ""
     },
