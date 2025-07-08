@@ -73,7 +73,7 @@ const Home = () => {
                     This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
                 </p>
 
-                    <strong>Skills</strong>
+                    {/* <strong>Skills</strong>
                     <div className="taskills">
                         <span>Physics, </span>
                         <span>Mathematics, </span>
@@ -91,7 +91,7 @@ const Home = () => {
                         <span>Albanian</span>
                     </div>
 
-                    <br/>
+                    <br/> */}
 
                     <strong>Selected works</strong>
 
