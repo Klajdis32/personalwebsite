@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e4a244ee.css",
-    "main.js": "/static/js/main.a824fd99.js",
+    "main.js": "/static/js/main.5c7f40c3.js",
     "static/media/MilkyWay.jpg": "/static/media/MilkyWay.e1b36cbb40ddd8fc05ad.jpg",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
@@ -69,10 +69,10 @@
     "index.html": "/index.html",
     "static/media/3.txt": "/static/media/3.fcabe3ebfe3ff817bd99.txt",
     "main.e4a244ee.css.map": "/static/css/main.e4a244ee.css.map",
-    "main.a824fd99.js.map": "/static/js/main.a824fd99.js.map"
+    "main.5c7f40c3.js.map": "/static/js/main.5c7f40c3.js.map"
   },
   "entrypoints": [
     "static/css/main.e4a244ee.css",
-    "static/js/main.a824fd99.js"
+    "static/js/main.5c7f40c3.js"
   ]
 }
