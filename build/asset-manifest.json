@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4420549e.css",
-    "main.js": "/static/js/main.d28d6794.js",
+    "main.css": "/static/css/main.1c797f46.css",
+    "main.js": "/static/js/main.dd7515c4.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
     "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
@@ -36,11 +36,11 @@
     "static/media/llamachat.png": "/static/media/llamachat.cb363c493d3d370046b0.png",
     "static/media/Lab5Simulation_InGreek.pdf": "/static/media/Lab5Simulation_InGreek.ad83e62089cf758594f4.pdf",
     "static/media/Lab3Exercise_InGreek.pdf": "/static/media/Lab3Exercise_InGreek.77201ca1b875864cf9f6.pdf",
-    "static/media/me.png": "/static/media/me.7570a0174a2cc7d6b4b2.png",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
     "static/media/WindowsUsers.pdf": "/static/media/WindowsUsers.5bbaa33b5f419fd1452c.pdf",
     "static/media/Lab3Simulation_InGreek.pdf": "/static/media/Lab3Simulation_InGreek.85d59e87fed337758e61.pdf",
+    "static/media/me.png": "/static/media/me.2b8ee0db235b636d60b2.png",
     "static/media/Lab1Simulation_InGreek.pdf": "/static/media/Lab1Simulation_InGreek.c586b61abcabe16e63e3.pdf",
     "static/media/Lab4Simulation_InGreek.pdf": "/static/media/Lab4Simulation_InGreek.cfe0cd5c5e3ffa606672.pdf",
     "static/media/Conn-LM35.png": "/static/media/Conn-LM35.0020f4eb7ee88d05d4fd.png",
@@ -51,11 +51,11 @@
     "static/media/folder.png": "/static/media/folder.c71c2c482ab2e7e64a1e.png",
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
-    "main.4420549e.css.map": "/static/css/main.4420549e.css.map",
-    "main.d28d6794.js.map": "/static/js/main.d28d6794.js.map"
+    "main.1c797f46.css.map": "/static/css/main.1c797f46.css.map",
+    "main.dd7515c4.js.map": "/static/js/main.dd7515c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4420549e.css",
-    "static/js/main.d28d6794.js"
+    "static/css/main.1c797f46.css",
+    "static/js/main.dd7515c4.js"
   ]
 }
