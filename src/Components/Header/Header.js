@@ -1,46 +1,40 @@
-import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
 import './header.css';
-import DarkMode from '../DarkMode/DarkMode.js';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import logo from "../../Assets/logo.png";
 
 const Header = () => {
-  const location = useLocation();
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
-  const [showHeaderDiv, setShowHeaderDiv] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleChange = (event) => {
-    const selectedLang = event.target.value;
-    setSelectedLanguage(selectedLang);
-    window.location.reload();
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => {
-    localStorage.setItem('selectedLanguage', selectedLanguage);
-    setShowHeaderDiv(location.pathname === '/');
-    // προσθεσε αυτο να θεσ να εμφανιστει και σε αλλα:  || location.pathname === '/contact');
-  }, [selectedLanguage, location]);
+  // helper για να κλείνουμε το μενού
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
-    <div className="tooloheader">
-    <div className="header">
+    <div className={`headerOut ${menuOpen ? 'open' : ''}`}>
+      <div className='headerOutmesa'>
+        <Link to='/' className='toaristera' onClick={closeMenu}>
+          <img src={logo} className='logoImg' />
+        </Link>
 
-      <div className="left-item">
-          <Link to="/" className="tolink">
-              <p><strong>Klajdi Cami</strong></p>
-          </Link>
-      </div>
-      {/* {showHeaderDiv && (
-        <div className="right-item">
-            <select className="form-select" id="languages" name="languages" value={selectedLanguage} onChange={handleChange}>
-                <option value="en">English</option>
-                <option value="gr">Greek</option>
-                <option value="ge">German</option>
-            </select>
+        <div className={`tadeksia ${menuOpen ? 'open' : ''}`}>
+          <Link to='/'       className='tolinkdeks' onClick={closeMenu}>Blog</Link>
+          <Link to='/about'  className='tolinkdeks' onClick={closeMenu}>About</Link>
+          <Link to='/uni'    className='tolinkdeks' onClick={closeMenu}>Uni</Link>
+          <Link to='/contact'className='tolinkdeks' onClick={closeMenu}>Contact</Link>
         </div>
-      )} */}
-      <DarkMode />
- 
-    </div>
+
+        <div className='burger' onClick={toggleMenu}>
+          <div className={`line ${menuOpen ? 'open' : ''}`}></div>
+          <div className={`line ${menuOpen ? 'open' : ''}`}></div>
+          <div className={`line ${menuOpen ? 'open' : ''}`}></div>
+        </div>
+      </div>
     </div>
   );
 }

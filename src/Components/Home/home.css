@@ -1,938 +1,245 @@
-.toolo {
-    background-color: white;
+.home {
     color: black;
- 
-}
-
-[data-theme="dark"] {
-    background-color: #282828; /* Σκοτεινό φόντο */
-    color: #ffffff; /* Λευκό χρώμα κειμένου */
-
-
-    .toatoykeimenoy{
-        color: white;
-    }
-
-    .toolo{
-        color: white;
-    }
-    
-    .left-item9 p {
-        color: rgb(255, 255, 255);
-    }
-
-    .toatoykeimenoy{
-        color: white;
-    }
-    
-    .todivdeksia1{
-        color: white;
-        text-shadow: -1px -1px 0 black,  
-            1px -1px 0 black,  
-            -1px 1px 0 black,  
-            1px 1px 0 black;
-    }
-
-    .todivdeksia1:hover {
-        color: rgb(216, 216, 216);
-    }
-
-    .tolink {
-        color: white;
-    }
-    
-    .tacart {
-        color: white;
-      }
-
-      .timeline-item::before {
-        background: white;
-        border: 4px solid #0a58a0;
-      }
-
-      .todatep {
-        color: rgb(161, 161, 161);
-      }
-
-      .tocertimg {
-        border: 2px solid #0a58a0;
-        background-color: #282828;
-    }
-
-    .mpalaki {
-        background-color: rgb(255, 255, 255);
-        border: 4px solid #0a58a0;
-      }
-
-      .horizontal-line {
-        background-color: rgb(255, 255, 255);
-    }
-
-    .timeline-container::before {
-        background: linear-gradient(to right, #282828, transparent);
-    }
-    
-    .timeline-container::after {
-        background: linear-gradient(to left, #282828, transparent);
-    }
-
-    .toolohor {
-        border-left: 2px solid #282828;
-        border-right: 2px solid #282828;
-      }
-
-      .toaCv {
-        color: white;
-      }
-
-      .left-dot {
-        color: white;
-    }
-    
-    .right-arrows {
-        color: white;
-    }
-
-    .toLinkEpil {
-        color: white;
-      }
-
-      .toaGood {
-        color: rgb(255, 255, 255);
-     }
-
-     
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-}
-
-.toolo {
-    position: relative;
-    width: 100%;
-}
-
-.right-item {
-    text-align: right;
-    margin-right: 30px;
-}
-
-
-.heikona {
-    margin-top: 5px;
-    padding: 30px;
-}
-
-.container {
-    position: absolute;
-    top: 0;
     margin: 0 auto;
-    left: 0;
-    right: 0; /* Διασφαλίζει ότι το πλάτος θα προσαρμοστεί */
     max-width: 1100px;
-    width: 100%; /* Καταλαμβάνει το 100% του διαθέσιμου πλάτους του γονέα */
-    z-index: 200;
 }
 
-
-.content {
-    display: block;
-    padding: 0 0px;
+.arxiko {
+    width: 60%;
 }
 
-.toa {
-    cursor: pointer;
-    text-decoration: none;
+.mesi {
+    background-color: #273036;
+    height: 100vh;
+    margin-top: -25px;
 }
 
-.divlogo{
-    margin-top: 2%;
-    padding: 0 20px;
-    margin-left: 0px;
-    text-align: left;
-    display: flex;
+.subscribe {
+  margin-top: 20px;
 }
 
-.divlogo h3{
-margin-left: 5px;
-}
-
-.tologo{
-    z-index: 500;
-    border-radius: 20%;
-    width: 11%;
-    margin-bottom: -20px;
-    border: 2px solid rgb(150, 150, 150);
-}
-
-
-.divkeimeno {
-    margin-top: 20px;
-    padding: 0 20px;
-}
-
-#grcont {
-    display: none;
-}
-
-.divkeimeno1{
-    padding: 0px 25px;
-}
-
-.divkeimeno strong {
-    font-size: 20px;
-}
-
-.divkeimeno p {
-    font-size: 18px;
-    text-align: justify;
-}
-
-#toepi {
-    border-bottom : 2px solid blue;
-}
-
-
-.form-select {
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
-    background-color: #ffffff;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-
-#languages option[value="en"] {
-    font-size: 16px;
-}
-
-#languages option[value="gr"] {
-    font-size: 16px;
-}
-
-#languages option[value="ge"] {
-    font-size: 16px;
-}
-
-
-.mode {
-    cursor: pointer;
-    width: 1.8%;
-    margin-right: 20px;
-    padding: 0px 0px;
-}
-
-#en {
-    display: block;
-}
-
-#gr {
-    display: none;
-}
-
-#ge {
-    display: none;
-}
-
-.divmaximg {
-    z-index: 999;
-    display: flex;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.modal{
-    display: none;
-    overflow: hidden;
-}
-
-.overlay {
-    z-index: 900;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.maxlogo {
-    margin-left: 10%;
-    width: 80%;
-    z-index: 999;
-    border-radius: 100%;
-}
-
-
-#darkmode {
-    display: block;
-}
-
-#lightmode {
-    display: none;
-}
-
-.left-item9 {
-    width: 100%;
-    flex: 1;
-}
-
-.left-item9 h3{
-    white-space: nowrap;
-}
-
-.left-item9 p {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.tolink {
-
-    font-weight: 550;
-}
-
-.left-item9 img {
- width: 20%;
-}
-
-.todivdeksia {
-    color: black;
-    text-align: right;
-    width: 50%;
-    margin-top: 5px;
-    border-radius: 20px;
-    padding: 20px 0px;
-    height: 60px;
-}
-
-.todivdeksia img {
-width: 20%;
-margin-bottom: 5px;
-}
-
-#ligomegalhtero {
-    width: 22%;
-}
-
-#monokin {
-    display: none;
-}
-
-#oxideksia{
-    border-right: none;
-    padding: 0px;
-    margin-right: -25px;
-}
-
-#oxideksia1 {
-    border: none;
-}
-
-.todivdeksia1 {
-    color: black;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    width: 25%;
-}
-
-.todivdeksia1:hover {
-    color: rgb(110, 90, 90);
-}
-
-#tosig {
-    margin-top: -30px;
-}
-
-.toatoykeimenoy{
-    color: black;
-}
-
-#grname {
-    display: none;
-}
-
-.tasocial {
-    display: flex;
-
-}
-
-.tasocial img{
-   width: 3%;
-   height: 3%;
-}
-
-.tasocial p{
-    font-size: 18px;
-    color: black;
-    margin-top: 5px;
-    margin-left: 15px;
- }
-
- .toreact {
-    width: 1.8%;
-    margin-top: -3px;
-    animation: rotate 10s linear infinite;
- }
-
- .tawaves {
-    position: absolute; 
-    margin-top: 0%;
-    z-index: 1;
-    width: 100%;
-
- }
-
- @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.tocertimg {
-    width: 30px;
-    height: 30px;
+.subscribeButton {
     border: 2px solid black;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 10px;
     background-color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
 
-.torightArrimg {
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.tocerthoriz {
-    display: flex;
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
-    .todivcart {
-        margin-top: -10px;
-        display: flex;
-        position: relative; 
-        z-index: 300; 
-        width: 100%;
-        height: 9px;
-    }
-
-    .timeline-container {
-        position: relative; 
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        margin-bottom: 0px;
-        scrollbar-width: thin;
-        scrollbar-color: #b4b4b4 #f1f1f1;
-        overflow: hidden; /* για να περιορίσουμε το περιεχόμενο */
-    }
-    
-    .timeline-container::before, .timeline-container::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 30px; /* Προσαρμόστε το ανάλογα με το πόσο μεγάλη θέλετε τη σκιά */
-        z-index: 200; /* Πρέπει να είναι μεγαλύτερο από το z-index των γραμμάτων */
-        pointer-events: none; /* Να μην εμποδίζει τις ενέργειες του χρήστη */
-    }
-    
-    .timeline-container::before {
-        left: 0;
-        background: linear-gradient(to right, #f2f2f2, transparent);
-    }
-    
-    .timeline-container::after {
-        right: 0;
-        background: linear-gradient(to left, #f2f2f2, transparent);
-    }
-
-    .charts {
-        border: 2px solid red;
-    }
-
-    .tacart {
-        position: relative; 
-        z-index: 150;
-        color: black;
-        margin-right: 20px;
-        margin-top: -17px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        color: inherit; 
-        padding: 20px;
-        gap: 0px; 
-    }
-
-    .timeline {
-        display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        width: 100%;
-        padding: 0px;
-    }
-  
-    .horizontal-line {
-        height: 2px;
-        margin-top: 20px;
-        background-color: black;
-        flex-grow: 1;
-        margin-left: -5px;
-        position: relative;
-        z-index: 1; /* Τοποθετεί τη γραμμή κάτω από το timeline */
-    }
-
-
-.left-dot {
-    margin-top: -29px;
-    font-size: 60px; /* Μέγεθος της τελείας */
-    color: black;/* Χρώμα της τελείας */
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
-.right-arrows {
-    font-size: 30px; /* Μέγεθος των βελάκων */
-    color: black; /* Χρώμα των βελάκων */
-    margin-top: -5px;
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
-  .tokatwpnow {
-    margin-top: 0px;
-  }
-  
-  .mpalaki {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 0, 0);
-    border: 4px solid #63aeff;
-    border-radius: 50%;
-    flex-shrink: 0;  
-  }
-  
-  
-  .timeline-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 0 10px;
-  }
-  
-  #tonow {
-    margin-right: auto;
-  }
 
-  #tonowmpalaki {
-    text-align: right;
-    justify-content: right;
-    margin-left: 130%;
-  }
+.blog {
+  margin-top: 50px;
+}
 
-  .toolohor {
-    border-left: 2px solid #f2f2f2;
-    border-right: 2px solid #f2f2f2;
-    display: flex;
-  }
+.post {
+  display: flex;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
 
-  .timeline-button:hover {
-    background-color: #0056b3;
-  }
+.blog h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-  .cc {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .taskills {
-    display: flex;
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+/* Top section: δύο στήλες, αριστερή 2fr, δεξιά 1fr */
+.topColumns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: stretch;      /* τεντώνει την αριστερή/δεξιά στο ίδιο ύψος */
+}
+
+/* Αριστερή στήλη: το post1 παίρνει όλο το ύψος */
+.leftColumn {
+  display: flex;
+}
+.leftColumn .post1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.leftColumn .post1 img {
+  width: 100%;
+  display: block;
+}
+
+/* Δεξιά στήλη: column flex και τα postright μοιράζονται ύψος */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;             /* παίρνει ίδιο ύψος με την αριστερή */
+  gap: 25px;
+}
+
+.rightColumn .postright {
+  flex: 1;                   /* κάθε postright μοιράζεται το ύψος στη μέση */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.rightColumn .postright img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.postContent {
+  padding: 20px;
+  height: 100%;
+}
+
+.date {
+  color: #888;
+  font-size: 12px;
+}
+
+h3 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.readMore {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.bottomFullWidth {
+  width: 100%;
+}
+
+.bottomFullWidth img{
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+} 
+
+/* Responsive */
+@media (max-width: 768px) {
+.home {
+  padding: 0 10px;
+}
+
+.arxiko {
     width: 100%;
-    flex-wrap: wrap; 
-    gap: 5px;
-    margin-top: 10px;
-    font-size: 18px;
+}
+
+
+  .topColumns {
+    grid-template-columns: 1fr;
+  }
+  .rightColumn {
+    height: auto;
+    flex-direction: column;
+  }
+  .rightColumn .postright {
+    flex: unset;
   }
 
-  .taskills p {
-    border-radius: 20px;
-  }
-
-  .taCv {
-    margin: 25px 0 25px 0;
-    font-size: 18px;
-    display: flex;
-  }
-
-  .toaCv {
-    padding: 0 10px;
-    color: black;
-    margin: 0 10px;
-    border: 2px solid darkgray;
-    border-radius: 20px;
-  }
-
-  #enname {
-    margin-top: 30px;
-  }
-
-  .toEpilegmeno {
-    display: flex;
-    margin: 0 0 -20px 0;
-  }
-
-  .toLinkEpil {
-    margin-left: 20px;
-    color: black;
-    margin-top: 18px;
-    cursor: pointer;
-  }
-
-  .maps {
-    display: flex;
-  }
-
- .divMap {
-    padding: 0px;
-    width: 30%;
- }
-
- .ccHome {
-    text-align: right;
-    width: 100%;
- }
-
- .ccHome p{
-    margin-top: -5px;
-    text-align: none;
-    text-align: right;
-    font-size: 17px;
- }
-
- .clustrmaps-container {
-    width: 100%;
-    height: 100%;
- }
-
- .toaGood {
-    color: black;
- }
-
-
-  /* MEgalitero apo tablet mikrotero apo 1100px
-  @media (min-width: 769px) and (max-width: 1100px) {
-    
-
-  } */
-
-  
-/* Κανόνες CSS για tablet */
-@media (min-width: 601px) and (max-width: 768px) {
-    .container {
-        width: 100%;
-        margin-left: 0%;
-        padding: 0px;
-    }
-
-    .divlogo{
-        z-index: 999;
-        display: flex;
-        margin-top: 5%;
-        text-align: left;
-        padding: 0 0px;
-        margin-left: 20px;
-    }
-
-    .tocertimg {
-        width: 30px;
-      
-    }
-    
-    .timeline {
-        margin-left: 9px;
-      }
-    
-
-    .heikona {
-        margin-left: 0%;
-    }
-
-    .tologo {
-        width: 15%;
-    } 
-
-
-    .divmaximg {
-        display: flex;
-        position: fixed;
-        top: 20%;
-        left: 20%;
-        transform: translate(-10%, -10%);
-    }
-
-    .maxlogo {
-        margin-left: 0%;
-        width: 100%;
-        z-index: 999;
-        border-radius: 100%;
-    }
-
-    .mode {
-    width: 4%;
-}
-
-.tasocial img{
-    width: 6%;
-
-}
-
-
-.toreact {
-    width: 4%;
-    margin-top: 0px;
-}
-
-.left-item9 img {
-    width: 30%;
-   }
-
-   
-.todivdeksia {
-    text-align: center;
-    width: 50%;
-    margin-top: -15px;
-
-}
-
-
-.todivdeksia1 {
-display: inline-block;
-text-align: center;
-cursor: pointer;
-width: 30%;
-padding: 0px;
-}
-
-
-#ligomegalhtero {
-width: 30%;
-}
-   
-   .todivdeksia img {
-    width: 25%;
-    margin-bottom: 5px;
-    }
-    
-    #oxideksia{
-        margin-right: 0px;
-    }
-
-    #pdficon {
-        padding: 0px 0px;
-        width: 4%;
-        height: 4%;
-        margin-top: 20px;
-      }
-    
-
-}
-
-/* Κανόνες CSS για κινητά */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        margin-left: 0%;
-        padding: 0px;
-    }
-
-    .divlogo{
-        z-index: 100;
-        display: flex;
-        margin-top: 5%;
-        padding: 0 0px;
-        text-align: left;
-        margin-left: 17px;
-    }
-
-    .heikona {
-    margin-left: 0%;
-}
-
-    .tologo {
-        border: 2px solid lightgrey;
-        width: 23%;
-    }
-    
-
-
-    .divmaximg {
-        display: flex;
-        position: fixed;
-        top: 30%;
-        left: 20%;
-        transform: translate(-12%, -10%);
-    }
-
-    .maxlogo {
-        margin-left: 0%;
-        width: 100%;
-        z-index: 999;
-        border-radius: 100%;
-    }
-
-    
-    .mode {
-        width: 6%;
-    }
-
-    .tasocial img{
-        width: 7%;
-    }
-    
-    
-    .toreact {
-        width: 5%;
-        margin-top: 0px;
-    }
-
-    .left-item9 img {
-        width: 45%;
-       }
-
-       
-.todivdeksia {
-    text-align: left;
-    width: 50%;
-    margin-top: -15px;
-}
-
-
-.todivdeksia1 {
-    font-size: 13px;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    width: 45%;
-    padding: 0px;
- border-right: none;
-}
-
-
-#ligomegalhtero {
-    width: 29%;
-}
-       
-       .todivdeksia img {
-        width: 22%;
-        margin-bottom: 5px;
-        }
-
-        #oxideksia{
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-left: 70px;
-            border-top: none;
-            border-left: none;
-            padding: 10px;
-        }
-
-        #monokin {
-            display: block;
-        }
-        
-        #pdficon {
-            padding: 0px 0px;
-            width: 8%;
-            height: 10%;
-            margin-top: 20px;
-          }
-        
-.tocertimg {
-    width: 30px;
-}
-
-
-  .timeline {
-    margin-left: 0px;
-    width: 100%;
-    padding: 0px;
-}
-
-  #tonow {
-    justify-content: right;
-margin-left: 0px;
-  }
-
-
-  .timeline-container {
-    width: 100%;
-    margin-left: 0%;
-    margin-bottom: 0px;
-}
-  
-.content {
-    display: block;
-    padding: 0 0px;
-    width: 300px;
-}
-
-.maps {
+  .bottomFullWidth .post {
     display: block;
   }
 
- .divMap {
-    padding: 0px;
+  .post img {
     width: 100%;
- }
+    padding: none;
+    border-radius: 10px 10px 0 0;
+  }
 
- .ccHome {
-    text-align: center;
-    width: 100%;
- }
-
- .ccHome p{
-    margin-top: 20px;
-    margin-bottom: -20px;
-    font-size: 13px;
- }
-
- .clustrmaps-container {
-    width: 100%;
-    height: 100%;
- }
- 
- .toEpilegmeno {
-    margin: 0 0 -20px 0;
- }
-
-.topEpi {
-    width: 70%;
-}
-
-.toLinkEpil {
-    width: 40%;
-    margin-left: 10px;
-    display: flex;
-    justify-content: right;
-}
-
-.toarrow {
-    margin-top: 7px;
-}
-        
+  .bottomFullWidth img{
+  width: 100%;
+  padding: 0px;
+  border-radius: 10px 10px 0 0;
+} 
 }

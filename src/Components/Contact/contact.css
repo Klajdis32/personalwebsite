@@ -1,294 +1,35 @@
-.container1 {
-    font-family: 'Space Grotesk', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #f2f2f200;
-    max-width: 1100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 0%;
-    z-index: 200;
-}
-
-[data-theme="dark"] {
-    background-color: #282828;
-    color: #ffffff;
-
-    .container1 {
-        background-color: #28282800;
-    }
-
-    .tologoAC {
-        border: 2px solid rgb(255, 255, 255);
-    }
-
-    .online {
-        color: rgb(255, 255, 255);
-        border-bottom: 2px solid white;
-    }
-
-    .right-item1 {
-        color: rgb(255, 255, 255); /* Χρώμα του κειμένου */
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Δημιουργία περιγράμματος γύρω από τα γράμματα */
-    }
-
-    .pgb {
-        color: white;
-    }
-
-    .toPgbCopya:hover {
-        box-shadow: rgba(255, 255, 255, 0.4) -5px 5px,
-        rgba(255, 255, 255, 0.3) -10px 10px,
-        rgba(255, 255, 255, 0.2) -15px 15px;
-    }
-
-    .sinomilia {
-        border: 2px solid white;
-        border-top: none;
-        border-bottom: none;
-    }
-
-    .minima {
-        background-color: rgb(82, 82, 84);
-    }
-    
-}
-
-.tologoAC {
-    width: auto;
-    height: 70%;
-    border-radius: 100%;
-    margin: 8px 0 0 20px;
-    margin-right: 10px;
-    border: 2px solid black;
-    
-}
-
-.toolocont {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.left-item1 {
-    width: 100%;
-
-    display: flex;
-}
-
-.left-item1 p {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.toonline {
-    width: 20%;
-    text-align: right;
-}
-
-.online {
-    height: 70px;
-    display: flex;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    border-bottom: 2px solid black;
-    border-top: none;
-    margin-bottom: 20px;
-}
-
-.online p {
-    margin-left: 0;
-    font-size: 17px;
-    margin-top: 22px;
-}
-
-.minima {
-    margin: 5px 20px;
-    background-color: rgb(46, 47, 50);
-    color: white;
-    display: inline-block;
-    padding: 0 15px;
-    border-radius: 20px;
-    width: auto;
-}
-
-.minima a{
-    color: aqua;
-}
-
-.pgb {
-    margin: 5px 20px;
+.Contact {
     color: black;
-    padding: 15px;
-    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.pgpKey {
     text-align: center;
-    word-break: break-word; /* Σπάει τη λέξη αν χρειάζεται */
-    overflow-wrap: break-word; /* Εναλλακτική υποστήριξη για σπάσιμο λέξεων */
-    white-space: normal; /* Επιτρέπει το περιεχόμενο να τυλιχθεί σε νέες γραμμές */
+        margin: 0 auto;
+    max-width: 900px;
 }
 
-.pgbDiv {
-    width: 100%;
-    justify-content: right;
-    display: flex;
+  @media (max-width: 768px) {
 
-}
-
-.sinomilia {
-    min-height: 100vh;
-    border: 2px solid black;
-    border-top: none;
-    border-bottom: none;
-}
-
-.toPgbCopya {
-    background-color: rgb(46, 47, 50);
-    color: white;
-    border: 2px solid black;
-    border-left: 2px solid rgb(170, 170, 170);
-    border-bottom: 2px solid rgb(170, 170, 170);
-    font-weight: 500;
-    padding: 4px 10px;
-    margin-left: 10px;
-    margin-right: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 17px;
-    transition: 0.5s ease;
-}
-
-.toPgbCopya:hover {
-    border-top: 2px solid rgb(170, 170, 170);
-    border-right: 2px solid rgb(170, 170, 170);
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px,
-    rgba(0, 0, 0, 0.3) -10px 10px,
-    rgba(0, 0, 0, 0.2) -15px 15px;
-}
-
-#mnm5 {
-    cursor: pointer;
-}
-
-#hr1 {
-    text-align: center;
-    font-size: 14px;
-    color: grey;
-}
-
-#tohr {
-    width: 90%;
-}
-
-.apathsh {
-    cursor: pointer;
-    float: right;
-    margin: 5px 20px;
-    color: white;
-    text-align: center;
-    background-color: rgba(76, 76, 208, 0.4);
-    border-radius: 20px;
-    padding: 0 15px;
-}
-
-.apathsh:focus {
-    background-color: rgb(76, 76, 208);
-}
-
-.right-item1 {
-    font-size: 16px;
-    margin: -45px 20px 30px;
-    font-weight: 550;
-}
-
-#toa {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#mnm6, #mnm7 {
-    border-radius: 0 20px 20px 20px;
-}
-
-.hforma {
-    width: 100%;
-}
-
-.waveContact {
-    z-index: 5;
-}
-
-#tocopy {
-    cursor: pointer;
-}
-
-#tostrong {
-    font-weight: 550;
-}
-
-.toshow {
-    text-align: center;
-    margin: 50px 0 50px 0;
-}
-
-/* Responsive Styles */
-@media (min-width: 601px) and (max-width: 768px) {
-    .container1 {
-        margin-top: 0%;
-        width: 100%;
+    .Contact {
+        padding: 0 10px;
     }
 
-    .contactdiv {
-        width: 95%;
-        height: 40px;
-    }
-
-    .hforma {
-        width: 100%;
-        margin-left: -5%;
-    }
+ .pgpKey p {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  /* εξασφαλίζει ότι επιτρέπεται το wrapping */
+  white-space: normal;
+  /* παλιότερη σύνταξη, αλλά ακόμα διαδεδομένη */
+  word-wrap: break-word;
+  /* νεότερη, προτεινόμενη σύνταξη */
+  overflow-wrap: break-word;
+  /* (προαιρετικά) σπάει ακόμα και μέσα στη λέξη */
+  word-break: break-all;
+  /* (προαιρετικά) προσθέτει αυτόματα παύλες όπου προβλέπεται */
+  hyphens: auto;
 }
 
-@media (max-width: 600px) {
-    .container1 {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 0;
-        min-height: 100vh;
-    }
-
-
-    .sinomilia {
-        border: none;
-        border-left: none;
-    }
-
-    .contactdiv {
-        width: 95%;
-        height: 25px;
-    }
-
-    .hforma {
-        width: 90%;
-        margin-left: 0;
-    }
-    
-    .left-item1 {
-        width: 100%;
-        display: flex;
-    }
-    
-    .left-item1 p {
-        font-size: 16px;
-        font-weight: 600;
-    }
-    
-    .toonline {
-        display: none;
-    }
-
-}
+  }

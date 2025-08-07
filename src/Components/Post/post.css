@@ -1,0 +1,51 @@
+.Post {
+    color: black;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.postImgdiv {
+    text-align: center;
+}
+
+.postImg {
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.postText {
+    font-size: 18px;
+}
+
+.info {
+    text-align: right;
+}
+
+.mdImage {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1em auto;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+.Post  {
+  padding: 0 10px;
+}
+
+.postImg {
+    width: 100%;
+}
+
+
+.mdImage {
+    max-width: 100%;
+    border: none;
+}
+
+}

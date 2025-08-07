@@ -1,145 +1,108 @@
+// src/components/Home/Home.js
 import './home.css';
+import postsData from '../Posts/Posts';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/imagelogo.png';
-import React from "react";
-import contact from "../../assets/new-email.png";
-import github from "../../assets/github.png";
-// import Linkedin from "../../assets/linkedin.png";
-// import qiskit from '../../attachments/certificates/Klajdi Cami_QiskitFallFestAUTH2023_Certificate 2024-08-05 20_52_04.pdf';
-// import EEF from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ ΣΥΜΜΕΤΟΧΗΣ ΕΛΦ.pdf';
-// import Esa from '../../attachments/certificates/ΒΕΒΑΙΩΣΗ KLAJDI CΑΜΙ.pdf';
-// import AiSim from '../../attachments/certificates/Certificate of Attendance_.pdf';
-// import GreeCv from '../../attachments/cv/KlajdiCami_GreekCv.pdf';
-// import EnglishCv from "../../attachments/cv/KlajdiCami_EnglishCv.pdf";
-import { FaArrowRightLong } from "react-icons/fa6";
-import ClustrMaps from "./ClustrMaps.js";
 
 const Home = () => {
-    const today = new Date();
-    const year = today.getFullYear();
+  // 1. Κλωνάρισμα και ταξινόμηση κατά Date (νέο ➝ παλιό)
+  const sortedPosts = [...postsData].sort((a, b) =>
+    new Date(b.Date) - new Date(a.Date)
+  );
 
-    return (
-        <div className='toolo'>
-        <div className='tawaves'>
-          <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="29%" y1="95%" x2="71%" y2="5%"><stop offset="5%" stopColor="#abb8c3"></stop><stop offset="95%" stopColor="#8ed1fc"></stop></linearGradient></defs><path d="M 0,600 L 0,112 C 48.02679491583649,131.9395396770869 96.05358983167298,151.87907935417383 175,153 C 253.94641016832702,154.12092064582617 363.81243558914457,136.42322226039158 442,149 C 520.1875644108554,161.57677773960842 566.6966678117485,204.42803160425973 625,255 C 683.3033321882515,305.57196839574027 753.4008931638613,363.8646513225695 815,385 C 876.5991068361387,406.1353486774305 929.6997595328064,390.1133631054621 1000,407 C 1070.3002404671936,423.8866368945379 1157.8000687049123,473.6818962555823 1234,505 C 1310.1999312950877,536.3181037444177 1375.0999656475437,549.1590518722089 1440,562 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="url(#gradient)" fillOpacity="0.4" className="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 300)"></path><defs><linearGradient id="gradient" x1="29%" y1="95%" x2="71%" y2="5%"><stop offset="5%" stopColor="#abb8c3"></stop><stop offset="95%" stopColor="#8ed1fc"></stop></linearGradient></defs><path d="M 0,600 L 0,262 C 64.71315699072483,240.31879079354172 129.42631398144965,218.63758158708345 201,244 C 272.57368601855035,269.36241841291655 351.00790106492616,341.7684644452078 411,379 C 470.99209893507384,416.2315355547922 512.5420817588457,418.2885606320852 585,436 C 657.4579182411543,453.7114393679148 760.823771899691,487.07729302645134 832,519 C 903.176228100309,550.9227069735487 942.1628306423911,581.4022672621093 1009,589 C 1075.837169357609,596.5977327378907 1170.5249055307454,581.3136379251116 1247,598 C 1323.4750944692546,614.6863620748884 1381.7375472346273,663.3431810374442 1440,712 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="url(#gradient)" fillOpacity="0.53" className="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 300)"></path><defs><linearGradient id="gradient" x1="29%" y1="95%" x2="71%" y2="5%"><stop offset="5%" stopColor="#abb8c3"></stop><stop offset="95%" stopColor="#8ed1fc"></stop></linearGradient></defs><path d="M 0,600 L 0,412 C 67.5396770869117,382.02885606320854 135.0793541738234,352.05771212641713 212,373 C 288.9206458261766,393.94228787358287 375.2222603916181,465.79800755754025 444,515 C 512.7777396083819,564.2019924424598 564.0316042597047,590.7502576434216 624,602 C 683.9683957402953,613.2497423565784 752.6513225695637,609.2009618687737 822,623 C 891.3486774304363,636.7990381312263 961.3631054620405,668.445894881484 1023,686 C 1084.6368945379595,703.554105118516 1137.896255582274,707.0154586052903 1206,734 C 1274.103744417726,760.9845413947097 1357.051872208863,811.4922706973548 1440,862 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="url(#gradient)" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 300)"></path></svg>
+  // 2. Διαχωρισμός σε top (3) και bottom (υπόλοιπα)
+  const [firstPost, ...rest] = sortedPosts;
+  const rightPosts = rest.slice(0, 2);
+  const bottomPosts = rest.slice(2);
+
+  return (
+    <div className='home'>
+      <div className='arxiko'>
+        <h1>Hello, I'm Klajdi! I'm passionate about physics and coding. Explore my blog below.</h1>
+        <h3>Subscribe to receive my latest posts directly in your inbox!</h3>
+        <div className='subscribe'>
+          <button className="button-85" role="button">Subscribe</button>
         </div>
-        <div className="container">
-            <div className="divlogo">
-                <div className='left-item9'>
-                    <img src={Logo} alt="" className="tologo" id='logo' />
-                    <h3 id="enname">Klajdi Cami</h3>
+      </div>
+
+      <div className='blog'>
+        <h2>Latest Posts</h2>
+        <div className='postsContainer'>
+          <div className='topColumns'>
+            {/* Αριστερό μεγάλο post */}
+            {firstPost && (
+              <div className='leftColumn'>
+                <div className='post1'>
+                  <img
+                    src={firstPost.imageEksw}
+                    alt={firstPost.Titlos}
+                  />
+                  <div className='postContent'>
+                    <small className='date'>{firstPost.Date}</small>
+                    <h3>{firstPost.Titlos}</h3>
+                    <p>{firstPost.Keimeno}</p>
+                  <Link
+                    to={`/post?key=${firstPost.id}`}
+                    className="readMore"
+                  >
+                    Read More
+                  </Link>
+                  </div>
                 </div>
-                <div className='todivdeksia'>
-                    <Link to="/contact" className='tolink'>
-                        <div className='todivdeksia1'>
-                            <img src={contact} alt="" id='ligomegalhtero'/><br />
-                            <span id="encont">Contact</span>
-                            <span id="grcont">Επικοινωνία</span>
-                        </div>
+              </div>
+            )}
+
+           {/* Δύο μικρότερα posts δεξιά */}
+            <div className='rightColumn'>
+              {rightPosts.map(post => (
+                <div className='postright' key={post.id}>
+                  <img src={post.imageEksw} alt={post.Titlos} />
+                  <div className='postContent'>
+                    <small className='date'>{post.Date}</small>
+                    <h3>{post.Titlos}</h3>
+                    <p>
+                      {post.Keimeno.length > 100
+                        ? post.Keimeno.slice(0, 100) + '...'
+                        : post.Keimeno}
+                    </p>
+                    <Link
+                      to={`/post?key=${post.id}`}
+                      className="readMore"
+                    >
+                      Read More
                     </Link>
-                    {/* <Link to="https://www.linkedin.com/in/klajdi-cami-90a59b284/" target="_blank" rel="noreferrer" className='tolink'>
-                    <div className='todivdeksia1' id='oxideksia1'>
-                        <img src={Linkedin} alt="" /><br />
-                        <span>Linkedin</span>
-                    </div>
-                    </Link>*/}
-               
-                    <Link to="https://github.com/Klajdis32" target="_blank" rel="noreferrer" className='tolink'>
-                    <div className='todivdeksia1' id='oxideksia'>
-                        <img src={github} alt="" /><br />
-                        <span>Github</span>
-                    </div>
-                    </Link>
+                  </div>
                 </div>
+              ))}
             </div>
+          </div>
 
-            {/* English  */}
-            <div className="divkeimeno" id="en"> 
-                <p>🎓 Physics student at the Aristotle University of Thessaloniki  <small>&#40; 2022 – Present &#41;</small></p>
-
-                <strong>About me</strong>
-                <p>
-                    I have a deep interest in physics, a field I am currently studying, which allows me to explore and understand the fundamental principles that govern the natural world. At the same time, I am equally passionate about programming, an area that fascinates me for its ability to solve problems and create innovative solutions.
-                </p>
-
-                {/* 
-                <p>By learning languages like C, Python, PHP, and JavaScript I have built a strong foundation in coding. Programming not only enhances my problem-solving skills but also fuels my creativity, enabling me to turn ideas into functional tools.</p> 
-                */}
-                {/* 
-                <p>Through my studies, I have developed strong problem-solving skills, using the scientific method to approach challenges logically and effectively. This process has taught me to analyze situations critically and find practical solutions to complex issues.</p>   
-                */}
-                
-                <p>
-                    This combination of physics and programming drives my curiosity and inspires me to continue learning and growing in both domains.
-                </p>
-
-                    {/* <strong>Skills</strong>
-                    <div className="taskills">
-                        <span>Physics, </span>
-                        <span>Mathematics, </span>
-                        <span>Electronics, </span>
-                        <span>Computer programming ( C, Python, JavaScript ) ,</span>
-                        <span>App & Web App Developer ( Kotlin, Swift, React, Angular, php, Express.js, MySQL ) </span>
-                    </div>
-
-                    <br/>
-
-                    <strong>Languages</strong>
-                    <div className="taskills">
-                        <span>English, </span>
-                        <span>Greek, </span>
-                        <span>Albanian</span>
-                    </div>
-
-                    <br/> */}
-
-                    <strong>Selected works</strong>
-
-                    <div className="toEpilegmeno">
-                        <p className='topEpi'>Lunar Lander Ai Agent</p>
-                        <Link to='/project?to=Lunar%20Lander%20Ai%20Agent' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                    </div>
-
-                    <div className="toEpilegmeno">
-                        <p className='topEpi'>React-Express.js-MySQL Authentication System</p>
-                        <Link to='/project?to=React-Express.js-MySQL%20Authentication%20System' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                    </div>
-
-                    <div className="toEpilegmeno">
-                        <p className='topEpi'>Measurement of Electron Mass</p>
-                        <Link to='/project?to=Measurement%20of%20Electron%20Mass' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                    </div>
-
-                    <div className="toEpilegmeno">
-                        <p className='topEpi'>Proof of the Wave Nature of Electrons</p>
-                        <Link to='/project?to=Proof%20of%20the%20Wave%20Nature%20of%20Electrons' className="toLinkEpil" >Read more <FaArrowRightLong  className='toarrow'/></Link>
-                    </div>
-
-                    <div className="toEpilegmeno">
-                        <p className='topEpi'>All projects</p>
-                        <Link to='/projects' className="toLinkEpil" >Here <FaArrowRightLong  className='toarrow'/></Link>
-                    </div>
-
-                    <br/>
-
-                    <strong>Some of the books i have reed</strong>
-                    <div className="taskills">
-                        <a href='https://www.goodreads.com/review/list/189751853-klajdi?shelf=read&view=covers' target="_blank" className='toaGood'>www.goodreads.com/review/list/189751853?shelf=read</a>
-                    </div>
-
-                    <br/><hr/><br/>
-
-                    <div className='maps'>
-                        <ClustrMaps  className="tomap"/>
-                        <div className='ccHome'>       
-                            <p>© {year} Klajdi Cami</p>
-                        </div>
-                    </div>
-            </div>
-            <br/><br/><br/><br/><br/>
+          <h2>More Posts</h2>
+          <div className='bottomFullWidth'>
+            {bottomPosts.map((post, idx) => (
+              <div className='post' key={idx}>
+                <img src={post.imageEksw} alt={post.Titlos} className='postsImg'/>
+                <div className='postContent'>
+                  <small className='date'>{post.Date}</small>
+                  <h3>{post.Titlos}</h3>
+                  <p>
+                    {post.Keimeno.length > 400
+                      ? post.Keimeno.slice(0, 400) + '...'
+                      : post.Keimeno}
+                  </p>
+                        <Link
+                        to={`/post?key=${post.id}`}
+                        className="readMore"
+                      >
+                        Read More
+                      </Link>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
     </div>
-    );
+  );
 }
- 
-export default Home; 
+
+export default Home;
