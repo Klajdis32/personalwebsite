@@ -130,6 +130,7 @@
 .leftColumn .post1 {
   flex: 1;
   display: flex;
+    border: 1px solid #ddd;
   flex-direction: column;
   border-radius: 8px;
   overflow: hidden;

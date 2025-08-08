@@ -18,10 +18,6 @@ const Home = () => {
     <div className='home'>
       <div className='arxiko'>
         <h1>Hello, I'm Klajdi! I'm passionate about physics and coding. Explore my blog below.</h1>
-        <h3>Subscribe to receive my latest posts directly in your inbox!</h3>
-        <div className='subscribe'>
-          <button className="button-85" role="button">Subscribe</button>
-        </div>
       </div>
 
       <div className='blog'>

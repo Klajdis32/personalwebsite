@@ -1,5 +1,6 @@
 import './about.css';
 import meImg from '../../Assets/me.png';
+import { Link } from 'react-router-dom';
 
 const About = () => {
 
@@ -32,11 +33,11 @@ const About = () => {
                 <span>App & Web App Developer ( Kotlin, Swift, React, Angular, php, Express.js, MySQL ) </span>
             </div>
 
-            <p>To get in touch, contact me.</p>
+            <p>To get in touch, <Link to="/contact">contact me</Link>.</p>
 
-            <strong>Some of the books i have reed</strong>
+            {/* <strong>Some of the books i have reed</strong>
             <br/><br/>
-            <a href='www.goodreads.com/review/list/189751853?shelf=read'>www.goodreads.com/review/list/189751853?shelf=read</a>
+            <a href='www.goodreads.com/review/list/189751853?shelf=read'>www.goodreads.com/review/list/189751853?shelf=read</a> */}
 
         </div>
     </div>

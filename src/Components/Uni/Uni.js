@@ -21,22 +21,14 @@ const Uni = () => {
 
           {/* Όλα τα pdfs αυτού του item */}
           <div className="taPdfs">
-            {item.pdfs.map((pdf, idx) => (
-              <div className="pdf" key={idx}>
-                <img src={pdfIcon} alt="PDF icon" />
-                {/* 
-                  Μπορείς να προσαρμόσεις το κείμενο του link 
-                  π.χ. από item.Katigoria ή κάτι άλλο, εδώ βάζω Project 1,2…
-                */}
-               <a
-                  href={pdf.src}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {pdf.name}
-                </a>
-              </div>
-            ))}
+            {item.pdfs.map((pdf) => (
+            <div className="pdf" key={`${item.id}-${pdf.name}`}>
+              <img src={pdfIcon} alt="PDF icon" />
+              <a href={pdf.src} target="_blank" rel="noopener noreferrer">
+                {pdf.name}
+              </a>
+            </div>
+          ))}
           </div>
         </div>
       ))}
