@@ -18,6 +18,7 @@ const Home = () => {
     <div className='home'>
       <div className='arxiko'>
         <h1>Hello, I'm Klajdi! I'm passionate about physics and coding. Explore my blog below.</h1>
+        <h3>Feel free to <Link to="/contact">contact me</Link> about anything you’d like to discuss.</h3>
       </div>
 
       <div className='blog'>

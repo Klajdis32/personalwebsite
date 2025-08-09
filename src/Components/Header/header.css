@@ -57,104 +57,109 @@
     width: 20px;
   }
   
-  /* Κρύβουμε τα spans για κινητά */
-  @media (max-width: 768px) {
+ /* Κρύβουμε τα spans για κινητά */
+@media (max-width: 768px) {
       
   .headerOutmesa {
     padding: 0px 10px;
   }
 
-    .header {
-      background-color: white;
-      padding: 0 0px;
-      height: 50px;
-    }
-    
-    .header.open {
-      background-color: #333;
-      color: white;
-    }
+  .header {
+    background-color: white;
+    padding: 0 0px;
+    height: 50px;
+  }
+  
+  .header.open {
+    background-color: #333;
+    color: white;
+  }
 
-      .toaristera {
+  .toaristera {
     width: 15%;
-      }
-  
-    .tadeksia {
-      position: fixed;
-      top: 70px;
-      font-size: 20px;
-      font-weight: 550;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-      background-color: #ffffff;
-      display: none;
-      align-items: flex-start;
-      z-index: 1000; 
-    }
-  
-    .tolinkdeks {
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-    }
-    
-    .tolinkdeks::after {
-      display: none;
-    }
-  
-    .tolinkdeks:hover {
-      color: rgb(0, 0, 0);
-    }
-  
-    .tadeksia.open {
-      display: flex;
-      width: 100%;
-    }
-  
-    .tolinkdeks {
-      margin-top: 20px;
-      padding: 0px 10px;
-    }
-  
-    .burger {
-      margin-top: 0px;
-      display: block;
-      cursor: pointer;
-    }
-  
-    .burger .line {
-      width: 25px;
-      height: 3px;
-      background-color: black;
-      margin: 5px 0;
-      transition: all 0.3s ease;
-    }
-  
-    .burger .line.open:nth-child(1) {
-      background-color: rgb(0, 0, 0);
-      transform: rotate(45deg) translate(7px, 5px);
-    }
-  
-    .burger .line.open:nth-child(2) {
-      background-color: rgb(0, 0, 0);
-      opacity: 0;
-    }
-  
-    .burger .line.open:nth-child(3) {
-      background-color: rgb(0, 0, 0);
-      transform: rotate(-45deg) translate(6px, -5px);
-    }
-  
-    .tadeksia span {
-      margin-left: 0;
-      margin-top: 10px;
-    }
+  }
+
+  .tadeksia {
+    position: fixed;
+    top: 70px; /* κάτω από το header */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px); /* όλο το ύψος κάτω από το header */
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: flex-start;
+    z-index: 1000; 
+
+    /* Animation αρχική κατάσταση */
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .tolinkdeks {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
   }
   
-  /* Απόκρυψη του burger menu στις μεγάλες οθόνες */
-  @media (min-width: 769px) {
-    .burger {
-      display: none;
-    }
+  .tolinkdeks::after {
+    display: none;
   }
+
+  .tolinkdeks:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  /* Όταν ανοίγει το menu */
+  .tadeksia.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .tolinkdeks {
+    margin-top: 20px;
+    padding: 0px 10px;
+  }
+
+  .burger {
+    margin-top: 0px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+
+  .burger .line.open:nth-child(1) {
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg) translate(7px, 5px);
+  }
+
+  .burger .line.open:nth-child(2) {
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+  }
+
+  .burger .line.open:nth-child(3) {
+    background-color: rgb(0, 0, 0);
+    transform: rotate(-45deg) translate(6px, -5px);
+  }
+
+  .tadeksia span {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Απόκρυψη του burger menu στις μεγάλες οθόνες */
+@media (min-width: 769px) {
+  .burger {
+    display: none;
+  }
+}
