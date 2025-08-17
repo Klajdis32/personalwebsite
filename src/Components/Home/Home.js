@@ -36,7 +36,9 @@ const Home = () => {
                   <div className='postContent'>
                     <small className='date'>{firstPost.Date}</small>
                     <h3>{firstPost.Titlos}</h3>
-                    <p>{firstPost.Keimeno}</p>
+                    <p>  {firstPost.Keimeno.length > 500
+                        ? firstPost.Keimeno.slice(0, 500) + '...'
+                        : firstPost.Keimeno}</p>
                   <Link
                     to={`/post?key=${firstPost.id}`}
                     className="readMore"

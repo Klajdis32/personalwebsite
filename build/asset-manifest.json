@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f71726e.css",
-    "main.js": "/static/js/main.dfa64390.js",
+    "main.css": "/static/css/main.63d75dbf.css",
+    "main.js": "/static/js/main.f11cc6e7.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
     "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
@@ -52,11 +52,11 @@
     "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
-    "main.4f71726e.css.map": "/static/css/main.4f71726e.css.map",
-    "main.dfa64390.js.map": "/static/js/main.dfa64390.js.map"
+    "main.63d75dbf.css.map": "/static/css/main.63d75dbf.css.map",
+    "main.f11cc6e7.js.map": "/static/js/main.f11cc6e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f71726e.css",
-    "static/js/main.dfa64390.js"
+    "static/css/main.63d75dbf.css",
+    "static/js/main.f11cc6e7.js"
   ]
 }
