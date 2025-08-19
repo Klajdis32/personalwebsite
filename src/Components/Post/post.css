@@ -72,5 +72,6 @@
 @media (max-width: 768px) {
   .Post { padding: 0 10px; }
   .postImg { width: 100%; }
-  .mdImage { border: none; }
+  .mdImage { border: none;
+ width: 100%; }
 }
