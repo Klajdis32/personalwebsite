@@ -55,30 +55,40 @@ const Post = () => {
         <p className="postText">{post.Keimeno}</p>
 
         <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          // 2) Μετασχηματίζουμε όλα τα URLs, και ειδικά τα './Mdimg/...'
-          urlTransform={(url, key, node) => {
-            if (key === 'src' && url.startsWith('./Mdimg/')) {
-              const fileName = url.replace('./Mdimg/', '');
-              try {
-                return mdImages(`./${fileName}`);
-              } catch {
-                return url;
-              }
-            }
-            return url;
+                  remarkPlugins={[remarkGfm]}
+                  // 2) Μετασχηματίζουμε όλα τα URLs, και ειδικά τα './Mdimg/...'
+                  urlTransform={(url, key, node) => {
+                    if (key === 'src' && url.startsWith('./Mdimg/')) {
+                      const fileName = url.replace('./Mdimg/', '');
+                      try {
+                        return mdImages(`./${fileName}`);
+                      } catch {
+                        return url;
+                      }
+                    }
+                    return url;
+                  }}
+                  components={{
+            img: ({node, ...props}) => (
+              <img
+                {...props}
+                className='mdImage'
+              />
+            )
           }}
-          components={{
-    img: ({node, ...props}) => (
-      <img
-        {...props}
-        className='mdImage'
-      />
-    )
-  }}
-        >
-          {mdText}
+                >
+                  {mdText}
         </ReactMarkdown>
+
+       {post.Link && (
+          <>
+            <br />
+            <h3>Links</h3>
+            <a href={post.Link} target="_blank" rel="noopener noreferrer" className='postLink'>
+              {post.Link}
+            </a>
+          </>
+        )}
       </div>
     </div>
   );

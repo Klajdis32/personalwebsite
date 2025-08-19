@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.63d75dbf.css",
-    "main.js": "/static/js/main.f11cc6e7.js",
+    "main.css": "/static/css/main.98c0fbe3.css",
+    "main.js": "/static/js/main.08e03d67.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
     "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
@@ -48,15 +48,20 @@
     "static/media/MysqlExReact.jpg": "/static/media/MysqlExReact.c209a9921bb2f848f4d6.jpg",
     "static/media/Compo-LM35.png": "/static/media/Compo-LM35.35416c7939aa58f2b1b9.png",
     "static/media/LunarLander.png": "/static/media/LunarLander.1adf70980bc8ce673ecd.png",
+    "static/media/VerificationEmail.png": "/static/media/VerificationEmail.ced77e38fa2749f6120b.png",
+    "static/media/ResetPassEmail.png": "/static/media/ResetPassEmail.d2dab6dafd7905236d2d.png",
     "static/media/folder.png": "/static/media/folder.c71c2c482ab2e7e64a1e.png",
     "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
+    "static/media/MysqlExReact.md": "/static/media/MysqlExReact.f78b443cbe6de718acf8.md",
+    "static/media/LunarLander.md": "/static/media/LunarLander.9f1fadd1830b1e34f84a.md",
+    "static/media/llamachat.md": "/static/media/llamachat.14e9669d1de92431908d.md",
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
-    "main.63d75dbf.css.map": "/static/css/main.63d75dbf.css.map",
-    "main.f11cc6e7.js.map": "/static/js/main.f11cc6e7.js.map"
+    "main.98c0fbe3.css.map": "/static/css/main.98c0fbe3.css.map",
+    "main.08e03d67.js.map": "/static/js/main.08e03d67.js.map"
   },
   "entrypoints": [
-    "static/css/main.63d75dbf.css",
-    "static/js/main.f11cc6e7.js"
+    "static/css/main.98c0fbe3.css",
+    "static/js/main.08e03d67.js"
   ]
 }

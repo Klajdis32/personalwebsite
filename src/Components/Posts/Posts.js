@@ -3,6 +3,9 @@ import TempMeter from "../../Assets/TempMeter.png";
 import MysqlExReact from "../../Assets/MysqlExReact.jpg";
 import llamachat from "../../Assets/llamachat.png";
 import LM35 from "../Md/LM35.md";
+import MysqlExReactmd from "../Md/MysqlExReact.md";
+import LunarLandermd from "../Md/LunarLander.md";
+import llamachatmd from "../Md/llamachat.md";
 
 const posts = [
     {
@@ -30,12 +33,12 @@ const posts = [
         Date: "1 feb 2025",
         Katigoria: "", 
         Keimeno: "This project is about a web application with a robust authentication system built using React for the frontend, Express.js for the backend, and MySQL as the database. User interaction with the backend is handled via cookies for authentication and session management. The application follows modern security best practices, including password hashing, token expiration handling, and CSRF protection. It also supports role-based access control (RBAC) to differentiate between user permissions, ensuring that only authorized users can access specific resources. Additionally, the frontend is designed with a responsive UI, providing a seamless experience across different devices. The backend API is structured using RESTful principles, making it scalable and easy to integrate with other services. ",
-        Link: "",
+        Link: "https://github.com/Klajdis32/Express.js-React-MySQL-Authentication-System",
         htmlPdf: "",
         pdf: "",
         file: "",
         video: "",
-        md: ""
+        md: MysqlExReactmd
     },
     {
         id: 2,
@@ -46,12 +49,12 @@ const posts = [
         Date: "17 dec 2024",
         Katigoria: "", 
         Keimeno: "This project focuses on training an agent to successfully land a lunar module on the flattest possible surface to avoid damage. The agent is trained using Reinforcement Learning (RL) techniques, specifically with the Proximal Policy Optimization (PPO) algorithm implemented in Ray RLlib. In the video generated, you can see the top 3 landings of the lunar module using the trained model. These landings demonstrate the agent's ability to control the lander effectively and achieve safe touchdowns.",
-        Link: "",
+        Link: "https://github.com/Klajdis32/Lunar-Lander-Ai-Agent",
         htmlPdf: "",
         pdf: "",
         file: "",
         video: "",
-        md: ""
+        md: LunarLandermd
     },
     {
         id: 1,
@@ -62,12 +65,12 @@ const posts = [
         Date: "9 dec 2024",
         Katigoria: "", 
         Keimeno: "This project involves my attempt to create a web-based AI chat interface utilizing Meta's Llama-3.3-70B-Versatile model. Leveraging my knowledge of React, I developed a user-friendly platform offering natural and intelligent interaction, utilizing the advanced capabilities of this AI model.",
-        Link: "",
+        Link: "https://github.com/Klajdis32/llama-chat-Interface-react",
         htmlPdf: "",
         pdf: "",
         file: "",
         video: "",
-        md: ""
+        md: llamachatmd
     },
     ];
 

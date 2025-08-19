@@ -1,51 +1,76 @@
+/* Container: μην αφήνεις τίποτα να βγει οριζόντια */
 .Post {
-    color: black;
-    margin: 0 auto;
-    max-width: 1100px;
+  color: black;
+  margin: 0 auto;
+  max-width: 1100px;
+  overflow-x: hidden;           /* safety net */
 }
 
-.postImgdiv {
-    text-align: center;
+/* Το σώμα του markdown να χωράει πάντα */
+.markdown-body {
+  max-width: 100%;
+  width: 100%;
+  overflow-wrap: anywhere;      /* για μακριά URLs/λέξεις */
+  word-break: break-word;
 }
 
-.postImg {
-    width: 50%;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-.postText {
-    font-size: 18px;
-}
-
-.info {
-    text-align: right;
-}
-
+/* Εικόνες μέσα στο markdown: 100% του container */
 .mdImage {
-    max-width: 60%;
-    height: auto;
-    display: block;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 1em auto;
+  display: block;
+  width: 50%;                  /* <-- από 60% σε 100% */
+  max-width: 100%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 1em auto;
 }
 
+/* Πίνακες σε markdown: responsive με οριζόντιο scroll αν χρειαστεί */
+.markdown-body table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+.markdown-body th, .markdown-body td {
+  padding: .5rem;
+  border: 1px solid #ccc;
+}
 
+/* Code blocks: scroll αντί να σπάνε layout */
+.markdown-body pre {
+  max-width: 100%;
+  overflow: auto;               /* οριζόντιο scroll αν χρειαστεί */
+  padding: 1rem;
+  background: #f6f8fa;
+  border-radius: 6px;
+}
+.markdown-body code {
+  white-space: pre-wrap;        /* προαιρετικό: τυλίγει γραμμές */
+  word-break: break-word;
+}
+
+/* Προαιρετικά: στοιχεία μέσα στο markdown να μη ξεφεύγουν */
+.markdown-body img,
+.markdown-body video,
+.markdown-body iframe {
+  max-width: 100%;
+}
+
+/* Υπάρχοντα σου (κρατάς ό,τι έχεις) */
+.postImgdiv { text-align: center; }
+.postImg { width: 50%; border-radius: 10px; border: 2px solid black; }
+.postText { font-size: 18px; }
+.info { text-align: right; }
+
+.postLink {
+    color: black;
+    text-decoration: underline blue;
+}
 /* Responsive */
 @media (max-width: 768px) {
-.Post  {
-  padding: 0 10px;
-}
-
-.postImg {
-    width: 100%;
-}
-
-
-.mdImage {
-    max-width: 100%;
-    border: none;
-}
-
+  .Post { padding: 0 10px; }
+  .postImg { width: 100%; }
+  .mdImage { border: none; }
 }
