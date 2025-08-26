@@ -5,7 +5,7 @@
 }
 
 .fakeloi {
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .fakelos {
@@ -24,9 +24,26 @@
     margin-right: 10px;
 }
 
+/* --- ΑΛΛΑΓΗ: κάνουμε transition στο ύψος + opacity --- */
 .taPdfs {
     display: block;
+    padding: 0; /* padding θα μπει μόνο όταν ανοίξει */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-4px);
+    transition:
+      max-height 500ms ease,
+      opacity 220ms ease,
+      transform 300ms ease,
+      padding 220ms ease;
+}
+
+.taPdfs.open {
     padding: 10px 0;
+    max-height: 1000px; /* δώσε μεγάλο όριο ώστε να χωράει όλα */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .taPdfs img {
@@ -35,18 +52,30 @@
     margin-right: 10px;
 }
 
+/* Μικρό animation και για κάθε pdf row */
 .pdf {
-    padding: 5px 0px;
+    padding: 10px 0px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.taPdfs.open .pdf {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .pdf img {
     width: 25px;
 }
 
+.pdf a {
+    font-size: 17px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
-.Uni {
-  padding: 0 10px;
-}
+  .Uni {
+    padding: 0 10px;
+  }
 }

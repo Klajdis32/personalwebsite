@@ -23,21 +23,29 @@ const Uni = () => {
     <div className="Uni">
       <h1>Here you can find the work I have completed at uni.</h1>
 
-      {uniData.map((item, idx) => (
-        <div className="fakeloi" key={idx}>
-          <div className="fakelos">
-            <img src={fakelos} alt="University Project" />
-            <p 
-              onClick={() => toggleItem(idx)} 
-              style={{ cursor: 'pointer', userSelect: 'none' }}
-              aria-expanded={openIndexes.has(idx)}
-            >
-              {item.Onoma}
-            </p>
-          </div>
+      {uniData.map((item, idx) => {
+        const isOpen = openIndexes.has(idx);
+        return (
+          <div className="fakeloi" key={idx}>
+            <div className="fakelos">
+              <img src={fakelos} alt="University Project" />
+              <p
+                onClick={() => toggleItem(idx)}
+                style={{ cursor: 'pointer', userSelect: 'none' }}
+                aria-expanded={isOpen}
+                aria-controls={`pdfs-${idx}`}
+              >
+                {item.Onoma}
+              </p>
+            </div>
 
-          {openIndexes.has(idx) && (
-            <div className="taPdfs">
+            {/* ΠΑΝΤΑ RENDER, αλλάζουμε μόνο className */}
+            <div
+              id={`pdfs-${idx}`}
+              className={`taPdfs ${isOpen ? 'open' : ''}`}
+              role="region"
+              aria-hidden={!isOpen}
+            >
               {item.pdfs.map((pdf) => (
                 <div className="pdf" key={`${idx}-${pdf.name}`}>
                   <img src={pdfIcon} alt="PDF icon" />
@@ -47,9 +55,9 @@ const Uni = () => {
                 </div>
               ))}
             </div>
-          )}
-        </div>
-      ))}
+          </div>
+        );
+      })}
     </div>
   );
 };
