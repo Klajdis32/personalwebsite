@@ -16,6 +16,7 @@
 .fakelos p {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .fakelos img {

@@ -24,7 +24,6 @@ The application is divided into three main components:
 
 ![Password reset Overview](./Mdimg/ResetPassEmail.png)
 
----
 
 ## Requirements
 
@@ -34,7 +33,6 @@ To run this project, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v18 or later)
 - [MySQL](https://www.mysql.com/) (active on your system)
 
----
 
 ## Setup Instructions
 
@@ -120,7 +118,6 @@ Now your MySQL database is ready for use!
       npm start
       ```
 
----
 
 ## Folder Structure
 
@@ -132,7 +129,6 @@ Now your MySQL database is ready for use!
 └── client/         # Client-facing frontend
 ```
 
----
 
 ## Usage
 
@@ -140,9 +136,10 @@ Now your MySQL database is ready for use!
 - **Client**: Allows users to interact with the application (e.g., login, view content).
 - **Admin**: Provides tools for administrators to manage users and data.
 
----
 
 ## Notes
 
 - Ensure all necessary environment variables (e.g., database credentials, JWT secret) are set before running the application.
 - The application runs on default ports (API: `http://localhost:8081`, Admin: `http://localhost:3001`, Client: `http://localhost:3000`). Adjust these if needed.
+
+You can find more information and the code for this post at the link below, which will take you to the post’s repository.

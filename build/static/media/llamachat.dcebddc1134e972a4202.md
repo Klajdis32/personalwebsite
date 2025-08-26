@@ -4,7 +4,6 @@
 - API-powered by Groq for real-time responses.
 - A user-friendly React frontend for engaging chat interactions.
 
----
 
 ## **Prerequisites**
 
@@ -16,7 +15,6 @@ Ensure the following software is installed on your system before running the pro
 	•	Create an account at Groq.
 	•	Obtain your API Key from Groq.
 
----
 
 ## **Setup Instructions**
 
@@ -78,19 +76,16 @@ Follow these steps to get the project up and running:
    npm start
    ```
 
----
 
 ## **Contributing**
 
 Feel free to fork the repository and submit pull requests for improvements or feature additions. Ensure all new code is thoroughly tested before submitting!
 
----
 
 ## **License**
 
 This project is licensed under the MIT License.
 
----
 
 ## **Acknowledgements**
 
@@ -98,6 +93,5 @@ This project is licensed under the MIT License.
 - **Groq** for providing an efficient API integration.
 - Open-source tools and libraries that made this project possible.
 
----
 
-Happy coding! 🚀
+You can find more information and the code for this post at the link below, which will take you to the post’s repository.
