@@ -36,8 +36,24 @@ import Dispersion from "../../Components/Posts/pdfs/Διασκεδασμός.pdf
 import Diffraction from "../../Components/Posts/pdfs/Περίθλαση.pdf";
 import Interference from "../../Components/Posts/pdfs/Συμβολή.pdf";
 import geometricOptics from "../../Components/Posts/pdfs/ΓΟ.pdf";
+import Pirin1 from "../../Components/Posts/pdfs/Pirin1.pdf";
+import Pirin2 from "../../Components/Posts/pdfs/Pirin2.pdf";
+import Pirin3 from "../../Components/Posts/pdfs/Pirin3.pdf";
+import Pirin4 from "../../Components/Posts/pdfs/Pirin4.pdf";
+import Pirin5 from "../../Components/Posts/pdfs/Pirin5.pdf";
 
 const Ergasies = [
+  {
+    Onoma: "Εργαστήριο Πυρινικής Φυσικής (Nuclear Physics Laboratory)",
+    pdfs: [
+      { name: "Εύρεση των χαρακτηριστικών του απαριθμητή Geiger–Muller", src: Pirin1 },
+      { name: "Μέτρηση του νεκρού χρόνου και της απόδοσης του απαριθμητή Geiger-Muller", src: Pirin2 },
+      { name: "Μελέτη του νόμου των ραδιενεργών διασπάσεων", src: Pirin3 },
+      { name: "Φασματοσκοπία ακτίνων γ", src: Pirin4 },
+      { name: "Απορρόφηση ακτινοβολίας γ", src: Pirin5 },
+    ],
+    files: ""
+  },
   {
     Onoma: "Google.org Cybersecurity Seminars",
     pdfs: [

@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.008813fe.css",
-    "main.js": "/static/js/main.d2f0bd51.js",
+    "main.js": "/static/js/main.9f38698b.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
+    "static/media/Pirin4.pdf": "/static/media/Pirin4.883fe43797206257cd92.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
     "static/media/TempMeter.png": "/static/media/TempMeter.fe307464732d974b490b.png",
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
@@ -22,6 +23,7 @@
     "static/media/Lab4Exercise_InGreek.pdf": "/static/media/Lab4Exercise_InGreek.f41779804cec60d6464b.pdf",
     "static/media/oscilloscope.pdf": "/static/media/oscilloscope.c1459b1128b767ec9552.pdf",
     "static/media/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .pdf": "/static/media/Θεώρημα Μέγιστης Μεταφοράς Ισχύος .86e565d7a6b181b18901.pdf",
+    "static/media/Pirin5.pdf": "/static/media/Pirin5.75d7c09581c049db833b.pdf",
     "static/media/Μέτρηση Τάσεων Mε Παλμογράφο.pdf": "/static/media/Μέτρηση Τάσεων Mε Παλμογράφο.7916f091448d303fd1f7.pdf",
     "static/media/Planck.pdf": "/static/media/Planck.900c690bf21244ebba14.pdf",
     "static/media/Περίθλαση Ηλεκτρονίων.pdf": "/static/media/Περίθλαση Ηλεκτρονίων.716353741bf5a6444eb4.pdf",
@@ -35,7 +37,10 @@
     "static/media/SimulationOfLinearMotion.pdf": "/static/media/SimulationOfLinearMotion.cc81f6f4c4c615433874.pdf",
     "static/media/llamachat.png": "/static/media/llamachat.cb363c493d3d370046b0.png",
     "static/media/Lab5Simulation_InGreek.pdf": "/static/media/Lab5Simulation_InGreek.ad83e62089cf758594f4.pdf",
+    "static/media/Pirin1.pdf": "/static/media/Pirin1.642708a3abbdb6580531.pdf",
+    "static/media/Pirin3.pdf": "/static/media/Pirin3.8208817aab4ee53b6c42.pdf",
     "static/media/Lab3Exercise_InGreek.pdf": "/static/media/Lab3Exercise_InGreek.77201ca1b875864cf9f6.pdf",
+    "static/media/Pirin2.pdf": "/static/media/Pirin2.99e0b45d5f120efaf23d.pdf",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
     "static/media/WindowsUsers.pdf": "/static/media/WindowsUsers.5bbaa33b5f419fd1452c.pdf",
@@ -59,10 +64,10 @@
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
     "main.008813fe.css.map": "/static/css/main.008813fe.css.map",
-    "main.d2f0bd51.js.map": "/static/js/main.d2f0bd51.js.map"
+    "main.9f38698b.js.map": "/static/js/main.9f38698b.js.map"
   },
   "entrypoints": [
     "static/css/main.008813fe.css",
-    "static/js/main.d2f0bd51.js"
+    "static/js/main.9f38698b.js"
   ]
 }
