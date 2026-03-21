@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.008813fe.css",
-    "main.js": "/static/js/main.9f38698b.js",
+    "main.js": "/static/js/main.c9b0e564.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Pirin4.pdf": "/static/media/Pirin4.883fe43797206257cd92.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
@@ -64,10 +64,10 @@
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
     "main.008813fe.css.map": "/static/css/main.008813fe.css.map",
-    "main.9f38698b.js.map": "/static/js/main.9f38698b.js.map"
+    "main.c9b0e564.js.map": "/static/js/main.c9b0e564.js.map"
   },
   "entrypoints": [
     "static/css/main.008813fe.css",
-    "static/js/main.9f38698b.js"
+    "static/js/main.c9b0e564.js"
   ]
 }
