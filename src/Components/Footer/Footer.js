@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="FooterOut">
       <div className='mesaFooter'>
-        <p>© 2025 Klajdi</p>
+        <p>© 2026 Klajdi</p>
         <p>-</p>
         <p onClick={scrollToTop} className="goTop">
           Go to the top

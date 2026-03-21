@@ -7,10 +7,10 @@ const Contact = () => {
         <h1>Contact me</h1>
 
 
-        <h3>Best way to contact me is via email!</h3>
-        <p>You can email me at <strong>ktsami@auth.gr</strong></p> 
+        <h4>Best way to contact me is via email!</h4>
+        <h3>You can email me at: <strong>ktsami@auth.gr</strong></h3> 
 
-        <h3>My PGP</h3>
+        <h4>My PGP</h4>
         <div className='pgpKey'>
         <p>
             -----BEGIN PGP PUBLIC KEY BLOCK-----
