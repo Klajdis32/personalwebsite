@@ -2,12 +2,30 @@ import LunarLander from '../../Assets/LunarLander.png';
 import TempMeter from "../../Assets/TempMeter.png";
 import MysqlExReact from "../../Assets/MysqlExReact.jpg";
 import llamachat from "../../Assets/llamachat.png";
+import Lammps from "../../Assets/Lammps.png";
 import LM35 from "../Md/LM35.md";
 import MysqlExReactmd from "../Md/MysqlExReact.md";
 import LunarLandermd from "../Md/LunarLander.md";
 import llamachatmd from "../Md/llamachat.md";
+import CompMat from "../Md/CompMat.md";
 
 const posts = [
+    {
+        id: 5,
+        imageEksw: Lammps, 
+        Titlos: "Computational Materials Science Projects", 
+        Sigrafeas: "Klajdi", 
+        Linksigrafea: "",  
+        Date: "23 may 2026",
+        Katigoria: "", 
+        Keimeno: "This repository contains a collection of computational materials science and atomistic simulation projects developed using LAMMPS, Quantum ESPRESSO, OVITO, and Python. The projects focus on Molecular Dynamics (MD), Molecular Statics, Monte Carlo methods, nanoparticle simulations, and Density Functional Theory (DFT). The repository includes simulation input/output files, visualization results, Python-based data analysis and plotting scripts, and detailed PDF reports explaining the theoretical background, computational methodology, and analysis of each project.",
+        Link: "https://github.com/Klajdis32/Computational-Materials-Science-Projects",
+        htmlPdf: "",
+        pdf: "",
+        file: "",
+        video: "",
+        md: CompMat
+    },
     {
         id: 4,
         imageEksw: TempMeter, 

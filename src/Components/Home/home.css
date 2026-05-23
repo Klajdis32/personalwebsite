@@ -118,7 +118,7 @@
 /* Top section: δύο στήλες, αριστερή 2fr, δεξιά 1fr */
 .topColumns {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 30px;
   align-items: stretch;      /* τεντώνει την αριστερή/δεξιά στο ίδιο ύψος */
 }
@@ -167,9 +167,24 @@
   display: block;
 }
 
+.rightColumn .postright img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.postContent h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .postContent {
   padding: 20px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .date {
@@ -185,7 +200,7 @@ h3 {
 
 .readMore {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: auto;
   color: #007BFF;
   text-decoration: none;
   font-weight: 600;
@@ -198,6 +213,10 @@ h3 {
 
 .bottomFullWidth {
   width: 100%;
+}
+
+.bottomFullWidth .post {
+  margin-bottom: 30px;
 }
 
 .bottomFullWidth img{
