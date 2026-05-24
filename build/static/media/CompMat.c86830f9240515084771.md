@@ -1,4 +1,4 @@
-## LAMMPS, Quantum ESPRESSO & OVITO Simulations
+### LAMMPS, Quantum ESPRESSO & OVITO Simulations
 
 This repository contains a collection of computational materials science projects developed using:
 
@@ -30,9 +30,9 @@ The repository includes:
   - analysis process,
   - and conclusions.
 
-## Projects Overview
+### Projects Overview
 
-## 1. Verification of the Ideal Gas Law using Molecular Dynamics
+### 1. Verification of the Ideal Gas Law using Molecular Dynamics
 
 Study and numerical verification of the ideal gas law through Molecular Dynamics simulations.
 
@@ -48,7 +48,7 @@ Tools:
 
 ---
 
-## 2. Selection of Appropriate Parameters for Molecular Dynamics Simulations
+### 2. Selection of Appropriate Parameters for Molecular Dynamics Simulations
 
 Investigation of how simulation parameters affect stability and accuracy in MD simulations.
 
@@ -65,7 +65,7 @@ Tools:
 
 ---
 
-## 3. Nanoparticle Melting
+### 3. Nanoparticle Melting
 
 Simulation and analysis of the melting behavior of nanoparticles at the atomic scale.
 
@@ -81,7 +81,7 @@ Tools:
 
 ---
 
-## 4. Monte Carlo vs Molecular Dynamics
+### 4. Monte Carlo vs Molecular Dynamics
 
 Comparative study between Monte Carlo and Molecular Dynamics methods.
 
@@ -98,7 +98,7 @@ Tools:
 
 ---
 
-## 5. Molecular Statics
+### 5. Molecular Statics
 
 Energy minimization and structural analysis of crystalline materials using Molecular Statics techniques.
 
@@ -114,7 +114,7 @@ Tools:
 
 ---
 
-## 6. Introduction to Density Functional Theory (DFT)
+### 6. Introduction to Density Functional Theory (DFT)
 
 Introduction to first-principles electronic structure calculations using Density Functional Theory.
 
@@ -129,25 +129,25 @@ Tools:
 - Quantum ESPRESSO
 
 
-## Software Requirements
+### Software Requirements
 
-## LAMMPS
+### LAMMPS
 Official website:
 
 https://www.lammps.org/
 
-## Quantum ESPRESSO
+### Quantum ESPRESSO
 Official website:
 
 https://www.quantum-espresso.org/
 
-## OVITO
+### OVITO
 Official website:
 
 https://www.ovito.org/
 
 
-##Educational Purpose
+### Educational Purpose
 
 This repository is intended for:
 
@@ -159,7 +159,7 @@ This repository is intended for:
 The projects combine theoretical understanding with practical implementation, visualization, and simulation analysis.
 
 
-# Topics Covered
+### Topics Covered
 
 - Molecular Dynamics (MD)
 - Monte Carlo Methods

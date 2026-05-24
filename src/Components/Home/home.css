@@ -236,6 +236,14 @@ h3 {
 }
 
 
+.rightColumn .postright img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
   .topColumns {
     grid-template-columns: 1fr;
   }

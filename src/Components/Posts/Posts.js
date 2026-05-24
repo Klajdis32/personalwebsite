@@ -3,15 +3,17 @@ import TempMeter from "../../Assets/TempMeter.png";
 import MysqlExReact from "../../Assets/MysqlExReact.jpg";
 import llamachat from "../../Assets/llamachat.png";
 import Lammps from "../../Assets/Lammps.png";
+import rocket from "../../Assets/rocket.png";
 import LM35 from "../Md/LM35.md";
 import MysqlExReactmd from "../Md/MysqlExReact.md";
 import LunarLandermd from "../Md/LunarLander.md";
 import llamachatmd from "../Md/llamachat.md";
 import CompMat from "../Md/CompMat.md";
+import RocketGame from "../Md/RocketGame.md";
 
 const posts = [
     {
-        id: 5,
+        id: 6,
         imageEksw: Lammps, 
         Titlos: "Computational Materials Science Projects", 
         Sigrafeas: "Klajdi", 
@@ -27,7 +29,7 @@ const posts = [
         md: CompMat
     },
     {
-        id: 4,
+        id: 5,
         imageEksw: TempMeter, 
         Titlos: "LM35 Temperature Meter – Arduino Uno", 
         Sigrafeas: "Klajdi", 
@@ -43,7 +45,7 @@ const posts = [
         md: LM35
     },
     {
-        id: 3,
+        id: 4,
         imageEksw: MysqlExReact, 
         Titlos: "React-Express.js-MySQL Authentication System", 
         Sigrafeas: "Klajdi", 
@@ -59,7 +61,7 @@ const posts = [
         md: MysqlExReactmd
     },
     {
-        id: 2,
+        id: 3,
         imageEksw: LunarLander, 
         Titlos: "Lunar Lander Ai Agent", 
         Sigrafeas: "Klajdi", 
@@ -75,7 +77,7 @@ const posts = [
         md: LunarLandermd
     },
     {
-        id: 1,
+        id: 2,
         imageEksw: llamachat, 
         Titlos: "Chat Interface for Llama LLM", 
         Sigrafeas: "Klajdi", 
@@ -89,6 +91,22 @@ const posts = [
         file: "",
         video: "",
         md: llamachatmd
+    },
+    {
+        id: 1,
+        imageEksw: rocket, 
+        Titlos: "Rocket Game With Python", 
+        Sigrafeas: "Klajdi", 
+        Linksigrafea: "",  
+        Date: "25 Jul 2023",
+        Katigoria: "", 
+        Keimeno: "This project is a simple space-themed game created with Pygame, where the player controls a rocket and moves it left or right to avoid incoming obstacles. The rocket can shoot bullets to destroy enemies such as comets, UFOs, and robots, while the player earns points and advances through different levels. As the score increases, the game changes background, enemies, speed, and difficulty, making the gameplay more challenging. The project also includes a score/level panel and a Game Over screen with the option to restart or close the game.",
+        Link: "https://github.com/Klajdis32/Rocket-Game-With-Python",
+        htmlPdf: "",
+        pdf: "",
+        file: "",
+        video: "",
+        md: RocketGame
     },
     ];
 
