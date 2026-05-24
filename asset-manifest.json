@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.98cba819.css",
-    "main.js": "/static/js/main.679004b7.js",
+    "main.css": "/static/css/main.fde08424.css",
+    "main.js": "/static/js/main.f6fd610c.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Pirin4.pdf": "/static/media/Pirin4.883fe43797206257cd92.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
@@ -41,6 +41,7 @@
     "static/media/Pirin3.pdf": "/static/media/Pirin3.8208817aab4ee53b6c42.pdf",
     "static/media/Lab3Exercise_InGreek.pdf": "/static/media/Lab3Exercise_InGreek.77201ca1b875864cf9f6.pdf",
     "static/media/Pirin2.pdf": "/static/media/Pirin2.99e0b45d5f120efaf23d.pdf",
+    "static/media/rocket.png": "/static/media/rocket.a5defd9ab29fe8404e96.png",
     "static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.pdf": "/static/media/Νόμοι Kirchhoff - Διαιρέτης Τάσης.3705eaaff16f87ea284c.pdf",
     "static/media/Θεώρημα Thevenin - Norton.pdf": "/static/media/Θεώρημα Thevenin - Norton.1577d61f7adeb2ca96ee.pdf",
     "static/media/Lammps.png": "/static/media/Lammps.3de7f00d43c205eb0711.png",
@@ -54,22 +55,23 @@
     "static/media/logo.png": "/static/media/logo.d20766512111f884160d.png",
     "static/media/MysqlExReact.jpg": "/static/media/MysqlExReact.c209a9921bb2f848f4d6.jpg",
     "static/media/Compo-LM35.png": "/static/media/Compo-LM35.35416c7939aa58f2b1b9.png",
-    "static/media/LunarLander.png": "/static/media/LunarLander.1adf70980bc8ce673ecd.png",
+    "static/media/LunarLander.png": "/static/media/LunarLander.c11ea431599bd72e6622.png",
     "static/media/VerificationEmail.png": "/static/media/VerificationEmail.ced77e38fa2749f6120b.png",
     "static/media/ResetPassEmail.png": "/static/media/ResetPassEmail.d2dab6dafd7905236d2d.png",
     "static/media/folder.png": "/static/media/folder.c71c2c482ab2e7e64a1e.png",
     "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
     "static/media/MysqlExReact.md": "/static/media/MysqlExReact.25ae30430ba21ac5c245.md",
-    "static/media/CompMat.md": "/static/media/CompMat.044a85208c6b0f320b13.md",
+    "static/media/CompMat.md": "/static/media/CompMat.c86830f9240515084771.md",
+    "static/media/RocketGame.md": "/static/media/RocketGame.0bc1179ede949e53daa2.md",
     "static/media/LunarLander.md": "/static/media/LunarLander.385a2ee099cefe5b43c4.md",
     "static/media/llamachat.md": "/static/media/llamachat.dcebddc1134e972a4202.md",
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
-    "main.98cba819.css.map": "/static/css/main.98cba819.css.map",
-    "main.679004b7.js.map": "/static/js/main.679004b7.js.map"
+    "main.fde08424.css.map": "/static/css/main.fde08424.css.map",
+    "main.f6fd610c.js.map": "/static/js/main.f6fd610c.js.map"
   },
   "entrypoints": [
-    "static/css/main.98cba819.css",
-    "static/js/main.679004b7.js"
+    "static/css/main.fde08424.css",
+    "static/js/main.f6fd610c.js"
   ]
 }
