@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fde08424.css",
+    "main.css": "/static/css/main.52705981.css",
     "main.js": "/static/js/main.f6fd610c.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Pirin4.pdf": "/static/media/Pirin4.883fe43797206257cd92.pdf",
@@ -67,11 +67,11 @@
     "static/media/llamachat.md": "/static/media/llamachat.dcebddc1134e972a4202.md",
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
-    "main.fde08424.css.map": "/static/css/main.fde08424.css.map",
+    "main.52705981.css.map": "/static/css/main.52705981.css.map",
     "main.f6fd610c.js.map": "/static/js/main.f6fd610c.js.map"
   },
   "entrypoints": [
-    "static/css/main.fde08424.css",
+    "static/css/main.52705981.css",
     "static/js/main.f6fd610c.js"
   ]
 }
