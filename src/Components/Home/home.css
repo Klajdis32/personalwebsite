@@ -227,32 +227,46 @@ h3 {
 
 /* Responsive */
 @media (max-width: 768px) {
-.home {
-  padding: 0 10px;
-}
-
-.arxiko {
+  .home {
     width: 100%;
-}
+    max-width: 100%;
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
 
+  .arxiko {
+    width: 100%;
+  }
 
-.rightColumn .postright img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
+  .postsContainer,
+  .topColumns,
+  .leftColumn,
+  .rightColumn,
+  .leftColumn .post1,
+  .rightColumn .postright {
+    width: 100%;
+    max-width: 100%;
+  }
 
   .topColumns {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
   }
+
   .rightColumn {
     height: auto;
     flex-direction: column;
   }
+
   .rightColumn .postright {
     flex: unset;
+  }
+
+  .rightColumn .postright img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
   }
 
   .bottomFullWidth .post {
@@ -261,19 +275,23 @@ h3 {
 
   .post img {
     width: 100%;
-    padding: none;
+    max-width: 100%;
+    padding: 0;
     border-radius: 10px 10px 0 0;
   }
 
-  .bottomFullWidth img{
-  width: 100%;
-  padding: 0px;
-  border-radius: 10px 10px 0 0;
-} 
+  .bottomFullWidth img {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+  }
 
-.blog {
-  margin-top: 30px;
-}
+  .postContent h3 {
+    max-width: 100%;
+  }
 
-
+  .blog {
+    margin-top: 30px;
+  }
 }
