@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f48ae2fa.css",
-    "main.js": "/static/js/main.d1631cb7.js",
+    "main.css": "/static/css/main.31f1a0eb.css",
+    "main.js": "/static/js/main.2843d241.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Pirin4.pdf": "/static/media/Pirin4.883fe43797206257cd92.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
@@ -71,11 +71,11 @@
     "static/media/llamachat.md": "/static/media/llamachat.1a92a7c62069f655f65c.md",
     "static/media/LM35.md": "/static/media/LM35.27cc09c9481b5575e2d6.md",
     "static/media/LunarLander.md": "/static/media/LunarLander.2ba70c56d816ed7f33ca.md",
-    "main.f48ae2fa.css.map": "/static/css/main.f48ae2fa.css.map",
-    "main.d1631cb7.js.map": "/static/js/main.d1631cb7.js.map"
+    "main.31f1a0eb.css.map": "/static/css/main.31f1a0eb.css.map",
+    "main.2843d241.js.map": "/static/js/main.2843d241.js.map"
   },
   "entrypoints": [
-    "static/css/main.f48ae2fa.css",
-    "static/js/main.d1631cb7.js"
+    "static/css/main.31f1a0eb.css",
+    "static/js/main.2843d241.js"
   ]
 }
