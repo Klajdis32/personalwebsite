@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba0d7d19.css",
-    "main.js": "/static/js/main.f6fd610c.js",
+    "main.css": "/static/css/main.30d98403.css",
+    "main.js": "/static/js/main.fd93ba24.js",
     "static/media/ΓΟ.pdf": "/static/media/ΓΟ.f71b98b54c08ba3ab37a.pdf",
     "static/media/Pirin4.pdf": "/static/media/Pirin4.883fe43797206257cd92.pdf",
     "static/media/Πόλωση.pdf": "/static/media/Πόλωση.d3a15fb148bc6a6778d9.pdf",
@@ -9,8 +9,10 @@
     "static/media/LinuxMachineCommunication.pdf": "/static/media/LinuxMachineCommunication.fce105dd96b820d97c41.pdf",
     "static/media/WiresharkAndNmap_En.pdf": "/static/media/WiresharkAndNmap_En.be101a0fac4f7e28d5ff.pdf",
     "static/media/Συμβολή.pdf": "/static/media/Συμβολή.3c0320368a461bd5091f.pdf",
+    "static/media/NasaPlanetXSpherex.png": "/static/media/NasaPlanetXSpherex.ae046c31e857f31fe411.png",
     "static/media/Συντονισμός Σειράς – Παράλληλος.pdf": "/static/media/Συντονισμός Σειράς – Παράλληλος.9b89fe9c499585747d75.pdf",
     "static/media/Συχνοτική Απόκριση Φίλτρων.pdf": "/static/media/Συχνοτική Απόκριση Φίλτρων.678f0392a4b1845603c7.pdf",
+    "static/media/astropic.png": "/static/media/astropic.c007dc7880a0f204e249.png",
     "static/media/malware5thExercise.pdf": "/static/media/malware5thExercise.8052461695685efd51cd.pdf",
     "static/media/Lab2Exercise_InGreek.pdf": "/static/media/Lab2Exercise_InGreek.76512e6e79a2d226e100.pdf",
     "static/media/Τετράπολα - Κυκλώματα Διαφόρισης .pdf": "/static/media/Τετράπολα - Κυκλώματα Διαφόρισης .84948d01b1fa9bd22414.pdf",
@@ -63,15 +65,16 @@
     "static/media/MysqlExReact.md": "/static/media/MysqlExReact.25ae30430ba21ac5c245.md",
     "static/media/CompMat.md": "/static/media/CompMat.c86830f9240515084771.md",
     "static/media/RocketGame.md": "/static/media/RocketGame.0bc1179ede949e53daa2.md",
+    "static/media/NasaPlanetXSpherex.md": "/static/media/NasaPlanetXSpherex.1a918e3bdd2543e4700b.md",
     "static/media/LunarLander.md": "/static/media/LunarLander.385a2ee099cefe5b43c4.md",
     "static/media/llamachat.md": "/static/media/llamachat.dcebddc1134e972a4202.md",
     "static/media/LM35.md": "/static/media/LM35.c564adcaa06ed721d80a.md",
     "index.html": "/index.html",
-    "main.ba0d7d19.css.map": "/static/css/main.ba0d7d19.css.map",
-    "main.f6fd610c.js.map": "/static/js/main.f6fd610c.js.map"
+    "main.30d98403.css.map": "/static/css/main.30d98403.css.map",
+    "main.fd93ba24.js.map": "/static/js/main.fd93ba24.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba0d7d19.css",
-    "static/js/main.f6fd610c.js"
+    "static/css/main.30d98403.css",
+    "static/js/main.fd93ba24.js"
   ]
 }
