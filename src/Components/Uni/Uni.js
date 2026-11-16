@@ -6,6 +6,7 @@ import uniData from '../Posts/Ergasies.js';
 
 const Uni = () => {
   const [openIndexes, setOpenIndexes] = useState(new Set());
+  const totalPdfs = uniData.reduce((total, item) => total + item.pdfs.length, 0);
 
   const toggleItem = (idx) => {
     setOpenIndexes((prev) => {
@@ -21,43 +22,74 @@ const Uni = () => {
 
   return (
     <div className="Uni">
-      <h1>Here you can find the work I have completed at uni.</h1>
+      <section className="uniIntro">
+        <p className="uniEyebrow">Academic archive</p>
+        <h1>University work &amp; lab reports</h1>
+        <p className="uniDescription">
+          A collection of reports and exercises from physics, electronics,
+          cybersecurity, and laboratory courses.
+        </p>
+        <div className="uniStats" aria-label={`${totalPdfs} documents in ${uniData.length} categories`}>
+          <span><strong>{totalPdfs}</strong> PDF documents</span>
+          <span><strong>{uniData.length}</strong> categories</span>
+        </div>
+      </section>
 
-      {uniData.map((item, idx) => {
-        const isOpen = openIndexes.has(idx);
-        return (
-          <div className="fakeloi" key={idx}>
-            <div className="fakelos">
-              <img src={fakelos} alt="University Project" />
-              <p
+      <section className="uniLibrary" aria-label="University documents">
+        {uniData.map((item, idx) => {
+          const isOpen = openIndexes.has(idx);
+          return (
+            <article className={`fakeloi ${isOpen ? 'isOpen' : ''}`} key={item.Onoma}>
+              <button
+                type="button"
+                className="fakelos"
                 onClick={() => toggleItem(idx)}
-                style={{ cursor: 'pointer', userSelect: 'none' }}
                 aria-expanded={isOpen}
                 aria-controls={`pdfs-${idx}`}
               >
-                {item.Onoma}
-              </p>
-            </div>
+                <span className="folderIcon" aria-hidden="true">
+                  <img src={fakelos} alt="" />
+                </span>
+                <span className="folderDetails">
+                  <span className="folderTitle">{item.Onoma}</span>
+                  <span className="folderCount">
+                    {item.pdfs.length} {item.pdfs.length === 1 ? 'document' : 'documents'}
+                  </span>
+                </span>
+                <span className="folderChevron" aria-hidden="true">⌄</span>
+              </button>
 
-            {/* ΠΑΝΤΑ RENDER, αλλάζουμε μόνο className */}
-            <div
-              id={`pdfs-${idx}`}
-              className={`taPdfs ${isOpen ? 'open' : ''}`}
-              role="region"
-              aria-hidden={!isOpen}
-            >
-              {item.pdfs.map((pdf) => (
-                <div className="pdf" key={`${idx}-${pdf.name}`}>
-                  <img src={pdfIcon} alt="PDF icon" />
-                  <a href={pdf.src} target="_blank" rel="noopener noreferrer">
-                    {pdf.name}
-                  </a>
+              <div
+                id={`pdfs-${idx}`}
+                className={`taPdfs ${isOpen ? 'open' : ''}`}
+                role="region"
+                aria-hidden={!isOpen}
+              >
+                <div className="pdfGrid">
+                  {item.pdfs.map((pdf) => (
+                    <a
+                      className="pdf"
+                      key={`${idx}-${pdf.name}`}
+                      href={pdf.src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      tabIndex={isOpen ? 0 : -1}
+                    >
+                      <span className="pdfIcon" aria-hidden="true">
+                        <img src={pdfIcon} alt="" />
+                      </span>
+                      <span className="pdfDetails">
+                        <span className="pdfName">{pdf.name}</span>
+                        <span className="pdfAction">Open PDF <span aria-hidden="true">↗</span></span>
+                      </span>
+                    </a>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </div>
-        );
-      })}
+              </div>
+            </article>
+          );
+        })}
+      </section>
     </div>
   );
 };

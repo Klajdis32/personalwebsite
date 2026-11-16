@@ -1,35 +1,291 @@
 .Contact {
-    color: var(--text);
-    margin: 0 auto;
-    max-width: 1100px;
+  color: var(--text);
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 54px 0 80px;
+}
+
+.contactIntro {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(30px, 6vw, 62px);
+  border: 1px solid var(--soft-border);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 92% 15%, color-mix(in srgb, var(--link) 18%, transparent) 0, transparent 35%),
+    var(--surface);
+  box-shadow: 0 12px 34px var(--shadow);
+}
+
+.contactEyebrow {
+  margin: 0 0 10px;
+  color: var(--link);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contactIntro h1 {
+  margin: 0;
+  font-size: clamp(46px, 9vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.contactDescription {
+  max-width: 620px;
+  margin: 22px 0 28px;
+  color: var(--muted);
+  font-size: clamp(17px, 2.2vw, 20px);
+  line-height: 1.6;
+}
+
+.primaryContact,
+.copyKeyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--page-bg);
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.primaryContact {
+  padding: 12px 18px;
+}
+
+.primaryContact:hover,
+.copyKeyButton:hover {
+  opacity: 0.82;
+  transform: translateY(-1px);
+}
+
+.primaryContact:focus-visible,
+.copyKeyButton:focus-visible,
+.contactCard:focus-visible,
+.pgpDisclosure summary:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+}
+
+.contactMethods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.contactCard {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) 30px;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--soft-border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--shadow) 65%, transparent);
+  text-decoration: none;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.contactCard:hover {
+  border-color: color-mix(in srgb, var(--link) 45%, var(--soft-border));
+  box-shadow: 0 9px 24px var(--shadow);
+  transform: translateY(-2px);
+}
+
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--soft-border);
+  border-radius: 15px;
+  background: var(--surface-soft);
+  color: var(--link);
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.githubContactIcon {
+  font-size: 14px;
+  letter-spacing: -0.04em;
+}
+
+.contactCardText {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.contactLabel {
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contactCardText strong {
+  overflow-wrap: anywhere;
+  font-size: 18px;
+}
+
+.contactCardText > span:last-child {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.contactArrow {
+  color: var(--link);
+  font-size: 20px;
+  transition: transform 180ms ease;
+}
+
+.contactCard:hover .contactArrow {
+  transform: translate(2px, -2px);
+}
+
+.pgpSection {
+  padding: clamp(22px, 4vw, 34px);
+  border: 1px solid var(--soft-border);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--shadow) 65%, transparent);
+}
+
+.pgpHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.pgpHeader h2 {
+  margin: 0;
+  font-size: clamp(26px, 4vw, 36px);
+  letter-spacing: -0.025em;
+}
+
+.pgpHeader p:last-child {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.pgpActions {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 10px;
+}
+
+.copyKeyButton {
+  padding: 10px 15px;
+}
+
+.copyStatus {
+  max-width: 110px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pgpDisclosure {
+  margin-top: 24px;
+  border-top: 1px solid var(--soft-border);
+}
+
+.pgpDisclosure summary {
+  padding: 18px 2px 0;
+  color: var(--link);
+  font-weight: 750;
+  cursor: pointer;
 }
 
 .pgpKey {
-    text-align: center;
-        margin: 0 auto;
-    max-width: 900px;
+  max-width: 100%;
+  margin: 16px 0 0;
+  padding: 18px;
+  overflow: auto;
+  border: 1px solid var(--soft-border);
+  border-radius: 12px;
+  background: #0c1017;
+  color: #d9f99d;
 }
 
-  @media (max-width: 768px) {
-
-    .Contact {
-        padding: 0 10px;
-    }
-
- .pgpKey p {
-  text-align: center;
-  margin: 0;
+.pgpKey p {
   width: 100%;
-  /* εξασφαλίζει ότι επιτρέπεται το wrapping */
-  white-space: normal;
-  /* παλιότερη σύνταξη, αλλά ακόμα διαδεδομένη */
-  word-wrap: break-word;
-  /* νεότερη, προτεινόμενη σύνταξη */
-  overflow-wrap: break-word;
-  /* (προαιρετικά) σπάει ακόμα και μέσα στη λέξη */
+  margin: 0;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
   word-break: break-all;
-  /* (προαιρετικά) προσθέτει αυτόματα παύλες όπου προβλέπεται */
-  hyphens: auto;
 }
 
+@media (max-width: 760px) {
+  .Contact {
+    width: min(100% - 24px, 1100px);
+    padding: 28px 0 56px;
   }
+
+  .contactIntro {
+    padding: 30px 22px;
+    border-radius: 17px;
+  }
+
+  .contactMethods {
+    grid-template-columns: 1fr;
+  }
+
+  .contactCard {
+    grid-template-columns: 46px minmax(0, 1fr) 24px;
+    gap: 13px;
+    padding: 17px;
+  }
+
+  .contactIcon {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+  }
+
+  .pgpHeader {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pgpActions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .copyStatus {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryContact,
+  .copyKeyButton,
+  .contactCard,
+  .contactArrow {
+    transition: none;
+  }
+}

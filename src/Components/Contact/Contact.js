@@ -1,18 +1,79 @@
+import { useRef, useState } from 'react';
 import './contact.css';
 
 const Contact = () => {
+  const pgpKeyRef = useRef(null);
+  const [copyStatus, setCopyStatus] = useState('');
+
+  const copyPgpKey = async () => {
+    try {
+      await navigator.clipboard.writeText(pgpKeyRef.current?.innerText || '');
+      setCopyStatus('Public key copied');
+    } catch {
+      setCopyStatus('Could not copy the key');
+    }
+  };
 
   return (
     <div className='Contact'>
-        <h1>Contact me</h1>
+      <section className="contactIntro">
+        <p className="contactEyebrow">Get in touch</p>
+        <h1>Let&apos;s talk.</h1>
+        <p className="contactDescription">
+          Have a question, a project idea, or just want to say hello? Email is
+          the best way to reach me.
+        </p>
+        <a className="primaryContact" href="mailto:ktsami@auth.gr">
+          Send me an email <span aria-hidden="true">↗</span>
+        </a>
+      </section>
 
+      <section className="contactMethods" aria-label="Contact methods">
+        <a className="contactCard" href="mailto:ktsami@auth.gr">
+          <span className="contactIcon" aria-hidden="true">@</span>
+          <span className="contactCardText">
+            <span className="contactLabel">Email</span>
+            <strong>ktsami@auth.gr</strong>
+            <span>Best for direct messages and collaboration.</span>
+          </span>
+          <span className="contactArrow" aria-hidden="true">↗</span>
+        </a>
 
-        <h4>Best way to contact me is via email!</h4>
-        <h3>You can email me at: <strong>ktsami@auth.gr</strong></h3> 
+        <a
+          className="contactCard"
+          href="https://github.com/Klajdis32"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="contactIcon githubContactIcon" aria-hidden="true">GH</span>
+          <span className="contactCardText">
+            <span className="contactLabel">GitHub</span>
+            <strong>Klajdis32</strong>
+            <span>Explore my repositories and latest code.</span>
+          </span>
+          <span className="contactArrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
 
-        <h4>My PGP</h4>
-        <div className='pgpKey'>
-        <p>
+      <section className="pgpSection">
+        <div className="pgpHeader">
+          <div>
+            <p className="contactEyebrow">Encrypted communication</p>
+            <h2>PGP public key</h2>
+            <p>Use this key when you need to send me an encrypted message.</p>
+          </div>
+          <div className="pgpActions">
+            <button type="button" className="copyKeyButton" onClick={copyPgpKey}>
+              Copy public key
+            </button>
+            <span className="copyStatus" role="status">{copyStatus}</span>
+          </div>
+        </div>
+
+        <details className="pgpDisclosure">
+          <summary>View complete public key</summary>
+          <div className='pgpKey'>
+          <p ref={pgpKeyRef}>
             -----BEGIN PGP PUBLIC KEY BLOCK-----
             <br/><br/>
             mQINBGeTcekBEADgeUSDEcqoG1K3vDJZOhvxHLPZWplT3MLguckeQL8/zW7Vrbxh
@@ -65,8 +126,10 @@ const Contact = () => {
             =GPoa
             <br/><br/>
             -----END PGP PUBLIC KEY BLOCK-----
-        </p>
-        </div>
+          </p>
+          </div>
+        </details>
+      </section>
     </div>
   );
 }

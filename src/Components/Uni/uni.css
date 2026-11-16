@@ -1,86 +1,308 @@
 .Uni {
-    color: var(--text);
-    margin: 0 auto;
-    max-width: 1100px;
+  color: var(--text);
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 54px 0 80px;
+}
+
+.uniIntro {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(28px, 5vw, 52px);
+  margin-bottom: 30px;
+  border: 1px solid var(--soft-border);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--link) 17%, transparent) 0, transparent 34%),
+    var(--surface);
+  box-shadow: 0 12px 34px var(--shadow);
+}
+
+.uniEyebrow {
+  margin: 0 0 10px;
+  color: var(--link);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.uniIntro h1 {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(34px, 6vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.uniDescription {
+  max-width: 680px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.6;
+}
+
+.uniStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.uniStats span {
+  padding: 9px 14px;
+  border: 1px solid var(--soft-border);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.uniStats strong {
+  color: var(--text);
+}
+
+.uniLibrary {
+  display: grid;
+  gap: 14px;
 }
 
 .fakeloi {
-    padding: 5px 0px;
+  overflow: hidden;
+  border: 1px solid var(--soft-border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--shadow) 65%, transparent);
+  transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.fakeloi:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 24px var(--shadow);
+}
+
+.fakeloi.isOpen {
+  border-color: color-mix(in srgb, var(--link) 45%, var(--soft-border));
 }
 
 .fakelos {
-    display: flex;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 18px 20px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
-.fakelos p {
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 18px;
+.fakelos:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: -4px;
+  border-radius: 14px;
 }
 
-.fakelos img {
-    width: 30px;
-    margin-right: 10px;
+.folderIcon,
+.pdfIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--soft-border);
+  background: var(--surface-soft);
 }
 
-/* --- ΑΛΛΑΓΗ: κάνουμε transition στο ύψος + opacity --- */
+.folderIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+}
+
+.folderIcon img {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.folderDetails,
+.pdfDetails {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.folderTitle {
+  font-size: 18px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.folderCount {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.folderChevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--surface-soft);
+  font-size: 21px;
+  line-height: 1;
+  transform: rotate(0deg);
+  transition: transform 240ms ease, background-color 200ms ease;
+}
+
+.isOpen .folderChevron {
+  background: color-mix(in srgb, var(--link) 14%, var(--surface-soft));
+  transform: rotate(180deg);
+}
+
 .taPdfs {
-    display: block;
-    padding: 0; /* padding θα μπει μόνο όταν ανοίξει */
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(-4px);
-    transition:
-      max-height 500ms ease,
-      opacity 220ms ease,
-      transform 300ms ease,
-      padding 220ms ease;
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 340ms ease, opacity 180ms ease;
 }
 
 .taPdfs.open {
-    padding: 10px 0;
-    max-height: 1000px; /* δώσε μεγάλο όριο ώστε να χωράει όλα */
-    opacity: 1;
-    transform: translateY(0);
+  grid-template-rows: 1fr;
+  opacity: 1;
 }
 
-.taPdfs img {
-    margin-top: 0px;
-    width: 30px;
-    margin-right: 10px;
+.pdfGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  min-height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  transition: padding 340ms ease;
 }
 
-/* Μικρό animation και για κάθε pdf row */
+.taPdfs.open .pdfGrid {
+  padding: 4px 20px 20px;
+}
+
 .pdf {
-    padding: 10px 0px;
-    opacity: 0;
-    transform: translateY(4px);
-    transition: opacity 220ms ease, transform 220ms ease;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid var(--soft-border);
+  border-radius: 12px;
+  background: var(--surface-soft);
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 220ms ease, transform 220ms ease, border-color 180ms ease, background-color 180ms ease;
 }
 
 .taPdfs.open .pdf {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.pdf img {
-    width: 25px;
+.pdf:hover {
+  border-color: color-mix(in srgb, var(--link) 55%, var(--soft-border));
+  background: color-mix(in srgb, var(--link) 7%, var(--surface-soft));
 }
 
-.pdf a {
-    font-size: 17px;
+.pdf:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
 }
 
-:root[data-theme='dark'] .fakelos img,
-:root[data-theme='dark'] .pdf img {
-    filter: invert(1);
+.pdfIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--surface);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+.pdfIcon img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+}
+
+.pdfName {
+  overflow-wrap: anywhere;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.pdfAction {
+  margin-top: 6px;
+  color: var(--link);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+:root[data-theme='dark'] .folderIcon img,
+:root[data-theme='dark'] .pdfIcon img {
+  filter: invert(1);
+}
+
+@media (max-width: 700px) {
   .Uni {
-    padding: 0 10px;
+    width: min(100% - 24px, 1100px);
+    padding: 28px 0 56px;
+  }
+
+  .uniIntro {
+    padding: 26px 22px;
+    border-radius: 17px;
+  }
+
+  .uniIntro h1 {
+    font-size: clamp(32px, 11vw, 44px);
+  }
+
+  .fakelos {
+    grid-template-columns: 42px minmax(0, 1fr) 30px;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .folderIcon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .folderTitle {
+    font-size: 16px;
+  }
+
+  .pdfGrid {
+    grid-template-columns: 1fr;
+    padding-inline: 15px;
+  }
+
+  .taPdfs.open .pdfGrid {
+    padding: 2px 15px 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fakeloi,
+  .folderChevron,
+  .taPdfs,
+  .pdf,
+  .pdfGrid {
+    transition: none;
   }
 }
