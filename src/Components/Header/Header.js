@@ -14,9 +14,7 @@ const Header = () => {
       return savedTheme;
     }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
+    return 'light';
   });
 
   const toggleMenu = () => {
@@ -116,7 +114,9 @@ const Header = () => {
               aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
               title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
             >
-              <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span>
+              <span className="themeIcon" aria-hidden="true">
+                {theme === 'dark' ? '☀' : '☾'}
+              </span>
             </button>
             <a
               href="https://github.com/Klajdis32"

@@ -63,6 +63,11 @@ const Post = () => {
   const postId = keyParam ? parseInt(keyParam, 10) : null;
   const post = postsData.find(p => p.id === postId);
   const [mdText, setMdText] = useState('');
+  const [shareStatus, setShareStatus] = useState('');
+
+  const shareUrl = post?.slug
+    ? `https://klainti.gr/projects/${post.slug}/`
+    : window.location.href;
 
   useEffect(() => {
     if (!post?.md) return;
@@ -72,6 +77,45 @@ const Post = () => {
       .then(text => setMdText(text))
       .catch(() => setMdText('## Σφάλμα\nΔεν μπόρεσε να φορτωθεί το περιεχόμενο.'));
   }, [post]);
+
+  useEffect(() => {
+    if (!post) return;
+
+    document.title = `${post.Titlos} | Klajdi Cami`;
+
+    const metadata = {
+      'meta[property="og:title"]': post.Titlos,
+      'meta[property="og:description"]': post.Keimeno,
+      'meta[property="og:url"]': shareUrl,
+      'meta[name="twitter:title"]': post.Titlos,
+      'meta[name="twitter:description"]': post.Keimeno,
+    };
+
+    Object.entries(metadata).forEach(([selector, content]) => {
+      const element = document.querySelector(selector);
+      if (element) element.setAttribute('content', content);
+    });
+  }, [post, shareUrl]);
+
+  const shareProject = async () => {
+    const shareData = {
+      title: post.Titlos,
+      text: post.Keimeno,
+      url: shareUrl,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        setShareStatus('Shared');
+      } else {
+        await navigator.clipboard.writeText(shareUrl);
+        setShareStatus('Link copied');
+      }
+    } catch (error) {
+      if (error?.name !== 'AbortError') setShareStatus('Could not share');
+    }
+  };
 
   if (!post) {
     return (
@@ -103,6 +147,13 @@ const Post = () => {
         <h2>Summary</h2>
         <p className="postText">{post.Keimeno}</p>
 
+        <div className="shareProject">
+          <button type="button" className="shareButton" onClick={shareProject}>
+            Share project
+          </button>
+          <span className="shareStatus" role="status">{shareStatus}</span>
+        </div>
+
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeRaw]}
@@ -111,9 +162,10 @@ const Post = () => {
             return url;
           }}
           components={{
-            img: ({ node, className, ...props }) => (
+            img: ({ node, className, alt = '', ...props }) => (
               <img
                 {...props}
+                alt={alt}
                 className={`mdImage${className ? ` ${className}` : ''}`}
               />
             ),

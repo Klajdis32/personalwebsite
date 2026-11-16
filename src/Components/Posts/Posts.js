@@ -16,6 +16,7 @@ import NasaPlanetXSpherexmd from "../Md/NasaPlanetXSpherex.md";
 const posts = [
     {
         id: 7,
+        slug: "nasa-planet-x-spherex-sky-time-lapse-viewer",
         imageEksw: NasaPlanetXSpherex,
         Titlos: "NASA Planet X — SPHEREx Sky Time-Lapse Viewer",
         Sigrafeas: "Klajdi",
@@ -32,6 +33,7 @@ const posts = [
     },
     {
         id: 6,
+        slug: "computational-materials-science-projects",
         imageEksw: Lammps, 
         Titlos: "Computational Materials Science Projects", 
         Sigrafeas: "Klajdi", 
@@ -48,6 +50,7 @@ const posts = [
     },
     {
         id: 5,
+        slug: "lm35-temperature-meter-arduino-uno",
         imageEksw: TempMeter, 
         Titlos: "LM35 Temperature Meter – Arduino Uno", 
         Sigrafeas: "Klajdi", 
@@ -64,6 +67,7 @@ const posts = [
     },
     {
         id: 4,
+        slug: "react-express-mysql-authentication-system",
         imageEksw: MysqlExReact, 
         Titlos: "React-Express.js-MySQL Authentication System", 
         Sigrafeas: "Klajdi", 
@@ -80,6 +84,7 @@ const posts = [
     },
     {
         id: 3,
+        slug: "lunar-lander-ai-agent",
         imageEksw: LunarLander, 
         Titlos: "Lunar Lander Ai Agent", 
         Sigrafeas: "Klajdi", 
@@ -96,6 +101,7 @@ const posts = [
     },
     {
         id: 2,
+        slug: "llama-llm-chat-interface",
         imageEksw: llamachat, 
         Titlos: "Chat Interface for Llama LLM", 
         Sigrafeas: "Klajdi", 
@@ -112,6 +118,7 @@ const posts = [
     },
     {
         id: 1,
+        slug: "rocket-game-with-python",
         imageEksw: rocket, 
         Titlos: "Rocket Game With Python", 
         Sigrafeas: "Klajdi", 

@@ -74,6 +74,38 @@
     text-decoration: underline blue;
 }
 
+.shareProject {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0 30px;
+}
+
+.shareButton {
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--page-bg);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.shareButton:hover {
+  opacity: 0.82;
+}
+
+.shareButton:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+}
+
+.shareStatus {
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .mdVideo {
   max-width: 60%;
   height: auto;
