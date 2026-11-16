@@ -41,7 +41,7 @@ The full application can query live data and run the processing pipeline locally
 
 ## Meet team AstroPic
 
-<img src="./Assets/astropic.png" alt="The four members of team AstroPic" class="teamPhoto" />
+![Astropic team](./Mdimg/astropic.png)
 
 This project was created by **AstroPic**, a team in which every member contributed their own ideas, knowledge, and effort. From the scientific research and data-processing pipeline to the web experience, testing, and presentation, everyone played an important part and added their own piece to the final result.
 
@@ -49,7 +49,7 @@ From left to right in the photo:
 
 1. [zisisdiamantop](https://github.com/zisisdiamantop)
 2. [Asterios-d](https://github.com/Asterios-d)
-3. [Klajdi](https://github.com/Klajdis32)
+3. [Klajdi (me)](https://github.com/Klajdis32)
 4. [FotisVard](https://github.com/FotisVard)
 
 ## Try the project
