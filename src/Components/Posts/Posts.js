@@ -4,14 +4,32 @@ import MysqlExReact from "../../Assets/MysqlExReact.jpg";
 import llamachat from "../../Assets/llamachat.png";
 import Lammps from "../../Assets/Lammps.png";
 import rocket from "../../Assets/rocket.png";
+import NasaPlanetXSpherex from "../../Assets/NasaPlanetXSpherex.png";
 import LM35 from "../Md/LM35.md";
 import MysqlExReactmd from "../Md/MysqlExReact.md";
 import LunarLandermd from "../Md/LunarLander.md";
 import llamachatmd from "../Md/llamachat.md";
 import CompMat from "../Md/CompMat.md";
 import RocketGame from "../Md/RocketGame.md";
+import NasaPlanetXSpherexmd from "../Md/NasaPlanetXSpherex.md";
 
 const posts = [
+    {
+        id: 7,
+        imageEksw: NasaPlanetXSpherex,
+        Titlos: "NASA Planet X — SPHEREx Sky Time-Lapse Viewer",
+        Sigrafeas: "Klajdi",
+        Linksigrafea: "",
+        Date: "15 nov 2026",
+        Katigoria: "Astrophysics & Scientific Computing",
+        Keimeno: "An accessible web application built for the NASA Planet X and SPHEREx Challenge. It explores current SPHEREx infrared observations and compares the same region of the sky across two dates. Users can select coordinates on an interactive all-sky map, search released observations through NASA/IPAC IRSA, align two FITS epochs, inspect a brightness-change heatmap, and review scientifically quality-controlled candidates for follow-up. The project combines a Flask interface with a Python astronomy pipeline for FITS validation, WCS reprojection, wavelength and PSF matching, background correction, uncertainty calibration, and conservative candidate detection. Results can also be exported as PDF, JSON, and animated GIF files.",
+        Link: "https://github.com/Klajdis32/NASA-Planet-X-SPHEREx-Challenge",
+        htmlPdf: "",
+        pdf: "",
+        file: "",
+        video: "",
+        md: NasaPlanetXSpherexmd
+    },
     {
         id: 6,
         imageEksw: Lammps, 

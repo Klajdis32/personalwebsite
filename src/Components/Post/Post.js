@@ -12,6 +12,12 @@ const mdImages = require.context(
   /\.(png|jpe?g|svg)$/
 );
 
+const assetImages = require.context(
+  '../../Assets',
+  false,
+  /\.(png|jpe?g|svg)$/
+);
+
 const mdVideos = require.context(
   '../Md/Mdmp4',
   false,
@@ -25,6 +31,15 @@ const mapMediaSrc = (url) => {
     const fileName = url.replace('./Mdimg/', '');
     try {
       return mdImages(`./${fileName}`);
+    } catch (e) {
+      return url;
+    }
+  }
+
+  if (url.startsWith('./Assets/')) {
+    const fileName = url.replace('./Assets/', '');
+    try {
+      return assetImages(`./${fileName}`);
     } catch (e) {
       return url;
     }
@@ -96,8 +111,11 @@ const Post = () => {
             return url;
           }}
           components={{
-            img: ({ node, ...props }) => (
-              <img {...props} className="mdImage" />
+            img: ({ node, className, ...props }) => (
+              <img
+                {...props}
+                className={`mdImage${className ? ` ${className}` : ''}`}
+              />
             ),
 
             video: ({ node, src, ...props }) => (

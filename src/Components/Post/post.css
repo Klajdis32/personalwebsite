@@ -26,6 +26,10 @@
     margin-bottom: 50px;
 }
 
+.mdImage.teamPhoto {
+  width: 72%;
+}
+
 /* Πίνακες σε markdown: responsive με οριζόντιο scroll αν χρειαστεί */
 .markdown-body table {
   display: block;
@@ -115,4 +119,8 @@
   .mdImage { border: none;
         margin-bottom: 30px;
  width: 100%; }
+
+  .mdImage.teamPhoto {
+    width: 100%;
+  }
 }
