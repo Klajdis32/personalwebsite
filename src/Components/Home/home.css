@@ -14,7 +14,7 @@ body {
 }
 
 .home {
-    color: black;
+    color: var(--text);
     margin: 0 auto;
     max-width: 1100px;
 }
@@ -114,8 +114,21 @@ body {
 
 .post {
   display: flex;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    border-radius: 10px;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background-color: var(--surface);
+  border: 1px solid var(--soft-border);
+  box-shadow: 0 4px 14px var(--shadow);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover,
+.post1:hover,
+.postright:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px var(--shadow);
 }
 
 .blog h2 {
@@ -133,9 +146,9 @@ body {
 /* Top section: δύο στήλες, αριστερή 2fr, δεξιά 1fr */
 .topColumns {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 30px;
-  align-items: stretch;      /* τεντώνει την αριστερή/δεξιά στο ίδιο ύψος */
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr);
+  gap: 24px;
+  align-items: stretch;
 }
 
 /* Αριστερή στήλη: το post1 παίρνει όλο το ύψος */
@@ -145,54 +158,63 @@ body {
 .leftColumn .post1 {
   flex: 1;
   display: flex;
-    border: 1px solid #ddd;
+  min-width: 0;
+  border: 1px solid var(--soft-border);
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: var(--surface);
+  box-shadow: 0 4px 14px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
 }
 .leftColumn .post1 img {
   width: 100%;
+  height: 0;
+  min-height: 360px;
+  flex: 1 1 360px;
+  object-fit: contain;
+  background-color: var(--surface-soft);
   display: block;
+}
+
+.leftColumn .post1 .postContent {
+  flex: 0 0 auto;
 }
 
 /* Δεξιά στήλη: column flex και τα postright μοιράζονται ύψος */
 .rightColumn {
   display: flex;
   flex-direction: column;
-  height: 100%;             /* παίρνει ίδιο ύψος με την αριστερή */
-  gap: 25px;
+  height: auto;
+  gap: 24px;
 }
 
 .rightColumn .postright {
-  flex: 1;                   /* κάθε postright μοιράζεται το ύψος στη μέση */
+  flex: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid var(--soft-border);
+  min-width: 0;
+  border-radius: 12px;
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.rightColumn .postright img {
-  width: 100%;
-  height: auto;
-  display: block;
+  background-color: var(--surface);
+  box-shadow: 0 4px 14px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .rightColumn .postright img {
   width: 100%;
-  height: 200px;
+  height: 185px;
   object-fit: cover;
   display: block;
 }
 
 .postContent h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
 }
 
 .postContent {
@@ -202,8 +224,18 @@ body {
   flex: 1;
 }
 
+.postContent p {
+  width: 100%;
+  margin: 0 0 20px;
+  line-height: 1.55;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
 .date {
-  color: #888;
+  color: var(--muted);
   font-size: 12px;
 }
 
@@ -216,7 +248,7 @@ h3 {
 .readMore {
   display: inline-block;
   margin-top: auto;
-  color: #007BFF;
+  color: var(--link);
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
@@ -228,17 +260,27 @@ h3 {
 
 .bottomFullWidth {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .bottomFullWidth .post {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .bottomFullWidth img{
-  width: 50%;
-  padding: 10px;
-  border-radius: 10px;
+  width: 100%;
+  height: 240px;
+  padding: 0;
+  border-radius: 0;
+  object-fit: cover;
+  background-color: var(--surface-soft);
 } 
+
+.postsContainer > h2 {
+  margin-top: 48px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -279,9 +321,21 @@ h3 {
 
   .rightColumn .postright img {
     width: 100%;
-    height: auto;
+    height: 220px;
     object-fit: cover;
     display: block;
+  }
+
+  .leftColumn .post1 img {
+    height: auto;
+    min-height: 0;
+    max-height: 440px;
+    flex: none;
+  }
+
+  .bottomFullWidth {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
   }
 
   .bottomFullWidth .post {
@@ -298,6 +352,7 @@ h3 {
   .bottomFullWidth img {
     width: 100%;
     max-width: 100%;
+    height: 230px;
     padding: 0;
     border-radius: 10px 10px 0 0;
   }

@@ -1,6 +1,7 @@
 .FooterOut {
     text-align: center;
     padding: 20px 20px;
+    color: var(--text);
 }
 
 .mesaFooter {

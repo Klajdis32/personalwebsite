@@ -4,7 +4,7 @@ import MysqlExReact from "../../Assets/MysqlExReact.jpg";
 import llamachat from "../../Assets/llamachat.png";
 import Lammps from "../../Assets/Lammps.png";
 import rocket from "../../Assets/rocket.png";
-import NasaPlanetXSpherex from "../../Assets/NasaPlanetXSpherex.png";
+import NasaPlanetXSpherex from "../Md/Mdmp4/spherex-timelapse.gif";
 import LM35 from "../Md/LM35.md";
 import MysqlExReactmd from "../Md/MysqlExReact.md";
 import LunarLandermd from "../Md/LunarLander.md";

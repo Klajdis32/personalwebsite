@@ -1,50 +1,15 @@
-## **Objective**
-The goal is to train the agent to:
-1. **Control the lunar lander** efficiently.
-2. **Land safely** on a flat surface with minimal damage.
-3. Optimize the reward function during training.
+## Lunar Lander AI Agent
 
-## **Files Included**
-- **`LunarLander.ipynb`**: This notebook contains the full implementation, explanation, and results of the project. It includes:
-  - Initialization of the environment and agent.
-  - Training the agent with specified hyperparameters.
-  - Visualizing the training performance.
-  - Testing the agent for multiple landing attempts.
-- **`lunarlander_best3.mp4`**: A video showcasing the **top 3 landings** performed by the trained agent.
+This project trains an AI agent to control a lunar module and land it safely without crashing.
 
-## **Technologies Used**
-- **Python**: Programming language used for implementation.
-- **Ray RLlib**: Library for Reinforcement Learning.
-- **Gymnasium**: Environment for Lunar Lander simulation.
-- **MoviePy** and **ImageIO**: Used for video generation and processing.
-- **PyTorch**: Framework for neural networks in PPO training.
+The agent learns through **Reinforcement Learning** using the **PPO algorithm**. During training, it receives rewards for stable movement, accurate positioning, and smooth landings.
 
-## **How It Works**
-1. The agent interacts with the **LunarLander-v3** environment.
-2. It is trained over **100 iterations** to maximize cumulative rewards, with each reward corresponding to smooth landings and minimal damage.
-3. The **best 3 landings** are recorded and combined into a single video file.
+### Technologies
 
-## **Results**
-The video `lunarlander_best3.mp4` displays the **3 best landings** achieved by the trained agent, demonstrating its ability to land the lunar module safely.  
+- Python and PyTorch
+- Ray RLlib
+- Gymnasium LunarLander environment
 
-[Click here to see the video!](./Mdmp4/lunarlander_best3.mp4)
+The video below shows the three best landings produced by the trained model.
 
-## **How to Run**  
-You can run the project on **Google Colab** by following these steps:
-
-1. **Create a Google Account** (if you don’t already have one) and visit [Google Colab](https://colab.research.google.com/).
-
-2. **Upload the Notebook**:
-   - Download the file **`LunarLander.ipynb`** from this repository.
-   - Open Google Colab, click on **“File” → “Upload notebook”**, and select the downloaded file.
-
-3. **Run the Code**:
-   - Execute the cells in the notebook one by one to train the agent and test its performance.
-
-4. **Results**:
-   - The notebook will generate the top 3 landings video and save it as:
-     ```
-     ./output/lunarlander_best3.mp4
-     ```
-
-You can find more information and the code for this post at the link below, which will take you to the post’s repository.
+[Watch the best landings](./Mdmp4/lunarlander_best3.mp4)

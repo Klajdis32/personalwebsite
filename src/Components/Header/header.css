@@ -1,12 +1,69 @@
+:root {
+    color-scheme: light;
+    --page-bg: #ffffff;
+    --surface: #ffffff;
+    --surface-soft: #f6f8fa;
+    --text: #111111;
+    --muted: #6b7280;
+    --border: #111111;
+    --soft-border: #dddddd;
+    --link: #006fe6;
+    --shadow: rgba(0, 0, 0, 0.14);
+    --inline-code-bg: #eeeeee;
+    --inline-code-text: #c7254e;
+}
+
+:root[data-theme='dark'] {
+    color-scheme: dark;
+    --page-bg: #0f1115;
+    --surface: #181b21;
+    --surface-soft: #20242c;
+    --text: #f4f6f8;
+    --muted: #aab0bb;
+    --border: #e8ebef;
+    --soft-border: #343a45;
+    --link: #7bb8ff;
+    --shadow: rgba(0, 0, 0, 0.42);
+    --inline-code-bg: #282d36;
+    --inline-code-text: #ff9db5;
+}
+
+body {
+    background-color: var(--page-bg);
+    color: var(--text);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+    color: var(--link);
+}
+
 .headerOut {
-    border-bottom: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    width: 100%;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+    transform: translateY(0);
+    transition: transform 0.25s ease;
+    will-change: transform;
+  }
+
+  .headerOut.headerHidden {
+    transform: translateY(-100%);
+  }
+
+  .headerOffset {
+    height: 61px;
   }
   
   .headerOutmesa {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--surface);
     font-size: 20px;
     height: 60px;
     top: 0;
@@ -27,9 +84,8 @@
   }
   
   .tadeksia {
-    margin-top: -5px;
     display: flex;
-    align-items: left;
+    align-items: center;
     text-decoration: none;
     gap: 10px;
     transition: all 0.3s ease;
@@ -37,15 +93,17 @@
   
   .tolinkdeks {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
     cursor: pointer;
     margin-left: 15px;
-    color: black;
+    color: var(--text);
     text-decoration: none;
   }
   
   .tolinkdeks:hover {
-    color: rgb(58, 58, 58);
+    color: var(--muted);
   
   }
 
@@ -55,6 +113,39 @@
 
   .headIcons {
     width: 20px;
+    display: block;
+  }
+
+  .themeToggle {
+    width: 34px;
+    height: 34px;
+    margin-left: 15px;
+    padding: 0;
+    border: 1px solid var(--soft-border);
+    border-radius: 50%;
+    background: var(--surface-soft);
+    color: var(--text);
+    font: inherit;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .themeToggle:hover {
+    transform: translateY(-1px);
+  }
+
+  .themeToggle:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
+  }
+
+  :root[data-theme='dark'] .logoImg,
+  :root[data-theme='dark'] .headIcons {
+    filter: invert(1);
   }
   
  /* Κρύβουμε τα spans για κινητά */
@@ -70,14 +161,14 @@
   }
 
   .header {
-    background-color: white;
+    background-color: var(--surface);
     padding: 0 0px;
     height: 50px;
   }
   
   .header.open {
-    background-color: #333;
-    color: white;
+    background-color: var(--surface);
+    color: var(--text);
   }
 
   .toaristera {
@@ -91,7 +182,7 @@
     width: 100%;
     height: calc(100vh - 70px); /* όλο το ύψος κάτω από το header */
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--surface);
     align-items: flex-start;
     z-index: 1000; 
 
@@ -103,7 +194,7 @@
   }
 
   .tolinkdeks {
-    color: rgb(0, 0, 0);
+    color: var(--text);
     text-decoration: none;
   }
   
@@ -112,7 +203,7 @@
   }
 
   .tolinkdeks:hover {
-    color: rgb(0, 0, 0);
+    color: var(--text);
   }
 
   /* Όταν ανοίγει το menu */
@@ -127,6 +218,11 @@
     padding: 0px 10px;
   }
 
+  .themeToggle {
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+
   .burger {
     margin-top: 0px;
     display: block;
@@ -136,23 +232,23 @@
   .burger .line {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: var(--text);
     margin: 5px 0;
     transition: all 0.3s ease;
   }
 
   .burger .line.open:nth-child(1) {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--text);
     transform: rotate(45deg) translate(7px, 5px);
   }
 
   .burger .line.open:nth-child(2) {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--text);
     opacity: 0;
   }
 
   .burger .line.open:nth-child(3) {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--text);
     transform: rotate(-45deg) translate(6px, -5px);
   }
 
@@ -166,5 +262,11 @@
 @media (min-width: 769px) {
   .burger {
     display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headerOut {
+    transition: none;
   }
 }

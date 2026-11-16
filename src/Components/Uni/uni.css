@@ -1,5 +1,5 @@
 .Uni {
-    color: black;
+    color: var(--text);
     margin: 0 auto;
     max-width: 1100px;
 }
@@ -71,6 +71,11 @@
 
 .pdf a {
     font-size: 17px;
+}
+
+:root[data-theme='dark'] .fakelos img,
+:root[data-theme='dark'] .pdf img {
+    filter: invert(1);
 }
 
 /* Responsive */

@@ -1,5 +1,5 @@
 .about {
-        color: black;
+        color: var(--text);
     margin: 0 auto;
     max-width: 800px;
 }
@@ -11,7 +11,7 @@
 .aboutMeimgdiv img {
     width: 40%;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--border);
 }
 
 .aboutMeText {

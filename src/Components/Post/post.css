@@ -1,6 +1,6 @@
 /* Container: μην αφήνεις τίποτα να βγει οριζόντια */
 .Post {
-  color: black;
+  color: var(--text);
   margin: 0 auto;
   max-width: 1100px;
   overflow-x: hidden;           /* safety net */
@@ -20,7 +20,7 @@
   width: 35%;                  /* <-- από 60% σε 100% */
   max-width: 100%;
   height: auto;
-  border: 2px solid black;
+  border: 2px solid var(--border);
   border-radius: 10px;
   margin: 1em auto;
     margin-bottom: 50px;
@@ -40,7 +40,7 @@
 }
 .markdown-body th, .markdown-body td {
   padding: .5rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--soft-border);
 }
 
 /* Code blocks: scroll αντί να σπάνε layout */
@@ -48,7 +48,7 @@
   max-width: 100%;
   overflow: auto;               /* οριζόντιο scroll αν χρειαστεί */
   padding: 1rem;
-  background: #f6f8fa;
+  background: var(--surface-soft);
   border-radius: 6px;
 }
 .markdown-body code {
@@ -65,12 +65,12 @@
 
 /* Υπάρχοντα σου (κρατάς ό,τι έχεις) */
 .postImgdiv { text-align: center; }
-.postImg { width: 50%; border-radius: 10px; border: 2px solid black; }
+.postImg { width: 50%; border-radius: 10px; border: 2px solid var(--border); }
 .postText { font-size: 18px; }
 .info { text-align: right; }
 
 .postLink {
-    color: black;
+    color: var(--text);
     text-decoration: underline blue;
 }
 
@@ -78,7 +78,7 @@
   max-width: 60%;
   height: auto;
   display: block;
-  border: 2px solid black;
+  border: 2px solid var(--border);
   border-radius: 10px;
   margin: 1em auto;
 }
@@ -100,8 +100,8 @@
 }
 
 .mdInlineCode {
-  background: #eeeeee;
-  color: #c7254e;
+  background: var(--inline-code-bg);
+  color: var(--inline-code-text);
   padding: 2px 6px;
   border-radius: 5px;
   font-family: Consolas, Monaco, 'Courier New', monospace;

@@ -36,8 +36,8 @@ const Home = () => {
                   <div className='postContent'>
                     <small className='date'>{firstPost.Date}</small>
                     <h3>{firstPost.Titlos}</h3>
-                    <p>  {firstPost.Keimeno.length > 500
-                        ? firstPost.Keimeno.slice(0, 500) + '...'
+                    <p>{firstPost.Keimeno.length > 320
+                        ? firstPost.Keimeno.slice(0, 320) + '...'
                         : firstPost.Keimeno}</p>
                   <Link
                     to={`/post?key=${firstPost.id}`}
@@ -59,8 +59,8 @@ const Home = () => {
                     <small className='date'>{post.Date}</small>
                     <h3>{post.Titlos}</h3>
                     <p>
-                      {post.Keimeno.length > 100
-                        ? post.Keimeno.slice(0, 100) + '...'
+                      {post.Keimeno.length > 150
+                        ? post.Keimeno.slice(0, 150) + '...'
                         : post.Keimeno}
                     </p>
                     <Link
@@ -77,15 +77,15 @@ const Home = () => {
 
           <h2>More Posts</h2>
           <div className='bottomFullWidth'>
-            {bottomPosts.map((post, idx) => (
-              <div className='post' key={idx}>
+            {bottomPosts.map(post => (
+              <div className='post' key={post.id}>
                 <img src={post.imageEksw} alt={post.Titlos} className='postsImg'/>
                 <div className='postContent'>
                   <small className='date'>{post.Date}</small>
                   <h3>{post.Titlos}</h3>
                   <p>
-                    {post.Keimeno.length > 400
-                      ? post.Keimeno.slice(0, 400) + '...'
+                    {post.Keimeno.length > 220
+                      ? post.Keimeno.slice(0, 220) + '...'
                       : post.Keimeno}
                   </p>
                         <Link
