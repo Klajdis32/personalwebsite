@@ -48,7 +48,6 @@ function ContactH() {
 }
 
 function PostH() {
-  useDocumentTitle("Post");
   useScrollToTop();
   return <Post />;
 }

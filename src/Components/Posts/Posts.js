@@ -19,7 +19,7 @@ const posts = [
         slug: "nasa-planet-x-spherex-sky-time-lapse-viewer",
         imageEksw: NasaPlanetXSpherex,
         Titlos: "NASA Planet X — SPHEREx Sky Time-Lapse Viewer",
-        Sigrafeas: "Klajdi",
+        Sigrafeas: "Klajdi Cami, Asterios Dioudis, Fotis Vardikos and Zisis Diamantopoulos",
         Linksigrafea: "",
         Date: "15 nov 2026",
         Katigoria: "Astrophysics & Scientific Computing",

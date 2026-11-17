@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
@@ -58,6 +58,7 @@ const mapMediaSrc = (url) => {
 };
 
 const Post = () => {
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const keyParam = searchParams.get('key');
   const postId = keyParam ? parseInt(keyParam, 10) : null;
@@ -69,6 +70,14 @@ const Post = () => {
     ? `https://klainti.gr/projects/${post.slug}/`
     : window.location.href;
 
+  const goBack = () => {
+    if (window.history.state?.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate('/');
+    }
+  };
+
   useEffect(() => {
     if (!post?.md) return;
 
@@ -79,7 +88,10 @@ const Post = () => {
   }, [post]);
 
   useEffect(() => {
-    if (!post) return;
+    if (!post) {
+      document.title = 'Project not found | Klajdi Cami';
+      return;
+    }
 
     document.title = `${post.Titlos} | Klajdi Cami`;
 
@@ -119,21 +131,45 @@ const Post = () => {
 
   if (!post) {
     return (
-      <div className="Post">
-        <p>Το άρθρο δεν βρέθηκε.</p>
-      </div>
+      <main className="Post postErrorPage">
+        <button type="button" className="postBackButton" onClick={goBack}>
+          <span aria-hidden="true">←</span> Back
+        </button>
+
+        <section className="postErrorCard">
+          <p className="postEyebrow">404 · Project not found</p>
+          <h1>This project isn&apos;t here.</h1>
+          <p>
+            The link may be incorrect, or the project may have been moved.
+            You can return to the portfolio and explore the available work.
+          </p>
+          <Link to="/" className="errorHomeLink">
+            Explore all projects <span aria-hidden="true">→</span>
+          </Link>
+        </section>
+      </main>
     );
   }
 
   return (
-    <div className="Post">
-      <div className="title">
-        <h1>{post.Titlos}</h1>
+    <main className="Post">
+      <nav className="postNavigation" aria-label="Project navigation">
+        <button type="button" className="postBackButton" onClick={goBack}>
+          <span aria-hidden="true">←</span> Back
+        </button>
+        <Link to="/" className="allProjectsLink">All projects</Link>
+      </nav>
 
-        <div className="info">
-          <p className="postDate">{post.Date}, {post.Sigrafeas}</p>
+      <header className="postHero">
+        <div className="postHeroText">
+          <p className="postEyebrow">{post.Katigoria || 'Selected project'}</p>
+          <h1>{post.Titlos}</h1>
+          <div className="postMeta">
+            <span>{post.Date}</span>
+            <span aria-hidden="true">·</span>
+            <span>By {post.Sigrafeas}</span>
+          </div>
         </div>
-
         <div className="postImgdiv">
           <img
             src={post.imageEksw}
@@ -141,19 +177,18 @@ const Post = () => {
             className="postImg"
           />
         </div>
+      </header>
 
-        <br /><br />
-
-        <h2>Summary</h2>
+      <section className="postSummary">
+        <div className="summaryHeading">
+          <p className="postEyebrow">Overview</p>
+          <h2>About this project</h2>
+        </div>
         <p className="postText">{post.Keimeno}</p>
 
-        <div className="shareProject">
-          <button type="button" className="shareButton" onClick={shareProject}>
-            Share project
-          </button>
-          <span className="shareStatus" role="status">{shareStatus}</span>
-        </div>
+      </section>
 
+      <article className="markdown-body">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeRaw]}
@@ -230,20 +265,34 @@ const Post = () => {
         </ReactMarkdown>
 
         {post.Link && (
-          <>
-            <h3>Links</h3>
+          <section className="projectLinks">
+            <p className="postEyebrow">Project link</p>
+            <h2>Explore the source</h2>
             <a
               href={post.Link}
               target="_blank"
               rel="noopener noreferrer"
               className="postLink"
             >
-              {post.Link}
+              Open project repository <span aria-hidden="true">↗</span>
             </a>
-          </>
+          </section>
         )}
-      </div>
-    </div>
+
+        <section className="postShareFooter">
+          <div>
+            <p className="postEyebrow">Share this project</p>
+            <h2>Know someone who might find it interesting?</h2>
+          </div>
+          <div className="shareProject">
+            <button type="button" className="shareButton" onClick={shareProject}>
+              Share project <span aria-hidden="true">↗</span>
+            </button>
+            <span className="shareStatus" role="status">{shareStatus}</span>
+          </div>
+        </section>
+      </article>
+    </main>
   );
 };
 

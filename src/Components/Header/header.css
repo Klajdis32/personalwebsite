@@ -190,10 +190,11 @@ a {
 
   .tadeksia {
     position: fixed;
-    top: 70px; /* κάτω από το header */
+    top: 61px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 70px); /* όλο το ύψος κάτω από το header */
+    height: calc(100vh - 61px);
+    height: calc(100dvh - 61px);
     flex-direction: column;
     background-color: var(--surface);
     align-items: flex-start;

@@ -4,99 +4,168 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className="about">
-      <section className="aboutHero">
-        <div className="aboutHeroContent">
-          <p className="aboutEyebrow">About me</p>
-          <h1>Physics, code, and everything in between.</h1>
-          <p className="aboutLead">
-            I&apos;m Klajdi, an MSc student in Computational Physics at the
-            Aristotle University of Thessaloniki. I enjoy turning scientific
-            questions into models, simulations, and useful software.
-          </p>
-          <div className="aboutMeta" aria-label="Current focus">
-            <span>MSc Computational Physics</span>
-            <span>AUTh</span>
-            <span>Thessaloniki</span>
+    <main className="about">
+      <section className="profileCard">
+        <div className="profileCover" aria-hidden="true">
+          <span className="coverOrbit coverOrbitOne" />
+          <span className="coverOrbit coverOrbitTwo" />
+        </div>
+
+        <div className="profileContent">
+          <div className="profilePhotoWrap">
+            <img src={meImg} className="profilePhoto" alt="Klajdi Cami" />
           </div>
-        </div>
 
-        <div className="aboutMeimgdiv">
-          <div className="portraitFrame">
-            <img src={meImg} className="meImg" alt="Klajdi Cami" />
-          </div>
-          <p className="portraitCaption">Curious by nature. Building through science and code.</p>
-        </div>
-      </section>
-
-      <section className="aboutStory" aria-label="My background">
-        <article className="storyCard">
-          <span className="storyNumber" aria-hidden="true">01</span>
-          <h2>Scientific curiosity</h2>
-          <p>
-            Physics taught me to look beyond the surface of a problem: to ask
-            better questions, work carefully with evidence, and understand the
-            principles behind complex systems. My postgraduate studies now let
-            me explore those ideas through numerical methods and computation.
-          </p>
-        </article>
-
-        <article className="storyCard">
-          <span className="storyNumber" aria-hidden="true">02</span>
-          <h2>Building with code</h2>
-          <p>
-            Programming is how I turn ideas into working tools. I&apos;m especially
-            interested in scientific computing, simulations, data analysis, and
-            web applications that make technical information easier to explore
-            and understand.
-          </p>
-        </article>
-      </section>
-
-      <section className="skillsSection">
-        <div className="skillsIntro">
-          <p className="aboutEyebrow">Skills &amp; interests</p>
-          <h2>A toolkit shaped by science and technology.</h2>
-        </div>
-
-        <div className="skillGroups">
-          <div className="skillGroup">
-            <h3>Science</h3>
-            <div className="skillTags">
-              <span>Physics</span>
-              <span>Computational Physics</span>
-              <span>Mathematics</span>
-              <span>Electronics</span>
-              <span>Scientific Computing</span>
+          <div className="profileIdentity">
+            <div className="profileHeading">
+              <div>
+                <h1>Klajdi Cami</h1>
+                <p className="profileHeadline">
+                  MSc Computational Physics student · Scientific computing &amp; software development
+                </p>
+                <p className="profileLocation">Thessaloniki, Greece · Aristotle University of Thessaloniki</p>
+              </div>
+              <span className="openBadge">Open to collaboration</span>
             </div>
-          </div>
 
-          <div className="skillGroup">
-            <h3>Programming</h3>
-            <div className="skillTags">
-              <span>Python</span>
-              <span>C</span>
-              <span>JavaScript</span>
-              <span>React</span>
-              <span>Express.js</span>
-              <span>MySQL</span>
-              <span>Kotlin</span>
-              <span>Swift</span>
+            <div className="profileActions">
+              <Link to="/contact" className="profilePrimaryAction">
+                Contact me
+              </Link>
+              <a
+                href="https://github.com/Klajdis32"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="profileSecondaryAction"
+              >
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="aboutCta">
-        <div>
-          <p className="aboutEyebrow">Let&apos;s connect</p>
-          <h2>Have an interesting idea or project?</h2>
+      <div className="profileLayout">
+        <div className="profileMainColumn">
+          <section className="profileSection aboutSection">
+            <h2>About</h2>
+            <p>
+              I&apos;m a postgraduate student in Computational Physics at the
+              Aristotle University of Thessaloniki, interested in the point where
+              physical theory, numerical methods, and software meet.
+            </p>
+            <p>
+              My work combines scientific thinking with practical development. I
+              enjoy building simulations, analysing data, and creating tools that
+              make complex scientific information easier to explore. Alongside
+              computational physics, I develop web applications and experiment
+              with AI, electronics, and interactive scientific interfaces.
+            </p>
+            <p>
+              I&apos;m motivated by problems that require both careful reasoning and
+              creative implementation—and I&apos;m always looking for opportunities to
+              learn, collaborate, and turn an interesting idea into something that
+              works.
+            </p>
+          </section>
+
+          <section className="profileSection">
+            <h2>Education</h2>
+            <div className="timeline">
+              <article className="timelineItem">
+                <div className="institutionMark" aria-hidden="true">AUTh</div>
+                <div>
+                  <h3>MSc in Computational Physics</h3>
+                  <p className="institution">Aristotle University of Thessaloniki</p>
+                  <p className="timelineDate">Postgraduate studies · Current</p>
+                  <p className="timelineDescription">
+                    Numerical modelling, scientific programming, simulation, and computational methods in physics.
+                  </p>
+                </div>
+              </article>
+
+              <article className="timelineItem">
+                <div className="institutionMark" aria-hidden="true">AUTh</div>
+                <div>
+                  <h3>BSc in Physics</h3>
+                  <p className="institution">Aristotle University of Thessaloniki</p>
+                  <p className="timelineDescription">
+                    Academic foundation in physics, mathematics, electronics, and laboratory experimentation.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section className="profileSection featuredProfileSection">
+            <div>
+              <p className="profileEyebrow">Featured work</p>
+              <h2>Projects where physics meets code</h2>
+              <p>
+                Explore my work in astrophysics, simulations, AI, electronics, and web development.
+              </p>
+            </div>
+            <Link to="/" className="featuredProfileLink">
+              View projects <span aria-hidden="true">→</span>
+            </Link>
+          </section>
         </div>
-        <Link to="/contact" className="aboutContactLink">
-          Contact me <span aria-hidden="true">↗</span>
-        </Link>
-      </section>
-    </div>
+
+        <aside className="profileSideColumn">
+          <section className="profileSection focusSection">
+            <h2>Current focus</h2>
+            <ul className="focusList">
+              <li>
+                <span aria-hidden="true">01</span>
+                Computational and numerical physics
+              </li>
+              <li>
+                <span aria-hidden="true">02</span>
+                Scientific software and data analysis
+              </li>
+              <li>
+                <span aria-hidden="true">03</span>
+                Interactive tools for scientific communication
+              </li>
+            </ul>
+          </section>
+
+          <section className="profileSection skillsProfileSection">
+            <h2>Skills</h2>
+            <div className="profileSkillGroup">
+              <h3>Science</h3>
+              <div className="profileSkillTags">
+                <span>Physics</span>
+                <span>Computational Physics</span>
+                <span>Mathematics</span>
+                <span>Electronics</span>
+                <span>Scientific Computing</span>
+              </div>
+            </div>
+
+            <div className="profileSkillGroup">
+              <h3>Technology</h3>
+              <div className="profileSkillTags">
+                <span>Python</span>
+                <span>C</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Express.js</span>
+                <span>MySQL</span>
+                <span>Kotlin</span>
+                <span>Swift</span>
+              </div>
+            </div>
+          </section>
+
+          <section className="profileSection contactProfileSection">
+            <h2>Contact</h2>
+            <p>Interested in a project, research idea, or collaboration?</p>
+            <Link to="/contact">Let&apos;s talk <span aria-hidden="true">↗</span></Link>
+          </section>
+        </aside>
+      </div>
+    </main>
   );
 };
 
